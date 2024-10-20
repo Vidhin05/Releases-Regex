@@ -1,0 +1,49 @@
+# Sonarr:
+
+- **Remux Tiers:**
+```
+    \b(BLURANiUM|FraMeSToR|PmP|decibeL|EPSiLON|HiFi|KRaLiMaRKo|playBD|PTer|SiCFoI|TRiToN)\b|-BMF
+```
+
+- **HD Bluray Tiers:**
+```
+    \b(Chotab|CtrlHD|DON|EbP|NTb|PTer|SA89|sbR)\b
+```
+
+- **WEB Tiers:**
+```
+    \b(ABBiE|AJP69|APEX|PAXA|PEXA|XEPA|CasStudio|CRFW|CtrlHD|FLUX|HONE|KiNGS|Kitsune|monkee|NOSiViD|NTb|NTG|QOQ|RTN|SiC|T6D|TOMMY|ViSUM|3cTWeB|BLUTONiUM|BTW|Chotab|Cinefeel|CiT|CMRG|Coo7|dB|DEEP|END|ETHiCS|FC|Flights|GNOME|iJP|iKA|iT00NZ|JETIX|KHN|KiMCHI|LAZY|MiU|MZABI|NPMS|NYH|orbitron|PHOENiX|playWEB|PSiG|ROCCaT|RTFM|SA89|SbR|SDCC|SIGMA|SMURF|SPiRiT|TEPES|TVSmash|WELP|XEBEC|4KBEC|CEBEX|DRACULA|NINJACENTRAL|SLiGNOME|SwAgLaNdEr|T4H|ViSiON|DEFLATE|INFLATE)\b
+```
+
+- **Remux Tier 01:**
+```
+    \b(BLURANiUM|FraMeSToR|PmP)\b|-BMF
+```
+- **Remux Tier 02:**
+```
+    \b(decibeL|EPSiLON|HiFi|KRaLiMaRKo|playBD|PTer|SiCFoI|TRiToN)\b
+```
+- **HD Bluray Tier 01:**
+```
+    \b(Chotab|CtrlHD|DON|EbP|NTb|PTer)\b
+```
+- **HD Bluray Tier 02:**
+```
+    \b(SA89|sbR)\b
+```
+- **WEB Tier 01:**
+```
+    \b(ABBiE|AJP69|APEX|PAXA|PEXA|XEPA|CasStudio|CRFW|CtrlHD|FLUX|HONE|KiNGS|Kitsune|monkee|NOSiViD|NTb|NTG|QOQ|RTN|SiC|T6D|TOMMY|ViSUM)\b
+```
+- **WEB Tier 02:**
+```
+    \b(3cTWeB|BLUTONiUM|BTW|Chotab|Cinefeel|CiT|CMRG|Coo7|dB|DEEP|END|ETHiCS|FC|Flights|GNOME|iJP|iKA|iT00NZ|JETIX|KHN|KiMCHI|LAZY|MiU|MZABI|NPMS|NYH|orbitron|PHOENiX|playWEB|PSiG|ROCCaT|RTFM|SA89|SbR|SDCC|SIGMA|SMURF|SPiRiT|TEPES|TVSmash|WELP|XEBEC|4KBEC|CEBEX)\b
+```
+- **WEB Tier 03:**
+```
+    \b(DRACULA|NINJACENTRAL|SLiGNOME|SwAgLaNdEr|T4H|ViSiON)\b
+```
+- **WEB Scene:**
+```
+    \b(DEFLATE|INFLATE)\b
+```
