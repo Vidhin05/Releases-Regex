@@ -23,8 +23,7 @@ def extract_release_group_specifications(json_files):
 
             # Combine all the extracted values into one regular expression for the given name
             if regex_list:
-                # Ensure word boundaries \b apply to the whole group of values, not individually
-                combined_regex = rf"\b({'|'.join(regex_list)})\b"
+                combined_regex = rf"({'|'.join(regex_list)})"
                 regex_map[name] = combined_regex
 
     return regex_map
