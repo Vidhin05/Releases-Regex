@@ -1,5 +1,5 @@
 {
-  "trash_id": "0329044e3d9137b08502a9f84a7e58db",
+  "trash_id": "1ef101b3a82646b40e0cab7fc92cd896",
   "trash_scores": {
     "default": 800
   },
@@ -12,16 +12,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": 6
-      }
-    },
-    {
-      "name": "Bluray Remux",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 7
+        "value": 9
       }
     },
     {

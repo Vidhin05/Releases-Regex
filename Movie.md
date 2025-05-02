@@ -2,13 +2,13 @@
 
 - **All Movies:**
 ```
-    \b(3L|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PmP|ZQ|Flights|NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|decibeL|EPSiLON|HiFi|iFT|KRaLiMaRKo|NTb|PTP|SumVision|TOA|TRiToN|CtrlHD|MainFrame|DON|W4NK3R|HQMUX|BHDStudio|hallowed|HONE|PTer|SPHD|WEBDV|BBQ|c0kE|Chotab|CRiSC|D-Z0N3|Dariush|EbP|EDPH|Geek|LolHD|TayTO|TDD|TnP|VietHD|EA|HiDt|HiSD|QOQ|SA89|sbR|LoRD|playHD|ABBIE|AJP69|APEX|PAXA|PEXA|XEPA|BLUTONiUM|CMRG|CRFW|CRUD|FLUX|GNOME|KiNGS|Kitsune|NOSiViD|NTG|SiC|dB|MiU|monkee|MZABI|PHOENiX|playWEB|SbR|SMURF|TOMMY|XEBEC|4KBEC|CEBEX)\b|-BMF|-WiLDCAT
+    \b(3L|ATELiER|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PmP|ZQ|Flights|NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|decibeL|EPSiLON|HiFi|iFT|KRaLiMaRKo|NTb|PTP|SumVision|TOA|TRiToN|CtrlHD|MainFrame|DON|W4NK3R|HQMUX|BHDStudio|hallowed|HONE|PTer|SPHD|WEBDV|BBQ|c0kE|Chotab|CRiSC|D-Z0N3|Dariush|EbP|EDPH|Geek|LolHD|TayTO|TDD|TnP|VietHD|EA|HiDt|HiSD|QOQ|SA89|sbR|LoRD|playHD|ABBIE|AJP69|APEX|PAXA|PEXA|XEPA|BLUTONiUM|CMRG|CRFW|CRUD|FLUX|GNOME|KiNGS|Kitsune|NOSiViD|NTG|SiC|dB|MiU|monkee|MZABI|PHOENiX|playWEB|SbR|SMURF|TOMMY|XEBEC|4KBEC|CEBEX)\b|-BMF|-WiLDCAT
 
 ```
 
 - **Remux Tiers:**
 ```
-    \b(3L|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PmP|ZQ|Flights|NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|decibeL|EPSiLON|HiFi|iFT|KRaLiMaRKo|NTb|PTP|SumVision|TOA|TRiToN)\b|-BMF|-WiLDCAT
+    \b(3L|ATELiER|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PmP|ZQ|Flights|NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|decibeL|EPSiLON|HiFi|iFT|KRaLiMaRKo|NTb|PTP|SumVision|TOA|TRiToN)\b|-BMF|-WiLDCAT
 ```
 
 - **UHD Bluray Tiers:**
@@ -18,7 +18,7 @@
 
 - **HD Bluray Tiers:**
 ```
-    \b(BBQ|c0kE|Chotab|CRiSC|CtrlHD|D-Z0N3|Dariush|decibeL|DON|EbP|EDPH|Geek|LolHD|NCmt|PTer|TayTO|TDD|TnP|VietHD|ZQ|EA|HiDt|HiSD|iFT|NTb|QOQ|SA89|sbR|BHDStudio|hallowed|HONE|LoRD|playHD|SPHD|W4NK3R)\b|-BMF
+    \b(ATELiER|BBQ|c0kE|Chotab|CRiSC|CtrlHD|D-Z0N3|Dariush|decibeL|DON|EbP|EDPH|Geek|HiFi|LolHD|NCmt|PTer|TayTO|TDD|TnP|VietHD|ZQ|EA|HiDt|HiSD|iFT|NTb|QOQ|SA89|sbR|BHDStudio|hallowed|HONE|LoRD|playHD|SPHD|W4NK3R)\b|-BMF
 ```
 
 - **WEB Tiers:**
@@ -36,7 +36,7 @@
 ```
 - **Remux Tier 03:**
 ```
-    \b(decibeL|EPSiLON|HiFi|iFT|KRaLiMaRKo|NTb|PTP|SumVision|TOA|TRiToN)\b
+    \b(ATELiER|decibeL|EPSiLON|HiFi|iFT|KRaLiMaRKo|NTb|PTP|SumVision|TOA|TRiToN)\b
 ```
 - **UHD Bluray Tier 01:**
 ```
@@ -60,7 +60,7 @@
 ```
 - **HD Bluray Tier 03:**
 ```
-    \b(BHDStudio|hallowed|HONE|LoRD|playHD|SPHD|W4NK3R)\b
+    \b(ATELiER|BHDStudio|hallowed|HiFi|HONE|LoRD|playHD|SPHD|W4NK3R)\b
 ```
 - **WEB Tier 01:**
 ```
