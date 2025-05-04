@@ -1,66 +1,80 @@
 # Bad Regex Patterns
 
 - ** All Bad:**
-```
-\b(?<=\b[12]\d{3}\b).*\b(sbs|BluRay3D|BD3D)\b|\b(\$tore-Chill|0neshot|\[224\]|-224|A-Destiny|AceAres|AhmadDev|AnimeDynastyEN|AnimeKuro|AnimeRG|Animesubs|AnimeTR|Anitsu|AniVoid|ArataEnc|AREY|\[Ari\]|-Ari\b|ASW|BJX|BlackLuster|bonkai77|CameEsp|Cat66|CBB|\[Cerberus\]|-Cerberus\b|\[Cleo\]|-Cleo|CuaP|\[Daddy(Subs)?\]|-Daddy(Subs)?\b|DARKFLiX|\[DB\]|DBArabic|Deadmau|DKB|DP|DsunS|\[Emmid\]|-Emmid\b|ExREN|\[FAV\]|-FAV\b|(Baked|Dead|Space)Fish|FunArts|GERMini|Hakata|Hall_of_C|\[Hatsuyuki\]|-Hatsuyuki\b|HAV1T|HENiL|\[Hitoku\]|-Hitoku\b|HollowRoxas|\[HR\]|-HR\b|ICEBLUE|iPUNISHER|JacobSwaggedUp|Johnny-englishsubs|\[Kallango\]|-Kallango\b|Kanjouteki|KEKMASTERS|Kirion|KQRM|KRP|LoliHouse|M@nI|Man\.K|\[Maximus\]|-Maximus\b|\[MD\]|-MD\b|mdcx|Metaljerk|MGD|MiniFreeza|MiniMTBB|MinisCuba|MiniTheatre|Mites|Modders|Mr\.Deadpool|NemDiggers|neoHEVC|Nokou|NS|Nyanpasu|OldCastle|\[Pantsu\]|-Pantsu\b|\[Pao\]|-Pao\b|phazer11|\[Pixel\]|-Pixel\b|Plex|PnPSubs|Polarwindz|Project-gxs|PuyaSubs|QAS|QCE|Rando235|\[Ranger\]|-Ranger\b|\[Rapta\]|-Rapta\b|M2TS|BDMV|BDVD|\[Raze\]|-Raze\b|Reaktor|RightShiftBy2|Rip|\[SAD\]|-SAD\b|Salieri|Samir755|SanKyuu|\[SEiN\]|-SEiN\b|sekkusu&ok|SHFS|shincaps|SLAX|\[Sokudo\]|-Sokudo\b|SRW|SSA|StrayGods|Suki|TeamTurquoize|Tenrai|TnF|TOPKEK|\[Trix\]|-Trix\b|U3-Web|\[UNBIASED\]|-UNBIASED\b|\[uP\]|\[USD\]|-USD\b|Valenciano|VipapkStudios|\[Wardevil\]|-Wardevil\b|xiao-av1|Yabai_Desu_NeRandomRemux|YakuboEncodes|youshikibi|YuiSubs|\[Yun\]|-Yun\b|\[zza\]|-zza\b)\b|\b(Asuka|Beatrice|Daddy|Fumi|Iriza|Kawaiika|\[km\]|-km\b|Koi|Lilith|LowPower|Moozzi2|Nanako|NC|neko|Ohys|Raws-Maji|ReinForce|Scryous|Seicher|Shiniori)\b|\b(\bAV1\b)\b|\b(alfaHD.*|BAT|BlackBit|BNd|C\.A\.A|Cory|EXTREME|FF|FOXX|G4RiS|GUEIRA|LCD|N3G4N|ONLYMOViE|PD|PTHome|RiPER|RK|SiGLA|Tars|tokar86a|TvR|vnlls|WTV|Yatogam1|YusukeFLA|ZigZag|ZNM)\b|\b(Golumpa|KamiFS|torenter69|\[Yameii\]|-Yameii\b)\b|\b((?<=\\b[12]\\d{3}\\b).*\\b(Extras|Bonus)\\b)\b|\b(\b(VOST.*?FR(E|A)?)\b|\b(SUBFR(A|ENCH)?)\b)\b|\b(BiTOR|DepraveD|SasukeducK|tarunk9c|VD0N|VECTOR)|\b(BRiNK|BTM|CHX|CTFOH|d3g|DepraveD|EVO|Feranki1980|FGT|FMD|HiQVE|iNTENSO|iVy|JFF|KC|MeGusta|nhanc3|OFT|Pahe(\.(ph|in))?\b|PSA|SasukeducK|SHD|ShieldBearer|TBS|TG|VIDEOHOLE|worldmkv|XLF|Zero00)\b|\b(1XBET|Feranki1980|GalaxyRG|(?<!-)\b(jennaortega(UHD)?)\b|SWTYBLZ|TeeWee|TEKNO3D|Will1869)\b|\b(24xHD|41RGB|4K4U|AROMA|aXXo|AZAZE|BARC0DE|BAUCKLEY|BdC|BTM|C1NEM4|C4K|CDDHD|CHD|CiNE|COLLECTiVE|CREATiVE24|CrEwSaDe|CTFOH|d3g|DDR|DNL|EuReKA|FaNGDiNG0|Feranki1980|FGT|FMD|FRDS|FZHD|GalaxyRG|GHD|GPTHD|HDS|HDT|HDTime|HDWinG|iNTENSO|iPlanet|iVy|jennaortega(UHD)?|JFF|KC|KIRA|L0SERNIGHT|LAMA|Leffe|Liber8|LiGaS|MarkII|MeGusta|mHD|mSD|MTeam|MT|MySiLU|NhaNc3|nHD|nikt0|NoGr(ou)?p|nSD|OFT|Pahe(\.(ph|in))?\b|PATOMiEL|PRODJi|PSA|PTNK|RDN|Rifftrax|RU4HD|SANTi|SHD|ShieldBearer|STUTTERSHIT|SUNSCREEN|TBS|TEKNO3D|Tigole|TIKO|VISIONPLUSHDR(-X|1000)?|WAF|WiKi|x0r|YIFY|YTS(.(MX|LT|AG))?|Zeus)\b
+```regex
+\b(?<=\b[12]\d{3}\b).*\b(sbs|half[ .-]ou|half[ .-]sbs|BluRay3D|BD3D|Extras|Bonus|Extended[ ._-]Clip|Sing[-_. ]Along)\b|\bAV1\b|\b(\$tore-Chill|0neshot|A-Destiny|AceAres|AhmadDev|AnimeDynastyEN|AnimeKuro|AnimeRG|Animesubs|AnimeTR|Anitsu|AniVoid|ArataEnc|AREY|ASW|BJX|BlackLuster|bonkai77|CameEsp|Cat66|CBBCerberus|CuaP|DARKFLiX|DBArabic|Deadmau[ .-]?[ .-]?RAWS|DKB|DP|DsunS|ExREN|(Baked|Dead|Space)Fish|FunArts|GERMini|Hakata[ .-]?Ramen|Hall_of_C|HAV1T|HENiL|HollowRoxas|ICEBLUE|iPUNISHER|JacobSwaggedUp|Johnny-englishsubs|Kanjouteki|KEKMASTERS|Kirion|KQRM|KRP|LoliHouse|M@nI|mal[ .-]lu[ .-]zen|Man\.KMaximus|mdcx|Metaljerk|MGD|Mites|Modders[ .-]?Bay|Mr\.Deadpool|NemDiggers|neoHEVC|Nokou|N[eo][wo]b[ ._-]?Subs|NS|Nyanpasu|OldCastle|phazer11|Plex[ .-]?Friendly|PnPSubs|Polarwindz|Project-gxs|PuyaSubs|QAS|QCE|Rando235Ranger|M2TS|BDMV|BDVD|Reaktor|RightShiftBy2|Rip[ .-]?Time|Salieri|Samir755|SanKyuu|sekkusu&ok|SHFS|shincaps|SLAX|SRW|SSA|StrayGods|TeamTurquoize|Tenrai[ .-]?Sensei|TnF|TOPKEK|U3-Web|Valenciano|VipapkStudios|WtF[ ._-]?Anime|xiao-av1|Yabai_Desu_NeRandomRemux|YakuboEncodes|youshikibi|YuiSubs|Anime[ .-]?(Chap|Land|Time)|Mini(Freeza|MTBB|sCuba|Theatre)|-(224|Ari|Cerberus|Cleo|Daddy(Subs)?|Emmid|FAV|Hatsuyuki|Hitoki|HR|Kallango|Maximus|MD|Pantsu|Pao|Pixel|Ranger|Rapta|Raze|SAD|SEiN|Sokudo|Suki[ .-]?Desu|Trix|UNBIASED|USD|Wardevil|Yun|zza))\b|\[(224|Ari|Cerberus|Cleo|Daddy(Subs)?|DB|Emmid|FAV|Hatsuyuki|Hitoku|HR|Kallango|Maximus|MD|Pantsu|Pao|Pixel|Ranger|Rapta|Raze|SAD|SEiN|Sokudo|Suki[ .-]?Desu|Trix|UNBIASED|uP|USD|Wardevil|Yun|zza)\]|\b(Asuka|Beatrice|Daddy|Fumi|Iriza|Kawaiika|Koi|Lilith|LowPower|Nanako|NC|neko|Ohys|Pandoratv|Scryous|Seicher|Shiniori)[ ._-]?(Raws)\b|\b(Moozzi2|Raws-Maji|ReinForce)\b|\[km\]|-km\b|\b(alfaHD.*|BAT|BlackBit|BNd|C\.A\.A|Cory|EXTREME|FF|FOXX|G4RiS|GUEIRA|LCD|N3G4N|ONLYMOViE|PD|PTHome|RiPER|RK|SiGLA|Tars|tokar86a|TvR|vnlls|WTV|Yatogam1|YusukeFLA|ZigZag|ZNM)\b|\b(Golumpa|KamiFS|torenter69)\b|\[Yameii\]|-Yameii\b|^(?!.*(Dual|Multi)[-_. ]?Audio).*((?<!multi-)\b(dub(bed)?)\b|(funi|eng(lish)?)_?dub)|^(?!.*(dual[ ._-]?audio|[([]dual[])]|(JA|ZH|KO)\\+EN|EN\+(JA|ZH|KO))).*\b(KaiDubs|KS)\b|\b(BiTOR|DepraveD|SasukeducK|tarunk9c|VD0N|VECTOR)\b|\b(BRiNK|BTM|CHX|CTFOH|d3g|DepraveD|EVO|Feranki1980|FGT|FMD|HiQVE|iNTENSO|iVy|JFF|KC|MeGusta|nhanc3|OFT|Pahe(\.(ph|in))?|PSA|SasukeducK|SHD|ShieldBearer|TBS|TG|VIDEOHOLE|worldmkv|XLF|Zero00)\b|\b(1XBET|2160p.*BiTOR|BEN[ ._-]THE[ ._-]MEN|CREATiVE24|Feranki1980|GalaxyRG|(?<!-)\bjennaortega(UHD)?|SWTYBLZ|TeeWee|TEKNO3D|Will1869)\b|\b(24xHD|41RGB|4K4U|AROMA|aXXo|AZAZE|BARC0DE|BAUCKLEY|BdC|BTM|C1NEM4|C4K|CDDHD|CHD|CiNE|COLLECTiVE|CREATiVE24|CrEwSaDe|CTFOH|d3g|DDR|DNL|EuReKA|FaNGDiNG0|Feranki1980|FGT|FMD|FRDS|FZHD|GalaxyRG|GHD|GPTHD|HDS|HDT|HDTime|HDWinG|iNTENSO|iPlanet|iVy|jennaortega(UHD)?|JFF|KC|KIRA|L0SERNIGHT|LAMA|Leffe|Liber8|LiGaS|MarkII|MeGusta|mHD|mSD|MTeam|MT|MySiLU|NhaNc3|nHD|nikt0|NoGr(ou)?p|nSD|OFT|Pahe(\.(ph|in))?|PATOMiEL|PRODJi|PSA|PTNK|RDN|Rifftrax|RU4HD|SANTi|SHD|ShieldBearer|STUTTERSHIT|SUNSCREEN|TBS|TEKNO3D|Tigole|TIKO|VISIONPLUSHDR(-X|1000)?|WAF|WiKi|x0r|YIFY|YTS(.(MX|LT|AG))?|Zeus)\b|\b(VOST.*?FR(E|A)?|SUBFR(A|ENCH)?)\b
+
+<!-- \b(?<=\b[12]\d{3}\b).*\b(sbs|half[.-]ou|half[.-]sbs|BluRay3D|BD3D|Extras|Bonus|Extended[._-]Clip|Sing[-_.]Along)\b|\bAV1\b|\b(\$tore-Chill|0neshot|A-Destiny|AceAres|AhmadDev|AnimeDynastyEN|AnimeKuro|AnimeRG|Animesubs|AnimeTR|Anitsu|AniVoid|ArataEnc|AREY|ASW|BJX|BlackLuster|bonkai77|CameEsp|Cat66|CBBCerberus|CuaP|DARKFLiX|DBArabic|Deadmau[.-]?[.-]?RAWS|DKB|DP|DsunS|ExREN|(Baked|Dead|Space)Fish|FunArts|GERMini|Hakata[.-]?Ramen|Hall_of_C|HAV1T|HENiL|HollowRoxas|ICEBLUE|iPUNISHER|JacobSwaggedUp|Johnny-englishsubs|Kanjouteki|KEKMASTERS|Kirion|KQRM|KRP|LoliHouse|M@nI|mal[.-]lu[.-]zen|Man\.KMaximus|mdcx|Metaljerk|MGD|Mites|Modders[.-]?Bay|Mr\.Deadpool|NemDiggers|neoHEVC|Nokou|N[eo][wo]b[._-]?Subs|NS|Nyanpasu|OldCastle|phazer11|Plex[.-]?Friendly|PnPSubs|Polarwindz|Project-gxs|PuyaSubs|QAS|QCE|Rando235Ranger|M2TS|BDMV|BDVD|Reaktor|RightShiftBy2|Rip[.-]?Time|Salieri|Samir755|SanKyuu|sekkusu&ok|SHFS|shincaps|SLAX|SRW|SSA|StrayGods|TeamTurquoize|Tenrai[.-]?Sensei|TnF|TOPKEK|U3-Web|Valenciano|VipapkStudios|WtF[._-]?Anime|xiao-av1|Yabai_Desu_NeRandomRemux|YakuboEncodes|youshikibi|YuiSubs|Anime[.-]?(Chap|Land|Time)|Mini(Freeza|MTBB|sCuba|Theatre)|-(224|Ari|Cerberus|Cleo|Daddy(Subs)?|Emmid|FAV|Hatsuyuki|Hitoki|HR|Kallango|Maximus|MD|Pantsu|Pao|Pixel|Ranger|Rapta|Raze|SAD|SEiN|Sokudo|Suki[.-]?Desu|Trix|UNBIASED|USD|Wardevil|Yun|zza))\b|\[(224|Ari|Cerberus|Cleo|Daddy(Subs)?|DB|Emmid|FAV|Hatsuyuki|Hitoku|HR|Kallango|Maximus|MD|Pantsu|Pao|Pixel|Ranger|Rapta|Raze|SAD|SEiN|Sokudo|Suki[.-]?Desu|Trix|UNBIASED|uP|USD|Wardevil|Yun|zza)\]|\b(Asuka|Beatrice|Daddy|Fumi|Iriza|Kawaiika|Koi|Lilith|LowPower|Nanako|NC|neko|Ohys|Pandoratv|Scryous|Seicher|Shiniori)[._-]?(Raws)\b|\b(Moozzi2|Raws-Maji|ReinForce)\b|\[km\]|-km\b|\b(alfaHD.*|BAT|BlackBit|BNd|C\.A\.A|Cory|EXTREME|FF|FOXX|G4RiS|GUEIRA|LCD|N3G4N|ONLYMOViE|PD|PTHome|RiPER|RK|SiGLA|Tars|tokar86a|TvR|vnlls|WTV|Yatogam1|YusukeFLA|ZigZag|ZNM)\b|\b(Golumpa|KamiFS|torenter69)\b|\[Yameii\]|-Yameii\b|^(?!.*(Dual|Multi)[-_.]?Audio).*((?<!multi-)\b(dub(bed)?)\b|(funi|eng(lish)?)_?dub)|^(?!.*(dual[._-]?audio|(JA|ZH|KO)\\+EN|EN\+(JA|ZH|KO))).*\b(KaiDubs|KS)\b|\b(BiTOR|DepraveD|SasukeducK|tarunk9c|VD0N|VECTOR)\b|\b(BRiNK|BTM|CHX|CTFOH|d3g|DepraveD|EVO|Feranki1980|FGT|FMD|HiQVE|iNTENSO|iVy|JFF|KC|MeGusta|nhanc3|OFT|Pahe(\.(ph|in))?|PSA|SasukeducK|SHD|ShieldBearer|TBS|TG|VIDEOHOLE|worldmkv|XLF|Zero00)\b|\b(1XBET|2160p.*BiTOR|BEN[._-]THE[._-]MEN|CREATiVE24|Feranki1980|GalaxyRG|(?<!-)\bjennaortega(UHD)?|SWTYBLZ|TeeWee|TEKNO3D|Will1869)\b|\b(24xHD|41RGB|4K4U|AROMA|aXXo|AZAZE|BARC0DE|BAUCKLEY|BdC|BTM|C1NEM4|C4K|CDDHD|CHD|CiNE|COLLECTiVE|CREATiVE24|CrEwSaDe|CTFOH|d3g|DDR|DNL|EuReKA|FaNGDiNG0|Feranki1980|FGT|FMD|FRDS|FZHD|GalaxyRG|GHD|GPTHD|HDS|HDT|HDTime|HDWinG|iNTENSO|iPlanet|iVy|jennaortega(UHD)?|JFF|KC|KIRA|L0SERNIGHT|LAMA|Leffe|Liber8|LiGaS|MarkII|MeGusta|mHD|mSD|MTeam|MT|MySiLU|NhaNc3|nHD|nikt0|NoGr(ou)?p|nSD|OFT|Pahe(\.(ph|in))?|PATOMiEL|PRODJi|PSA|PTNK|RDN|Rifftrax|RU4HD|SANTi|SHD|ShieldBearer|STUTTERSHIT|SUNSCREEN|TBS|TEKNO3D|Tigole|TIKO|VISIONPLUSHDR(-X|1000)?|WAF|WiKi|x0r|YIFY|YTS(.(MX|LT|AG))?|Zeus)\b|\b(VOST.*?FR(E|A)?|SUBFR(A|ENCH)?)\b -->
 ```
 
 - **3D:**
-```
-\b(?<=\b[12]\d{3}\b).*\b(sbs|BluRay3D|BD3D)\b
+```regex
+\b(?<=\b[12]\d{3}\b).*\b(sbs|half[ .-]ou|half[ .-]sbs|BluRay3D|BD3D)\b
+<!-- \b(?<=\b[12]\d{3}\b).*\b(3d|sbs|half[ .-]ou|half[ .-]sbs|BluRay3D|BD3D)\b -->
 ```
 
 - **Anime LQ Groups:**
-```
-\b(\$tore-Chill|0neshot|\[224\]|-224|A-Destiny|AceAres|AhmadDev|AnimeDynastyEN|AnimeKuro|AnimeRG|Animesubs|AnimeTR|Anitsu|AniVoid|ArataEnc|AREY|\[Ari\]|-Ari\b|ASW|BJX|BlackLuster|bonkai77|CameEsp|Cat66|CBB|\[Cerberus\]|-Cerberus\b|\[Cleo\]|-Cleo|CuaP|\[Daddy(Subs)?\]|-Daddy(Subs)?\b|DARKFLiX|\[DB\]|DBArabic|Deadmau|DKB|DP|DsunS|\[Emmid\]|-Emmid\b|ExREN|\[FAV\]|-FAV\b|(Baked|Dead|Space)Fish|FunArts|GERMini|Hakata|Hall_of_C|\[Hatsuyuki\]|-Hatsuyuki\b|HAV1T|HENiL|\[Hitoku\]|-Hitoku\b|HollowRoxas|\[HR\]|-HR\b|ICEBLUE|iPUNISHER|JacobSwaggedUp|Johnny-englishsubs|\[Kallango\]|-Kallango\b|Kanjouteki|KEKMASTERS|Kirion|KQRM|KRP|LoliHouse|M@nI|Man\.K|\[Maximus\]|-Maximus\b|\[MD\]|-MD\b|mdcx|Metaljerk|MGD|MiniFreeza|MiniMTBB|MinisCuba|MiniTheatre|Mites|Modders|Mr\.Deadpool|NemDiggers|neoHEVC|Nokou|NS|Nyanpasu|OldCastle|\[Pantsu\]|-Pantsu\b|\[Pao\]|-Pao\b|phazer11|\[Pixel\]|-Pixel\b|Plex|PnPSubs|Polarwindz|Project-gxs|PuyaSubs|QAS|QCE|Rando235|\[Ranger\]|-Ranger\b|\[Rapta\]|-Rapta\b|M2TS|BDMV|BDVD|\[Raze\]|-Raze\b|Reaktor|RightShiftBy2|Rip|\[SAD\]|-SAD\b|Salieri|Samir755|SanKyuu|\[SEiN\]|-SEiN\b|sekkusu&ok|SHFS|shincaps|SLAX|\[Sokudo\]|-Sokudo\b|SRW|SSA|StrayGods|Suki|TeamTurquoize|Tenrai|TnF|TOPKEK|\[Trix\]|-Trix\b|U3-Web|\[UNBIASED\]|-UNBIASED\b|\[uP\]|\[USD\]|-USD\b|Valenciano|VipapkStudios|\[Wardevil\]|-Wardevil\b|xiao-av1|Yabai_Desu_NeRandomRemux|YakuboEncodes|youshikibi|YuiSubs|\[Yun\]|-Yun\b|\[zza\]|-zza\b)\b
+```regex
+\b(\$tore-Chill|0neshot|A-Destiny|AceAres|AhmadDev|AnimeDynastyEN|AnimeKuro|AnimeRG|Animesubs|AnimeTR|Anitsu|AniVoid|ArataEnc|AREY|ASW|BJX|BlackLuster|bonkai77|CameEsp|Cat66|CBBCerberus|CuaP|DARKFLiX|DBArabic|Deadmau[ .-]?[ .-]?RAWS|DKB|DP|DsunS|ExREN|(Baked|Dead|Space)Fish|FunArts|GERMini|Hakata[ .-]?Ramen|Hall_of_C|HAV1T|HENiL|HollowRoxas|ICEBLUE|iPUNISHER|JacobSwaggedUp|Johnny-englishsubs|Kanjouteki|KEKMASTERS|Kirion|KQRM|KRP|LoliHouse|M@nI|mal[ .-]lu[ .-]zen|Man\.KMaximus|mdcx|Metaljerk|MGD|Mites|Modders[ .-]?Bay|Mr\.Deadpool|NemDiggers|neoHEVC|Nokou|N[eo][wo]b[ ._-]?Subs|NS|Nyanpasu|OldCastle|phazer11|Plex[ .-]?Friendly|PnPSubs|Polarwindz|Project-gxs|PuyaSubs|QAS|QCE|Rando235Ranger|M2TS|BDMV|BDVD|Reaktor|RightShiftBy2|Rip[ .-]?Time|Salieri|Samir755|SanKyuu|sekkusu&ok|SHFS|shincaps|SLAX|SRW|SSA|StrayGods|TeamTurquoize|Tenrai[ .-]?Sensei|TnF|TOPKEK|U3-Web|Valenciano|VipapkStudios|WtF[ ._-]?Anime|xiao-av1|Yabai_Desu_NeRandomRemux|YakuboEncodes|youshikibi|YuiSubs|Anime[ .-]?(Chap|Land|Time)|Mini(Freeza|MTBB|sCuba|Theatre)|-(224|Ari|Cerberus|Cleo|Daddy(Subs)?|Emmid|FAV|Hatsuyuki|Hitoki|HR|Kallango|Maximus|MD|Pantsu|Pao|Pixel|Ranger|Rapta|Raze|SAD|SEiN|Sokudo|Suki[ .-]?Desu|Trix|UNBIASED|USD|Wardevil|Yun|zza))\b|\[(224|Ari|Cerberus|Cleo|Daddy(Subs)?|DB|Emmid|FAV|Hatsuyuki|Hitoku|HR|Kallango|Maximus|MD|Pantsu|Pao|Pixel|Ranger|Rapta|Raze|SAD|SEiN|Sokudo|Suki[ .-]?Desu|Trix|UNBIASED|uP|USD|Wardevil|Yun|zza)\]
 ```
 
 - **Anime Raws:**
-```
-\b(Asuka|Beatrice|Daddy|Fumi|Iriza|Kawaiika|\[km\]|-km\b|Koi|Lilith|LowPower|Moozzi2|Nanako|NC|neko|Ohys|Raws-Maji|ReinForce|Scryous|Seicher|Shiniori)\b
+```regex
+\b(Asuka|Beatrice|Daddy|Fumi|Iriza|Kawaiika|Koi|Lilith|LowPower|Nanako|NC|neko|Ohys|Pandoratv|Scryous|Seicher|Shiniori)[ ._-]?(Raws)\b|\b(Moozzi2|Raws-Maji|ReinForce)\b|\[km\]|-km\b
+
+<!-- \b(Asuka|Beatrice|Daddy|Fumi|Iriza|Kawaiika|Koi|Lilith|LowPower|Nanako|NC|neko|New|Ohys|Pandoratv|Scryous|Seicher|Shiniori)[ ._-]?(Raws)\b|\b(Moozzi2|Raws-Maji|ReinForce)\b|\[km\]|-km\b -->
 ```
 
 - **AV1:**
-```
-\b(\bAV1\b)\b
+```regex
+\bAV1\b
 ```
 
 - **Bad Dual Groups:**
-```
+```regex
 \b(alfaHD.*|BAT|BlackBit|BNd|C\.A\.A|Cory|EXTREME|FF|FOXX|G4RiS|GUEIRA|LCD|N3G4N|ONLYMOViE|PD|PTHome|RiPER|RK|SiGLA|Tars|tokar86a|TvR|vnlls|WTV|Yatogam1|YusukeFLA|ZigZag|ZNM)\b
 ```
 
 - **Dubs Only:**
-```
-\b(Golumpa|KamiFS|torenter69|\[Yameii\]|-Yameii\b)\b
+```regex
+\b(Golumpa|KamiFS|torenter69)\b|\[Yameii\]|-Yameii\b|^(?!.*(Dual|Multi)[-_. ]?Audio).*((?<!multi-)\b(dub(bed)?)\b|(funi|eng(lish)?)_?dub)|^(?!.*(dual[ ._-]?audio|[([]dual[])]|(JA|ZH|KO)\\+EN|EN\+(JA|ZH|KO))).*\b(KaiDubs|KS)\b
 ```
 
 - **Extras:**
-```
-\b((?<=\\b[12]\\d{3}\\b).*\\b(Extras|Bonus)\\b)\b
+```regex
+\b(?<=\b[12]\d{3}\b).*\b(Extras|Bonus|Extended[ ._-]Clip)\b
 ```
 
 - **VOSTFR:**
-```
-\b(\b(VOST.*?FR(E|A)?)\b|\b(SUBFR(A|ENCH)?)\b)\b
+```regex
+\b(VOST.*?FR(E|A)?|SUBFR(A|ENCH)?)\b
 ```
 
 - **Generated Dynamic HDR:**
-```
+```regex
 \b(BiTOR|DepraveD|SasukeducK|tarunk9c|VD0N|VECTOR)\b
 ```
 
 - **LQ:**
-```
-\b(BRiNK|BTM|CHX|CTFOH|d3g|DepraveD|EVO|Feranki1980|FGT|FMD|HiQVE|iNTENSO|iVy|JFF|KC|MeGusta|nhanc3|OFT|Pahe(\.(ph|in))?\b|PSA|SasukeducK|SHD|ShieldBearer|TBS|TG|VIDEOHOLE|worldmkv|XLF|Zero00)\b
+```regex
+\b(BRiNK|BTM|CHX|CTFOH|d3g|DepraveD|EVO|Feranki1980|FGT|FMD|HiQVE|iNTENSO|iVy|JFF|KC|MeGusta|nhanc3|OFT|Pahe(\.(ph|in))?|PSA|SasukeducK|SHD|ShieldBearer|TBS|TG|VIDEOHOLE|worldmkv|XLF|Zero00)\b
+
+<!-- \b(BRiNK|BTM|CHX|CTFOH|d3g|DepraveD|EVO|Feranki1980|FGT|FMD|GHOSTS|HiQVE|iNTENSO|iVy|JFF|KC|MeGusta|nhanc3|OFT|Pahe(\.(ph|in))?|PSA|SasukeducK|SHD|ShieldBearer|TBS|TG|VIDEOHOLE|worldmkv|XLF|Zero00)\b -->
 ```
 
 - **LQ (Release Title):**
-```
-\b(1XBET|Feranki1980|GalaxyRG|(?<!-)\b(jennaortega(UHD)?)\b|SWTYBLZ|TeeWee|TEKNO3D|Will1869)\b
+```regex
+\b(1XBET|2160p.*BiTOR|BEN[ ._-]THE[ ._-]MEN|CREATiVE24|Feranki1980|GalaxyRG|(?<!-)\bjennaortega(UHD)?|SWTYBLZ|TeeWee|TEKNO3D|Will1869)\b
 ```
 
 - **LQ (General):**
+```regex
+\b(24xHD|41RGB|4K4U|AROMA|aXXo|AZAZE|BARC0DE|BAUCKLEY|BdC|BTM|C1NEM4|C4K|CDDHD|CHD|CiNE|COLLECTiVE|CREATiVE24|CrEwSaDe|CTFOH|d3g|DDR|DNL|EuReKA|FaNGDiNG0|Feranki1980|FGT|FMD|FRDS|FZHD|GalaxyRG|GHD|GPTHD|HDS|HDT|HDTime|HDWinG|iNTENSO|iPlanet|iVy|jennaortega(UHD)?|JFF|KC|KIRA|L0SERNIGHT|LAMA|Leffe|Liber8|LiGaS|MarkII|MeGusta|mHD|mSD|MTeam|MT|MySiLU|NhaNc3|nHD|nikt0|NoGr(ou)?p|nSD|OFT|Pahe(\.(ph|in))?|PATOMiEL|PRODJi|PSA|PTNK|RDN|Rifftrax|RU4HD|SANTi|SHD|ShieldBearer|STUTTERSHIT|SUNSCREEN|TBS|TEKNO3D|Tigole|TIKO|VISIONPLUSHDR(-X|1000)?|WAF|WiKi|x0r|YIFY|YTS(.(MX|LT|AG))?|Zeus)\b
+
+<!-- \b(24xHD|41RGB|4K4U|AROMA|aXXo|AZAZE|BARC0DE|BAUCKLEY|BdC|beAst|BTM|C1NEM4|C4K|CDDHD|CHAOS|CHD|CiNE|COLLECTiVE|CREATiVE24|CrEwSaDe|CTFOH|d3g|DDR|DNL|EPiC|EuReKA|FaNGDiNG0|Feranki1980|FGT|FMD|FRDS|FZHD|GalaxyRG|GHD|GPTHD|HDS|HDT|HDTime|HDWinG|iNTENSO|iPlanet|iVy|jennaortega(UHD)?|JFF|KC|KiNGDOM|KIRA|L0SERNIGHT|LAMA|Leffe|Liber8|LiGaS|LUCY|MarkII|MeGusta|mHD|mSD|MTeam|MT|MySiLU|NhaNc3|nHD|nikt0|NoGr(ou)?p|nSD|OFT|Pahe(\.(ph|in))?|PATOMiEL|PRODJi|PSA|PTNK|RARBG|RDN|Rifftrax|RU4HD|SANTi|Scene|SHD|ShieldBearer|STUTTERSHIT|SUNSCREEN|TBS|TEKNO3D|Tigole|TIKO|VISIONPLUSHDR(-X|1000)?|WAF|WiKi|x0r|YIFY|YTS(.(MX|LT|AG))?|Zeus)\b -->
 ```
-\b(24xHD|41RGB|4K4U|AROMA|aXXo|AZAZE|BARC0DE|BAUCKLEY|BdC|BTM|C1NEM4|C4K|CDDHD|CHD|CiNE|COLLECTiVE|CREATiVE24|CrEwSaDe|CTFOH|d3g|DDR|DNL|EuReKA|FaNGDiNG0|Feranki1980|FGT|FMD|FRDS|FZHD|GalaxyRG|GHD|GPTHD|HDS|HDT|HDTime|HDWinG|iNTENSO|iPlanet|iVy|jennaortega(UHD)?|JFF|KC|KIRA|L0SERNIGHT|LAMA|Leffe|Liber8|LiGaS|MarkII|MeGusta|mHD|mSD|MTeam|MT|MySiLU|NhaNc3|nHD|nikt0|NoGr(ou)?p|nSD|OFT|Pahe(\.(ph|in))?\b|PATOMiEL|PRODJi|PSA|PTNK|RDN|Rifftrax|RU4HD|SANTi|SHD|ShieldBearer|STUTTERSHIT|SUNSCREEN|TBS|TEKNO3D|Tigole|TIKO|VISIONPLUSHDR(-X|1000)?|WAF|WiKi|x0r|YIFY|YTS(.(MX|LT|AG))?|Zeus)\b
+
+- **Sing-Along Versions:**
+```regex
+\b(?<=\b[12]\d{3}\b).*\b(Sing[-_. ]Along)\b
 ```
