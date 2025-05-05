@@ -8,6 +8,7 @@ This section merges **Movies**, **TV Shows** and **Anime** regexes together for 
 > - Removed Chotab from Blu-ray Tier 01 as it is already in Anime BD Tier 02. Removed D-Z0N3 from Blu-ray Tier 01 as it is already in Anime BD Tier 02.
 
 Order:
+This order is recommended for movies, tv shows and anime.
 - [Anime BD Tier 01 (Top SeaDex Muxers)](Merged.md#Anime-BD-Tier-01-Top-SeaDex-Muxers)
 - [Anime BD Tier 02 (SeaDex Muxers)](Merged.md#Anime-BD-Tier-02-SeaDex-Muxers)
 - [Anime BD Tier 03 (SeaDex Muxers)](Merged.md#Anime-BD-Tier-03-SeaDex-Muxers)
