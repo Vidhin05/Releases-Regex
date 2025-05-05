@@ -7,6 +7,9 @@ This repository contains **regular expressions (regexes) for the best and recomm
 > [!CAUTION]
 > This repo is **not** a general TRaSH Guides repository. It is **only for regex patterns** that help filter and prioritize **high-quality releases** based on TRaSH's recommendations.
 
+> [!NOTE]
+> To use these regexes in DMM, remove spaces inside any square brackets if present in the regex.
+
 ---
 
 ## 📂 Regex Lists
