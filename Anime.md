@@ -30,72 +30,72 @@
 ---
 
 ## **All Animes:**
-```regex
+    ```regex
     ((\[(Aergia|Legion|sam|smol|SoM|Vanilla|Vodes)\]|-(Aergia(?!-raws)|Legion|sam|smol|SoM|Vanilla)\b|\b(Arg0|LYS1TH3A|OZR|SCY|ZeroBuild)\b)|(\[(Alt|ARC|Arid|Crow|DemiHuman|Drag|Lulu|Metal|Moxie|Not-Vodes|Smoke|Thighs|Yuki)\]|-(Alt|ARC|Arid|Crow|DemiHuman|Drag|Lulu|Metal|Moxie|Not-Vodes|Smoke|Thighs|Yuki)\b|\b(0x539|aro|Baws|BKC|Brrrrrrr|Chotab|CsS|CUNNY|Cunnysseur|D-Z0N3|Dae|Datte13|FLFL|hydes|iKaos|JySzE|LostYears|Matsya|MC|McBalls|MTBB|Noyr|NSDAB|Okay-Subs|pog42|pyroneko|RAI|Reza|Shimatta|Spirale|UDF)\b)|(\[(AC|Ayashii|CRUCiBLE|Dekinai|EXP|Kaizoku|Mysteria|Senjou|YURI)\]|-(AC|Ayashii|CRUCiBLE|Dekinai|EXP|Kaizoku|Mysteria|Senjou|YURI)\b|\b(ASC|AssMix|CBT|CTR|CyC|Flugel|Galator|GSK[._-]kun|Holomux|IK|AnimeKaizoku|Kametsu|KH|kuchikirukia|LazyRemux|MK|Netaro|Pn8|Pookie|Quetzal|Rasetsu|ShowY|WBDP|WSE|Yoghurt|ZOIO|ZR)\b|-ZR-)|(?<=remux).*\b(NAN0)\b|(\[(Asakura|Bolshevik|Bulldog|Chihiro|Chimera|Davinci|Doki|Foxtrot|Lia|Orphan|SOLA|Tsundere)\]|-(Asakura|Bolshevik|Bulldog|Chihiro|Chimera|Davinci|Doki|Foxtrot|Lia|Orphan|SOLA|Tsundere(?!-))\b|\b(9volt|AOmundson|ASO|Cait-Sidhe|CoalGirls|Commie|D3|deanzel|Dragon-Releases|GHS|HaiveMind|hchcsen|Iznjie[ .-]Biznjie|Kaleido|karios|kBaraka|kmplx|Koitern|Koten[ ._-]Gars|Kulot|MCLR|mottoj|NH|NTRM|RMX|SallySubs|Scriptum|ShadyCrab|SNSbu|THORA|UWU|xPearse)\b)|(\[VULCAN\]|-VULCAN\b|\b(BluDragon|D4C|E[.-]N[.-]D|Raizel|REVO|SRLS|TTGA)\b|^(?=.*\b(PMR)\b)(?=.*\b(Remux)\b))|(\[(Afro|Akai|Almighty|ANE|CH|Harunatsu|Impatience|Judgment|Kantai|Nii-sama|Soldado|Sushi|Vivid|Watashi|Yabai)\]|-(Afro|Akai|Almighty|ANE|CH|Harunatsu|Impatience|Judgment|Kantai|Nii-sama|Soldado|Sushi|Vivid|Watashi|Yabai)\b|\b(Asenshi|BlurayDesuYo|Bunny-Apocalypse|EJF|Exiled-Destiny|E-D|FFF|Final8|GS|Inka-Subs|LCE|Licca|niizk|Nishi-Taku|OnDeed|orz|PAS|peachflavored|Saizen|SCP-2223|SHiN-gx|SmugCat|Zurako)\b)|(\[(NPC|STRiFE)\]|-(NPC|STRiFE)\b|\b(A-L|ANiHLS|CBM|DHD|DragsterPS|HAiKU|Hark0N|iAHD|inid4c|KS|KiyoshiStar|MCR|RedBlade|RH|SEV|TENEIGHTY|WaLMaRT)\b)|(\[(EDGE|EMBER|GHOST|Judas|naiyas|Prof|YURASUKA)\]|-(EDGE|EMBER|GHOST|Judas|naiyas|Prof|YURASUKA)\b|\b(AkihitoSubs|Arukoru|Nep[ ._-]Blanc|Shirσ)\b)|(\[(Cyan|Gao|Pizza|tenshi)\]|-(Cyan|Gao|Pizza|tenshi)\b|\b(Half-Baked|HatSubs|MALD|Slyfox|SoLCE)\b)|(\b(SubsPlease|SubsPlus\+?|ZR)\b)|(\[(ZigZag)\]|-(ZigZa)\b|\b(BlueLobster|Erai-raws|GST|HorribleRips|HorribleSubs|KAN3D2M|NanDesuKa|URANIME|VARYG)\b)|(\b(GJM|SobsPlease|Some-Stuffs)\b)|(?<!Not)-Vodes\b)
-```
+    ```
 ---
 ## **All BD Tiers:**
-```regex
-((\[(Aergia|Legion|sam|smol|SoM|Vanilla|Vodes)\]|-(Aergia(?!-raws)|Legion|sam|smol|SoM|Vanilla)\b|\b(Arg0|LYS1TH3A|OZR|SCY|ZeroBuild)\b)|(?<!Not)-Vodes\b|(\[(Alt|ARC|Arid|Crow|DemiHuman|Drag|Lulu|Metal|Moxie|Not-Vodes|Smoke|Thighs|Yuki)\]|-(Alt|ARC|Arid|Crow|DemiHuman|Drag|Lulu|Metal|Moxie|Not-Vodes|Smoke|Thighs|Yuki)\b|\b(0x539|aro|Baws|BKC|Brrrrrrr|Chotab|CsS|CUNNY|Cunnysseur|D-Z0N3|Dae|Datte13|FLFL|hydes|iKaos|JySzE|LostYears|Matsya|MC|McBalls|MTBB|Noyr|NSDAB|Okay-Subs|pog42|pyroneko|RAI|Reza|Shimatta|Spirale|UDF)\b)|(\[(AC|Ayashii|CRUCiBLE|Dekinai|EXP|Kaizoku|Mysteria|Senjou|YURI)\]|-(AC|Ayashii|CRUCiBLE|Dekinai|EXP|Kaizoku|Mysteria|Senjou|YURI)\b|\b(ASC|AssMix|CBT|CTR|CyC|Flugel|Galator|GSK[._-]kun|Holomux|IK|AnimeKaizoku|Kametsu|KH|kuchikirukia|LazyRemux|MK|Netaro|Pn8|Pookie|Quetzal|Rasetsu|ShowY|WBDP|WSE|Yoghurt|ZOIO|ZR)\b|-ZR-)|(?<=remux).*\b(NAN0)\b|(\[(Asakura|Bolshevik|Bulldog|Chihiro|Chimera|Davinci|Doki|Foxtrot|Lia|Orphan|SOLA|Tsundere)\]|-(Asakura|Bolshevik|Bulldog|Chihiro|Chimera|Davinci|Doki|Foxtrot|Lia|Orphan|SOLA|Tsundere(?!-))\b|\b(9volt|AOmundson|ASO|Cait-Sidhe|CoalGirls|Commie|D3|deanzel|Dragon-Releases|GHS|HaiveMind|hchcsen|Iznjie[ .-]Biznjie|Kaleido|karios|kBaraka|kmplx|Koitern|Koten[ ._-]Gars|Kulot|MCLR|mottoj|NH|NTRM|RMX|SallySubs|Scriptum|ShadyCrab|SNSbu|THORA|UWU|xPearse)\b)|(\[VULCAN\]|-VULCAN\b|\b(BluDragon|D4C|E[.-]N[.-]D|Raizel|REVO|SRLS|TTGA)\b|^(?=.*\b(PMR)\b)(?=.*\b(Remux)\b))|(\[(Afro|Akai|Almighty|ANE|CH|Harunatsu|Impatience|Judgment|Kantai|Nii-sama|Soldado|Sushi|Vivid|Watashi|Yabai)\]|-(Afro|Akai|Almighty|ANE|CH|Harunatsu|Impatience|Judgment|Kantai|Nii-sama|Soldado|Sushi|Vivid|Watashi|Yabai)\b|\b(Asenshi|BlurayDesuYo|Bunny-Apocalypse|EJF|Exiled-Destiny|E-D|FFF|Final8|GS|Inka-Subs|LCE|Licca|niizk|Nishi-Taku|OnDeed|orz|PAS|peachflavored|Saizen|SCP-2223|SHiN-gx|SmugCat|Zurako)\b)|(\[(NPC|STRiFE)\]|-(NPC|STRiFE)\b|\b(A-L|ANiHLS|CBM|DHD|DragsterPS|HAiKU|Hark0N|iAHD|inid4c|KS|KiyoshiStar|MCR|RedBlade|RH|SEV|TENEIGHTY|WaLMaRT)\b)|(\[(EDGE|EMBER|GHOST|Judas|naiyas|Prof|YURASUKA)\]|-(EDGE|EMBER|GHOST|Judas|naiyas|Prof|YURASUKA)\b|\b(AkihitoSubs|Arukoru|Nep[ ._-]Blanc|Shirσ)\b))
-```
+    ```regex
+    ((\[(Aergia|Legion|sam|smol|SoM|Vanilla|Vodes)\]|-(Aergia(?!-raws)|Legion|sam|smol|SoM|Vanilla)\b|\b(Arg0|LYS1TH3A|OZR|SCY|ZeroBuild)\b)|(?<!Not)-Vodes\b|(\[(Alt|ARC|Arid|Crow|DemiHuman|Drag|Lulu|Metal|Moxie|Not-Vodes|Smoke|Thighs|Yuki)\]|-(Alt|ARC|Arid|Crow|DemiHuman|Drag|Lulu|Metal|Moxie|Not-Vodes|Smoke|Thighs|Yuki)\b|\b(0x539|aro|Baws|BKC|Brrrrrrr|Chotab|CsS|CUNNY|Cunnysseur|D-Z0N3|Dae|Datte13|FLFL|hydes|iKaos|JySzE|LostYears|Matsya|MC|McBalls|MTBB|Noyr|NSDAB|Okay-Subs|pog42|pyroneko|RAI|Reza|Shimatta|Spirale|UDF)\b)|(\[(AC|Ayashii|CRUCiBLE|Dekinai|EXP|Kaizoku|Mysteria|Senjou|YURI)\]|-(AC|Ayashii|CRUCiBLE|Dekinai|EXP|Kaizoku|Mysteria|Senjou|YURI)\b|\b(ASC|AssMix|CBT|CTR|CyC|Flugel|Galator|GSK[._-]kun|Holomux|IK|AnimeKaizoku|Kametsu|KH|kuchikirukia|LazyRemux|MK|Netaro|Pn8|Pookie|Quetzal|Rasetsu|ShowY|WBDP|WSE|Yoghurt|ZOIO|ZR)\b|-ZR-)|(?<=remux).*\b(NAN0)\b|(\[(Asakura|Bolshevik|Bulldog|Chihiro|Chimera|Davinci|Doki|Foxtrot|Lia|Orphan|SOLA|Tsundere)\]|-(Asakura|Bolshevik|Bulldog|Chihiro|Chimera|Davinci|Doki|Foxtrot|Lia|Orphan|SOLA|Tsundere(?!-))\b|\b(9volt|AOmundson|ASO|Cait-Sidhe|CoalGirls|Commie|D3|deanzel|Dragon-Releases|GHS|HaiveMind|hchcsen|Iznjie[ .-]Biznjie|Kaleido|karios|kBaraka|kmplx|Koitern|Koten[ ._-]Gars|Kulot|MCLR|mottoj|NH|NTRM|RMX|SallySubs|Scriptum|ShadyCrab|SNSbu|THORA|UWU|xPearse)\b)|(\[VULCAN\]|-VULCAN\b|\b(BluDragon|D4C|E[.-]N[.-]D|Raizel|REVO|SRLS|TTGA)\b|^(?=.*\b(PMR)\b)(?=.*\b(Remux)\b))|(\[(Afro|Akai|Almighty|ANE|CH|Harunatsu|Impatience|Judgment|Kantai|Nii-sama|Soldado|Sushi|Vivid|Watashi|Yabai)\]|-(Afro|Akai|Almighty|ANE|CH|Harunatsu|Impatience|Judgment|Kantai|Nii-sama|Soldado|Sushi|Vivid|Watashi|Yabai)\b|\b(Asenshi|BlurayDesuYo|Bunny-Apocalypse|EJF|Exiled-Destiny|E-D|FFF|Final8|GS|Inka-Subs|LCE|Licca|niizk|Nishi-Taku|OnDeed|orz|PAS|peachflavored|Saizen|SCP-2223|SHiN-gx|SmugCat|Zurako)\b)|(\[(NPC|STRiFE)\]|-(NPC|STRiFE)\b|\b(A-L|ANiHLS|CBM|DHD|DragsterPS|HAiKU|Hark0N|iAHD|inid4c|KS|KiyoshiStar|MCR|RedBlade|RH|SEV|TENEIGHTY|WaLMaRT)\b)|(\[(EDGE|EMBER|GHOST|Judas|naiyas|Prof|YURASUKA)\]|-(EDGE|EMBER|GHOST|Judas|naiyas|Prof|YURASUKA)\b|\b(AkihitoSubs|Arukoru|Nep[ ._-]Blanc|Shirσ)\b))
+    ```
 ### **Anime BD Tier 01 (Top SeaDex Muxers):**
-```regex
+    ```regex
     (\[(Aergia|Legion|sam|smol|SoM|Vanilla|Vodes)\]|-(Aergia(?!-raws)|Legion|sam|smol|SoM|Vanilla)\b|\b(Arg0|LYS1TH3A|OZR|SCY|ZeroBuild)\b)|(?<!Not)-Vodes\b
-```
+    ```
 ### **Anime BD Tier 02 (SeaDex Muxers):**
-```regex
+    ```regex
     (\[(Alt|ARC|Arid|Crow|DemiHuman|Drag|Lulu|Metal|Moxie|Not-Vodes|Smoke|Thighs|Yuki)\]|-(Alt|ARC|Arid|Crow|DemiHuman|Drag|Lulu|Metal|Moxie|Not-Vodes|Smoke|Thighs|Yuki)\b|\b(0x539|aro|Baws|BKC|Brrrrrrr|Chotab|CsS|CUNNY|Cunnysseur|D-Z0N3|Dae|Datte13|FLFL|hydes|iKaos|JySzE|LostYears|Matsya|MC|McBalls|MTBB|Noyr|NSDAB|Okay-Subs|pog42|pyroneko|RAI|Reza|Shimatta|Spirale|UDF)\b)
-```
+    ```
 ### **Anime BD Tier 03 (SeaDex Muxers):**
-```regex
+    ```regex
     (\[(AC|Ayashii|CRUCiBLE|Dekinai|EXP|Kaizoku|Mysteria|Senjou|YURI)\]|-(AC|Ayashii|CRUCiBLE|Dekinai|EXP|Kaizoku|Mysteria|Senjou|YURI)\b|\b(ASC|AssMix|CBT|CTR|CyC|Flugel|Galator|GSK[._-]kun|Holomux|IK|AnimeKaizoku|Kametsu|KH|kuchikirukia|LazyRemux|MK|Netaro|Pn8|Pookie|Quetzal|Rasetsu|ShowY|WBDP|WSE|Yoghurt|ZOIO|ZR)\b|-ZR-)|(?<=remux).*\b(NAN0)\b
-```
+    ```
 ### **Anime BD Tier 04 (SeaDex Muxers):**
-```regex
+    ```regex
     (\[(Asakura|Bolshevik|Bulldog|Chihiro|Chimera|Davinci|Doki|Foxtrot|Lia|Orphan|SOLA|Tsundere)\]|-(Asakura|Bolshevik|Bulldog|Chihiro|Chimera|Davinci|Doki|Foxtrot|Lia|Orphan|SOLA|Tsundere(?!-))\b|\b(9volt|AOmundson|ASO|Cait-Sidhe|CoalGirls|Commie|D3|deanzel|Dragon-Releases|GHS|HaiveMind|hchcsen|Iznjie[ .-]Biznjie|Kaleido|karios|kBaraka|kmplx|Koitern|Koten[ ._-]Gars|Kulot|MCLR|mottoj|NH|NTRM|RMX|SallySubs|Scriptum|ShadyCrab|SNSbu|THORA|UWU|xPearse)\b)
-```
+    ```
 ### **Anime BD Tier 05 (Remuxes):**
-```regex
+    ```regex
     (\[VULCAN\]|-VULCAN\b|\b(BluDragon|D4C|E[.-]N[.-]D|Raizel|REVO|SRLS|TTGA)\b|^(?=.*\b(PMR)\b)(?=.*\b(Remux)\b))
-```
+    ```
 ### **Anime BD Tier 06 (FanSubs):**
-```regex
+    ```regex
     (\[(Afro|Akai|Almighty|ANE|CH|Harunatsu|Impatience|Judgment|Kantai|Nii-sama|Soldado|Sushi|Vivid|Watashi|Yabai)\]|-(Afro|Akai|Almighty|ANE|CH|Harunatsu|Impatience|Judgment|Kantai|Nii-sama|Soldado|Sushi|Vivid|Watashi|Yabai)\b|\b(Asenshi|BlurayDesuYo|Bunny-Apocalypse|EJF|Exiled-Destiny|E-D|FFF|Final8|GS|Inka-Subs|LCE|Licca|niizk|Nishi-Taku|OnDeed|orz|PAS|peachflavored|Saizen|SCP-2223|SHiN-gx|SmugCat|Zurako)\b)
-```
+    ```
 ### **Anime BD Tier 07 (P2P/Scene):**
-```regex
+    ```regex
     (\[(NPC|STRiFE)\]|-(NPC|STRiFE)\b|\b(A-L|ANiHLS|CBM|DHD|DragsterPS|HAiKU|Hark0N|iAHD|inid4c|KS|KiyoshiStar|MCR|RedBlade|RH|SEV|TENEIGHTY|WaLMaRT)\b)
-```
+    ```
 ### **Anime BD Tier 08 (Mini Encodes):**
-```regex
+    ```regex
     (\[(EDGE|EMBER|GHOST|Judas|naiyas|Prof|YURASUKA)\]|-(EDGE|EMBER|GHOST|Judas|naiyas|Prof|YURASUKA)\b|\b(AkihitoSubs|Arukoru|Nep[ ._-]Blanc|Shirσ)\b)
-```
+    ```
 ---
 ## **All WEB Tiers:**
-```regex
-((\[(Arid|sam|smol|SoM|Vodes)\]|-(Arid|sam|smol|SoM)\b|\b(Arg0|Baws|LostYears|LYS1TH3A|McBalls|SCY|Setsugen|Z4ST1N|ZeroBuild)\b)|(?<!Not)-Vodes\b|(\[(Asakura|Cyan|Dae|Foxtrot|Gao|Not-Vodes|Pizza|tenshi)\]|-(Asakura|Cyan|Dae|Foxtrot|Gao|Not-Vodes|Pizza|tenshi)\b|\b(0x539|GSK[._-]kun|Half-Baked|HatSubs|MALD|MTBB|Okay-Subs|Reza|Slyfox|SoLCE)\b)|(\b(SubsPlease|SubsPlus\+?|ZR)\b)|(\[(Lia|ZigZag)\]|-(Lia|ZigZa)\b|\b(BlueLobster|Erai-raws|GST|HorribleRips|HorribleSubs|KAN3D2M|KS|KiyoshiStar|NanDesuKa|URANIME|VARYG)\b)|(\[Kantai\]|-Kantai\b|\b(9volt|GJM|Kaleido|SobsPlease|Some-Stuffs)\b)|(\[(Chihiro|Doki|Tsundere)\]|-(Chihiro|Doki|Tsundere(?!-))\b|\b(Asenshi|Commie|DameDesuYo)\b))
-```
+    ```regex
+    ((\[(Arid|sam|smol|SoM|Vodes)\]|-(Arid|sam|smol|SoM)\b|\b(Arg0|Baws|LostYears|LYS1TH3A|McBalls|SCY|Setsugen|Z4ST1N|ZeroBuild)\b)|(?<!Not)-Vodes\b|(\[(Asakura|Cyan|Dae|Foxtrot|Gao|Not-Vodes|Pizza|tenshi)\]|-(Asakura|Cyan|Dae|Foxtrot|Gao|Not-Vodes|Pizza|tenshi)\b|\b(0x539|GSK[._-]kun|Half-Baked|HatSubs|MALD|MTBB|Okay-Subs|Reza|Slyfox|SoLCE)\b)|(\b(SubsPlease|SubsPlus\+?|ZR)\b)|(\[(Lia|ZigZag)\]|-(Lia|ZigZa)\b|\b(BlueLobster|Erai-raws|GST|HorribleRips|HorribleSubs|KAN3D2M|KS|KiyoshiStar|NanDesuKa|URANIME|VARYG)\b)|(\[Kantai\]|-Kantai\b|\b(9volt|GJM|Kaleido|SobsPlease|Some-Stuffs)\b)|(\[(Chihiro|Doki|Tsundere)\]|-(Chihiro|Doki|Tsundere(?!-))\b|\b(Asenshi|Commie|DameDesuYo)\b))
+    ```
 ### **Anime Web Tier 01 (Muxers):**
-```regex
+    ```regex
     (\[(Arid|sam|smol|SoM|Vodes)\]|-(Arid|sam|smol|SoM)\b|\b(Arg0|Baws|LostYears|LYS1TH3A|McBalls|SCY|Setsugen|Z4ST1N|ZeroBuild)\b)|(?<!Not)-Vodes\b
-```
+    ```
 ### **Anime Web Tier 02 (Top FanSubs):**
-```regex
+    ```regex
     (\[(Asakura|Cyan|Dae|Foxtrot|Gao|Not-Vodes|Pizza|tenshi)\]|-(Asakura|Cyan|Dae|Foxtrot|Gao|Not-Vodes|Pizza|tenshi)\b|\b(0x539|GSK[._-]kun|Half-Baked|HatSubs|MALD|MTBB|Okay-Subs|Reza|Slyfox|SoLCE)\b)
-```
+    ```
 ### **Anime Web Tier 03 (Official Subs):**
-```regex
+    ```regex
     (\b(SubsPlease|SubsPlus\+?|ZR)\b)
-```
+    ```
 ### **Anime Web Tier 04 (Official Subs):**
-```regex
+    ```regex
     (\[(Lia|ZigZag)\]|-(Lia|ZigZa)\b|\b(BlueLobster|Erai-raws|GST|HorribleRips|HorribleSubs|KAN3D2M|KS|KiyoshiStar|NanDesuKa|URANIME|VARYG)\b)
-```
+    ```
 ### **Anime Web Tier 05 (FanSubs):**
-```regex
+    ```regex
     (\[Kantai\]|-Kantai\b|\b(9volt|GJM|Kaleido|SobsPlease|Some-Stuffs)\b)
-```
+    ```
 ### **Anime Web Tier 06 (FanSubs):**
-```regex
+    ```regex
     (\[(Chihiro|Doki|Tsundere)\]|-(Chihiro|Doki|Tsundere(?!-))\b|\b(Asenshi|Commie|DameDesuYo)\b)
-```
+    ```

@@ -24,75 +24,74 @@
 ---
 
 ## **All Movies:**
-```regex
+    ```regex
     \b(3L|ATELiER|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PmP|ZQ|Flights|NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|decibeL|EPSiLON|HiFi|iFT|KRaLiMaRKo|NTb|PTP|SumVision|TOA|TRiToN|CtrlHD|MainFrame|DON|W4NK3R|HQMUX|BHDStudio|hallowed|HONE|PTer|SPHD|WEBDV|BBQ|c0kE|Chotab|CRiSC|D-Z0N3|Dariush|EbP|EDPH|Geek|LolHD|TayTO|TDD|TnP|VietHD|EA|HiDt|HiSD|QOQ|SA89|sbR|LoRD|playHD|ABBIE|AJP69|APEX|PAXA|PEXA|XEPA|BLUTONiUM|CMRG|CRFW|CRUD|FLUX|GNOME|KiNGS|Kitsune|NOSiViD|NTG|SiC|dB|MiU|monkee|MZABI|PHOENiX|playWEB|SbR|SMURF|TOMMY|XEBEC|4KBEC|CEBEX)\b|-BMF|-WiLDCAT
-
-```
+    ```
 ---
 ## **All Remux Tiers:**
-```regex
+    ```regex
     \b(3L|ATELiER|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PmP|ZQ|Flights|NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|decibeL|EPSiLON|HiFi|iFT|KRaLiMaRKo|NTb|PTP|SumVision|TOA|TRiToN)\b|-BMF|-WiLDCAT
-```
+    ```
 ### **Remux Tier 01:**
-```regex
+    ```regex
     \b(3L|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PmP|ZQ)\b|-BMF|-WiLDCAT
-```
+    ```
 ### **Remux Tier 02:**
-```regex
+    ```regex
     \b(Flights|NCmt|playBD|SiCFoI|SURFINBIRD|TEPES)\b
-```
+    ```
 ### **Remux Tier 03:**
-```regex
+    ```regex
     \b(ATELiER|decibeL|EPSiLON|HiFi|iFT|KRaLiMaRKo|NTb|PTP|SumVision|TOA|TRiToN)\b
-```
+    ```
 ---
 ## **All UHD Bluray Tiers:**
-```regex
+    ```regex
     \b(CtrlHD|MainFrame|DON|W4NK3R|HQMUX|BHDStudio|hallowed|HONE|PTer|SPHD|WEBDV)\b
-```
+    ```
 ### **UHD Bluray Tier 01:**
-```regex
+    ```regex
     \b(CtrlHD|MainFrame|DON|W4NK3R)\b
-```
+    ```
 ### **UHD Bluray Tier 02:**
-```regex
+    ```regex
     \b(HQMUX)\b
-```
+    ```
 ### **UHD Bluray Tier 03:**
-```regex
+    ```regex
     \b(BHDStudio|hallowed|HONE|PTer|SPHD|WEBDV)\b
-```
+    ```
 ---
 ## **All HD Bluray Tiers:**
-```regex
+    ```regex
     \b(ATELiER|BBQ|c0kE|Chotab|CRiSC|CtrlHD|D-Z0N3|Dariush|decibeL|DON|EbP|EDPH|Geek|HiFi|LolHD|NCmt|PTer|TayTO|TDD|TnP|VietHD|ZQ|EA|HiDt|HiSD|iFT|NTb|QOQ|SA89|sbR|BHDStudio|hallowed|HONE|LoRD|playHD|SPHD|W4NK3R)\b|-BMF
-```
+    ```
 ### **HD Bluray Tier 01:**
-```regex
+    ```regex
     \b(BBQ|c0kE|Chotab|CRiSC|CtrlHD|D-Z0N3|Dariush|decibeL|DON|EbP|EDPH|Geek|LolHD|NCmt|PTer|TayTO|TDD|TnP|VietHD|ZQ)\b|-BMF
-```
+    ```
 ### **HD Bluray Tier 02:**
-```regex
+    ```regex
     \b(EA|HiDt|HiSD|iFT|NTb|QOQ|SA89|sbR)\b
-```
+    ```
 ### **HD Bluray Tier 03:**
-```regex
+    ```regex
     \b(ATELiER|BHDStudio|hallowed|HiFi|HONE|LoRD|playHD|SPHD|W4NK3R)\b
-```
+    ```
 ---
 ## **All WEB Tiers:**
-```regex
+    ```regex
     \b(ABBIE|AJP69|APEX|PAXA|PEXA|XEPA|BLUTONiUM|CMRG|CRFW|CRUD|FLUX|GNOME|HONE|KiNGS|Kitsune|NOSiViD|NTb|NTG|SiC|TEPES|dB|Flights|MiU|monkee|MZABI|PHOENiX|playWEB|SbR|SMURF|TOMMY|XEBEC|4KBEC|CEBEX)\b
-```
+    ```
 ### **WEB Tier 01:**
-```regex
+    ```regex
     \b(ABBIE|AJP69|APEX|PAXA|PEXA|XEPA|BLUTONiUM|CMRG|CRFW|CRUD|FLUX|GNOME|HONE|KiNGS|Kitsune|NOSiViD|NTb|NTG|SiC|TEPES)\b
-```
+    ```
 ### **WEB Tier 02:**
-```regex
+    ```regex
     \b(dB|Flights|MiU|monkee|MZABI|PHOENiX|playWEB|SbR|SMURF|TOMMY|XEBEC|4KBEC|CEBEX)\b
-```
+    ```
 ### **WEB Tier 03:**
-```regex
+    ```regex
     \b(GNOMiSSiON|NINJACENTRAL|ROCCaT|SiGMA|SLiGNOME|SwAgLaNdEr)\b
-```
+    ```
