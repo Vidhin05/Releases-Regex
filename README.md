@@ -19,7 +19,8 @@ This repository contains **regular expressions (regexes) for the best and recomm
 ### 🎭 **[Bad](Bad.md)**
 ### 📝 **[All](All.md)** **(Use this when multiple regexes are not allowed)**
 
-### ✨ **[Merged](Merged.md)** *Recommended*
+### ✨ **[Merged](Merged.md)** *Recommended if not interested in Anime*
+### ✨ **[Merged+Anime](Merged+Anime.md)** *Recommended*
 
 ---
 
