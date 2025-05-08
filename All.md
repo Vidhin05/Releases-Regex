@@ -1,6 +1,6 @@
 ##  📝 All
 
-This section contains a collecion of category wise single regexes, **[Bad releases]**(All.md#Bad-releases) is useful in DMM to filter out unwanted releases and **[All Trash recommended]**(All.md#All-Trash-recommended) is useful in DMM as a default filter. **[Highest tier releases]**(All.md#Highest-tier-releases) and **[Not trash recommended]**(All.md#Not-trash-recommended) can be used for library management.
+This section contains a collecion of category wise single regexes, **[Bad releases](All.md#Bad-releases)** is useful in DMM to filter out unwanted releases and **[All Trash recommended](All.md#All-Trash-recommended)** is useful in DMM as a default filter. **[Highest tier releases](All.md#Highest-tier-releases)** and **[Not trash recommended](All.md#Not-trash-recommended)** can be used for library management.
 
 ## **Highest tier releases:**
   ```regex
