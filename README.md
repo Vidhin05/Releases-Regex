@@ -47,11 +47,11 @@ For an in-depth breakdown, visit the [Wikipedia release formats](https://en.wiki
 ### 3. Configuration Methods
 
 #### Option A: Using .env File (Recommended)
-Due to the length of the merged regexes, it's recommended to configure them in your `.env` file to avoid HTTP 431 (Request Headers too large) errors.
+Due to the length of these regexes, it's recommended to configure them in your `.env` file to avoid HTTP 431 (Request Headers too large) errors.
 
 ```sh
 # Configure your regex in .env
-DEFAULT_REGEX_SORT_PATTERNS='[Copy the Merged Space-Separated Regex from Merged+Anime.md or Merged.md below]'
+DEFAULT_REGEX_SORT_PATTERNS='[Copy the Space-Separated Regex from your chosen file below]'
 ```
 
 > [!IMPORTANT]
@@ -64,4 +64,43 @@ If you prefer using the addon configuration URL and are experiencing HTTP 431 er
 - [Merged+Anime Space-Separated Regex](Merged+Anime.md#-merged-space-seperated-regex-use-this-for-aiostreams) - Merged regex pattern for Movies, TV and anime sorting
 - [Merged Space-Separated Regex](Merged.md#-merged-space-seperated-regex-use-this-for-aiostreams) - Mergex Regex pattern for Movies and TV Shows sorting
 
+> [!TIP]
+> To see which regex pattern matched a stream, add `{stream.regexMatched::exists["🏷️{stream.regexMatched}"||""]}` to your custom format.
+> 
+> Here are two recommended custom formats:
+> <details>
+> <summary>Clean GDrive Format with Metadata ([source: Viren](https://discord.com/channels/1225024298490662974/1370170296568516608))</summary>
+> 
+> **Name:**
+> ```
+> {stream.proxied::istrue["🕵️ "||""]}{stream.infoHash::exists["[P2P]"||""]}{provider.shortName::exists["[{provider.shortName}"||""]}{stream.personal::istrue[" ☁️"||""]}{provider.cached::istrue["⚡] "||""]}{provider.cached::isfalse["⏳]"||""]}{addon.name}{stream.resolution::exists[" {stream.resolution}"||""]}{stream.regexMatched::exists[" ({stream.regexMatched})"||""]}
+> ```
+> 
+> **Description:**
+> ```
+> {stream.title::exists["📁 {stream.title}"||""]}{stream.year::exists[" ({stream.year})"||""]}{stream.season::>=0[" S"||""]}{stream.season::<=9["0"||""]}{stream.season::>0["{stream.season}"||""]}{stream.episode::>=0[" • E"||""]}{stream.episode::<=9["0"||""]}{stream.episode::>0["{stream.episode}"||""]}
+> {stream.quality::exists["🎥 {stream.quality} "||""]}{stream.encode::exists["🎞️ {stream.encode} "||""]}{stream.releaseGroup::exists["🏷️ {stream.releaseGroup}"||""]}
+> {stream.visualTags::exists["📺 {stream.visualTags::join(' • ')} "||""]}{stream.audioTags::exists["🎧 {stream.audioTags::join(' • ')}"||""]}
+> {stream.size::>0["📦 {stream.size::bytes} "||""]}{stream.duration::>0["⏱️ {stream.duration::time} "||""]}{stream.age::exists["📅 {stream.age} "||""]}{stream.indexer::exists["🔍 {stream.indexer}"||""]}
+> {stream.languageEmojis::exists["🌐 {stream.languageEmojis::join(' / ')}"||""]}
+> ```
+> </details>
+> 
+> <details>
+> <summary>Detailed TV Format with Release Info ([source](https://discord.com/channels/1225024298490662974/1367377508328280145))</summary>
+> 
+> **Name:**
+> ```
+> {stream.infoHash::exists["[P2P]"||""]}{provider.cached::isfalse["⏳"||""]}{stream.personal::istrue["☁️ "||""]}{addon.name} {stream.resolution::exists["{stream.resolution} "||""]}
+> {stream.visualTags::exists["📺 {stream.visualTags::join(' | ')} "||""]}
+> {stream.regexMatched::exists["🏷️{stream.regexMatched}"||""]}
+> ```
+> 
+> **Description:**
+> ```
+> {stream.quality::exists["🎥 {stream.quality} "||""]}{stream.encode::exists["🎞️ {stream.encode} "||""]}{stream.languages::exists["🌎 {stream.languageEmojis::join(' | ')}"||""]}
+> {stream.size::>0["📦 {stream.size::bytes} "||""]}{stream.audioTags::exists["🎧 {stream.audioTags::join(' | ')} "||""]}
+> {stream.filename::exists["📄 {stream.name}"||""]}
+> ```
+> </details>
 ---
