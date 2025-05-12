@@ -10,10 +10,10 @@ This repository contains **regular expressions (regexes) for the best and recomm
 ---
 
 ## 📂 Regex Lists
-### 🎬 **[Movies](Movie.md)** 
-### 📺 **[TV Shows](TV.md)**  
-### 🍥 **[Anime](Anime.md)**
-### 🎭 **[Bad](Bad.md)**
+### 🎬 **[Movies](Source%20Regexes/Movie.md)** 
+### 📺 **[TV Shows](Source%20Regexes/TV.md)**  
+### 🍥 **[Anime](Source%20Regexes/Anime.md)**
+### 🎭 **[Bad](Source%20Regexes/Bad.md)**
 ### 📝 **[All](All.md)** **(Use this when multiple regexes are not allowed)**
 
 ### ✨ **[Merged](Merged.md)** *Recommended if not interested in Anime*
@@ -61,7 +61,7 @@ DEFAULT_REGEX_SORT_PATTERNS='[Copy the Merged Space-Separated Regex from Merged+
 If you prefer using the addon configuration URL and are experiencing HTTP 431 errors, you can increase the read and write buffers in your `configuration.yaml` file. This is only possible if you are using Authelia.
 
 ### 4. Reference Files
-- [Merged+Anime Space-Separated Regex](Merged+Anime.md#space-separated) - Complete regex patterns including anime
-- [Merged Space-Separated Regex](Merged.md#space-separated) - Regex patterns excluding anime content
+- [Merged+Anime Space-Separated Regex](Merged+Anime.md#-merged-space-seperated-regex-use-this-for-aiostreams) - Complete regex patterns including anime
+- [Merged Space-Separated Regex](Merged.md#-merged-space-seperated-regex-use-this-for-aiostreams) - Regex patterns excluding anime content
 
 ---
