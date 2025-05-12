@@ -38,7 +38,7 @@ For an in-depth breakdown, visit the [Wikipedia release formats](https://en.wiki
 
 ### 1. Choosing the Right Regex
 - **Recommended**: Use `Merged+Anime` for comprehensive coverage
-- **Alternative**: Use `Merged` if you don't need anime content
+- **Alternative**: Use `Merged` if you don't want to sort anime content
 
 ### 2. Sort Order Configuration
 - **Resolution/Quality-First**: `Cached -> Personal -> Resolution -> Quality -> Regex Sort -> Size`
@@ -60,8 +60,8 @@ DEFAULT_REGEX_SORT_PATTERNS='[Copy the Merged Space-Separated Regex from Merged+
 #### Option B: Using Addon Configuration URL
 If you prefer using the addon configuration URL and are experiencing HTTP 431 errors, you can increase the read and write buffers in your `configuration.yaml` file. This is only possible if you are using Authelia.
 
-### 4. Reference Files
-- [Merged+Anime Space-Separated Regex](Merged+Anime.md#-merged-space-seperated-regex-use-this-for-aiostreams) - Complete regex patterns including anime
-- [Merged Space-Separated Regex](Merged.md#-merged-space-seperated-regex-use-this-for-aiostreams) - Regex patterns excluding anime content
+### Direct Links
+- [Merged+Anime Space-Separated Regex](Merged+Anime.md#-merged-space-seperated-regex-use-this-for-aiostreams) - Merged regex pattern for Movies, TV and anime sorting
+- [Merged Space-Separated Regex](Merged.md#-merged-space-seperated-regex-use-this-for-aiostreams) - Mergex Regex pattern for Movies and TV Shows sorting
 
 ---
