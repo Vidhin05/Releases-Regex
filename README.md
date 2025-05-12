@@ -95,7 +95,7 @@ If you prefer using the addon configuration URL and are experiencing HTTP 431 er
 > 
 > **Name:**
 > ```
-> {stream.infoHash::exists["[P2P]"||""]}{provider.cached::isfalse["⏳"||""]}{stream.personal::istrue["☁️ "||""]}{addon.name} {stream.resolution::exists["{stream.resolution} "||""]}
+> {stream.infoHash::exists["[P2P]"||""]}{provider.cached::isfalse["⏳"||""]}{stream.personal::istrue["☁️ "||""]}{addon.name} {stream.resolution::=2160p["4K"||""]}{stream.resolution::=1440p["QHD"||""]}{stream.resolution::=1080p["HD"||""]}{stream.resolution::=720p["SD"||""]}
 > {stream.visualTags::exists["📺 {stream.visualTags::join(' | ')} "||""]}
 > {stream.regexMatched::exists["🏷️{stream.regexMatched}"||""]}
 > ```
