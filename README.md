@@ -69,7 +69,9 @@ If you prefer using the addon configuration URL and are experiencing HTTP 431 er
 > 
 > Here are two recommended custom formats:
 > <details>
-> <summary>Clean GDrive Format with Metadata ([source: Viren](https://discord.com/channels/1225024298490662974/1370170296568516608))</summary>
+> <summary>Slightly less minimalistic gdrive format</summary>
+> 
+> ([source: Viren](https://discord.com/channels/1225024298490662974/1370170296568516608))
 > 
 > **Name:**
 > ```
@@ -87,7 +89,9 @@ If you prefer using the addon configuration URL and are experiencing HTTP 431 er
 > </details>
 > 
 > <details>
-> <summary>Detailed TV Format with Release Info ([source](https://discord.com/channels/1225024298490662974/1367377508328280145))</summary>
+> <summary>TV-Usage Optimised Advanced Format</summary>
+> 
+> ([source](https://discord.com/channels/1225024298490662974/1367377508328280145))
 > 
 > **Name:**
 > ```
