@@ -58,7 +58,7 @@ DEFAULT_REGEX_SORT_PATTERNS='[Copy the Space-Separated Regex from your chosen fi
 > Always use single quotes for regex values in the `.env` file, especially when using Docker.
 
 #### Option B: Using Addon Configuration URL
-If you prefer using the addon configuration URL and are experiencing HTTP 431 errors, you can increase the read and write buffers in your `configuration.yaml` file. This is only possible if you are using Authelia.
+If you prefer using the addon configuration URL and are experiencing HTTP 431 errors, you can increase the read and write buffers in your Authelia `configuration.yaml` file. This is only possible if you are using Authelia.
 
 ### Direct Links
 - [Merged+Anime Space-Separated Regex](Merged+Anime.md#-merged-space-seperated-regex-use-this-for-aiostreams) - Merged regex pattern for Movies, TV and anime sorting
