@@ -42,7 +42,7 @@ For an in-depth breakdown, visit the [Wikipedia release formats](https://en.wiki
 
 ### 2. Sort Order Configuration
 - **Resolution/Quality-First**: `Cached -> Personal -> Resolution -> Quality -> Regex Sort -> Size`
-- **Known Groups First**: `Cached -> Personal -> Regex Sort -> Resolution -> Size`
+- **Known Groups-First**: `Cached -> Personal -> Regex Sort -> Resolution -> Size`
 
 ### 3. Configuration Methods
 
