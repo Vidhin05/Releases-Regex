@@ -46,6 +46,8 @@ For an in-depth breakdown, visit the [Wikipedia release formats](https://en.wiki
 
 ### 3. Configuration Methods
 
+If you haven't already, you need to set API_KEY in your `.env` to enable using regex patterns. It acts as a password protecting your instance. While configuring the addon, you also need to enter the API_KEY at the bottom of the page.
+
 #### Option A: Using .env File (Recommended)
 Due to the length of these regexes, it's recommended to configure them in your `.env` file to avoid HTTP 431 (Request Headers too large) errors.
 
