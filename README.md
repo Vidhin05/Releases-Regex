@@ -54,10 +54,16 @@ Due to the length of these regexes, it's recommended to configure them in your `
 ```sh
 # Configure your regex in .env
 DEFAULT_REGEX_SORT_PATTERNS='[Copy the Space-Separated Regex from your chosen file below]'
+
+# Optional: Exclude Hi10 content if your device doesn't support it (prevents stuttering)
+DEFAULT_REGEX_EXCLUDE_PATTERN='^.*Hi10.*$'
 ```
 
 > [!IMPORTANT]
 > Always use single quotes for regex values in the `.env` file, especially when using Docker.
+
+> [!NOTE]
+> Add `DEFAULT_REGEX_EXCLUDE_PATTERN='^.*Hi10.*$'` to your `.env` file if your device does not support Hi10 encoding. Hi10 content can cause stuttering on unsupported devices.
 
 #### Option B: Using Addon Configuration URL
 If you prefer using the addon configuration URL and are experiencing HTTP 431 errors, you can increase the read and write buffers in your Authelia `configuration.yaml` file. This is only possible if you are using Authelia.
