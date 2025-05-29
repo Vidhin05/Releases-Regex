@@ -66,7 +66,14 @@ DEFAULT_REGEX_EXCLUDE_PATTERN='^.*Hi10.*$'
 > Add `DEFAULT_REGEX_EXCLUDE_PATTERN='^.*Hi10.*$'` to your `.env` file if your device does not support Hi10 encoding. Hi10 content can cause stuttering on unsupported devices.
 
 #### Option B: Using Addon Configuration URL
-If you prefer using the addon configuration URL and are experiencing HTTP 431 errors, you can increase the read and write buffers in your Authelia `configuration.yaml` file. This is only possible if you are using Authelia.
+<details>
+<summary>If you prefer using the addon configuration URL and are experiencing HTTP 431 Request Header Fields Too Large error, if you are using Authelia, you can increase the read and write buffers in your Authelia config `configuration.yml`.</summary>
+```yml
+buffers:
+  read: 2097152
+  write: 2097152
+```
+</details>
 
 ### Direct Links
 - [Merged+Anime Space-Separated Regex](Merged+Anime.md#-merged-space-seperated-regex-use-this-for-aiostreams) - Merged regex pattern for Movies, TV and anime sorting
