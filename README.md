@@ -36,6 +36,27 @@ For an in-depth breakdown, visit the [Wikipedia release formats](https://en.wiki
 
 ## 🚀 Usage Instructions (For AIOStreams)
 
+### AIOStreams v2 (Beta) - JSON Format
+
+AIOStreams v2 now supports JSON regex files for improved performance and organization. Choose one of the following:
+
+#### **📥 Direct JSON Links:**
+- **[Merged Regexes (JSON)](merged-regexes.json)** - For Movies and TV Shows only
+- **[Merged+Anime Regexes (JSON)](merged-anime-regexes.json)** - For Movies, TV Shows, and Anime *(Recommended)*
+
+#### **🔗 Raw GitHub Links (for direct import):**
+```
+https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/merged-regexes.json
+https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/merged-anime-regexes.json
+```
+
+> [!TIP]
+> In AIOStreams v2, you can directly import these JSON files using the raw GitHub URLs in your regex configuration settings.
+
+---
+
+### AIOStreams v1 - Legacy Format
+
 ### 1. Choosing the Right Regex
 - **Recommended**: Use `Merged+Anime` for comprehensive coverage
 - **Alternative**: Use `Merged` if you don't want to sort anime content
