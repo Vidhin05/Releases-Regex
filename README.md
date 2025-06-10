@@ -145,4 +145,43 @@ buffers:
 > {stream.filename::exists["📄 {stream.name}"||""]}
 > ```
 > </details>
+>
+> (For v2) Here are two recommended custom formats:
+> <details>
+> <summary>Slightly less minimalistic gdrive format</summary>
+> 
+> ([source: Viren](https://discord.com/channels/1225024298490662974/1370170296568516608))
+> 
+> **Name:**
+> ```
+> {stream.proxied::istrue["🕵️ "||""]}{stream.infoHash::exists["[P2P]"||""]}{service.shortName::exists["[{service.shortName}"||""]}{stream.library::istrue[" ☁️"||""]}{service.cached::istrue["⚡] "||""]}{service.cached::isfalse["⏳]"||""]}{addon.name}{stream.resolution::exists[" {stream.resolution}"||""]}{stream.regexMatched::exists[" ({stream.regexMatched})"||""]}
+> ```
+> 
+> **Description:**
+> ```
+> {stream.quality::exists["🎥 {stream.quality} "||""]}{stream.encode::exists["🎞️ {stream.encode} "||""]}{stream.languages::exists["🌎 {stream.languageEmojis::join(' | ')}"||""]}
+> {stream.size::>0["📦 {stream.size::bytes} "||""]}{stream.audioTags::exists["🎧 {stream.audioTags::join(' | ')} "||""]}
+> {stream.filename::exists["📄 {stream.filename}"||""]}
+> ```
+> </details>
+> 
+> <details>
+> <summary>TV-Usage Optimised Advanced Format</summary>
+> 
+> ([source](https://discord.com/channels/1225024298490662974/1367377508328280145))
+> 
+> **Name:**
+> ```
+> {stream.infoHash::exists["[P2P]"||""]}{service.cached::isfalse["⏳"||""]}{stream.library::istrue["☁️ "||""]}{addon.name} {stream.resolution::=2160p["4K"||""]}{stream.resolution::=1440p["QHD"||""]}{stream.resolution::=1080p["HD"||""]}{stream.resolution::=720p["SD"||""]}
+> {stream.visualTags::exists["📺 {stream.visualTags::join(' | ')} "||""]}
+> {stream.regexMatched::exists["🏷️{stream.regexMatched}"||""]}
+> ```
+> 
+> **Description:**
+> ```
+> {stream.quality::exists["🎥 {stream.quality} "||""]}{stream.encode::exists["🎞️ {stream.encode} "||""]}{stream.languages::exists["🌎 {stream.languageEmojis::join(' | ')}"||""]}
+> {stream.size::>0["📦 {stream.size::bytes} "||""]}{stream.audioTags::exists["🎧 {stream.audioTags::join(' | ')} "||""]}
+> {stream.filename::exists["📄 {stream.filename}"||""]}
+> ```
+> </details>
 ---
