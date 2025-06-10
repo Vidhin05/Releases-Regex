@@ -33,7 +33,7 @@
   },
   {
     "name": "Web T3",
-    "pattern": "^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:BYNDR|DRACULA|GNOMiSSiON|NINJACENTRAL|ROCCaT|SiGMA|SLiGNOME|SwAgLaNdEr|T4H|ViSiON)\\b).*"
+    "pattern": "^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:BYNDR|DRACULA|GNOMiSSiON|NINJACENTRAL|ROCCaT|SLiGNOME|SwAgLaNdEr|T4H|ViSiON)\\b).*"
   },
   {
     "name": "Web Scene",
