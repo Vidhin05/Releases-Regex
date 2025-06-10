@@ -154,7 +154,7 @@ buffers:
 > 
 > **Name:**
 > ```
-> {stream.proxied::istrue["🕵️ "||""]}{stream.infoHash::exists["[P2P]"||""]}{service.shortName::exists["[{service.shortName}"||""]}{stream.library::istrue[" ☁️"||""]}{service.cached::istrue["⚡] "||""]}{service.cached::isfalse["⏳]"||""]}{addon.name}{stream.resolution::exists[" {stream.resolution}"||""]}{stream.regexMatched::exists[" ({stream.regexMatched})"||""]}
+> {stream.proxied::istrue["🕵️ "||""]}{stream.type::=p2p["[P2P]"||""]}{service.shortName::exists["[{service.shortName}"||""]}{stream.library::istrue[" ☁️"||""]}{service.cached::istrue["⚡] "||""]}{service.cached::isfalse["⏳]"||""]}{addon.name}{stream.resolution::exists[" {stream.resolution}"||""]}{stream.regexMatched::exists[" ({stream.regexMatched})"||""]}
 > ```
 > 
 > **Description:**
@@ -172,7 +172,7 @@ buffers:
 > 
 > **Name:**
 > ```
-> {stream.infoHash::exists["[P2P]"||""]}{service.cached::isfalse["⏳"||""]}{stream.library::istrue["☁️ "||""]}{addon.name} {stream.resolution::=2160p["4K"||""]}{stream.resolution::=1440p["QHD"||""]}{stream.resolution::=1080p["HD"||""]}{stream.resolution::=720p["SD"||""]}
+> {stream.type::=p2p["[P2P]"||""]}{service.cached::isfalse["⏳"||""]}{stream.library::istrue["☁️ "||""]}{addon.name} {stream.resolution::=2160p["4K"||""]}{stream.resolution::=1440p["QHD"||""]}{stream.resolution::=1080p["HD"||""]}{stream.resolution::=720p["SD"||""]}
 > {stream.visualTags::exists["📺 {stream.visualTags::join(' | ')} "||""]}
 > {stream.regexMatched::exists["🏷️{stream.regexMatched}"||""]}
 > ```
