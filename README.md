@@ -47,6 +47,8 @@ AIOStreams v2 now supports JSON regex files for improved performance and organiz
 #### **🔗 Raw GitHub Links (for direct import):**
 ```
 https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/merged-regexes.json
+```
+```
 https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/merged-anime-regexes.json
 ```
 
