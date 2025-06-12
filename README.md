@@ -146,25 +146,9 @@ buffers:
 > ```
 > </details>
 >
-> (For v2) Here are two recommended custom formats:
-> <details>
-> <summary>Slightly less minimalistic gdrive format</summary>
+> (For v2) For pre-built custom formats, you can select the **"Light Google Drive"** format directly from the formatter section on the configuration page.
 > 
-> ([source: Viren](https://discord.com/channels/1225024298490662974/1370170296568516608))
-> 
-> **Name:**
-> ```
-> {stream.proxied::istrue["🕵️ "||""]}{stream.type::=p2p["[P2P]"||""]}{service.shortName::exists["[{service.shortName}"||""]}{stream.library::istrue[" ☁️"||""]}{service.cached::istrue["⚡] "||""]}{service.cached::isfalse["⏳]"||""]}{addon.name}{stream.resolution::exists[" {stream.resolution}"||""]}{stream.regexMatched::exists[" ({stream.regexMatched})"||""]}
-> ```
-> 
-> **Description:**
-> ```
-> {stream.quality::exists["🎥 {stream.quality} "||""]}{stream.encode::exists["🎞️ {stream.encode} "||""]}{stream.languages::exists["🌎 {stream.languageEmojis::join(' | ')}"||""]}
-> {stream.size::>0["📦 {stream.size::bytes} "||""]}{stream.audioTags::exists["🎧 {stream.audioTags::join(' | ')} "||""]}
-> {stream.filename::exists["📄 {stream.filename}"||""]}
-> ```
-> </details>
-> 
+> Here's an additional recommended custom format for TV screens:
 > <details>
 > <summary>TV-Usage Optimised Advanced Format</summary>
 > 
