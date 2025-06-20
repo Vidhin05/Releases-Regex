@@ -1,5 +1,5 @@
 # Releases-Regex Repo
-This repository contains **regular expressions (regexes) for the best and recommended release groups**, sourced from [TRaSH Guides](https://trash-guides.info).
+This repository contains **regular expressions (regexes) for the best and recommended release groups** along with regexes for unwanted releases, sourced from [TRaSH Guides](https://trash-guides.info).
 
 > [!IMPORTANT]
 > TRaSH Guides is a community-driven resource offering clear, step-by-step guides for optimizing your media management tools—primarily Sonarr for TV shows and Radarr for Movies. Born from a personal quest to fine-tune quality profiles and release preferences, these guides break down complex configurations into easy-to-follow instructions.
@@ -36,9 +36,9 @@ For an in-depth breakdown, visit the [Wikipedia release formats](https://en.wiki
 
 ## 🚀 Usage Instructions (For AIOStreams)
 
-### AIOStreams v2 (Beta) - JSON Format
+### AIOStreams v2 - JSON Format
 
-AIOStreams v2 now supports JSON regex files for improved performance and organization. Choose one of the following:
+AIOStreams v2 supports JSON regex files for improved organization. Choose one of the following:
 
 #### **📥 Direct JSON Links:**
 - **[Merged Regexes (JSON)](merged-regexes.json)** - For Movies and TV Shows only
@@ -53,11 +53,20 @@ https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/merged-anime-rege
 ```
 
 > [!TIP]
-> In AIOStreams v2, you can directly import these JSON files using the raw GitHub URLs in your regex configuration settings.
+> ### Configuration
+> 1. In AIOStreams v2, navigate to the `Filters -> Regex` section.
+> 2. Copy one of the Raw GitHub links above and paste it into the **"Preferred"** field. **Do not** use the "Include", "Required", or "Exclude" fields for these regexes.
+> 3. Set your **Global Sort Order** to one of the options below. For the global setting to take effect properly, ensure the sort order fields for specific content types (e.g., Movie, Series) are left empty.
+>    - **Resolution/Quality-First**: `Cached -> Personal -> Resolution -> Quality -> Regex Sort -> Size`
+>    - **Known Groups-First**: `Cached -> Personal -> Regex Sort -> Resolution -> Size`
+
+> [!WARNING]
+> It is not recommended to remove the bad regex pattern from the JSON file and use it in the exclude regex section. If used as an exclude regex, it may filter out all streams for titles that have generic names (e.g., names like `Kingdom`, `Zeus`, `Epic`).
 
 ---
 
-### AIOStreams v1 - Legacy Format
+<details>
+<summary>AIOStreams v1 - Legacy Format Instructions</summary>
 
 ### 1. Choosing the Right Regex
 - **Recommended**: Use `Merged+Anime` for comprehensive coverage
@@ -102,9 +111,14 @@ buffers:
 - [Merged+Anime Space-Separated Regex](Merged+Anime.md#-merged-space-seperated-regex-use-this-for-aiostreams) - Merged regex pattern for Movies, TV and anime sorting
 - [Merged Space-Separated Regex](Merged.md#-merged-space-seperated-regex-use-this-for-aiostreams) - Mergex Regex pattern for Movies and TV Shows sorting
 
+</details>
+
 > [!TIP]
 > To see which regex pattern matched a stream, add `{stream.regexMatched::exists["🏷️{stream.regexMatched}"||""]}` to your custom format.
 > 
+<details>
+<summary>Click to see recommended custom formats</summary>
+
 > Here are two recommended custom formats:
 > <details>
 > <summary>Slightly less minimalistic gdrive format</summary>
