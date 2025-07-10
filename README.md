@@ -65,8 +65,9 @@ https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/merged-anime-rege
 
 <details>
 <summary>Click to see recommended custom formatters</summary>
+
 > For pre-built custom formats, you can select the **"Light Google Drive"** format directly from the formatter section on the configuration page.
-> 
+>
 > Here's an additional recommended custom format for TV screens:
 > <details>
 > <summary>TV-Usage Optimised Advanced Format</summary>
@@ -75,7 +76,7 @@ https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/merged-anime-rege
 > 
 > **Name:**
 > ```
-> {stream.type::=p2p["[P2P]"||""]}{service.cached::isfalse["⏳"||""]}{stream.library::istrue["☁️ "||""]}{addon.name} {stream.resolution::=2160p["4K"||""]}{stream.resolution::=1440p["QHD"||""]}{stream.resolution::=1080p["HD"||""]}{stream.resolution::=720p["SD"||""]}
+> {stream.type::=p2p["[P2P]"||""]}{service.cached::isfalse["⏳"||""]}{stream.library::istrue["☁️ "||""]}{addon.name} {stream.resolution::=2160p["4K"||""]}{stream.resolution::=1440p["QHD"||""]}{stream.resolution::=1080p["FHD"||""]}{stream.resolution::=720p["HD"||""]}{stream.resolution::=480p["SD"||""]}
 > {stream.visualTags::exists["📺 {stream.visualTags::join(' | ')} "||""]}
 > {stream.regexMatched::exists["🏷️{stream.regexMatched}"||""]}
 > ```
@@ -117,10 +118,8 @@ DEFAULT_REGEX_SORT_PATTERNS='[Copy the Space-Separated Regex from your chosen fi
 DEFAULT_REGEX_EXCLUDE_PATTERN='^.*Hi10.*$'
 ```
 
-> [!IMPORTANT]
 > Always use single quotes for regex values in the `.env` file, especially when using Docker.
 
-> [!NOTE]
 > Add `DEFAULT_REGEX_EXCLUDE_PATTERN='^.*Hi10.*$'` to your `.env` file if your device does not support Hi10 encoding. Hi10 content can cause stuttering on unsupported devices.
 
 #### Option B: Using Addon Configuration URL
@@ -138,9 +137,8 @@ buffers:
 - [Merged Space-Separated Regex](Merged.md#-merged-space-seperated-regex-use-this-for-aiostreams) - Mergex Regex pattern for Movies and TV Shows sorting
 
 
-> [!TIP]
 > To see which regex pattern matched a stream, add `{stream.regexMatched::exists["🏷️{stream.regexMatched}"||""]}` to your custom format.
-> 
+
 <details>
 <summary>Click to see recommended custom formatters</summary>
 
@@ -172,7 +170,7 @@ buffers:
 > 
 > **Name:**
 > ```
-> {stream.infoHash::exists["[P2P]"||""]}{provider.cached::isfalse["⏳"||""]}{stream.personal::istrue["☁️ "||""]}{addon.name} {stream.resolution::=2160p["4K"||""]}{stream.resolution::=1440p["QHD"||""]}{stream.resolution::=1080p["HD"||""]}{stream.resolution::=720p["SD"||""]}
+> {stream.infoHash::exists["[P2P]"||""]}{provider.cached::isfalse["⏳"||""]}{stream.personal::istrue["☁️ "||""]}{addon.name} {stream.resolution::=2160p["4K"||""]}{stream.resolution::=1440p["QHD"||""]}{stream.resolution::=1080p["FHD"||""]}{stream.resolution::=720p["HD"||""]}{stream.resolution::=480p["SD"||""]}
 > {stream.visualTags::exists["📺 {stream.visualTags::join(' | ')} "||""]}
 > {stream.regexMatched::exists["🏷️{stream.regexMatched}"||""]}
 > ```
@@ -181,9 +179,10 @@ buffers:
 > ```
 > {stream.quality::exists["🎥 {stream.quality} "||""]}{stream.encode::exists["🎞️ {stream.encode} "||""]}{stream.languages::exists["🌎 {stream.languageEmojis::join(' | ')}"||""]}
 > {stream.size::>0["📦 {stream.size::bytes} "||""]}{stream.audioTags::exists["🎧 {stream.audioTags::join(' | ')} "||""]}
-> {stream.filename::exists["📄 {stream.name}"||""]}
+> {stream.filename::exists["📄 {stream.filename}"||""]}
 > ```
 > </details>
 
 </details>
+
 ---
