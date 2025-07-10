@@ -57,16 +57,42 @@ https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/merged-anime-rege
 > 1. In AIOStreams v2, navigate to the `Filters -> Regex` section.
 > 2. Copy one of the Raw GitHub links above and paste it into the **"Preferred"** field. **Do not** use the "Include", "Required", or "Exclude" fields for these regexes.
 > 3. Set your **Global Sort Order** to one of the options below. For the global setting to take effect properly, ensure the sort order fields for specific content types (e.g., Movie, Series) are left empty.
->    - **Resolution/Quality-First**: `Cached -> Personal -> Resolution -> Quality -> Regex Sort -> Size`
->    - **Known Groups-First**: `Cached -> Personal -> Regex Sort -> Resolution -> Size`
+>    - **Resolution/Quality-First**: `Cached -> Library -> Resolution -> Quality -> Regex Patterns -> Size`
+>    - **Known Groups-First**: `Cached -> Library -> Regex Patterns -> Resolution -> Size`
 
 > [!WARNING]
 > It is not recommended to remove the bad regex pattern from the JSON file and use it in the exclude regex section. If used as an exclude regex, it may filter out all streams for titles that have generic names (e.g., names like `Kingdom`, `Zeus`, `Epic`).
 
+<details>
+<summary>Click to see recommended custom formatters</summary>
+> For pre-built custom formats, you can select the **"Light Google Drive"** format directly from the formatter section on the configuration page.
+> 
+> Here's an additional recommended custom format for TV screens:
+> <details>
+> <summary>TV-Usage Optimised Advanced Format</summary>
+> 
+> ([source](https://discord.com/channels/1225024298490662974/1367377508328280145))
+> 
+> **Name:**
+> ```
+> {stream.type::=p2p["[P2P]"||""]}{service.cached::isfalse["⏳"||""]}{stream.library::istrue["☁️ "||""]}{addon.name} {stream.resolution::=2160p["4K"||""]}{stream.resolution::=1440p["QHD"||""]}{stream.resolution::=1080p["HD"||""]}{stream.resolution::=720p["SD"||""]}
+> {stream.visualTags::exists["📺 {stream.visualTags::join(' | ')} "||""]}
+> {stream.regexMatched::exists["🏷️{stream.regexMatched}"||""]}
+> ```
+> 
+> **Description:**
+> ```
+> {stream.quality::exists["🎥 {stream.quality} "||""]}{stream.encode::exists["🎞️ {stream.encode} "||""]}{stream.languages::exists["🌎 {stream.languageEmojis::join(' | ')}"||""]}
+> {stream.size::>0["📦 {stream.size::bytes} "||""]}{stream.audioTags::exists["🎧 {stream.audioTags::join(' | ')} "||""]}
+> {stream.filename::exists["📄 {stream.filename}"||""]}
+> ```
+> </details>
+</details>
+
 ---
 
 <details>
-<summary>AIOStreams v1 - Legacy Format Instructions</summary>
+<summary>AIOStreams v1 - Legacy Instructions</summary>
 
 ### 1. Choosing the Right Regex
 - **Recommended**: Use `Merged+Anime` for comprehensive coverage
@@ -111,13 +137,12 @@ buffers:
 - [Merged+Anime Space-Separated Regex](Merged+Anime.md#-merged-space-seperated-regex-use-this-for-aiostreams) - Merged regex pattern for Movies, TV and anime sorting
 - [Merged Space-Separated Regex](Merged.md#-merged-space-seperated-regex-use-this-for-aiostreams) - Mergex Regex pattern for Movies and TV Shows sorting
 
-</details>
 
 > [!TIP]
 > To see which regex pattern matched a stream, add `{stream.regexMatched::exists["🏷️{stream.regexMatched}"||""]}` to your custom format.
 > 
 <details>
-<summary>Click to see recommended custom formats</summary>
+<summary>Click to see recommended custom formatters</summary>
 
 > Here are two recommended custom formats:
 > <details>
@@ -159,27 +184,6 @@ buffers:
 > {stream.filename::exists["📄 {stream.name}"||""]}
 > ```
 > </details>
->
-> (For v2) For pre-built custom formats, you can select the **"Light Google Drive"** format directly from the formatter section on the configuration page.
-> 
-> Here's an additional recommended custom format for TV screens:
-> <details>
-> <summary>TV-Usage Optimised Advanced Format</summary>
-> 
-> ([source](https://discord.com/channels/1225024298490662974/1367377508328280145))
-> 
-> **Name:**
-> ```
-> {stream.type::=p2p["[P2P]"||""]}{service.cached::isfalse["⏳"||""]}{stream.library::istrue["☁️ "||""]}{addon.name} {stream.resolution::=2160p["4K"||""]}{stream.resolution::=1440p["QHD"||""]}{stream.resolution::=1080p["HD"||""]}{stream.resolution::=720p["SD"||""]}
-> {stream.visualTags::exists["📺 {stream.visualTags::join(' | ')} "||""]}
-> {stream.regexMatched::exists["🏷️{stream.regexMatched}"||""]}
-> ```
-> 
-> **Description:**
-> ```
-> {stream.quality::exists["🎥 {stream.quality} "||""]}{stream.encode::exists["🎞️ {stream.encode} "||""]}{stream.languages::exists["🌎 {stream.languageEmojis::join(' | ')}"||""]}
-> {stream.size::>0["📦 {stream.size::bytes} "||""]}{stream.audioTags::exists["🎧 {stream.audioTags::join(' | ')} "||""]}
-> {stream.filename::exists["📄 {stream.filename}"||""]}
-> ```
-> </details>
+
+</details>
 ---
