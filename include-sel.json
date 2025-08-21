@@ -1,5 +1,0 @@
-{
-    "values": [
-      "negate(regexMatched(streams,'Bad',''), streams)"
-    ]
-} 

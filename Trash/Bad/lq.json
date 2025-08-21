@@ -233,6 +233,24 @@
       }
     },
     {
+      "name": "DRX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(DRX)$"
+      }
+    },
+    {
+      "name": "E",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(E)$"
+      }
+    },
+    {
       "name": "EPiC",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
