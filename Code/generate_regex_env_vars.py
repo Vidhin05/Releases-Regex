@@ -1,0 +1,1 @@
+import requests, json; json.dump(list(set([p['pattern'] for p in requests.get("https://raw.githubusercontent.com/Vidhin05/Releases-Regex/refs/heads/main/merged-anime-regexes.json").json()] + [p['pattern'] for p in requests.get("https://raw.githubusercontent.com/Vidhin05/Releases-Regex/refs/heads/main/merged-regexes.json").json()])), open("patterns.json", "w"))
