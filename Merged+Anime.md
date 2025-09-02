@@ -45,7 +45,7 @@ This order is recommended for movies, tv shows and anime.
   ```
 ### **Anime BD Tier 03 (SeaDex Muxers):**
   ```regex
-  (\[(Ayashii|CRUCiBLE|Dekinai|EXP|Kaizoku|Mysteria|Senjou|YURI)\]|-(Ayashii|CRUCiBLE|Dekinai|EXP|Kaizoku|Mysteria|Senjou|YURI)\b|\b(ASC|AssMix|B00BA|CBT|CTR|CyC|Flugel|Galator|GSK[._-]kun|Holomux|IK|AnimeKaizoku|Kametsu|KH|kuchikirukia|LazyRemux|MK|Netaro|Pn8|Pookie|Quetzal|Rasetsu|ShowY|WBDP|WSE|Yoghurt|ZOIO|ZR)\b|-ZR-)|(?<=remux).*\b(NAN0)\b
+  (\[(Ayashii|Dekinai|EXP|Headpatter|Kaizoku|Mysteria|Senjou|YURI)\]|-(Ayashii|Dekinai|EXP|Headpatter|Kaizoku|Mysteria|Senjou|YURI)\b|\b(ASC|AssMix|B00BA|CBT|CTR|CyC|Flugel|Galator|GSK[._-]kun|Holomux|IK|AnimeKaizoku|Kametsu|KH|kuchikirukia|LazyRemux|MK|Netaro|Pn8|Pookie|Quetzal|Rasetsu|ShowY|WBDP|WSE|Yoghurt|ZOIO|ZR)\b|-ZR-)|(?<=remux).*\b(NAN0)\b
   ```
 ### **Anime BD Tier 04 (SeaDex Muxers):**
   ```regex
@@ -105,7 +105,7 @@ This order is recommended for movies, tv shows and anime.
   ```
 ### **WEB Tier 01** / 🌐1️⃣
   ```regex
-  ^(?=.*\bWEB[-_.]?(?:DL|RIP)\b)(?=.*\b(?:ABBIE|AJP69|APEX|PAXA|PEXA|XEPA|BLUTONiUM|CasStudio|CMRG|CRFW|CRUD|CtrlHD|FLUX|GNOME|HONE|KiNGS|Kitsune|monkee|NOSiViD|NTb|NTG|QOQ|RTN|SiC|TEPES|T6D|TOMMY|ViSUM)\b).*
+  ^(?=.*\bWEB[-_.]?(?:DL|RIP)\b)(?=.*\b(?:ABBIE|AJP69|APEX|PAXA|PEXA|XEPA|BLUTONiUM|CasStudio|CMRG|CRFW|CRUD|CtrlHD|FLUX|GNOME|HONE|KiNGS|Kitsune|monkee|NOSiViD|NTb|NTG|QOQ|RTN|SiC|TEPES|TheFarm|T6D|TOMMY|ViSUM)\b).*
   ```
 ### **Anime Web Tier 04 (Official Subs):**
   ```regex

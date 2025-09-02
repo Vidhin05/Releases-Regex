@@ -17,7 +17,7 @@
   },
   {
     "name": "Anime BD T3",
-    "pattern": "/(\\[(Ayashii|CRUCiBLE|Dekinai|EXP|Kaizoku|Mysteria|Senjou|YURI)\\]|-(Ayashii|CRUCiBLE|Dekinai|EXP|Kaizoku|Mysteria|Senjou|YURI)\\b|\\b(ASC|AssMix|B00BA|CBT|CTR|CyC|Flugel|Galator|GSK[._-]kun|Holomux|IK|AnimeKaizoku|Kametsu|KH|kuchikirukia|LazyRemux|MK|Netaro|Pn8|Pookie|Quetzal|Rasetsu|ShowY|WBDP|WSE|Yoghurt|ZOIO|ZR)\\b|-ZR-)|(?<=remux).*\\b(NAN0)\\b/i"
+    "pattern": "/(\\[(Ayashii|Dekinai|EXP|Headpatter|Kaizoku|Mysteria|Senjou|YURI)\\]|-(Ayashii|Dekinai|EXP|Headpatter|Kaizoku|Mysteria|Senjou|YURI)\\b|\\b(ASC|AssMix|B00BA|CBT|CTR|CyC|Flugel|Galator|GSK[._-]kun|Holomux|IK|AnimeKaizoku|Kametsu|KH|kuchikirukia|LazyRemux|MK|Netaro|Pn8|Pookie|Quetzal|Rasetsu|ShowY|WBDP|WSE|Yoghurt|ZOIO|ZR)\\b|-ZR-)|(?<=remux).*\\b(NAN0)\\b/i"
   },
   {
     "name": "Anime BD T4",
@@ -85,7 +85,7 @@
   },
   {
     "name": "Web T1",
-    "pattern": "/^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:ABBIE|AJP69|PAXA|PEXA|XEPA|BLUTONiUM|CasStudio|CMRG|CRFW|CRUD|CtrlHD|GNOME|HONE|Kitsune|monkee|NOSiViD|NTb|NTG|QOQ|RTN|SiC|TEPES|T6D|ViSUM)\\b).*/i"
+    "pattern": "/^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:ABBIE|AJP69|PAXA|PEXA|XEPA|BLUTONiUM|CasStudio|CMRG|CRFW|CRUD|CtrlHD|GNOME|HONE|Kitsune|monkee|NOSiViD|NTb|NTG|QOQ|RTN|SiC|TEPES|TheFarm|T6D|ViSUM)\\b).*/i"
   },
   {
     "name": "Web T1",
