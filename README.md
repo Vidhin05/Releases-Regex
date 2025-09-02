@@ -107,3 +107,28 @@ ALLOWED_REGEX_PATTERNS_URLS=["https://raw.githubusercontent.com/Vidhin05/Release
 ```
 
 ---
+
+## 🔄 Recyclarr Configuration
+
+I have included my version of Recyclarr configuration that can be used by those running a single Radarr/Sonarr instance for handling all resolutions (4K, 1080p, etc.) and anime.
+
+### Features
+
+- **Single Instance Setup**: Configured for users who prefer one Radarr/Sonarr instance to manage all content types and resolutions
+- **Custom TRaSH Guides Fork**: Uses my fork of the TRaSH Guides repository
+- **Remux Tier 00**: Adds a new tier that prioritizes non-Framestor Remux Tier 1 releases
+
+### Configuration Files
+
+- **`recyclarr.yml`**: Main Recyclarr configuration file
+- **`settings.yml`**: Custom fork for the Remux Tier 00 configuration
+
+### Usage
+
+1. **To use Remux Tier 00**: Keep the current configuration as-is (line 100 in `recyclarr.yml` is active)
+2. **To skip Remux Tier 00**: Comment out line 100 in `recyclarr.yml` which contains the Remux Tier 00 configuration
+
+> [!NOTE]
+> The Remux Tier 00 feature requires editing `settings.yml`. If you don't want to use this custom tier, you can simply comment out line 100 in `recyclarr.yml` and skip editing the settings file.
+
+---
