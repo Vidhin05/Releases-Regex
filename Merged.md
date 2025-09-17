@@ -11,7 +11,7 @@ This section merges **Movies** and **TV Shows** regexes together for a more stre
 
 ### **Remux Tier 01** / 🍿1️⃣ / 📀1️⃣
   ```regex
-  \bRemux\b.*\b(3L|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PmP|ZQ)\b|-BMF|-WiLDCAT
+  \bRemux\b.*\b(3L|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PmP|PiRAMiDHEAD|ZQ)\b|-BMF|-WiLDCAT
   ```
 ### **Remux Tier 02** / 🍿2️⃣ / 📀2️⃣
   ```regex

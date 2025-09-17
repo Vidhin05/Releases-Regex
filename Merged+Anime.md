@@ -53,7 +53,7 @@ This order is recommended for movies, tv shows and anime.
   ```
 ### **Remux Tier 01** / 🍿1️⃣ / 📀1️⃣
   ```regex
-  \bRemux\b.*\b(3L|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PmP|ZQ)\b|-BMF|-WiLDCAT
+  \bRemux\b.*\b(3L|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PmP|PiRAMiDHEAD|ZQ)\b|-BMF|-WiLDCAT
   ```
 ### **Anime BD Tier 05 (Remuxes):**
   ```regex
