@@ -61,11 +61,11 @@ This order is recommended for movies, tv shows and anime.
   ```
 ### **Remux Tier 02** / 🍿2️⃣ / 📀2️⃣
   ```regex
-  \bRemux\b.*\b(NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|decibeL|EPSiLON|HiFi|KRaLiMaRKo|PTer|TRiToN)\b
+  \bRemux\b.*\b(ATELiER|NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|12GaugeShotgun|decibeL|EPSiLON|HiFi|KRaLiMaRKo|PTer|TRiToN)\b
   ```
 ### **Remux Tier 03** / 🍿3️⃣ / 📀3️⃣
   ```regex
-  \bRemux\b.*\b(ATELiER|iFT|NTb|PTP|SumVision|TOA)\b
+  \bRemux\b.*\b(iFT|NTb|PTP|SumVision|TOA)\b
   ```
 ### **Bluray Tier 01** / 💿1️⃣
   ```regex

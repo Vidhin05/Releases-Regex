@@ -5,11 +5,11 @@
   },
   {
     "name": "Remux T2",
-    "pattern": "/\\bRemux\\b.*\\b(NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|decibeL|EPSiLON|HiFi|KRaLiMaRKo|PTer|TRiToN)\\b/i"
+    "pattern": "/\\bRemux\\b.*\\b(ATELiER|NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|12GaugeShotgun|decibeL|EPSiLON|HiFi|KRaLiMaRKo|PTer|TRiToN)\\b/i"
   },
   {
     "name": "Remux T3",
-    "pattern": "/\\bRemux\\b.*\\b(ATELiER|iFT|NTb|PTP|SumVision|TOA)\\b/i"
+    "pattern": "/\\bRemux\\b.*\\b(iFT|NTb|PTP|SumVision|TOA)\\b/i"
   },
   {
     "name": "Bluray T1",
