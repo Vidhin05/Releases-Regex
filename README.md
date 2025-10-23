@@ -58,7 +58,7 @@ https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/merged-anime-rege
 
 > [!WARNING]
 > It is **not recommended** to remove the bad regex pattern from the JSON file and use it in the exclude regex section. If used as an exclude regex, it may filter out all streams for titles that have generic names (e.g., names like `Kingdom`, `Zeus`, `Epic`).
-> Instead, it is better to use Stream Expressions Language (SEL) to smartly limit and filter streams. You can use [this SEL Exclude JSON](exclude-sel.json) to help you with that, heavily inspired by [Tamtaro's work](https://discord.com/channels/1225024298490662974/1391478569607368924).
+> Instead, it is better to use Stream Expressions Language (SEL) to smartly limit and filter streams. You can use [this SEL Exclude JSON](exclude-sel.json) to help you with that, heavily inspired by [Tamtaro's work](https://discord.com/channels/1225024298490662974/1410118448306192425) [GitHub](https://github.com/Tam-Taro/SEL-Filtering-and-Sorting).
 > 
 > The `exclude-sel.json` file contains advanced SEL expressions that intelligently filter out low-quality streams (like CAM, TS, TC, SCR) and lower resolutions when higher quality alternatives are available. It uses conditional logic based on the [Stream Expression Language](https://github.com/Viren070/AIOStreams/wiki/Stream-Expression-Language) to dynamically exclude streams only when better options exist, preventing the loss of all streams for titles with generic names.
 > 
