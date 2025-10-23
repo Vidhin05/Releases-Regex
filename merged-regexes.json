@@ -49,7 +49,7 @@
   },
   {
     "name": "Web T3",
-    "pattern": "/^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:GNOMiSSiON|NINJACENTRAL|ROCCaT|SLiGNOME|SwAgLaNdEr|T4H)\\b).*/i"
+    "pattern": "/^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:Dooky|GNOMiSSiON|NINJACENTRAL|ROCCaT|SLiGNOME|SwAgLaNdEr|T4H)\\b).*/i"
   },
   {
     "name": "Web T3",

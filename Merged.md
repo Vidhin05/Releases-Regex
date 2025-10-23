@@ -43,7 +43,7 @@ This section merges **Movies** and **TV Shows** regexes together for a more stre
   ```
 ### **WEB Tier 03** / 🌐3️⃣
   ```regex
-  ^(?=.*\bWEB[-_.]?(?:DL|RIP)\b)(?=.*\b(?:DRACULA|GNOMiSSiON|NINJACENTRAL|SLiGNOME|SwAgLaNdEr|T4H|ViSiON)\b).*
+  ^(?=.*\bWEB[-_.]?(?:DL|RIP)\b)(?=.*\b(?:Dooky|DRACULA|GNOMiSSiON|NINJACENTRAL|SLiGNOME|SwAgLaNdEr|T4H|ViSiON)\b).*
   ```
 ### **WEB Scene** / 🌐🎭
   ```regex

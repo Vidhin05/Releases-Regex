@@ -121,11 +121,11 @@ This order is recommended for movies, tv shows and anime.
   ```
 ### **WEB Tier 03** / 🌐3️⃣
   ```regex
-  ^(?=.*\bWEB[-_.]?(?:DL|RIP)\b)(?=.*\b(?:DRACULA|GNOMiSSiON|NINJACENTRAL|SLiGNOME|SwAgLaNdEr|T4H|ViSiON)\b).*
+  ^(?=.*\bWEB[-_.]?(?:DL|RIP)\b)(?=.*\b(?:Dooky|DRACULA|GNOMiSSiON|NINJACENTRAL|SLiGNOME|SwAgLaNdEr|T4H|ViSiON)\b).*
   ```
 ### **Anime Web Tier 06 (FanSubs):**
   ```regex
-  (\b(DameDesuYo)\b)|\[AC\]|-AC\b
+  (\b(DameDesuYo|KawaSubs)\b)|\[AC\]|-AC\b
   ```
 ### **WEB Scene** / 🌐🎭
   ```regex
