@@ -1,8 +1,8 @@
 {
     "customNames": {
         "(?i)\\bRemux\\b.*\\b(3L|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PmP|PiRAMiDHEAD|ZQ)\\b|-BMF|-WiLDCAT": "📀 REMUX T1",
-        "(?i)\\bRemux\\b.*\\b(NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|decibeL|EPSiLON|HiFi|KRaLiMaRKo|PTer|TRiToN)\\b": "📀 REMUX T2",
-        "(?i)\\bRemux\\b.*\\b(ATELiER|iFT|NTb|PTP|SumVision|TOA)\\b": "📀 REMUX T3",
+        "(?i)\\bRemux\\b.*\\b(ATELiER|NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|12GaugeShotgun|decibeL|EPSiLON|HiFi|KRaLiMaRKo|PTer|TRiToN)\\b": "📀 REMUX T2",
+        "(?i)\\bRemux\\b.*\\b(iFT|NTb|PTP|SumVision|TOA)\\b": "📀 REMUX T3",
         "(?i)^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:BBQ|c0kE|Chotab|CRiSC|CtrlHD|Dariush|decibeL|D-Z0N3|EbP|EDPH|LolHD|MainFrame|NCmt|NTb|PTer|TayTO|TDD|TnP|VietHD|ZoroSenpai|W4NK3R|ZQ)\\b|-BMF)).*": "💿 BLU-RAY T1",
         "^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:DON|Geek)\\b)).*": "💿 BLU-RAY T1",
         "(?i)^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*\\b(?:ATELiER|EA|HiDt|HiSD|HQMUX|iFT|QOQ|SA89|sbR)\\b).*": "💿 BLU-RAY T2",
@@ -20,8 +20,8 @@
     "version": "1.1.0",
     "imageURLs": {
         "(?i)\\bRemux\\b.*\\b(3L|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PmP|PiRAMiDHEAD|ZQ)\\b|-BMF|-WiLDCAT": "https:\/\/raw.githubusercontent.com\/jorgitoxp\/json-files\/refs\/heads\/main\/mousa.m%20icons\/REMUX1.png",
-        "(?i)\\bRemux\\b.*\\b(NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|decibeL|EPSiLON|HiFi|KRaLiMaRKo|PTer|TRiToN)\\b": "https:\/\/raw.githubusercontent.com\/jorgitoxp\/json-files\/refs\/heads\/main\/mousa.m%20icons\/REMUX2.png",
-        "(?i)\\bRemux\\b.*\\b(ATELiER|iFT|NTb|PTP|SumVision|TOA)\\b": "https:\/\/raw.githubusercontent.com\/jorgitoxp\/json-files\/refs\/heads\/main\/mousa.m%20icons\/REMUX3.png",
+        "(?i)\\bRemux\\b.*\\b(ATELiER|NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|12GaugeShotgun|decibeL|EPSiLON|HiFi|KRaLiMaRKo|PTer|TRiToN)\\b": "https:\/\/raw.githubusercontent.com\/jorgitoxp\/json-files\/refs\/heads\/main\/mousa.m%20icons\/REMUX2.png",
+        "(?i)\\bRemux\\b.*\\b(iFT|NTb|PTP|SumVision|TOA)\\b": "https:\/\/raw.githubusercontent.com\/jorgitoxp\/json-files\/refs\/heads\/main\/mousa.m%20icons\/REMUX3.png",
         "(?i)^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:BBQ|c0kE|Chotab|CRiSC|CtrlHD|Dariush|decibeL|D-Z0N3|EbP|EDPH|LolHD|MainFrame|NCmt|NTb|PTer|TayTO|TDD|TnP|VietHD|ZoroSenpai|W4NK3R|ZQ)\\b|-BMF)).*": "https:\/\/raw.githubusercontent.com\/jorgitoxp\/Regexes\/refs\/heads\/main\/mousa.m%20icons\/Blue-Ray1.png",
         "^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:DON|Geek)\\b)).*": "https:\/\/raw.githubusercontent.com\/jorgitoxp\/Regexes\/refs\/heads\/main\/mousa.m%20icons\/Blue-Ray1.png",
         "(?i)^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*\\b(?:ATELiER|EA|HiDt|HiSD|HQMUX|iFT|QOQ|SA89|sbR)\\b).*": "https:\/\/raw.githubusercontent.com\/jorgitoxp\/Regexes\/refs\/heads\/main\/mousa.m%20icons\/Blue-Ray2.png",
@@ -38,8 +38,8 @@
     },
     "borderRadiusIndices": {
         "(?i)\\bRemux\\b.*\\b(3L|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PmP|PiRAMiDHEAD|ZQ)\\b|-BMF|-WiLDCAT": 3,
-        "(?i)\\bRemux\\b.*\\b(NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|decibeL|EPSiLON|HiFi|KRaLiMaRKo|PTer|TRiToN)\\b": 3,
-        "(?i)\\bRemux\\b.*\\b(ATELiER|iFT|NTb|PTP|SumVision|TOA)\\b": 3,
+        "(?i)\\bRemux\\b.*\\b(ATELiER|NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|12GaugeShotgun|decibeL|EPSiLON|HiFi|KRaLiMaRKo|PTer|TRiToN)\\b": 3,
+        "(?i)\\bRemux\\b.*\\b(iFT|NTb|PTP|SumVision|TOA)\\b": 3,
         "(?i)^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:BBQ|c0kE|Chotab|CRiSC|CtrlHD|Dariush|decibeL|D-Z0N3|EbP|EDPH|LolHD|MainFrame|NCmt|NTb|PTer|TayTO|TDD|TnP|VietHD|ZoroSenpai|W4NK3R|ZQ)\\b|-BMF)).*": 3,
         "^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:DON|Geek)\\b)).*": 3,
         "(?i)^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*\\b(?:ATELiER|EA|HiDt|HiSD|HQMUX|iFT|QOQ|SA89|sbR)\\b).*": 3,
@@ -56,8 +56,8 @@
     },
     "backgroundOpacities": {
         "(?i)\\bRemux\\b.*\\b(3L|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PmP|PiRAMiDHEAD|ZQ)\\b|-BMF|-WiLDCAT": 1,
-        "(?i)\\bRemux\\b.*\\b(NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|decibeL|EPSiLON|HiFi|KRaLiMaRKo|PTer|TRiToN)\\b": 1,
-        "(?i)\\bRemux\\b.*\\b(ATELiER|iFT|NTb|PTP|SumVision|TOA)\\b": 1,
+        "(?i)\\bRemux\\b.*\\b(ATELiER|NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|12GaugeShotgun|decibeL|EPSiLON|HiFi|KRaLiMaRKo|PTer|TRiToN)\\b": 1,
+        "(?i)\\bRemux\\b.*\\b(iFT|NTb|PTP|SumVision|TOA)\\b": 1,
         "(?i)^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:BBQ|c0kE|Chotab|CRiSC|CtrlHD|Dariush|decibeL|D-Z0N3|EbP|EDPH|LolHD|MainFrame|NCmt|NTb|PTer|TayTO|TDD|TnP|VietHD|ZoroSenpai|W4NK3R|ZQ)\\b|-BMF)).*": 1,
         "^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:DON|Geek)\\b)).*": 1,
         "(?i)^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*\\b(?:ATELiER|EA|HiDt|HiSD|HQMUX|iFT|QOQ|SA89|sbR)\\b).*": 1,
@@ -74,8 +74,8 @@
     },
     "tagEnabled": [
         "(?i)\\bRemux\\b.*\\b(3L|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PmP|PiRAMiDHEAD|ZQ)\\b|-BMF|-WiLDCAT",
-        "(?i)\\bRemux\\b.*\\b(NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|decibeL|EPSiLON|HiFi|KRaLiMaRKo|PTer|TRiToN)\\b",
-        "(?i)\\bRemux\\b.*\\b(ATELiER|iFT|NTb|PTP|SumVision|TOA)\\b",
+        "(?i)\\bRemux\\b.*\\b(ATELiER|NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|12GaugeShotgun|decibeL|EPSiLON|HiFi|KRaLiMaRKo|PTer|TRiToN)\\b",
+        "(?i)\\bRemux\\b.*\\b(iFT|NTb|PTP|SumVision|TOA)\\b",
         "(?i)^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:BBQ|c0kE|Chotab|CRiSC|CtrlHD|Dariush|decibeL|D-Z0N3|EbP|EDPH|LolHD|MainFrame|NCmt|NTb|PTer|TayTO|TDD|TnP|VietHD|ZoroSenpai|W4NK3R|ZQ)\\b|-BMF)).*",
         "^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:DON|Geek)\\b)).*",
         "(?i)^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*\\b(?:ATELiER|EA|HiDt|HiSD|HQMUX|iFT|QOQ|SA89|sbR)\\b).*",
@@ -92,8 +92,8 @@
     ],
     "patterns": [
         "(?i)\\bRemux\\b.*\\b(3L|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PmP|PiRAMiDHEAD|ZQ)\\b|-BMF|-WiLDCAT",
-        "(?i)\\bRemux\\b.*\\b(NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|decibeL|EPSiLON|HiFi|KRaLiMaRKo|PTer|TRiToN)\\b",
-        "(?i)\\bRemux\\b.*\\b(ATELiER|iFT|NTb|PTP|SumVision|TOA)\\b",
+        "(?i)\\bRemux\\b.*\\b(ATELiER|NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|12GaugeShotgun|decibeL|EPSiLON|HiFi|KRaLiMaRKo|PTer|TRiToN)\\b",
+        "(?i)\\bRemux\\b.*\\b(iFT|NTb|PTP|SumVision|TOA)\\b",
         "(?i)^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:BBQ|c0kE|Chotab|CRiSC|CtrlHD|Dariush|decibeL|D-Z0N3|EbP|EDPH|LolHD|MainFrame|NCmt|NTb|PTer|TayTO|TDD|TnP|VietHD|ZoroSenpai|W4NK3R|ZQ)\\b|-BMF)).*",
         "^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:DON|Geek)\\b)).*",
         "(?i)^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*\\b(?:ATELiER|EA|HiDt|HiSD|HQMUX|iFT|QOQ|SA89|sbR)\\b).*",
@@ -110,8 +110,8 @@
     ],
     "colorHexValues": {
         "(?i)\\bRemux\\b.*\\b(3L|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PmP|PiRAMiDHEAD|ZQ)\\b|-BMF|-WiLDCAT": "#000000",
-        "(?i)\\bRemux\\b.*\\b(NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|decibeL|EPSiLON|HiFi|KRaLiMaRKo|PTer|TRiToN)\\b": "#000000",
-        "(?i)\\bRemux\\b.*\\b(ATELiER|iFT|NTb|PTP|SumVision|TOA)\\b": "#000000",
+        "(?i)\\bRemux\\b.*\\b(ATELiER|NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|12GaugeShotgun|decibeL|EPSiLON|HiFi|KRaLiMaRKo|PTer|TRiToN)\\b": "#000000",
+        "(?i)\\bRemux\\b.*\\b(iFT|NTb|PTP|SumVision|TOA)\\b": "#000000",
         "(?i)^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:BBQ|c0kE|Chotab|CRiSC|CtrlHD|Dariush|decibeL|D-Z0N3|EbP|EDPH|LolHD|MainFrame|NCmt|NTb|PTer|TayTO|TDD|TnP|VietHD|ZoroSenpai|W4NK3R|ZQ)\\b|-BMF)).*": "#000000",
         "^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:DON|Geek)\\b)).*": "#000000",
         "(?i)^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*\\b(?:ATELiER|EA|HiDt|HiSD|HQMUX|iFT|QOQ|SA89|sbR)\\b).*": "#000000",
@@ -128,8 +128,8 @@
     },
     "borderThicknessIndices": {
         "(?i)\\bRemux\\b.*\\b(3L|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PmP|PiRAMiDHEAD|ZQ)\\b|-BMF|-WiLDCAT": 0,
-        "(?i)\\bRemux\\b.*\\b(NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|decibeL|EPSiLON|HiFi|KRaLiMaRKo|PTer|TRiToN)\\b": 0,
-        "(?i)\\bRemux\\b.*\\b(ATELiER|iFT|NTb|PTP|SumVision|TOA)\\b": 0,
+        "(?i)\\bRemux\\b.*\\b(ATELiER|NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|12GaugeShotgun|decibeL|EPSiLON|HiFi|KRaLiMaRKo|PTer|TRiToN)\\b": 0,
+        "(?i)\\bRemux\\b.*\\b(iFT|NTb|PTP|SumVision|TOA)\\b": 0,
         "(?i)^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:BBQ|c0kE|Chotab|CRiSC|CtrlHD|Dariush|decibeL|D-Z0N3|EbP|EDPH|LolHD|MainFrame|NCmt|NTb|PTer|TayTO|TDD|TnP|VietHD|ZoroSenpai|W4NK3R|ZQ)\\b|-BMF)).*": 0,
         "^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:DON|Geek)\\b)).*": 0,
         "(?i)^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*\\b(?:ATELiER|EA|HiDt|HiSD|HQMUX|iFT|QOQ|SA89|sbR)\\b).*": 0,
@@ -147,8 +147,8 @@
     "exportDate": "2025-09-06T17:49:12Z",
     "colorIndices": {
         "(?i)\\bRemux\\b.*\\b(3L|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PmP|PiRAMiDHEAD|ZQ)\\b|-BMF|-WiLDCAT": 0,
-        "(?i)\\bRemux\\b.*\\b(NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|decibeL|EPSiLON|HiFi|KRaLiMaRKo|PTer|TRiToN)\\b": 0,
-        "(?i)\\bRemux\\b.*\\b(ATELiER|iFT|NTb|PTP|SumVision|TOA)\\b": 0,
+        "(?i)\\bRemux\\b.*\\b(ATELiER|NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|12GaugeShotgun|decibeL|EPSiLON|HiFi|KRaLiMaRKo|PTer|TRiToN)\\b": 0,
+        "(?i)\\bRemux\\b.*\\b(iFT|NTb|PTP|SumVision|TOA)\\b": 0,
         "(?i)^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:BBQ|c0kE|Chotab|CRiSC|CtrlHD|Dariush|decibeL|D-Z0N3|EbP|EDPH|LolHD|MainFrame|NCmt|NTb|PTer|TayTO|TDD|TnP|VietHD|ZoroSenpai|W4NK3R|ZQ)\\b|-BMF)).*": 0,
         "^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:DON|Geek)\\b)).*": 0,
         "(?i)^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*\\b(?:ATELiER|EA|HiDt|HiSD|HQMUX|iFT|QOQ|SA89|sbR)\\b).*": 0,
