@@ -21,11 +21,11 @@
   },
   {
     "name": "Bluray T2",
-    "pattern": "/^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*\\b(?:EA|HiDt|HiSD|HQMUX|iFT|QOQ|SA89|sbR)\\b).*/i"
+    "pattern": "/^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*\\b(?:ATELiER|EA|HiDt|HiSD|HQMUX|iFT|QOQ|SA89|sbR)\\b).*/i"
   },
   {
     "name": "Bluray T3",
-    "pattern": "/^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*\\b(?:ATELiER|BHDStudio|hallowed|HiFi|HONE|SPHD|WEBDV|playHD)\\b).*/i"
+    "pattern": "/^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*\\b(?:BHDStudio|hallowed|HiFi|HONE|SPHD|WEBDV|playHD)\\b).*/i"
   },
   {
     "name": "Bluray T3",
