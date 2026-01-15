@@ -5,7 +5,7 @@
     "description": "Sorting Movies and TV Shows releases based on regex patterns sourced from TRaSH Guides for AIOStreams. Ensure you have regex patterns in your sort order for regexes to take effect.",
     "source": "external",
     "author": "Vidhin05",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "category": "Regex",
     "serviceRequired": false
   },
