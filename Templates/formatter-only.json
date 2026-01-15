@@ -5,7 +5,7 @@
       "description": "TV Optimised Formatter to ensure complete file name is visible on TV screens. Does not overwrite anything else.",
       "source": "external",
       "author": "Vidhin05",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "Formatter",
       "serviceRequired": false
     },
@@ -13,7 +13,7 @@
       "formatter": {
         "id": "custom",
         "definition": {
-          "name": "{stream.type::=p2p[\"[P2P] \"||\"\"]}{service.cached::isfalse[\"⏳\"||\"\"]}{stream.library::istrue[\"💾 \"||\"\"]}{stream.type::=Usenet[\"📰 \"||\"\"]}{stream.type::=http[\"💻 \"||\"\"]}{stream.proxied::istrue[\"🕵️‍♂️ \"||\"\"]}{service.shortName::exists[\"{service.shortName} \"||\"\"]}{addon.name} {stream.resolution::=2160p[\"4K\"||\"\"]}{stream.resolution::=1440p[\"QHD\"||\"\"]}{stream.resolution::=1080p[\"FHD\"||\"\"]}{stream.resolution::=720p[\"HD\"||\"\"]}{stream.resolution::=480p[\"SD\"||\"\"]}\n{stream.visualTags::exists[\"📺 {stream.visualTags::join(' | ')} \"||\"\"]}\n{stream.regexMatched::exists[\"🏷️{stream.regexMatched}\"||\"\"]}",
+          "name": "{stream.type::=p2p[\"[P2P] \"||\"\"]}{service.cached::isfalse[\"⏳\"||\"\"]}{stream.library::istrue[\"💾 \"||\"\"]}{stream.type::=Usenet[\"📰 \"||\"\"]}{stream.type::=http[\"💻 \"||\"\"]}{stream.proxied::istrue[\"🕵️‍♂️ \"||\"\"]}{service.shortName::exists[\"{service.shortName} \"||\"\"]}{addon.name} {stream.resolution::=2160p[\"4K\"||\"\"]}{stream.resolution::=1440p[\"QHD\"||\"\"]}{stream.resolution::=1080p[\"FHD\"||\"\"]}{stream.resolution::=720p[\"HD\"||\"\"]}{stream.resolution::=480p[\"SD\"||\"\"]}\n{stream.visualTags::exists[\"📺 {stream.visualTags::join(' | ')} \"||\"\"]}\n{stream.regexMatched::exists[\"🏷️{stream.regexMatched}\"||\"\"]} {stream.seadexBest::istrue[\"🏷️Best\"||\"\"]}{stream.seadex::istrue::and::stream.seadexBest::isfalse[\"🏷️Alt. Best\"||\"\"]}",
           "description": "{stream.quality::exists[\"🎥 {stream.quality} \"||\"\"]}{stream.encode::exists[\"🎞️ {stream.encode} \"||\"\"]}{stream.languages::exists[\"🌎 {stream.languageEmojis::join(' | ')}\"||\"\"]}\n{stream.size::>0[\"📦 {stream.size::bytes} \"||\"\"]}{stream.audioTags::exists[\"🎧 {stream.audioTags::join(' | ')} \"||\"\"]}\n{stream.filename::exists[\"📄 {stream.filename}\"||\"\"]}"
         }
       }
