@@ -80,7 +80,7 @@ https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/merged-anime-rege
 > ```
 > {stream.type::=p2p["[P2P] "||""]}{service.cached::isfalse["⏳"||""]}{stream.library::istrue["💾 "||""]}{stream.type::=Usenet["📰 "||""]}{stream.type::=http["💻 "||""]}{stream.proxied::istrue["🕵️‍♂️ "||""]}{service.shortName::exists["{service.shortName} "||""]}{addon.name} {stream.resolution::=2160p["4K"||""]}{stream.resolution::=1440p["QHD"||""]}{stream.resolution::=1080p["FHD"||""]}{stream.resolution::=720p["HD"||""]}{stream.resolution::=480p["SD"||""]}
 > {stream.visualTags::exists["📺 {stream.visualTags::join(' | ')} "||""]}
-> {stream.regexMatched::exists["🏷️{stream.regexMatched}"||""]}
+> {stream.regexMatched::exists["🏷️{stream.regexMatched}"||""]} {stream.seadexBest::istrue["🏷️Best"||""]}{stream.seadex::istrue::and::stream.seadexBest::isfalse["🏷️Alt. Best"||""]}
 > ```
 > 
 > **Description:**
