@@ -53,7 +53,7 @@ This order is recommended for movies, tv shows and anime.
   ```
 ### **Remux Tier 01** / 🍿1️⃣ / 📀1️⃣
   ```regex
-  \bRemux\b.*\b(3L|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PmP|PiRAMiDHEAD|ZQ)\b|-BMF|-WiLDCAT
+  \bRemux\b.*\b(3L|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PiRAMiDHEAD|PmP|ZQ)\b|-BMF|-WiLDCAT
   ```
 ### **Anime BD Tier 05 (Remuxes):**
   ```regex
@@ -61,15 +61,15 @@ This order is recommended for movies, tv shows and anime.
   ```
 ### **Remux Tier 02** / 🍿2️⃣ / 📀2️⃣
   ```regex
-  \bRemux\b.*\b(ATELiER|NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|12GaugeShotgun|decibeL|EPSiLON|HiFi|KRaLiMaRKo|PTer|TRiToN)\b
+  \bRemux\b.*\b(ATELiER|NCmt|playBD|SiCFoI|SURFINBIRD|TEPES)\b
   ```
 ### **Remux Tier 03** / 🍿3️⃣ / 📀3️⃣
   ```regex
-  \bRemux\b.*\b(iFT|NTb|PTP|SumVision|TOA)\b
+  \bRemux\b.*\b(12GaugeShotgun|decibeL|EPSiLON|HiFi|iFT|KRaLiMaRKo|NTb|PTer|PTP|SumVision|TOA|TRiToN)\b
   ```
 ### **Bluray Tier 01** / 💿1️⃣
   ```regex
-  ^(?=.*\bBlu[-_]?Ray\b)(?!.*\bRemux\b)(?!.*\bWEB[-_.]?(?:DL|Rip)\b)(?=.*(?:\b(?:BBQ|c0kE|CRiSC|CtrlHD|Dariush|decibeL|DON|EbP|EDPH|Geek|LolHD|MainFrame|NCmt|NTb|PTer|TayTO|TDD|TnP|VietHD|ZoroSenpai|W4NK3R|ZQ)\b|-BMF)).*
+  ^(?=.*\bBlu[-_]?Ray\b)(?!.*\bRemux\b)(?!.*\bWEB[-_.]?(?:DL|Rip)\b)(?=.*(?:\b(?:BBQ|c0kE|Chotab|CRiSC|CtrlHD|D-Z0N3|Dariush|decibeL|DON|EbP|EDPH|Geek|LolHD|MainFrame|NCmt|NTb|PTer|TayTO|TDD|TnP|VietHD|W4NK3R|ZQ|ZoroSenpai)\b|-BMF)).*
   ```
 ### **Bluray Tier 02** / 💿2️⃣
   ```regex
@@ -105,7 +105,7 @@ This order is recommended for movies, tv shows and anime.
   ```
 ### **WEB Tier 01** / 🌐1️⃣
   ```regex
-  ^(?=.*\bWEB[-_.]?(?:DL|RIP)\b)(?=.*\b(?:ABBIE|AJP69|APEX|PAXA|PEXA|XEPA|BLUTONiUM|BYNDR|CasStudio|CMRG|CRFW|CRUD|CtrlHD|FLUX|GNOME|HONE|KiNGS|Kitsune|monkee|NOSiViD|NTb|NTG|QOQ|RAWR|RTN|SiC|TEPES|TheFarm|T6D|TOMMY|ViSUM)\b).*
+  ^(?=.*\bWEB[-_.]?(?:DL|RIP)\b)(?=.*\b(?:ABBIE|AJP69|APEX|PAXA|PEXA|XEPA|BLUTONiUM|BYNDR|CasStudio|CMRG|CRFW|CRUD|CtrlHD|FLUX|GNOME|HONE|KiNGS|Kitsune|monkee|NOSiViD|NTb|NTG|QOQ|RAWR|RTN|SiC|TEPES|TheFarm|T6D|TOMMY|ViSUM|ZoroSenpai)\b).*
   ```
 ### **Anime Web Tier 04 (Official Subs):**
   ```regex
@@ -113,7 +113,7 @@ This order is recommended for movies, tv shows and anime.
   ```
 ### **WEB Tier 02** / 🌐2️⃣
   ```regex
-  ^(?=.*\bWEB[-_.]?(?:DL|RIP)\b)(?=.*\b(?:3cTWeB|BTW|Cinefeel|CiT|Coo7|dB|DEEP|END|ETHiCS|FC|Flights|iJP|iKA|iT00NZ|JETIX|KHN|KiMCHI|LAZY|MiU|MZABI|NPMS|NYH|orbitron|PHOENiX|playWEB|PSiG|ROCCaT|RTFM|SA89|SbR|SDCC|SIGMA|SiGMA|SMURF|SPiRiT|TVSmash|WELP|XEBEC|4KBEC|CEBEX)\b).*
+  ^(?=.*\bWEB[-_.]?(?:DL|RIP)\b)(?=.*\b(?:3cTWeB|BTW|Chotab|Cinefeel|CiT|Coo7|dB|DEEP|END|ETHiCS|FC|Flights|iJP|iKA|iT00NZ|JETIX|KHN|KiMCHI|LAZY|MiU|MZABI|NPMS|NYH|orbitron|PHOENiX|playWEB|PSiG|ROCCaT|RTFM|SA89|SbR|SDCC|SIGMA|SiGMA|SMURF|SPiRiT|TVSmash|WELP|XEBEC|4KBEC|CEBEX)\b).*
   ```
 ### **Anime Web Tier 05 (FanSubs):**
   ```regex
