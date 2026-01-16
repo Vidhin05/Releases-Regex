@@ -57,7 +57,7 @@
       },
       {
         "name": "Web T2",
-        "pattern": "/^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:DEEP|END|ETHiCS|Flights|KiMCHI|LAZY|PHOENiX|SIGMA|SMURF|SPiRiT)\\b).*/"
+        "pattern": "/^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:DEEP|END|ETHiCS|Flights|KiMCHI|LAZY|PHOENiX|SIGMA|SiGMA|SMURF|SPiRiT)\\b).*/"
       },
       {
         "name": "Web T3",
