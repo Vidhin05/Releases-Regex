@@ -71,6 +71,15 @@
       }
     },
     {
+      "name": "VisionXpert",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(VisionXpert)$"
+      }
+    },
+    {
       "name": "HDR10+",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -86,24 +95,6 @@
       "required": false,
       "fields": {
         "value": "\\b(dv|dovi|dolby[ .]?v(ision)?)\\b"
-      }
-    },
-    {
-      "name": "Not WEBDL",
-      "implementation": "SourceSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": 7
-      }
-    },
-    {
-      "name": "Not WEBRIP",
-      "implementation": "SourceSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": 8
       }
     }
   ]

@@ -27,15 +27,6 @@
       }
     },
     {
-      "name": "BYNDR",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(BYNDR)$"
-      }
-    },
-    {
       "name": "dB",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -96,15 +87,6 @@
       "required": false,
       "fields": {
         "value": "^(playWEB)$"
-      }
-    },
-    {
-      "name": "RAWR",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(RAWR)$"
       }
     },
     {
