@@ -1,6 +1,6 @@
 import json
 import re
-from glob import glob
+from pathlib import Path
 
 def extract_release_group_specifications(json_files):
     regex_map = {}
@@ -29,9 +29,9 @@ def extract_release_group_specifications(json_files):
 
     return regex_map
 
-# Example usage: assuming JSON files are in the current directory
-json_files = glob('*.json')  # Adjust the pattern to match your JSON file location
-json_files.sort()  # Sort the files to process them in a consistent order
+# Example usage: load JSON files from this script's directory
+script_dir = Path(__file__).resolve().parent
+json_files = sorted(str(path) for path in script_dir.glob("*.json"))
 regex_map = extract_release_group_specifications(json_files)
 
 # Print the regex for each name
