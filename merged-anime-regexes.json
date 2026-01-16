@@ -25,7 +25,7 @@
   },
   {
     "name": "Remux T1",
-    "pattern": "/\\bRemux\\b.*\\b(3L|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PmP|PiRAMiDHEAD|ZQ)\\b|-BMF|-WiLDCAT/i"
+    "pattern": "/\\bRemux\\b.*\\b(3L|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PiRAMiDHEAD|PmP|ZQ)\\b|-BMF|-WiLDCAT/i"
   },
   {
     "name": "Anime BD T5",
@@ -33,15 +33,15 @@
   },
   {
     "name": "Remux T2",
-    "pattern": "/\\bRemux\\b.*\\b(ATELiER|NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|12GaugeShotgun|decibeL|EPSiLON|HiFi|KRaLiMaRKo|PTer|TRiToN)\\b/i"
+    "pattern": "/\\bRemux\\b.*\\b(ATELiER|NCmt|playBD|SiCFoI|SURFINBIRD|TEPES)\\b/i"
   },
   {
     "name": "Remux T3",
-    "pattern": "/\\bRemux\\b.*\\b(iFT|NTb|PTP|SumVision|TOA)\\b/i"
+    "pattern": "/\\bRemux\\b.*\\b(12GaugeShotgun|decibeL|EPSiLON|HiFi|iFT|KRaLiMaRKo|NTb|PTer|PTP|SumVision|TOA|TRiToN)\\b/i"
   },
   {
     "name": "Bluray T1",
-    "pattern": "/^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:BBQ|c0kE|CRiSC|CtrlHD|Dariush|decibeL|D-Z0N3|EbP|EDPH|LolHD|MainFrame|NCmt|NTb|PTer|TayTO|TDD|TnP|VietHD|ZoroSenpai|W4NK3R|ZQ)\\b|-BMF)).*/i"
+    "pattern": "/^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:BBQ|c0kE|Chotab|CRiSC|CtrlHD|D-Z0N3|Dariush|decibeL|EbP|EDPH|LolHD|MainFrame|NCmt|NTb|PTer|TayTO|TDD|TnP|VietHD|W4NK3R|ZQ|ZoroSenpai)\\b|-BMF)).*/i"
   },
   {
     "name": "Bluray T1",
@@ -53,7 +53,7 @@
   },
   {
     "name": "Bluray T3",
-    "pattern": "/^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*\\b(?:BHDStudio|hallowed|HiFi|HONE|SPHD|WEBDV|playHD)\\b).*/i"
+    "pattern": "/^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*\\b(?:BHDStudio|hallowed|HiFi|HONE|playHD|SPHD|WEBDV)\\b).*/i"
   },
   {
     "name": "Bluray T3",
@@ -85,7 +85,7 @@
   },
   {
     "name": "Web T1",
-    "pattern": "/^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:ABBIE|AJP69|PAXA|PEXA|XEPA|BLUTONiUM|BYNDR|CasStudio|CMRG|CRFW|CRUD|CtrlHD|GNOME|HONE|Kitsune|monkee|NOSiViD|NTb|NTG|QOQ|RAWR|RTN|SiC|TEPES|TheFarm|T6D|ViSUM)\\b).*/i"
+    "pattern": "/^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:ABBiE|AJP69|BLUTONiUM|BYNDR|CasStudio|CMRG|CRFW|CRUD|CtrlHD|GNOME|HONE|Kitsune|monkee|NOSiViD|NTb|NTG|PAXA|PEXA|QOQ|RAWR|RTN|SiC|T6D|TEPES|TheFarm|ViSUM|XEPA|ZoroSenpai)\\b).*/i"
   },
   {
     "name": "Web T1",
@@ -97,7 +97,7 @@
   },
   {
     "name": "Web T2",
-    "pattern": "/^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:3cTWeB|BTW|Cinefeel|CiT|Coo7|dB|FC|iJP|iKA|iT00NZ|JETIX|KHN|MiU|MZABI|NPMS|NYH|orbitron|playWEB|PSiG|ROCCaT|RTFM|SA89|SbR|SDCC|TVSmash|WELP|XEBEC|4KBEC|CEBEX)\\b).*/i"
+    "pattern": "/^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:3cTWeB|4KBEC|BTW|CEBEX|Chotab|Cinefeel|CiT|Coo7|dB|FC|iJP|iKA|iT00NZ|JETIX|KHN|MiU|MZABI|NPMS|NYH|orbitron|playWEB|PSiG|ROCCaT|RTFM|SA89|SbR|SDCC|TVSmash|WELP|XEBEC)\\b).*/i"
   },
   {
     "name": "Web T2",
@@ -109,7 +109,7 @@
   },
   {
     "name": "Web T3",
-    "pattern": "/^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:Dooky|GNOMiSSiON|HHWEB|NINJACENTRAL|ROCCaT|SLiGNOME|SwAgLaNdEr|T4H)\\b).*/i"
+    "pattern": "/^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:Dooky|GNOMiSSiON|HHWEB|NINJACENTRAL|SLiGNOME|SwAgLaNdEr|T4H)\\b).*/i"
   },
   {
     "name": "Web T3",
