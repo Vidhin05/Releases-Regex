@@ -23,74 +23,36 @@ For an in-depth breakdown, visit the [Wikipedia release formats](https://en.wiki
 
 ---
 
-## 🚀 Usage Instructions (For AIOStreams)
+## 🚀 AIOStreams - Usage Instructions
 
-### AIOStreams - JSON Format
-
-AIOStreams supports JSON regex files for improved organization. Choose one of the following options:
-
-#### **📥 Direct JSON Links:**
-- **[Merged Regexes (JSON)](merged-regexes.json)** - For Movies and TV Shows only
-- **[Merged+Anime Regexes (JSON)](merged-anime-regexes.json)** - For Movies, TV Shows, and Anime *(Recommended)*
-
-#### **🔗 Raw GitHub Links (for direct import):**
-```
-https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/merged-regexes.json
-```
-```
-https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/merged-anime-regexes.json
-```
+AIOStreams supports two import methods: a template URL or a direct JSON link. The template method is recommended because it's simpler and templates are auto-updated with each release; you only need to re-apply them from the Template Wizard section in About. With the direct JSON link, you must manually revisit `Filters → Regex → Preferred` and update the link each time.
 
 > [!TIP]
-> ### Configuration Steps
-> 
-> 1. In AIOStreams, navigate to the `Filters -> Regex` section
-> 2. Copy one of the Raw GitHub links above and paste it into the **"Preferred"** field. **Do not** use the "Include", "Required", or "Exclude" fields for these regexes
-> 3. **For non-Usenet/P2P users**: Set your **Global Sort Order** to one of the options below. For the global setting to take effect properly, ensure the sort order fields for specific content types (e.g., Movie, Series) are left empty. You can remove "cached" from the sort order if you are only using Real-Debrid, as many top streams are cached despite showing as not cached. There is a lot of flexibility in the sort order, so you can experiment with different options to find the best one for you
->    - **Resolution/Quality-First**: `Cached -> Library -> Resolution -> Quality -> Regex Patterns -> Size`
->    - **Resolution-First**: `Cached -> Library -> Resolution -> Regex Patterns -> Size`
->    - **Known Groups-First**: `Cached -> Library -> Regex Patterns -> Resolution -> Size`
-> 
-> 4. **For Usenet/P2P users**: Set your Preferred Stream Types to `Usenet -> Debrid` and configure the following:
->    - **Global Sort Order**: `Cached`
->    - **Cached Sort Order**: `Resolution -> Library -> Quality -> Regex Patterns -> Size`
->    - **Uncached Sort Order**: `Resolution -> Library -> Quality -> Stream Type -> Regex Patterns -> Size`
+> After regexes are updated, public AIOStreams instances may take up to 24 hours to fetch changes. If you're on a public instance, wait a while after update notifications before updating your regexes. You'll know the instance has fetched the update when saving your config shows `You are only permitted to use specific regex patterns`. Once you see that message, you can apply the regex patterns update.
 
-> [!WARNING]
-> It is **not recommended** to remove the bad regex pattern from the JSON file and use it in the exclude regex section. If used as an exclude regex, it may filter out all streams for titles that have generic names (e.g., names like `Kingdom`, `Zeus`, `Epic`).
-> Instead, it is better to use Stream Expressions Language (SEL) to smartly limit and filter streams. You can use [this SEL Exclude JSON](exclude-sel.json) to help you with that, heavily inspired by [Tamtaro's work](https://discord.com/channels/1225024298490662974/1410118448306192425) [GitHub](https://github.com/Tam-Taro/SEL-Filtering-and-Sorting).
-> 
-> The `exclude-sel.json` file contains advanced SEL expressions that intelligently filter out low-quality streams (like CAM, TS, TC, SCR) and lower resolutions when higher quality alternatives are available. It uses conditional logic based on the [Stream Expression Language](https://github.com/Viren070/AIOStreams/wiki/Stream-Expression-Language) to dynamically exclude streams only when better options exist, preventing the loss of all streams for titles with generic names.
-> 
-> Raw Github link for direct import in Excluded Stream Expressions:
-> ```
-> https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/exclude-sel.json
-> ```
+#### **Option 1: Template Method (Recommended)**
+1. In AIOStreams, go to `About -> Template Wizard -> Import Template (Bottom Right)`
+2. Paste the template URL:
+   `https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/merged-anime-regexes-template.json`
+3. Click go, and then load the template.
 
 <details>
-<summary>Click to see recommended custom formatters</summary>
+<summary> Option 2: Filters → Regex</summary>
 
-> For pre-built custom formats, you can select the **"Light Google Drive"** format directly from the formatter section on the configuration page.
->
-> Here's an additional recommended custom format for TV screens:
-> <details>
-> <summary>TV-Usage Optimized Advanced Format</summary>
-> 
-> **Name:**
-> ```
-> {stream.type::=p2p["[P2P] "||""]}{service.cached::isfalse["⏳"||""]}{stream.library::istrue["💾 "||""]}{stream.type::=Usenet["📰 "||""]}{stream.type::=http["💻 "||""]}{stream.proxied::istrue["🕵️‍♂️ "||""]}{service.shortName::exists["{service.shortName} "||""]}{addon.name} {stream.resolution::=2160p["4K"||""]}{stream.resolution::=1440p["QHD"||""]}{stream.resolution::=1080p["FHD"||""]}{stream.resolution::=720p["HD"||""]}{stream.resolution::=480p["SD"||""]}
-> {stream.visualTags::exists["📺 {stream.visualTags::join(' | ')} "||""]}
-> {stream.regexMatched::exists["🏷️{stream.regexMatched}"||""]} {stream.seadexBest::istrue["🏷️Best"||""]}{stream.seadex::istrue::and::stream.seadexBest::isfalse["🏷️Alt. Best"||""]}
-> ```
-> 
-> **Description:**
-> ```
-> {stream.quality::exists["🎥 {stream.quality} "||""]}{stream.encode::exists["🎞️ {stream.encode} "||""]}{stream.languages::exists["🌎 {stream.languageEmojis::join(' | ')}"||""]}
-> {stream.size::>0["📦 {stream.size::bytes} "||""]}{stream.audioTags::exists["🎧 {stream.audioTags::join(' | ')} "||""]}
-> {stream.filename::exists["📄 {stream.filename}"||""]}
-> ```
-> </details>
+1. Go to `Filters → Regex → Preferred`
+2. Paste the raw URL there:
+   `https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/merged-anime-regexes.json`
 </details>
+
+> [!TIP]
+> My sort order: Set your Preferred Stream Types to `Usenet -> Debrid` and configure:
+> - **Global Sort Order**: `Cached`
+> - **Cached Sort Order**: `SeaDex -> Library -> Resolution -> Regex Patterns -> Size`
+> - **Uncached Sort Order**: `Resolution -> SeaDex -> Library -> Stream Type -> Regex Patterns -> Size`
+
+> [!WARNING]
+> It is **not recommended** to use the bad regex pattern as an exclude regex. If used so, it may filter out all streams for titles that have generic names (e.g., names like `Kingdom`, `Zeus`, `Epic`).
+> Instead, it is better to use Stream Expressions Language (SEL) to smartly limit and filter streams. You can use [Tamtaro's SEL Template](https://github.com/Tam-Taro/SEL-Filtering-and-Sorting#-how-to-import).
 
 ---
 
@@ -103,32 +65,7 @@ If you're running a community AIOStreams instance and want to allow users to use
 Set this environment variable in your AIOStreams instance to allow users to use these regexes:
 
 ```bash
-ALLOWED_REGEX_PATTERNS_URLS=["https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/merged-anime-regexes.json", "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/merged-regexes.json"]
+ALLOWED_REGEX_PATTERNS_URLS=["https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/merged-anime-regexes.json"]
 ```
-
----
-
-## 🔄 Recyclarr Configuration
-
-I have included my version of Recyclarr configuration that can be used by those running a single Radarr/Sonarr instance for handling all resolutions (4K, 1080p, etc.) and anime.
-
-### Features
-
-- **Single Instance Setup**: Configured for users who prefer one Radarr/Sonarr instance to manage all content types and resolutions
-- **Custom TRaSH Guides Fork**: Uses my fork of the TRaSH Guides repository
-- **Remux Tier 00**: Adds a new tier that prioritizes non-Framestor Remux Tier 1 releases
-
-### Configuration Files
-
-- **`recyclarr.yml`**: Main Recyclarr configuration file
-- **`settings.yml`**: Custom fork for the Remux Tier 00 configuration
-
-### Usage
-
-1. **To use Remux Tier 00**: Keep the current configuration as-is (line 100 in `recyclarr.yml` is active)
-2. **To skip Remux Tier 00**: Comment out line 100 in `recyclarr.yml` which contains the Remux Tier 00 configuration
-
-> [!NOTE]
-> The Remux Tier 00 feature requires editing `settings.yml`. If you don't want to use this custom tier, you can simply comment out line 100 in `recyclarr.yml` and skip editing the settings file.
 
 ---
