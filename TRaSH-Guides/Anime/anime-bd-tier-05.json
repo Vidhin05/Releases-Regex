@@ -1,9 +1,9 @@
 {
-  "trash_id": "f262f1299d99b1a2263375e8fa2ddbb3",
+  "trash_id": "ca864ed93c7b431150cc6748dc34875d",
   "trash_scores": {
-    "default": 1100
+    "default": 1000
   },
-  "name": "Anime BD Tier 04 (SeaDex Muxers)",
+  "name": "Anime BD Tier 05",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
@@ -25,12 +25,12 @@
       }
     },
     {
-      "name": "9volt",
+      "name": "Animorphs",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(9volt)\\b"
+        "value": "\\b(Animorphs)\\b"
       }
     },
     {
@@ -43,39 +43,39 @@
       }
     },
     {
-      "name": "Asakura",
+      "name": "ASC",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Asakura\\]|-Asakura\\b"
+        "value": "\\b(ASC)\\b"
       }
     },
     {
-      "name": "ASO",
+      "name": "Baws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(ASO)\\b"
+        "value": "\\b(Baws|McBalls)\\b"
       }
     },
     {
-      "name": "Bolshevik",
+      "name": "Beatrice",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Bolshevik\\]|-Bolshevik\\b"
+        "value": "\\[Beatrice\\]|-Beatrice(?!-raws)\\b"
       }
     },
     {
-      "name": "Bulldog",
+      "name": "B00BA",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Bulldog\\]|-Bulldog\\b"
+        "value": "\\b(B00BA)\\b"
       }
     },
     {
@@ -88,57 +88,30 @@
       }
     },
     {
-      "name": "Chihiro",
+      "name": "CsS",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Chihiro\\]|-Chihiro\\b"
+        "value": "\\b(CsS)\\b"
       }
     },
     {
-      "name": "Chimera",
+      "name": "CTR",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Chimera\\]|-Chimera\\b"
+        "value": "\\b(CTR)\\b"
       }
     },
     {
-      "name": "CoalGirls",
+      "name": "D4C",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(CoalGirls)\\b"
-      }
-    },
-    {
-      "name": "Commie",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Commie)\\b"
-      }
-    },
-    {
-      "name": "D3",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(D3)\\b"
-      }
-    },
-    {
-      "name": "Davinci",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[Davinci\\]|-Davinci\\b"
+        "value": "\\b(D4C)\\b"
       }
     },
     {
@@ -151,30 +124,30 @@
       }
     },
     {
-      "name": "Doki",
+      "name": "Drag",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Doki\\]|-Doki\\b"
+        "value": "\\[Drag\\]|-Drag\\b"
       }
     },
     {
-      "name": "Dragon-Releases",
+      "name": "eldon",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Dragon-Releases)\\b"
+        "value": "\\b(eldon)\\b"
       }
     },
     {
-      "name": "Foxtrot",
+      "name": "Freehold",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Foxtrot\\]|-Foxtrot\\b"
+        "value": "\\b(Freehold)\\b"
       }
     },
     {
@@ -187,111 +160,39 @@
       }
     },
     {
-      "name": "HaiveMind",
+      "name": "Hark0N",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(HaiveMind)\\b"
+        "value": "\\b(Hark0N)\\b"
       }
     },
     {
-      "name": "hchcsen",
+      "name": "Holomux",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(hchcsen)\\b"
+        "value": "\\b(Holomux)\\b"
       }
     },
     {
-      "name": "Iznjie Biznjie",
+      "name": "Judgement",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Iznjie[ .-]Biznjie)\\b"
+        "value": "\\[Judgment\\]|-Judgment\\b"
       }
     },
     {
-      "name": "Kaleido",
+      "name": "MC",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Kaleido)\\b"
-      }
-    },
-    {
-      "name": "karios",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(karios)\\b"
-      }
-    },
-    {
-      "name": "kBaraka",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(kBaraka)\\b"
-      }
-    },
-    {
-      "name": "kmplx",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(kmplx)\\b"
-      }
-    },
-    {
-      "name": "Koitern",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Koitern)\\b"
-      }
-    },
-    {
-      "name": "Koten_Gars",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Koten[ ._-]Gars)\\b"
-      }
-    },
-    {
-      "name": "Kulot",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Kulot)\\b"
-      }
-    },
-    {
-      "name": "Lia",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[Lia\\]|-Lia\\b"
-      }
-    },
-    {
-      "name": "MCLR",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(MCLR)\\b"
+        "value": "\\b(MC)\\b"
       }
     },
     {
@@ -322,102 +223,75 @@
       }
     },
     {
-      "name": "Orphan",
+      "name": "o7",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Orphan\\]|-Orphan\\b"
+        "value": "\\b(o7)\\b"
       }
     },
     {
-      "name": "RMX",
+      "name": "QM",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(RMX)\\b"
+        "value": "\\b(QM)\\b"
       }
     },
     {
-      "name": "SallySubs",
+      "name": "Thighs",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SallySubs)\\b"
+        "value": "\\[Thighs\\]|-Thighs\\b"
       }
     },
     {
-      "name": "Scriptum",
+      "name": "TTGA",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Scriptum)\\b"
+        "value": "\\b(TTGA)\\b"
       }
     },
     {
-      "name": "ShadyCrab",
+      "name": "UltraRemux",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(ShadyCrab)\\b"
+        "value": "\\b(UltraRemux)\\b"
       }
     },
     {
-      "name": "SNSbu",
+      "name": "WBDP",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SNSbu)\\b"
+        "value": "\\b(WBDP)\\b"
       }
     },
     {
-      "name": "SOLA",
+      "name": "WSE",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[SOLA\\]|-SOLA\\b"
+        "value": "\\b(WSE)\\b"
       }
     },
     {
-      "name": "THORA",
+      "name": "Yuki",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(THORA)\\b"
-      }
-    },
-    {
-      "name": "Tsundere",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[Tsundere\\]|-Tsundere(?!-)\\b"
-      }
-    },
-    {
-      "name": "UWU",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(UWU)\\b"
-      }
-    },
-    {
-      "name": "xPearse",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(xPearse)\\b"
+        "value": "\\[Yuki\\]|-Yuki\\b"
       }
     }
   ]

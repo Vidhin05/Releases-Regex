@@ -1,9 +1,9 @@
 {
-  "trash_id": "22d953bbe897857b517928f3652b8dd3",
+  "trash_id": "de41e72708d2c856fa261094c85e965d",
   "trash_scores": {
-    "default": 200
+    "default": 400
   },
-  "name": "Anime Web Tier 05 (FanSubs)",
+  "name": "Anime Web Tier 03",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
@@ -25,57 +25,48 @@
       }
     },
     {
-      "name": "9volt",
+      "name": "AnoZu",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(9volt)\\b"
+        "value": "\\b(AnoZu)\\b"
       }
     },
     {
-      "name": "GJM",
+      "name": "Dooky",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(GJM)\\b"
+        "value": "\\b(Dooky)\\b"
       }
     },
     {
-      "name": "Kaleido",
+      "name": "Kitsune",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Kaleido)\\b"
+        "value": "\\[Kitsune\\]|-Kitsune\\b"
       }
     },
     {
-      "name": "Kantai",
+      "name": "SubsPlus+",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Kantai\\]|-Kantai\\b"
+        "value": "\\b(SubsPlus\\+?)\\b"
       }
     },
     {
-      "name": "SobsPlease",
+      "name": "ZR",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SobsPlease)\\b"
-      }
-    },
-    {
-      "name": "Some-Stuffs",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Some-Stuffs)\\b"
+        "value": "\\b(ZR)\\b"
       }
     }
   ]
