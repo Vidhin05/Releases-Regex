@@ -77,7 +77,7 @@
       },
       {
         "name": "Anime BD T7",
-        "pattern": "/(\\[(Almighty|Asakura|Bolshevik|Chihiro|Crow|Dekinai|Senjou|Vivid)\\]|-(Almighty|Asakura|Bolshevik|Chihiro|Crow|Dekinai|Senjou|Vivid)\\b|\\b(9volt|Asenshi|BlurayDesuYo|Brrrrrrr|Commie|Dae|Dragon-Releases|DragsterPS|Exiled-Destiny|E-D|FFF|Final8|Geonope|GJM|iAHD|inid4c|Koten[ ._-]Gars|kuchikirukia|LCE|NTW|orz|RAI|REVO|SCP-2223|SEV|THORA)\\b|\\[AC\\]|-AC$/i"
+        "pattern": "/(\\[(Almighty|Asakura|Bolshevik|Chihiro|Crow|Dekinai|Senjou|Vivid)\\]|-(Almighty|Asakura|Bolshevik|Chihiro|Crow|Dekinai|Senjou|Vivid)\\b|\\b(9volt|Asenshi|BlurayDesuYo|Brrrrrrr|Commie|Dae|Dragon-Releases|DragsterPS|Exiled-Destiny|E-D|FFF|Final8|Geonope|GJM|iAHD|inid4c|Koten[ ._-]Gars|kuchikirukia|LCE|NTW|orz|RAI|REVO|SCP-2223|SEV|THORA)\\b|\\[AC\\]|-AC$)/i"
       },
       {
         "name": "Anime BD T8",
@@ -93,7 +93,7 @@
       },
       {
         "name": "Anime Web T2",
-        "pattern": "/(\\[(Asakura|Cyan|Dae|Foxtrot|Gao|Not-Vodes|Pizza)\\]|-(Asakura|Cyan|Dae|Foxtrot|Gao|Not-Vodes|Pizza)\\b|\\b(0x539|Cytox|GSK[._-]kun|Half-Baked|HatSubs|MALD|MTBB|Okay-Subs|Reza|Slyfox|SoLCE)\\b|\\[tenshi\\]|-tenshi$/i"
+        "pattern": "/(\\[(Asakura|Cyan|Dae|Foxtrot|Gao|Not-Vodes|Pizza)\\]|-(Asakura|Cyan|Dae|Foxtrot|Gao|Not-Vodes|Pizza)\\b|\\b(0x539|Cytox|GSK[._-]kun|Half-Baked|HatSubs|MALD|MTBB|Okay-Subs|Reza|Slyfox|SoLCE)\\b|\\[tenshi\\]|-tenshi$)/i"
       },
       {
         "name": "Anime Web T3",
