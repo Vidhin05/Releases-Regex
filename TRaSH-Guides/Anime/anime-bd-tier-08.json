@@ -1,90 +1,117 @@
 {
-  "trash_id": "a786fbc0eae05afe3bb51aee3c83a9d4",
+  "trash_id": "6115ccd6640b978234cc47f2c1f2cadc",
   "trash_scores": {
-    "default": 100
+    "default": 700
   },
-  "name": "Anime Web Tier 06 (FanSubs)",
+  "name": "Anime BD Tier 08",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "WEBDL",
+      "name": "Bluray",
       "implementation": "SourceSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": 7
+        "value": 9
       }
     },
     {
-      "name": "WEBRIP",
+      "name": "DVD",
       "implementation": "SourceSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": 8
+        "value": 5
       }
     },
     {
-      "name": "Asenshi",
+      "name": "AkihitoSubs",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Asenshi)\\b"
+        "value": "\\b(AkihitoSubs)\\b"
       }
     },
     {
-      "name": "Chihiro",
+      "name": "Arukoru",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Chihiro\\]|-Chihiro\\b"
+        "value": "\\b(Arukoru)\\b"
       }
     },
     {
-      "name": "Commie",
+      "name": "EDGE",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Commie)\\b"
+        "value": "\\[EDGE\\]|-EDGE\\b"
       }
     },
     {
-      "name": "DameDesuYo",
+      "name": "EMBER",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(DameDesuYo)\\b"
+        "value": "\\[EMBER\\]|-EMBER\\b"
       }
     },
     {
-      "name": "Doki",
+      "name": "GHOST",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Doki\\]|-Doki\\b"
+        "value": "\\[GHOST\\]|-GHOST\\b"
       }
     },
     {
-      "name": "KawaSubs",
+      "name": "Judas",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KawaSubs)\\b"
+        "value": "\\[Judas\\]|-Judas"
       }
     },
     {
-      "name": "Tsundere",
+      "name": "naiyas",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Tsundere\\]|-Tsundere(?!-)\\b"
+        "value": "\\[naiyas\\]|-naiyas\\b"
+      }
+    },
+    {
+      "name": "Nep_Blanc",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Nep[ ._-]Blanc)\\b"
+      }
+    },
+    {
+      "name": "Prof",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Prof\\]|-Prof\\b"
+      }
+    },
+    {
+      "name": "Shirσ",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Shirσ)\\b"
       }
     }
   ]

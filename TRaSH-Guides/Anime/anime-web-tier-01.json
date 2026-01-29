@@ -1,9 +1,9 @@
 {
-  "trash_id": "9edaeee9ea3bcd585da9b7c0ac3fc54f",
+  "trash_id": "8167cffba4febfb9a6988ef24f274e7e",
   "trash_scores": {
-    "default": 300
+    "default": 600
   },
-  "name": "Anime Web Tier 04 (Official Subs)",
+  "name": "Anime Web Tier 01",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
@@ -25,111 +25,138 @@
       }
     },
     {
-      "name": "BlueLobster",
+      "name": "Arg0",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BlueLobster)\\b"
+        "value": "\\b(Arg0)\\b"
       }
     },
     {
-      "name": "Erai-Raws",
+      "name": "Arid",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Erai-raws)\\b"
+        "value": "\\[Arid\\]|-Arid\\b"
       }
     },
     {
-      "name": "GST",
+      "name": "Baws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(GST)\\b"
+        "value": "\\b(Baws)\\b"
       }
     },
     {
-      "name": "HorribleRips",
+      "name": "FLE",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(HorribleRips)\\b"
+        "value": "\\b(FLE)\\b"
       }
     },
     {
-      "name": "HorribleSubs",
+      "name": "LostYears",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(HorribleSubs)\\b"
+        "value": "\\b(LostYears)\\b"
       }
     },
     {
-      "name": "KAN3D2M",
+      "name": "LYS1TH3A",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KAN3D2M)\\b"
+        "value": "\\b(LYS1TH3A)\\b"
       }
     },
     {
-      "name": "KiyoshiStar",
+      "name": "McBalls",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KS|KiyoshiStar)\\b"
+        "value": "\\b(McBalls)\\b"
       }
     },
     {
-      "name": "Lia",
+      "name": "sam",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Lia\\]|-Lia\\b"
+        "value": "\\[sam\\]|-sam\\b"
       }
     },
     {
-      "name": "NanDesuKa",
+      "name": "SCY",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(NanDesuKa)\\b"
+        "value": "\\b(SCY)\\b"
       }
     },
     {
-      "name": "URANIME",
+      "name": "Setsugen",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(URANIME)\\b"
+        "value": "\\b(Setsugen)\\b"
       }
     },
     {
-      "name": "VARYG",
+      "name": "smol",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(VARYG)\\b"
+        "value": "\\[smol\\]|-smol\\b"
       }
     },
     {
-      "name": "ZigZag",
+      "name": "SoM",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[ZigZag\\]|-ZigZab\b"
+        "value": "\\[SoM\\]|-SoM\\b"
+      }
+    },
+    {
+      "name": "Vodes",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Vodes\\]|(?<!Not)-Vodes\\b"
+      }
+    },
+    {
+      "name": "Z4ST1N",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Z4ST1N)\\b"
+      }
+    },
+    {
+      "name": "ZeroBuild",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ZeroBuild)\\b"
       }
     }
   ]

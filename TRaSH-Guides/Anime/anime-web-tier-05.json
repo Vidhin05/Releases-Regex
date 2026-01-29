@@ -1,126 +1,153 @@
 {
-  "trash_id": "6115ccd6640b978234cc47f2c1f2cadc",
+  "trash_id": "22d953bbe897857b517928f3652b8dd3",
   "trash_scores": {
-    "default": 700
+    "default": 200
   },
-  "name": "Anime BD Tier 08 (Mini Encodes)",
+  "name": "Anime Web Tier 05",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "Bluray",
+      "name": "WEBDL",
       "implementation": "SourceSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": 9
+        "value": 7
       }
     },
     {
-      "name": "DVD",
+      "name": "WEBRIP",
       "implementation": "SourceSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": 5
+        "value": 8
       }
     },
     {
-      "name": "AkihitoSubs",
+      "name": "BlueLobster",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(AkihitoSubs)\\b"
+        "value": "\\b(BlueLobster)\\b"
       }
     },
     {
-      "name": "Arukoru",
+      "name": "GST",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Arukoru)\\b"
+        "value": "\\b(GST)\\b"
       }
     },
     {
-      "name": "EDGE",
+      "name": "HorribleRips",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[EDGE\\]|-EDGE\\b"
+        "value": "\\b(HorribleRips)\\b"
       }
     },
     {
-      "name": "EMBER",
+      "name": "HorribleSubs",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[EMBER\\]|-EMBER\\b"
+        "value": "\\b(HorribleSubs)\\b"
       }
     },
     {
-      "name": "GHOST",
+      "name": "KAN3D2M",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[GHOST\\]|-GHOST\\b"
+        "value": "\\b(KAN3D2M)\\b"
       }
     },
     {
-      "name": "Judas",
+      "name": "KiyoshiStar",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Judas\\]|-Judas"
+        "value": "\\b(KS|KiyoshiStar)\\b"
       }
     },
     {
-      "name": "naiyas",
+      "name": "Lia",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[naiyas\\]|-naiyas\\b"
+        "value": "\\[Lia\\]|-Lia\\b"
       }
     },
     {
-      "name": "Nep_Blanc",
+      "name": "NanDesuKa",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Nep[ ._-]Blanc)\\b"
+        "value": "\\b(NanDesuKa)\\b"
       }
     },
     {
-      "name": "Prof",
+      "name": "PlayWeb",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Prof\\]|-Prof\\b"
+        "value": "\\b(PlayWeb)\\b"
       }
     },
     {
-      "name": "Shirσ",
+      "name": "SobsPlease",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Shirσ)\\b"
+        "value": "\\b(SobsPlease)\\b"
       }
     },
     {
-      "name": "YURASAKA",
+      "name": "Some-Stuffs",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[YURASUKA\\]|-YURASUKA\\b"
+        "value": "\\b(Some-Stuffs)\\b"
+      }
+    },
+    {
+      "name": "SubsPlease",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(SubsPlease)\\b"
+      }
+    },
+    {
+      "name": "URANIME",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(URANIME)\\b"
+      }
+    },
+    {
+      "name": "ZigZag",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[ZigZag\\]|-ZigZab\b"
       }
     }
   ]
