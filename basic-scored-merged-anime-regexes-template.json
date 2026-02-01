@@ -187,8 +187,12 @@
         "score": 1550
       },
       {
-        "expression": "isAnime ? seadex(streams) : []",
+        "expression": "isAnime ? seadex(streams, 'best') : []",
         "score": 9000
+      },
+      {
+        "expression": "isAnime ? negate(seadex(streams, 'best'), seadex(streams)) : []",
+        "score": 8000
       },
       {
         "expression": "isAnime ? regexMatched(streams,'Anime BD T1') : []",
