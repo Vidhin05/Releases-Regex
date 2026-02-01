@@ -227,63 +227,63 @@
         "score": -10000
       },
       {
-        "expression": "visualTag(streams, 'HDR')",
+        "expression": "(queryType == 'movie' or queryType == 'series') ? visualTag(streams, 'HDR') : []",
         "score": 500
       },
       {
-        "expression": "visualTag(streams, 'DV')",
+        "expression": "(queryType == 'movie' or queryType == 'series') ? visualTag(streams, 'DV') : []",
         "score": 1000
       },
       {
-        "expression": "visualTag(streams, 'HDR10')",
+        "expression": "(queryType == 'movie' or queryType == 'series') ? visualTag(streams, 'HDR10') : []",
         "score": 100
       },
       {
-        "expression": "visualTag(streams, 'HDR10+')",
+        "expression": "(queryType == 'movie' or queryType == 'series') ? visualTag(streams, 'HDR10+') : []",
         "score": 100
       },
       {
-        "expression": "audioTag(streams, 'TrueHD')",
+        "expression": "(queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'TrueHD') : []",
         "score": 2750
       },
       {
-        "expression": "audioTag(streams, 'Atmos')",
+        "expression": "(queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'Atmos') : []",
         "score": 3000
       },
       {
-        "expression": "audioTag(streams, 'DTS:X')",
+        "expression": "(queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'DTS:X') : []",
         "score": 3250
       },
       {
-        "expression": "audioTag(streams, 'DTS-HD MA')",
+        "expression": "(queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'DTS-HD MA') : []",
         "score": 1250
       },
       {
-        "expression": "audioTag(streams, 'DTS-ES')",
+        "expression": "(queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'DTS-ES') : []",
         "score": 250
       },
       {
-        "expression": "audioTag(streams, 'DTS')",
+        "expression": "(queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'DTS') : []",
         "score": 1250
       },
       {
-        "expression": "audioTag(streams, 'DD+')",
+        "expression": "(queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'DD+') : []",
         "score": 1000
       },
       {
-        "expression": "audioTag(streams, 'DD')",
+        "expression": "(queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'DD') : []",
         "score": 750
       },
       {
-        "expression": "audioTag(streams, 'FLAC')",
+        "expression": "(queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'FLAC') : []",
         "score": 2250
       },
       {
-        "expression": "audioTag(streams, 'AAC')",
+        "expression": "(queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'AAC') : []",
         "score": 1000
       },
       {
-        "expression": "audioTag(streams, 'Opus')",
+        "expression": "(queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'Opus') : []",
         "score": 250
       }
     ]
