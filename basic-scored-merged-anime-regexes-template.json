@@ -147,111 +147,111 @@
     ],
     "rankedStreamExpressions": [
       {
-        "expression": "(queryType == 'movie' or queryType == 'series') and regexMatched(streams,'Remux T1')",
+        "expression": "(queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Remux T1') : []",
         "score": 1950
       },
       {
-        "expression": "(queryType == 'movie' or queryType == 'series') and regexMatched(streams,'Remux T2')",
+        "expression": "(queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Remux T2') : []",
         "score": 1900
       },
       {
-        "expression": "(queryType == 'movie' or queryType == 'series') and regexMatched(streams,'Remux T3')",
+        "expression": "(queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Remux T3') : []",
         "score": 1850
       },
       {
-        "expression": "(queryType == 'movie' or queryType == 'series') and regexMatched(streams,'Bluray T1')",
+        "expression": "(queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Bluray T1') : []",
         "score": 1800
       },
       {
-        "expression": "(queryType == 'movie' or queryType == 'series') and regexMatched(streams,'Bluray T2')",
+        "expression": "(queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Bluray T2') : []",
         "score": 1750
       },
       {
-        "expression": "(queryType == 'movie' or queryType == 'series') and regexMatched(streams,'Bluray T3')",
+        "expression": "(queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Bluray T3') : []",
         "score": 1700
       },
       {
-        "expression": "(queryType == 'movie' or queryType == 'series') and regexMatched(streams,'Web T1')",
+        "expression": "(queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Web T1') : []",
         "score": 1700
       },
       {
-        "expression": "(queryType == 'movie' or queryType == 'series') and regexMatched(streams,'Web T2')",
+        "expression": "(queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Web T2') : []",
         "score": 1650
       },
       {
-        "expression": "(queryType == 'movie' or queryType == 'series') and regexMatched(streams,'Web T3')",
+        "expression": "(queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Web T3') : []",
         "score": 1600
       },
       {
-        "expression": "(queryType == 'movie' or queryType == 'series') and regexMatched(streams,'Web Scene')",
+        "expression": "(queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Web Scene') : []",
         "score": 1550
       },
       {
-        "expression": "isAnime and regexMatched(streams,'Anime BD T1')",
+        "expression": "isAnime ? regexMatched(streams,'Anime BD T1') : []",
         "score": 1400
       },
       {
-        "expression": "isAnime and regexMatched(streams,'Anime BD T2')",
+        "expression": "isAnime ? regexMatched(streams,'Anime BD T2') : []",
         "score": 1300
       },
       {
-        "expression": "isAnime and regexMatched(streams,'Anime BD T3')",
+        "expression": "isAnime ? regexMatched(streams,'Anime BD T3') : []",
         "score": 1200
       },
       {
-        "expression": "isAnime and regexMatched(streams,'Anime BD T4')",
+        "expression": "isAnime ? regexMatched(streams,'Anime BD T4') : []",
         "score": 1100
       },
       {
-        "expression": "isAnime and regexMatched(streams,'Anime BD T5')",
+        "expression": "isAnime ? regexMatched(streams,'Anime BD T5') : []",
         "score": 1000
       },
       {
-        "expression": "isAnime and regexMatched(streams,'Anime BD T6')",
+        "expression": "isAnime ? regexMatched(streams,'Anime BD T6') : []",
         "score": 900
       },
       {
-        "expression": "isAnime and regexMatched(streams,'Anime BD T7')",
+        "expression": "isAnime ? regexMatched(streams,'Anime BD T7') : []",
         "score": 800
       },
       {
-        "expression": "isAnime and regexMatched(streams,'Anime BD T8')",
+        "expression": "isAnime ? regexMatched(streams,'Anime BD T8') : []",
         "score": 700
       },
       {
-        "expression": "isAnime and regexMatched(streams,'Anime Web T1')",
+        "expression": "isAnime ? regexMatched(streams,'Anime Web T1') : []",
         "score": 600
       },
       {
-        "expression": "isAnime and regexMatched(streams,'Anime Web T2')",
+        "expression": "isAnime ? regexMatched(streams,'Anime Web T2') : []",
         "score": 500
       },
       {
-        "expression": "isAnime and regexMatched(streams,'Anime Web T3')",
+        "expression": "isAnime ? regexMatched(streams,'Anime Web T3') : []",
         "score": 400
       },
       {
-        "expression": "isAnime and regexMatched(streams,'Anime Web T4')",
+        "expression": "isAnime ? regexMatched(streams,'Anime Web T4') : []",
         "score": 300
       },
       {
-        "expression": "isAnime and regexMatched(streams,'Anime Web T5')",
+        "expression": "isAnime ? regexMatched(streams,'Anime Web T5') : []",
         "score": 200
       },
       {
-        "expression": "isAnime and regexMatched(streams,'Anime Web T6')",
+        "expression": "isAnime ? regexMatched(streams,'Anime Web T6') : []",
         "score": 100
       },
       {
-        "expression": "isAnime and regexMatched(streams,'Remux T1')",
+        "expression": "isAnime ? regexMatched(streams,'Remux T1') : []",
         "score": 975
       },
       {
-        "expression": "isAnime and regexMatched(streams,'Remux T2')",
+        "expression": "isAnime ? regexMatched(streams,'Remux T2') : []",
         "score": 950
       },
       {
-        "expression": "isAnime and regexMatched(streams,'Remux T3')",
+        "expression": "isAnime ? regexMatched(streams,'Remux T3') : []",
         "score": 925
       },
       {
