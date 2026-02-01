@@ -2,7 +2,7 @@
   "metadata": {
     "id": "Vidhin05.merged-anime-regexes-basic-ranked-se",
     "name": "Merged Anime Regexes using basic ranked SE template",
-    "description": "Sorting Anime, Movies and TV Shows releases based on regex patterns sourced from TRaSH Guides for AIOStreams. Ensure you have Stream Expression Score in your sort order for this template to take effect (and remove regex patterns from your sort order). This template has 28 regex based expressions that use Stream Expression Score.",
+    "description": "Sorting Anime, Movies and TV Shows releases based on regex patterns sourced from TRaSH Guides for AIOStreams. Ensure you have Stream Expression Score in your sort order for this template to take effect (and remove regex patterns from your sort order). This template has 30 regex based expressions that use Stream Expression Score.",
     "source": "external",
     "author": "Vidhin05",
     "version": "0.0.1",
