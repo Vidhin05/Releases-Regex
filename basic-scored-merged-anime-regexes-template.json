@@ -187,71 +187,71 @@
         "score": 1550
       },
       {
-        "expression": "queryType == 'anime' and regexMatched(streams,'Anime BD T1')",
+        "expression": "isAnime and regexMatched(streams,'Anime BD T1')",
         "score": 1400
       },
       {
-        "expression": "queryType == 'anime' and regexMatched(streams,'Anime BD T2')",
+        "expression": "isAnime and regexMatched(streams,'Anime BD T2')",
         "score": 1300
       },
       {
-        "expression": "queryType == 'anime' and regexMatched(streams,'Anime BD T3')",
+        "expression": "isAnime and regexMatched(streams,'Anime BD T3')",
         "score": 1200
       },
       {
-        "expression": "queryType == 'anime' and regexMatched(streams,'Anime BD T4')",
+        "expression": "isAnime and regexMatched(streams,'Anime BD T4')",
         "score": 1100
       },
       {
-        "expression": "queryType == 'anime' and regexMatched(streams,'Anime BD T5')",
+        "expression": "isAnime and regexMatched(streams,'Anime BD T5')",
         "score": 1000
       },
       {
-        "expression": "queryType == 'anime' and regexMatched(streams,'Anime BD T6')",
+        "expression": "isAnime and regexMatched(streams,'Anime BD T6')",
         "score": 900
       },
       {
-        "expression": "queryType == 'anime' and regexMatched(streams,'Anime BD T7')",
+        "expression": "isAnime and regexMatched(streams,'Anime BD T7')",
         "score": 800
       },
       {
-        "expression": "queryType == 'anime' and regexMatched(streams,'Anime BD T8')",
+        "expression": "isAnime and regexMatched(streams,'Anime BD T8')",
         "score": 700
       },
       {
-        "expression": "queryType == 'anime' and regexMatched(streams,'Anime Web T1')",
+        "expression": "isAnime and regexMatched(streams,'Anime Web T1')",
         "score": 600
       },
       {
-        "expression": "queryType == 'anime' and regexMatched(streams,'Anime Web T2')",
+        "expression": "isAnime and regexMatched(streams,'Anime Web T2')",
         "score": 500
       },
       {
-        "expression": "queryType == 'anime' and regexMatched(streams,'Anime Web T3')",
+        "expression": "isAnime and regexMatched(streams,'Anime Web T3')",
         "score": 400
       },
       {
-        "expression": "queryType == 'anime' and regexMatched(streams,'Anime Web T4')",
+        "expression": "isAnime and regexMatched(streams,'Anime Web T4')",
         "score": 300
       },
       {
-        "expression": "queryType == 'anime' and regexMatched(streams,'Anime Web T5')",
+        "expression": "isAnime and regexMatched(streams,'Anime Web T5')",
         "score": 200
       },
       {
-        "expression": "queryType == 'anime' and regexMatched(streams,'Anime Web T6')",
+        "expression": "isAnime and regexMatched(streams,'Anime Web T6')",
         "score": 100
       },
       {
-        "expression": "queryType == 'anime' and regexMatched(streams,'Remux T1')",
+        "expression": "isAnime and regexMatched(streams,'Remux T1')",
         "score": 975
       },
       {
-        "expression": "queryType == 'anime' and regexMatched(streams,'Remux T2')",
+        "expression": "isAnime and regexMatched(streams,'Remux T2')",
         "score": 950
       },
       {
-        "expression": "queryType == 'anime' and regexMatched(streams,'Remux T3')",
+        "expression": "isAnime and regexMatched(streams,'Remux T3')",
         "score": 925
       },
       {
