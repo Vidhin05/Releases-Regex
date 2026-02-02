@@ -5,7 +5,7 @@
     "description": "Sorting Anime, Movies and TV Shows releases based on regex patterns sourced from TRaSH Guides for AIOStreams. Ensure you have Stream Expression Score in your sort order for this template to take effect (and remove regex patterns from your sort order). This template has regex based expressions + extra expressions that use visual tags and audio tags. However, this has 45 stream expressions which exceeds the default limit of 30 expressions and hence currently requires selfhosting and MAX_STREAM_EXPRESSION_FILTERS set to above 45 in .env file. ",
     "source": "external",
     "author": "Vidhin05",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "category": "Regex",
     "services": [],
     "serviceRequired": false
@@ -264,11 +264,11 @@
       },
       {
         "expression": "(queryType == 'movie' or queryType == 'series') ? visualTag(streams, 'HDR10') : []",
-        "score": 100
+        "score": 600
       },
       {
         "expression": "(queryType == 'movie' or queryType == 'series') ? visualTag(streams, 'HDR10+') : []",
-        "score": 100
+        "score": 601
       },
       {
         "expression": "(queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'TrueHD') : []",
