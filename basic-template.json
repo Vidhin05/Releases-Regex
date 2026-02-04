@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "id": "Vidhin05.merged-anime-regexes-basic-ranked-se",
-    "name": "Merged Anime Regexes using basic ranked SE template",
-    "description": "Sorting Anime, Movies and TV Shows releases based on regex patterns sourced from TRaSH Guides for AIOStreams. Ensure you have Stream Expression Score in your sort order for this template to take effect (and remove regex patterns from your sort order). This template has 30 regex based expressions that use Stream Expression Score.",
+    "id": "Vidhin05.basic-template",
+    "name": "Vidhin's Regexes - Basic",
+    "description": "Essential sorting for Anime, Movies, and TV Shows using regex patterns from [TRaSH Guides](https://trash-guides.info). Features 30 Ranked Stream Expressions focused on release groups with intelligent scoring. \n\n * **Includes 30 regex-based expressions for release group ranking** \n * Works within default limits - perfect for public instances \n * **ⓘ Requires Stream Expression Score in your sort order** (remove Regex Patterns) \n * Add `{stream.streamExpressionScore}` to formatter to display scores \n * Fixes case-sensitive regex issues and anime/normal grouping problems \n * **Recommended for public instances or users preferring release group-only scoring**",
     "source": "external",
     "author": "Vidhin05",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "category": "Regex",
     "services": [],
     "serviceRequired": false
@@ -151,123 +151,123 @@
     ],
     "rankedStreamExpressions": [
       {
-        "expression": "(queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Remux T1') : []",
+        "expression": "/*Remux Tier 01*/ (queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Remux T1') : []",
         "score": 1950
       },
       {
-        "expression": "(queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Remux T2') : []",
+        "expression": "/*Remux Tier 02*/ (queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Remux T2') : []",
         "score": 1900
       },
       {
-        "expression": "(queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Remux T3') : []",
+        "expression": "/*Remux Tier 03*/ (queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Remux T3') : []",
         "score": 1850
       },
       {
-        "expression": "(queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Bluray T1') : []",
+        "expression": "/*HD Bluray Tier 01*/ (queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Bluray T1') : []",
         "score": 1800
       },
       {
-        "expression": "(queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Bluray T2') : []",
+        "expression": "/*HD Bluray Tier 02*/ (queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Bluray T2') : []",
         "score": 1750
       },
       {
-        "expression": "(queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Bluray T3') : []",
+        "expression": "/*HD Bluray Tier 03*/ (queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Bluray T3') : []",
         "score": 1700
       },
       {
-        "expression": "(queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Web T1') : []",
+        "expression": "/*WEB Tier 01*/ (queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Web T1') : []",
         "score": 1700
       },
       {
-        "expression": "(queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Web T2') : []",
+        "expression": "/*WEB Tier 02*/ (queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Web T2') : []",
         "score": 1650
       },
       {
-        "expression": "(queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Web T3') : []",
+        "expression": "/*WEB Tier 03*/ (queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Web T3') : []",
         "score": 1600
       },
       {
-        "expression": "(queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Web Scene') : []",
+        "expression": "/*Web Scene*/ (queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Web Scene') : []",
         "score": 1550
       },
       {
-        "expression": "isAnime ? seadex(streams, 'best') : []",
+        "expression": "/*SeaDex Best*/ isAnime ? seadex(streams, 'best') : []",
         "score": 9000
       },
       {
-        "expression": "isAnime ? negate(seadex(streams, 'best'), seadex(streams)) : []",
+        "expression": "/*SeaDex Alt*/ isAnime ? negate(seadex(streams, 'best'), seadex(streams)) : []",
         "score": 8000
       },
       {
-        "expression": "isAnime ? regexMatched(streams,'Anime BD T1') : []",
+        "expression": "/*Anime BD Tier 01*/ isAnime ? regexMatched(streams,'Anime BD T1') : []",
         "score": 1400
       },
       {
-        "expression": "isAnime ? regexMatched(streams,'Anime BD T2') : []",
+        "expression": "/*Anime BD Tier 02*/ isAnime ? regexMatched(streams,'Anime BD T2') : []",
         "score": 1300
       },
       {
-        "expression": "isAnime ? regexMatched(streams,'Anime BD T3') : []",
+        "expression": "/*Anime BD Tier 03*/ isAnime ? regexMatched(streams,'Anime BD T3') : []",
         "score": 1200
       },
       {
-        "expression": "isAnime ? regexMatched(streams,'Anime BD T4') : []",
+        "expression": "/*Anime BD Tier 04*/ isAnime ? regexMatched(streams,'Anime BD T4') : []",
         "score": 1100
       },
       {
-        "expression": "isAnime ? regexMatched(streams,'Anime BD T5') : []",
+        "expression": "/*Anime BD Tier 05*/ isAnime ? regexMatched(streams,'Anime BD T5') : []",
         "score": 1000
       },
       {
-        "expression": "isAnime ? regexMatched(streams,'Anime BD T6') : []",
+        "expression": "/*Anime BD Tier 06*/ isAnime ? regexMatched(streams,'Anime BD T6') : []",
         "score": 900
       },
       {
-        "expression": "isAnime ? regexMatched(streams,'Anime BD T7') : []",
+        "expression": "/*Anime BD Tier 07*/ isAnime ? regexMatched(streams,'Anime BD T7') : []",
         "score": 800
       },
       {
-        "expression": "isAnime ? regexMatched(streams,'Anime BD T8') : []",
+        "expression": "/*Anime BD Tier 08*/ isAnime ? regexMatched(streams,'Anime BD T8') : []",
         "score": 700
       },
       {
-        "expression": "isAnime ? regexMatched(streams,'Anime Web T1') : []",
+        "expression": "/*Anime Web Tier 01*/ isAnime ? regexMatched(streams,'Anime Web T1') : []",
         "score": 600
       },
       {
-        "expression": "isAnime ? regexMatched(streams,'Anime Web T2') : []",
+        "expression": "/*Anime Web Tier 02*/ isAnime ? regexMatched(streams,'Anime Web T2') : []",
         "score": 500
       },
       {
-        "expression": "isAnime ? regexMatched(streams,'Anime Web T3') : []",
+        "expression": "/*Anime Web Tier 03*/ isAnime ? regexMatched(streams,'Anime Web T3') : []",
         "score": 400
       },
       {
-        "expression": "isAnime ? regexMatched(streams,'Anime Web T4') : []",
+        "expression": "/*Anime Web Tier 04*/ isAnime ? regexMatched(streams,'Anime Web T4') : []",
         "score": 300
       },
       {
-        "expression": "isAnime ? regexMatched(streams,'Anime Web T5') : []",
+        "expression": "/*Anime Web Tier 05*/ isAnime ? regexMatched(streams,'Anime Web T5') : []",
         "score": 200
       },
       {
-        "expression": "isAnime ? regexMatched(streams,'Anime Web T6') : []",
+        "expression": "/*Anime Web Tier 06*/ isAnime ? regexMatched(streams,'Anime Web T6') : []",
         "score": 100
       },
       {
-        "expression": "isAnime ? regexMatched(streams,'Remux T1') : []",
+        "expression": "/*Remux Tier 01 (Anime)*/ isAnime ? regexMatched(streams,'Remux T1') : []",
         "score": 975
       },
       {
-        "expression": "isAnime ? regexMatched(streams,'Remux T2') : []",
+        "expression": "/*Remux Tier 02 (Anime)*/ isAnime ? regexMatched(streams,'Remux T2') : []",
         "score": 950
       },
       {
-        "expression": "isAnime ? regexMatched(streams,'Remux T3') : []",
+        "expression": "/*Remux Tier 03 (Anime)*/ isAnime ? regexMatched(streams,'Remux T3') : []",
         "score": 925
       },
       {
-        "expression": "regexMatched(streams, 'Bad')",
+        "expression": "/*Bad (3D / Anime LQ Groups / Anime Raws / AV1 / Bad Dual Groups / Dubs Only / Extras / VOSTFR / Generated Dynamic HDR / LQ / LQ (Release Title) / Sing-Along Versions)*/ regexMatched(streams, 'Bad')",
         "score": -10000
       }
     ]

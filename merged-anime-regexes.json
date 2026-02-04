@@ -1,35 +1,7 @@
 [
   {
-    "name": "Anime BD T1",
-    "pattern": "/(\\[(Moxie|smol|SoM)\\]|-(Moxie|smol|SoM)\\b|\\b(DemiHuman|FLE|Flugel|LYS1TH3A|ZR)\\b|(?<=remux).*\\b(NAN0)\\b)|-ZR-/i"
-  },
-  {
-    "name": "Anime BD T1",
-    "pattern": "/(\\[sam\\]|-sam\\b)/"
-  },
-  {
-    "name": "Anime BD T2",
-    "pattern": "/(\\[(Aergia|Arid|koala|Lulu|Vodes|YURI)\\]|-(Aergia(?!-raws)|Arid|koala|Lulu|YURI)\\b|\\b(Arg0|FateSucks|hchcsen|hydes|JOHNTiTOR|JySzE|Kulot|LostYears|Meakes|WAP|ZeroBuild)\\b|^(?=.*\\b(PMR)\\b)(?=.*\\b(Remux)\\b))|-Orphan\\b|(?<!Not)-Vodes\\b/i"
-  },
-  {
-    "name": "Anime BD T2",
-    "pattern": "/(\\[Orphan\\])/"
-  },
-  {
-    "name": "Anime BD T3",
-    "pattern": "/(\\[(ARC|cappybara|CRUCiBLE|Doc|fig|Headpatter|Legion|Mehul|Mysteria|RaiN|RUDY|Serendipity|sgt|uba)\\]|-(ARC|cappybara|CRUCiBLE|Doc|fig|Headpatter|Legion|Mehul|Mysteria|RaiN|RUDY|Serendipity|sgt|uba)\\b|\\b(BBT-RMX|ChucksMux|CUNNY|Cunnysseur|Inka-Subs|LaCroiX|MTBB|Netaro|Noiy|npz|NTRX|Okay-Subs|P9|RMX|Sekkon|SubsMix)\\b)/i"
-  },
-  {
-    "name": "Anime BD T4",
-    "pattern": "/(\\[(Afro|Chimera|derp|DIY|EXP|Foxtrot|Kawatare|Metal|Pizza|Smoke|Vanilla|VULCAN)\\]|-(Afro|Chimera|derp|DIY|EXP|Foxtrot|Kawatare|Metal|Pizza|Smoke|Vanilla|VULCAN)\\b|\\b(ABdex|aRMX|BiRJU|BKC|CBT|grimf|IK|Iznjie[ .-]Biznjie|Kaleido-subs|Kametsu|KH|LazyRemux|MK|neko-kBaraka|OZR|pog42|Quetzal|Reza|SCY|Shimatta|Spirale|UDF|UQW|Virtuality)\\b)/i"
-  },
-  {
     "name": "Remux T1",
     "pattern": "/\\bRemux\\b.*\\b(3L|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PiRAMiDHEAD|PmP|ZQ)\\b|-BMF|-WiLDCAT/i"
-  },
-  {
-    "name": "Anime BD T5",
-    "pattern": "/(\\[(Beatrice|Drag|Judgment|Thighs|Yuki)\\]|-(Beatrice(?!-raws)|Drag|Judgment|Thighs|Yuki)\\b|\\b(Animorphs|AOmundson|ASC|Baws|McBalls|B00BA|Cait-Sidhe|CsS|CTR|D4C|deanzel|eldon|Freehold|GHS|Hark0N|Holomux|MC|mottoj|NH|NTRM|o7|QM|TTGA|UltraRemux|WBDP|WSE)\\b)/i"
   },
   {
     "name": "Remux T2",
@@ -60,6 +32,62 @@
     "pattern": "/^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*\\b(?:LoRD)\\b).*/"
   },
   {
+    "name": "Web T1",
+    "pattern": "/^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:ABBiE|AJP69|BLUTONiUM|BYNDR|CasStudio|CMRG|CRFW|CRUD|CtrlHD|GNOME|HONE|Kitsune|monkee|NOSiViD|NTb|NTG|PAXA|PEXA|QOQ|RAWR|RTN|SiC|T6D|TEPES|TheFarm|ViSUM|XEPA|ZoroSenpai)\\b).*/i"
+  },
+  {
+    "name": "Web T1",
+    "pattern": "/^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:APEX|FLUX|KiNGS|TOMMY)\\b).*/"
+  },
+  {
+    "name": "Web T2",
+    "pattern": "/^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:3cTWeB|4KBEC|BTW|CEBEX|Chotab|Cinefeel|CiT|Coo7|dB|FC|iJP|iKA|iT00NZ|JETIX|KHN|MiU|MZABI|NPMS|NYH|orbitron|playWEB|PSiG|ROCCaT|RTFM|SA89|SbR|SDCC|TVSmash|WELP|XEBEC)\\b).*/i"
+  },
+  {
+    "name": "Web T2",
+    "pattern": "/^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:DEEP|END|ETHiCS|Flights|KiMCHI|LAZY|PHOENiX|SIGMA|SiGMA|SMURF|SPiRiT)\\b).*/"
+  },
+  {
+    "name": "Web T3",
+    "pattern": "/^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:Dooky|GNOMiSSiON|HHWEB|NINJACENTRAL|SLiGNOME|SwAgLaNdEr|T4H)\\b).*/i"
+  },
+  {
+    "name": "Web T3",
+    "pattern": "/^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:DRACULA|ViSiON)\\b).*/"
+  },
+  {
+    "name": "Web Scene",
+    "pattern": "/^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:DEFLATE|INFLATE)\\b).*/i"
+  },
+  {
+    "name": "Anime BD T1",
+    "pattern": "/(\\[(Moxie|smol|SoM)\\]|-(Moxie|smol|SoM)\\b|\\b(DemiHuman|FLE|Flugel|LYS1TH3A|ZR)\\b|(?<=remux).*\\b(NAN0)\\b)|-ZR-/i"
+  },
+  {
+    "name": "Anime BD T1",
+    "pattern": "/(\\[sam\\]|-sam\\b)/"
+  },
+  {
+    "name": "Anime BD T2",
+    "pattern": "/(\\[(Aergia|Arid|koala|Lulu|Vodes|YURI)\\]|-(Aergia(?!-raws)|Arid|koala|Lulu|YURI)\\b|\\b(Arg0|FateSucks|hchcsen|hydes|JOHNTiTOR|JySzE|Kulot|LostYears|Meakes|WAP|ZeroBuild)\\b|^(?=.*\\b(PMR)\\b)(?=.*\\b(Remux)\\b))|-Orphan\\b|(?<!Not)-Vodes\\b/i"
+  },
+  {
+    "name": "Anime BD T2",
+    "pattern": "/(\\[Orphan\\])/"
+  },
+  {
+    "name": "Anime BD T3",
+    "pattern": "/(\\[(ARC|cappybara|CRUCiBLE|Doc|fig|Headpatter|Legion|Mehul|Mysteria|RaiN|RUDY|Serendipity|sgt|uba)\\]|-(ARC|cappybara|CRUCiBLE|Doc|fig|Headpatter|Legion|Mehul|Mysteria|RaiN|RUDY|Serendipity|sgt|uba)\\b|\\b(BBT-RMX|ChucksMux|CUNNY|Cunnysseur|Inka-Subs|LaCroiX|MTBB|Netaro|Noiy|npz|NTRX|Okay-Subs|P9|RMX|Sekkon|SubsMix)\\b)/i"
+  },
+  {
+    "name": "Anime BD T4",
+    "pattern": "/(\\[(Afro|Chimera|derp|DIY|EXP|Foxtrot|Kawatare|Metal|Pizza|Smoke|Vanilla|VULCAN)\\]|-(Afro|Chimera|derp|DIY|EXP|Foxtrot|Kawatare|Metal|Pizza|Smoke|Vanilla|VULCAN)\\b|\\b(ABdex|aRMX|BiRJU|BKC|CBT|grimf|IK|Iznjie[ .-]Biznjie|Kaleido-subs|Kametsu|KH|LazyRemux|MK|neko-kBaraka|OZR|pog42|Quetzal|Reza|SCY|Shimatta|Spirale|UDF|UQW|Virtuality)\\b)/i"
+  },
+  {
+    "name": "Anime BD T5",
+    "pattern": "/(\\[(Beatrice|Drag|Judgment|Thighs|Yuki)\\]|-(Beatrice(?!-raws)|Drag|Judgment|Thighs|Yuki)\\b|\\b(Animorphs|AOmundson|ASC|Baws|McBalls|B00BA|Cait-Sidhe|CsS|CTR|D4C|deanzel|eldon|Freehold|GHS|Hark0N|Holomux|MC|mottoj|NH|NTRM|o7|QM|TTGA|UltraRemux|WBDP|WSE)\\b)/i"
+  },
+  {
     "name": "Anime BD T6",
     "pattern": "/(\\[(ANE|Tsundere|YURASUKA)\\]|-ANE$|-(Tsundere(?!-)|YURASUKA)\\b|\\b(Bunny-Apocalypse|CyC|Datte13|EJF|GetItTwisted|GSK[._-]kun|iKaos|karios|Pookie|RASETSU|Starbez|Yoghurt)\\b)/i"
   },
@@ -88,44 +116,16 @@
     "pattern": "/(\\[Kitsune\\]|-Kitsune\\b|\\b(AnoZu|Dooky|SubsPlus\\+?|ZR)\\b)/i"
   },
   {
-    "name": "Web T1",
-    "pattern": "/^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:ABBiE|AJP69|BLUTONiUM|BYNDR|CasStudio|CMRG|CRFW|CRUD|CtrlHD|GNOME|HONE|Kitsune|monkee|NOSiViD|NTb|NTG|PAXA|PEXA|QOQ|RAWR|RTN|SiC|T6D|TEPES|TheFarm|ViSUM|XEPA|ZoroSenpai)\\b).*/i"
-  },
-  {
-    "name": "Web T1",
-    "pattern": "/^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:APEX|FLUX|KiNGS|TOMMY)\\b).*/"
-  },
-  {
     "name": "Anime Web T4",
     "pattern": "/(\\b(Erai-raws|ToonsHub|VARYG)\\b)/i"
-  },
-  {
-    "name": "Web T2",
-    "pattern": "/^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:3cTWeB|4KBEC|BTW|CEBEX|Chotab|Cinefeel|CiT|Coo7|dB|FC|iJP|iKA|iT00NZ|JETIX|KHN|MiU|MZABI|NPMS|NYH|orbitron|playWEB|PSiG|ROCCaT|RTFM|SA89|SbR|SDCC|TVSmash|WELP|XEBEC)\\b).*/i"
-  },
-  {
-    "name": "Web T2",
-    "pattern": "/^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:DEEP|END|ETHiCS|Flights|KiMCHI|LAZY|PHOENiX|SIGMA|SiGMA|SMURF|SPiRiT)\\b).*/"
   },
   {
     "name": "Anime Web T5",
     "pattern": "/(\\[(Lia|ZigZag)\\]|-(Lia|ZigZab)\\b|\\b(BlueLobster|GST|HorribleRips|HorribleSubs|KAN3D2M|KS|KiyoshiStar|NanDesuKa|PlayWeb|SobsPlease|Some-Stuffs|SubsPlease|URANIME)\\b)/i"
   },
   {
-    "name": "Web T3",
-    "pattern": "/^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:Dooky|GNOMiSSiON|HHWEB|NINJACENTRAL|SLiGNOME|SwAgLaNdEr|T4H)\\b).*/i"
-  },
-  {
-    "name": "Web T3",
-    "pattern": "/^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:DRACULA|ViSiON)\\b).*/"
-  },
-  {
     "name": "Anime Web T6",
     "pattern": "/(\\[(Chihiro|Doki|Kantai|Tsundere)\\]|-(Chihiro|Doki|Kantai|Tsundere(?!-))\\b|\\b(9volt|Asenshi|Commie|DameDesuYo|GJM|Kaleido|KawaSubs)\\b)/i"
-  },
-  {
-    "name": "Web Scene",
-    "pattern": "/^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:DEFLATE|INFLATE)\\b).*/i"
   },
   {
     "name": "",
