@@ -8,9 +8,6 @@ Regular Expressions and ranked stream expressions (AIOStreams) for automatically
 
 AIOStreams uses a template-based import system. Templates are auto-updated with each release; you only need to re-apply them from the Template Wizard section in About to get the latest updates.
 
-> [!WARNING]
-> After regexes are updated, public AIOStreams instances may take up to 24 hours to fetch changes. If you're on a public instance, wait a while after update notifications before updating your regexes. You'll know the instance has fetched the update when saving your config shows `You are only permitted to use specific regex patterns`. Once you see that message, you can apply the regex patterns update.
-
 ### Stream Expression Score-based Sorting (AIOStreams Nightly Only)
 
 This repository has two templates with **Ranked Stream Expressions** featuring scoring capabilities:
@@ -58,7 +55,7 @@ If you're running a community AIOStreams instance and want to allow users to use
 Set these environment variables in your AIOStreams instance to allow users to use these regexes, to fetch updates hourly and to allow more stream expressions (for the use of the advanced template):
 
 ```bash
-ALLOWED_REGEX_PATTERNS_URLS=["https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/merged-anime-regexes.json"]
+ALLOWED_REGEX_PATTERNS_URLS=["https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/merged-anime-regexes.json"] 
 ALLOWED_REGEX_PATTERNS_URLS_REFRESH_INTERVAL=3600000
 MAX_STREAM_EXPRESSION_FILTERS=60
 ```
