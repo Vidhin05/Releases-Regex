@@ -1,25 +1,6 @@
 # Releases-Regex Repository
 
-This repository contains **regular expressions (regexes) for the best and recommended release groups** along with regexes for unwanted releases, sourced from [TRaSH Guides](https://trash-guides.info).
-
-> [!NOTE]
-> TRaSH Guides is a community-driven resource offering clear, step-by-step guides for optimizing your media management tools—primarily Sonarr for TV shows and Radarr for Movies. Born from a personal quest to fine-tune quality profiles and release preferences, these guides break down complex configurations into easy-to-follow instructions.
-
-> [!IMPORTANT]
-> This repository is **not** a general TRaSH Guides repository. It is **only for regex patterns** that help filter and prioritize **high-quality releases** based on TRaSH's recommendations.
-
----
-
-## 📖 Release Formats
-
-Here are some **common release formats**:
-
-- **Remux** – Lossless, no re-encoding, largest file size, best quality
-- **UHD Bluray** – 4K Bluray rip with HDR and high color depth, often re-encoded
-- **HD Bluray** – 1080p Bluray rip with higher bitrate than streaming, usually re-encoded
-- **WEB-DL** – Direct stream download, no compression artifacts, lower bitrate than Blu-ray
-
-For an in-depth breakdown, visit the [Wikipedia release formats](https://en.wikipedia.org/wiki/Pirated_movie_release_types#Release_formats).
+Regular Expressions and ranked stream expressions (AIOStreams) for automatically **sorting and scoring** anime, movies, and TV show releases. Patterns are sourced from [TRaSH Guides](https://trash-guides.info) to score releases based on source quality (Remux, Bluray, WEB), release groups (both high-quality and low-quality), audio/visual tags (HDR, Atmos, DTS), and other quality indicators.
 
 ---
 
@@ -30,7 +11,7 @@ AIOStreams uses a template-based import system. Templates are auto-updated with 
 > [!WARNING]
 > After regexes are updated, public AIOStreams instances may take up to 24 hours to fetch changes. If you're on a public instance, wait a while after update notifications before updating your regexes. You'll know the instance has fetched the update when saving your config shows `You are only permitted to use specific regex patterns`. Once you see that message, you can apply the regex patterns update.
 
-### 🎯 BETA: Stream Expression Score-based Sorting (AIOStreams Nightly Only)
+### Stream Expression Score-based Sorting (AIOStreams Nightly Only)
 
 This repository has two templates with **Ranked Stream Expressions** featuring scoring capabilities:
 
@@ -55,6 +36,7 @@ https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/advanced-template
 
 > [!TIP]
 > Add `{stream.streamExpressionScore}` to your formatter to display the score.
+>
 > My sort order:
 > - **Global Sort Order**: `Cached`
 > - **Cached Sort Order**: `SeaDex -> Library -> Resolution -> Quality -> Stream Expression Matched -> Stream Expression Score -> Bitrate`
