@@ -5,12 +5,13 @@
     "description": "Essential sorting for Anime, Movies, and TV Shows using regex patterns from [TRaSH Guides](https://trash-guides.info). Features 30 Ranked Stream Expressions focused on release groups with intelligent scoring. \n\n * **Includes 30 regex-based expressions for release group ranking** \n * Works within default limits - perfect for public instances \n * **ⓘ Requires Stream Expression Score in your sort order** (remove Regex Patterns) \n * Add `{stream.streamExpressionScore}` to formatter to display scores \n * Fixes case-sensitive regex issues and anime/normal grouping problems \n * **Recommended for public instances or users preferring release group-only scoring**",
     "source": "external",
     "author": "Vidhin05",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "category": "Regex",
     "services": [],
     "serviceRequired": false
   },
   "config": {
+    "preferredRegexPatterns": [],
     "syncedPreferredRegexUrls": [
     "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/merged-anime-regexes.json"
     ],
