@@ -2,18 +2,19 @@
   "metadata": {
     "id": "Vidhin05.basic-template",
     "name": "Vidhin's Regexes - Basic",
-    "description": "Essential sorting for Anime, Movies, and TV Shows using regex patterns from [TRaSH Guides](https://trash-guides.info). Features 30 Ranked Stream Expressions focused on release groups with intelligent scoring. \n\n * **Includes 30 regex-based expressions for release group ranking** \n * Works within default limits - perfect for public instances \n * **ⓘ Requires Stream Expression Score in your sort order** (remove Regex Patterns) \n * Add `{stream.streamExpressionScore}` to formatter to display scores \n * Fixes case-sensitive regex issues and anime/normal grouping problems \n * **Recommended for public instances or users preferring release group-only scoring**",
+    "description": "Essential sorting for Anime, Movies, and TV Shows using regex patterns from [TRaSH Guides](https://trash-guides.info). Features Ranked Stream Expressions with intelligent scoring for release groups, quality filtering, and repack detection. \n\n * **ⓘ Requires Stream Expression Score in your sort order** (remove Regex Patterns and ranked regex scores) \n * Add `{stream.streamExpressionScore}` to formatter to display scores \n * Filters out low-quality releases, unwanted formats, and problematic groups \n * **Recommended for public instances or users who don't need audio/visual tag scoring**",
     "source": "external",
     "author": "Vidhin05",
-    "version": "0.0.5",
+    "version": "0.1.0",
     "category": "Regex",
     "services": [],
     "serviceRequired": false
   },
   "config": {
     "preferredRegexPatterns": [],
-    "syncedPreferredRegexUrls": [
-    "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/merged-anime-regexes.json"
+    "syncedPreferredRegexUrls": [],
+    "syncedRankedRegexUrls": [
+      "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/merged-anime-regexes.json"
     ],
     "rankedStreamExpressions": [
       {
@@ -51,10 +52,6 @@
       {
         "expression": "/*WEB Tier 03*/ (queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Web T3') : []",
         "score": 1600
-      },
-      {
-        "expression": "/*Web Scene*/ (queryType == 'movie' or queryType == 'series') ? regexMatched(streams,'Web Scene') : []",
-        "score": 1550
       },
       {
         "expression": "/*SeaDex Best*/ isAnime ? seadex(streams, 'best') : []",
@@ -133,8 +130,12 @@
         "score": 925
       },
       {
-        "expression": "/*Bad (3D / Anime LQ Groups / Anime Raws / AV1 / Bad Dual Groups / Dubs Only / Extras / VOSTFR / Generated Dynamic HDR / LQ / LQ (Release Title) / Sing-Along Versions)*/ regexMatched(streams, 'Bad')",
+        "expression": "/*Bad (3D, Anime LQ Groups, Anime Raws, AV1, Bad Dual Groups, Dubs Only, Extras, VOSTFR, Generated Dynamic HDR, LQ, LQ (Case Sensitive), LQ (Release Title), Sing-Along Versions)*/ regexMatched(streams, '3D', 'Anime LQ Groups', 'Anime Raws', 'AV1', 'Bad Dual Groups', 'Dubs Only', 'Extras', 'VOSTFR', 'Generated Dynamic HDR', 'LQ', 'LQ (Release Title)', 'Sing-Along Versions')",
         "score": -10000
+      },
+      {
+        "expression": "/*Repack/Proper*/ regexMatched(streams, 'Repack/Proper','Repack2','Repack3')",
+        "score": 5
       }
     ]
   }

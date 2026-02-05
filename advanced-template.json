@@ -2,18 +2,19 @@
   "metadata": {
     "id": "Vidhin05.advanced-template",
     "name": "Vidhin's Regexes - Advanced",
-    "description": "Advanced sorting for Anime, Movies, and TV Shows using regex patterns from [TRaSH Guides](https://trash-guides.info). Features 46 Ranked Stream Expressions with intelligent scoring based on release groups, audio tags, and visual quality. \n\n * **Includes 30 regex-based expressions + 16 audio/visual tag expressions** \n * Eliminates the need for audio/visual tags in your sort order \n * **ⓘ Requires Stream Expression Score in your sort order** (remove Regex Patterns) \n * Add `{stream.streamExpressionScore}` to formatter to display scores \n * Exceeds default 30 expression limit - requires `MAX_STREAM_EXPRESSION_FILTERS=50+` \n * **Recommended for selfhosters or public instances with increased limits** \n * ⚠️ Change DV w/o HDR fallback score to -10000 if your devices don't fully support Dolby Vision Profile 5",
+    "description": "Advanced sorting for Anime, Movies, and TV Shows using regex patterns from [TRaSH Guides](https://trash-guides.info). Features Ranked Stream Expressions with intelligent scoring for release groups, quality filtering, repack detection, audio tags, and visual quality. \n\n * Eliminates the need for audio/visual tags in your sort order \n * **ⓘ Requires Stream Expression Score in your sort order** (remove Regex Patterns and ranked regex scores) \n * Add `{stream.streamExpressionScore}` to formatter to display scores \n * Exceeds default expression limit - requires `MAX_STREAM_EXPRESSION_FILTERS=60+` \n * ⚠️ Change DV w/o HDR fallback score to -10000 if your devices don't fully support Dolby Vision Profile 5 \n * **Recommended for selfhosters or public instances with increased limits**",
     "source": "external",
     "author": "Vidhin05",
-    "version": "0.0.5",
+    "version": "0.1.0",
     "category": "Regex",
     "services": [],
     "serviceRequired": false
   },
   "config": {
     "preferredRegexPatterns": [],
-    "syncedPreferredRegexUrls": [
-    "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/merged-anime-regexes.json"
+    "syncedPreferredRegexUrls": [],
+    "syncedRankedRegexUrls": [
+      "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/merged-anime-regexes.json"
     ],
     "rankedStreamExpressions": [
       {
@@ -133,8 +134,64 @@
         "score": 925
       },
       {
-        "expression": "/*Bad (3D / Anime LQ Groups / Anime Raws / AV1 / Bad Dual Groups / Dubs Only / Extras / VOSTFR / Generated Dynamic HDR / LQ / LQ (Release Title) / Sing-Along Versions)*/ regexMatched(streams, 'Bad')",
+        "expression": "/*3D*/ regexMatched(streams, '3D')",
         "score": -10000
+      },
+      {
+        "expression": "/*Anime LQ Groups*/ regexMatched(streams, 'Anime LQ Groups')",
+        "score": -10000
+      },
+      {
+        "expression": "/*Anime Raws*/ regexMatched(streams, 'Anime Raws')",
+        "score": -10000
+      },
+      {
+        "expression": "/*AV1*/ regexMatched(streams, 'AV1')",
+        "score": -10000
+      },
+      {
+        "expression": "/*Bad Dual Groups*/ regexMatched(streams, 'Bad Dual Groups')",
+        "score": -10000
+      },
+      {
+        "expression": "/*Dubs Only*/ regexMatched(streams, 'Dubs Only')",
+        "score": -10000
+      },
+      {
+        "expression": "/*Extras*/ regexMatched(streams, 'Extras')",
+        "score": -10000
+      },
+      {
+        "expression": "/*VOSTFR*/ regexMatched(streams, 'VOSTFR')",
+        "score": -10000
+      },
+      {
+        "expression": "/*Generated Dynamic HDR*/ regexMatched(streams, 'Generated Dynamic HDR')",
+        "score": -10000
+      },
+      {
+        "expression": "/*LQ*/ regexMatched(streams, 'LQ')",
+        "score": -10000
+      },
+      {
+        "expression": "/*LQ (Release Title)*/ regexMatched(streams, 'LQ (Release Title)')",
+        "score": -10000
+      },
+      {
+        "expression": "/*Sing-Along Versions*/ regexMatched(streams, 'Sing-Along Versions')",
+        "score": -10000
+      },
+      {
+        "expression": "/*Repack/Proper*/ regexMatched(streams, 'Repack/Proper')",
+        "score": 5
+      },
+      {
+        "expression": "/*Repack2*/ regexMatched(streams, 'Repack2')",
+        "score": 6
+      },
+      {
+        "expression": "/*Repack3*/ regexMatched(streams, 'Repack3')",
+        "score": 7
       },
       {
         "expression": "/*HDR (only)*/ (queryType == 'movie' or queryType == 'series') ? visualTag(streams, 'HDR') : []",
