@@ -13,15 +13,15 @@ AIOStreams uses a template-based import system. Templates are auto-updated with 
 This repository has two templates with **Ranked Stream Expressions** featuring scoring capabilities:
 
 #### **Basic Template**
-Includes merged anime regexes + **30 regex-based Ranked Stream Expressions** with scoring.  
-**Recommended for:** Public instances or users who prefer release group-based scoring only.
+Includes merged anime regexes + **regex-based Ranked Stream Expressions** with scoring for release groups, quality filtering, and repack detection.  
+**Recommended for:** Public instances or users who don't need audio/visual tag scoring.
 ```
 https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/basic-template.json
 ```
 
 #### **Advanced Template**
-Everything from the Basic Template **plus 16 additional expressions** that score based on audio and visual tags (for now — more coming later).  
-**Recommended for:** Selfhosters or public instances with `MAX_STREAM_EXPRESSION_FILTERS` set above 46.
+Everything from the Basic Template **plus additional expressions** that score based on audio and visual tags.  
+**Recommended for:** Selfhosters or public instances with `MAX_STREAM_EXPRESSION_FILTERS=60+`.
 ```
 https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/advanced-template.json
 ```
