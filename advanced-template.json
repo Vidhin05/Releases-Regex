@@ -5,12 +5,13 @@
     "description": "Advanced sorting for Anime, Movies, and TV Shows using regex patterns from [TRaSH Guides](https://trash-guides.info). Features 46 Ranked Stream Expressions with intelligent scoring based on release groups, audio tags, and visual quality. \n\n * **Includes 30 regex-based expressions + 16 audio/visual tag expressions** \n * Eliminates the need for audio/visual tags in your sort order \n * **ⓘ Requires Stream Expression Score in your sort order** (remove Regex Patterns) \n * Add `{stream.streamExpressionScore}` to formatter to display scores \n * Exceeds default 30 expression limit - requires `MAX_STREAM_EXPRESSION_FILTERS=50+` \n * **Recommended for selfhosters or public instances with increased limits** \n * ⚠️ Change DV w/o HDR fallback score to -10000 if your devices don't fully support Dolby Vision Profile 5",
     "source": "external",
     "author": "Vidhin05",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "category": "Regex",
     "services": [],
     "serviceRequired": false
   },
   "config": {
+    "preferredRegexPatterns": [],
     "syncedPreferredRegexUrls": [
     "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/merged-anime-regexes.json"
     ],
