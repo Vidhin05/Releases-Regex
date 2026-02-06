@@ -236,17 +236,17 @@
   },
   {
     "pattern": "/\\b(Repack|Proper|Rerip)\\b/i",
-    "name": "Repack/Proper",
+    "name": "Repack/Proper 1",
     "score": 0
   },
   {
     "pattern": "/\\b((repack|proper)2)\\b|\\b(REAL\\.(PROPER|REPACK))\\b/i",
-    "name": "Repack2",
+    "name": "Repack/Proper 2",
     "score": 0
   },
   {
     "pattern": "/\\b((repack|proper)3)\\b|\\b(REAL\\.REAL\\.(PROPER|REPACK))\\b/i",
-    "name": "Repack3",
+    "name": "Repack/Proper 3",
     "score": 0
   }
 ]
