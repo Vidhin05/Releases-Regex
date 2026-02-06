@@ -130,7 +130,7 @@
         "score": 925
       },
       {
-        "expression": "/*Bad (3D, Anime LQ Groups, Anime Raws, AV1, Bad Dual Groups, Dubs Only, Extras, VOSTFR, Generated Dynamic HDR, LQ, LQ (Case Sensitive), LQ (Release Title), Sing-Along Versions)*/ regexMatched(streams, '3D', 'Anime LQ Groups', 'Anime Raws', 'AV1', 'Bad Dual Groups', 'Dubs Only', 'Extras', 'VOSTFR', 'Generated Dynamic HDR', 'LQ', 'LQ (Release Title)', 'Sing-Along Versions')",
+        "expression": "/*Bad (3D, Anime LQ Groups, Anime Raws, AV1, Bad Dual Groups, Dubs Only, Extras, VOSTFR, Generated Dynamic HDR, LQ, LQ (Case Sensitive), LQ (Release Title), Sing-Along Versions, Line/Mic Dubbed)*/ regexMatched(streams, '3D', 'Anime LQ Groups', 'Anime Raws', 'AV1', 'Bad Dual Groups', 'Dubs Only', 'Extras', 'VOSTFR', 'Generated Dynamic HDR', 'LQ', 'LQ (Release Title)', 'Sing-Along Versions', 'Line/Mic Dubbed')",
         "score": -10000
       },
       {
