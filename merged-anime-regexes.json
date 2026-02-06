@@ -205,6 +205,26 @@
     "score": 0
   },
   {
+    "name": "Golumpa",
+    "pattern": "/\\b(Golumpa)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "KamiFS",
+    "pattern": "/\\b(KamiFS)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "torenter69",
+    "pattern": "/\\b(torenter69)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Yameii",
+    "pattern": "/\\[Yameii\\]|-Yameii\\b/i",
+    "score": 0
+  },
+  {
     "pattern": "/\\b(LD|AC3LD|Line[ .-]?Dubbed)|(MD|AC3MD|Mic[ .-]?Dubbed)\\b/i",
     "name": "Line/Mic Dubbed",
     "score": 0
