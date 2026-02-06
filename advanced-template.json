@@ -187,7 +187,7 @@
       },
       {
         "expression": "/*Upscaled*/ regexMatched(streams, 'Upscaled')",
-        "score": -35000
+        "score": -10000
       },
       {
         "expression": "/*Repack/Proper*/ regexMatched(negate(regexMatched(streams, 'Repack2','Repack3') , streams), 'Repack/Proper')",
