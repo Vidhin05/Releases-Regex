@@ -154,7 +154,7 @@
         "score": -10000
       },
       {
-        "expression": "/*Dubs Only*/ regexMatched(streams, 'Dubbed','KaiDubs (Not Dual Audio)','KS (Not Dual Audio)','Golumpa','KamiFS','torenter69','Yameii')",
+        "expression": "/*Dubs Only*/ regexMatched(streams, 'Dubs Only')",
         "score": -10000
       },
       {
@@ -183,7 +183,7 @@
       },
       {
         "expression": "/*Line/Mic Dubbed*/ regexMatched(streams, 'Line/Mic Dubbed')",
-        "score": -35000
+        "score": -10000
       },
       {
         "expression": "/*Repack/Proper*/ regexMatched(streams, 'Repack/Proper')",
