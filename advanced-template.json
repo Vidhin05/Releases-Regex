@@ -182,7 +182,7 @@
         "score": -10000
       },
       {
-        "expression": "/*Repack/Proper 1*/ regexMatched(negate(regexMatched(streams, 'Repack/Proper 2','Repack/Proper 3') , streams), 'Repack/Proper')",
+        "expression": "/*Repack/Proper 1*/ regexMatched(negate(regexMatched(streams, 'Repack/Proper 2','Repack/Proper 3') , streams), 'Repack/Proper 1')",
         "score": 5
       },
       {
