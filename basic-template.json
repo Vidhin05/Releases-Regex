@@ -136,11 +136,6 @@
       {
         "expression": "/*Repack/Proper*/ regexMatched(streams, 'Repack/Proper','Repack2','Repack3')",
         "score": 5
-      },
-      {
-        "pattern": "/((?<=\\b[12]\\d{3}\\b)(?=.*\\b(HEVC)\\b)(?=.*\\b(AI)\\b))|(\\b(AIUS|RW)\\b)|(\\b((Upscale)?Re-?graded?)\\b)|(\\b(The[ ._-]?Upscaler)\\b)|((?<=\\b[12]\\d{3}\\b).*\\b(AI[ ._-]?Enhanced|UPS(UHD)?|Upscaled?([ ._-]?UHD)?|UpRez)\\b)/i",
-        "name": "Upscaled",
-        "score": -35000
       }
     ]
   }
