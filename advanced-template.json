@@ -138,11 +138,11 @@
         "score": -10000
       },
       {
-        "expression": "/*Anime LQ Groups*/ regexMatched(streams, 'Anime LQ Groups')",
+        "expression": "/*Anime LQ Groups*/ isAnime ? regexMatched(streams, 'Anime LQ Groups') : []",
         "score": -10000
       },
       {
-        "expression": "/*Anime Raws*/ regexMatched(streams, 'Anime Raws')",
+        "expression": "/*Anime Raws*/ isAnime ? regexMatched(streams, 'Anime Raws') : []",
         "score": -10000
       },
       {
