@@ -182,6 +182,10 @@
         "score": -10000
       },
       {
+        "expression": "/*Line/Mic Dubbed*/ regexMatched(streams, 'Line/Mic Dubbed')",
+        "score": -35000
+      },
+      {
         "expression": "/*Repack/Proper*/ regexMatched(streams, 'Repack/Proper')",
         "score": 5
       },
