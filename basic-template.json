@@ -2,7 +2,7 @@
   "metadata": {
     "id": "Vidhin05.basic-template",
     "name": "Vidhin's Regexes - Basic",
-    "description": "Essential sorting for Anime, Movies, and TV Shows using regex patterns from [TRaSH Guides](https://trash-guides.info). Features Ranked Stream Expressions with intelligent scoring for release groups, quality filtering, and repack detection. \n\n * **ⓘ Requires Stream Expression Score in your sort order** (remove Regex Patterns and ranked regex scores) \n * Add `{stream.streamExpressionScore}` to formatter to display scores \n * Filters out low-quality releases, unwanted formats, and problematic groups \n * **Recommended for public instances or users who don't need audio/visual tag scoring**",
+    "description": "Essential sorting for Anime, Movies, and TV Shows using regex patterns from [TRaSH Guides](https://trash-guides.info). Features Ranked Stream Expressions with intelligent scoring for release groups, quality filtering, and repack detection. \n\n * **ⓘ Requires Stream Expression Score in your sort order** (remove Regex Patterns and ranked regex scores) \n * Add `{stream.streamExpressionScore}` to formatter to display scores \n * Filters out low-quality releases, unwanted formats, and problematic groups \n * **Recommended for public instances or users who don't need audio/visual tag scoring**  \n * **Note for public instance admins:** Set `MAX_STREAM_EXPRESSION_FILTERS=100+` as Basic template will be discontinued in favor of advanced template, and future updates will add more expressions",
     "source": "external",
     "author": "Vidhin05",
     "version": "0.1.2",
