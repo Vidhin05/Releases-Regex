@@ -154,7 +154,7 @@
         "score": -10000
       },
       {
-        "expression": "/*Dubs Only*/ regexMatched(streams, 'Dubs Only')",
+        "expression": "/*Dubs Only*/ regexMatched(streams, 'Dubbed','KaiDubs (Not Dual Audio)','KS (Not Dual Audio)')",
         "score": -10000
       },
       {
