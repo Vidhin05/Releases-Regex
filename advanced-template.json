@@ -186,15 +186,15 @@
         "score": -10000
       },
       {
-        "expression": "/*Repack/Proper 1*/ regexMatched(negate(regexMatched(streams, 'Repack/Proper 2','Repack/Proper 3') , streams), 'Repack/Proper 1')",
+        "expression": "/*Repack/Proper*/ regexMatched(negate(regexMatched(streams, 'Repack2','Repack3') , streams), 'Repack/Proper')",
         "score": 5
       },
       {
-        "expression": "/*Repack/Proper 2*/ regexMatched(negate(regexMatched(streams, 'Repack/Proper 3') , streams), 'Repack/Proper 2')",
+        "expression": "/*Repack2*/ regexMatched(negate(regexMatched(streams, 'Repack3') , streams), 'Repack2')",
         "score": 6
       },
       {
-        "expression": "/*Repack/Proper 3*/ regexMatched(streams, 'Repack/Proper 3')",
+        "expression": "/*Repack3*/ regexMatched(streams, 'Repack3')",
         "score": 7
       },
       {
