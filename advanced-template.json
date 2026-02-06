@@ -5,7 +5,7 @@
     "description": "Advanced sorting for Anime, Movies, and TV Shows using regex patterns from [TRaSH Guides](https://trash-guides.info). Features Ranked Stream Expressions with intelligent scoring for release groups, quality filtering, repack detection, audio tags, and visual quality. \n\n * Eliminates the need for audio/visual tags in your sort order \n * **ⓘ Requires Stream Expression Score in your sort order** (remove Regex Patterns and ranked regex scores) \n * Add `{stream.streamExpressionScore}` to formatter to display scores \n * Exceeds default expression limit - requires `MAX_STREAM_EXPRESSION_FILTERS=60+` \n * ⚠️ Change DV w/o HDR fallback score to -10000 if your devices don't fully support Dolby Vision Profile 5 \n * **Recommended for selfhosters or public instances with increased limits**",
     "source": "external",
     "author": "Vidhin05",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "category": "Regex",
     "services": [],
     "serviceRequired": false
@@ -196,6 +196,26 @@
       {
         "expression": "/*Repack3*/ regexMatched(streams, 'Repack3')",
         "score": 7
+      },
+      {
+        "expression": "/*v0*/ isAnime ? regexMatched(streams, 'v0') : []",
+        "score": -51
+      },
+      {
+        "expression": "/*v1*/ isAnime ? regexMatched(streams, 'v1') : []",
+        "score": 1
+      },
+      {
+        "expression": "/*v2*/ isAnime ? regexMatched(streams, 'v2') : []",
+        "score": 2
+      },
+      {
+        "expression": "/*v3*/ isAnime ? regexMatched(streams, 'v3') : []",
+        "score": 3
+      },
+      {
+        "expression": "/*v4*/ isAnime ? regexMatched(streams, 'v4') : []",
+        "score": 4
       },
       {
         "expression": "/*HDR (only)*/ (queryType == 'movie' or queryType == 'series') ? visualTag(streams, 'HDR') : []",

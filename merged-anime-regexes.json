@@ -240,6 +240,31 @@
     "score": 0
   },
   {
+    "name": "v0",
+    "pattern": "/(\\b|\\d)(v0)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "v1",
+    "pattern": "/(\\b|\\d)(v1)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "v2",
+    "pattern": "/(\\b|\\d)(v2)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "v3",
+    "pattern": "/(\\b|\\d)(v3)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "v4",
+    "pattern": "/(\\b|\\d)(v4)\\b/i",
+    "score": 0
+  },
+  {
     "pattern": "/\\b(Repack|Proper|Rerip)\\b/i",
     "name": "Repack/Proper",
     "score": 0
