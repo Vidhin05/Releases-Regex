@@ -5,7 +5,7 @@
     "description": "Advanced sorting for Anime, Movies, and TV Shows using regex patterns from [TRaSH Guides](https://trash-guides.info). Features Ranked Stream Expressions with intelligent scoring for release groups, quality filtering, repack detection, audio tags, visual tags and more. \n\n * Eliminates the need for audio/visual tags in your sort order \n * **ⓘ Requires Stream Expression Score in your sort order** (remove Regex Patterns and ranked regex scores) \n * Add `{stream.seScore}` to formatter to display scores and `{stream.rseMatched}` to display the matched stream expressions \n * Exceeds default expression limit - requires `MAX_STREAM_EXPRESSION_FILTERS=100`+ \n * ⚠️ Enable DV w/o HDR fallback ranked SEL if not all your devices support DV. This also applies to DV releases without HDR10 fallback (Profile 5) \n * ⚠️ Disable 3D, Bad Dual, and Dubs Only ranked SEL if you want 3D content, dual audio groups with non-English as primary language, or anime dub-only streams \n * **Recommended for all**",
     "source": "external",
     "author": "Vidhin05",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "category": "Regex",
     "services": [],
     "serviceRequired": false
@@ -59,11 +59,11 @@
       },
       {
         "expression": "/*#SeaDex Best*/ isAnime ? seadex(streams, 'best') : []",
-        "score": 9000
+        "score": 4000
       },
       {
         "expression": "/*#SeaDex Alt*/ isAnime ? negate(seadex(streams, 'best'), seadex(streams)) : []",
-        "score": 8000
+        "score": 1750
       },
       {
         "expression": "/*Anime BD T1*/ isAnime ? regexMatched(streams,'Anime BD T1') : []",
@@ -134,15 +134,15 @@
         "score": 100
       },
       {
-        "expression": "/*Repack*/ regexMatched(negate(regexMatched(streams, 'Repack2','Repack3') , streams), 'Repack/Proper')",
+        "expression": "/*Repack*/ (queryType == 'movie' or queryType == 'series') ? regexMatched(negate(regexMatched(streams, 'Repack2','Repack3') , streams), 'Repack/Proper') : []",
         "score": 5
       },
       {
-        "expression": "/*Repack2*/ regexMatched(negate(regexMatched(streams, 'Repack3') , streams), 'Repack2')",
+        "expression": "/*Repack2*/ (queryType == 'movie' or queryType == 'series') ? regexMatched(negate(regexMatched(streams, 'Repack3') , streams), 'Repack2') : []",
         "score": 6
       },
       {
-        "expression": "/*Repack3*/ regexMatched(streams, 'Repack3')",
+        "expression": "/*Repack3*/ (queryType == 'movie' or queryType == 'series') ? regexMatched(streams, 'Repack3') : []",
         "score": 7
       },
       {
