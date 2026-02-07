@@ -5,7 +5,7 @@
     "description": "Advanced sorting for Anime, Movies, and TV Shows using regex patterns from [TRaSH Guides](https://trash-guides.info). Features Ranked Stream Expressions with intelligent scoring for release groups, quality filtering, repack detection, audio tags, visual tags and more. \n\n * Eliminates the need for audio/visual tags in your sort order \n * **ⓘ Requires Stream Expression Score in your sort order** (remove Regex Patterns and ranked regex scores) \n * Add `{stream.seScore}` to formatter to display scores and `{stream.rseMatched}` to display the matched stream expressions \n * Exceeds default expression limit - requires `MAX_STREAM_EXPRESSION_FILTERS=100`+ \n * ⚠️ See [README](https://github.com/Vidhin05/Releases-Regex#customizing-scores) for a guide on customizing scores (Dual Audio, Uncensored, etc.) \n * **Recommended for all**",
     "source": "external",
     "author": "Vidhin05",
-    "version": "0.1.10",
+    "version": "0.1.11",
     "category": "Regex",
     "services": [],
     "serviceRequired": false
@@ -226,7 +226,7 @@
         "score": 250
       },
       {
-        "expression": "/*Season Pack*/ (queryType == 'series' or queryType == 'anime.series) ? seasonPack(streams, 'seasonPack') : []",
+        "expression": "/*Season Pack*/ (queryType == 'series' or queryType == 'anime.series') ? seasonPack(streams) : []",
         "score": 10
       },
       {
