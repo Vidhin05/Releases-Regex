@@ -2,10 +2,10 @@
   "metadata": {
     "id": "Vidhin05.advanced-template",
     "name": "Vidhin's Regexes - Advanced",
-    "description": "Advanced sorting for Anime, Movies, and TV Shows using regex patterns from [TRaSH Guides](https://trash-guides.info). Features Ranked Stream Expressions with intelligent scoring for release groups, quality filtering, repack detection, audio tags, and visual quality. \n\n * Eliminates the need for audio/visual tags in your sort order \n * **ⓘ Requires Stream Expression Score in your sort order** (remove Regex Patterns and ranked regex scores) \n * Add `{stream.streamExpressionScore}` to formatter to display scores \n * Exceeds default expression limit - requires `MAX_STREAM_EXPRESSION_FILTERS=100+` \n * ⚠️ Change DV w/o HDR fallback score to -10000 if your devices don't fully support Dolby Vision Profile 5 \n * **Recommended for selfhosters or public instances with increased limits** \n * **Note for public instance admins:** Set `MAX_STREAM_EXPRESSION_FILTERS=100+` as Basic template will be discontinued in favor of this template, and future updates will add more expressions",
+    "description": "Advanced sorting for Anime, Movies, and TV Shows using regex patterns from [TRaSH Guides](https://trash-guides.info). Features Ranked Stream Expressions with intelligent scoring for release groups, quality filtering, repack detection, audio tags, and visual quality. \n\n * Eliminates the need for audio/visual tags in your sort order \n * **ⓘ Requires Stream Expression Score in your sort order** (remove Regex Patterns and ranked regex scores) \n * Add `{stream.streamExpressionScore}` to formatter to display scores \n * Exceeds default expression limit - requires `MAX_STREAM_EXPRESSION_FILTERS=100+` \n * ⚠️ Enable DV w/o HDR fallback if not all your devices support Dolby Vision. This also appllied to Dolby Vision releases without HDR10 fallback (Profile 5) \n * ⚠️ Disable 3D, Bad Dual, and Dubs Only filters if you want 3D content, dual audio groups with non-English as primary language, or anime dub-only streams \n * **Recommended for selfhosters or public instances with increased limits** \n * **Note for public instance admins:** Set `MAX_STREAM_EXPRESSION_FILTERS=100+` as Basic template will be discontinued in favor of this template, and future updates will add more expressions",
     "source": "external",
     "author": "Vidhin05",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "category": "Regex",
     "services": [],
     "serviceRequired": false
@@ -226,10 +226,6 @@
         "score": 250
       },
       {
-        "expression": "/*3D*/ regexMatched(streams, '3D')",
-        "score": -10000
-      },
-      {
         "expression": "/*Anime LQ*/ isAnime ? regexMatched(streams, 'Anime LQ Groups') : []",
         "score": -10000
       },
@@ -239,14 +235,6 @@
       },
       {
         "expression": "/*AV1*/ regexMatched(streams, 'AV1')",
-        "score": -10000
-      },
-      {
-        "expression": "/*Bad Dual*/ regexMatched(streams, 'Bad Dual Groups')",
-        "score": -10000
-      },
-      {
-        "expression": "/*Dubs Only*/ isAnime ? regexMatched(streams, 'Dubs Only') : []",
         "score": -10000
       },
       {
@@ -278,8 +266,21 @@
         "score": -10000
       },
       {
+        "expression": "/*3D*/ regexMatched(streams, '3D')",
+        "score": -10000
+      },
+      {
+        "expression": "/*Bad Dual*/ regexMatched(streams, 'Bad Dual Groups')",
+        "score": -10000
+      },
+      {
+        "expression": "/*Dubs Only*/ isAnime ? regexMatched(streams, 'Dubs Only') : []",
+        "score": -10000
+      },
+      {
         "expression": "/*DV w/o HDR*/ (queryType == 'movie' or queryType == 'series') ? negate(merge(releaseGroup(streams, 'Flights'), regexMatched(streams, 'Hulu'), visualTag(streams, 'HDR','HDR10','HDR10+')), visualTag(streams, 'DV')) : []",
-        "score": 0
+        "score": -10000,
+        "enabled": false
       }
     ]
   }
