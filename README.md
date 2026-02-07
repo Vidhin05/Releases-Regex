@@ -32,7 +32,7 @@ https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/advanced-template
 3. Click go, and then load the template.
 
 > [!TIP]
-> Add `{stream.streamExpressionScore}` to your formatter to display the score.
+> Add `{stream.seScore}` to your formatter to display the score and `{stream.rseMatched}` to display the matched stream expressions.
 >
 > My sort order:
 > - **Global Sort Order**: `Cached`
