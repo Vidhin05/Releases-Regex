@@ -318,6 +318,7 @@
     "pattern": "/^(?=.*\\b((DSNP|BC|B?CORE)\\b|Disney\\+)(?=.*\\bWEB[ ._-]?(DL|Rip)\\b))(?=.*\\b((?<!NON[ ._-])IMAX)\\b)|^(?=.*\\b(IMAX[ ._-]Enhanced)\\b)/i",
     "name": "IMAX Enhanced",
     "score": 0
+  },
   {
     "pattern": "/\\b(Masters[ .-]?Of[ .-]?Cinema|MoC)(\\b|\\d)/i",
     "name": "Masters of Cinema",
@@ -336,6 +337,11 @@
   {
     "pattern": "/\\b(4k)\\b/i",
     "name": "4K",
+    "score": 0
+  },
+  {
+    "pattern": "/(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)|bd(?:720|1080|2160)))(?=.*(hybrid(\\b|\\d)))/i",
+    "name": "Hybrid",
     "score": 0
   }
 ]
