@@ -320,6 +320,11 @@
     "score": 0
   },
   {
+    "pattern": "/\\b(Criterion|CC)\\b/i",
+    "name": "Criterion Collection",
+    "score": 0
+  },
+  {
     "pattern": "/\\b(Masters[ .-]?Of[ .-]?Cinema|MoC)(\\b|\\d)/i",
     "name": "Masters of Cinema",
     "score": 0
