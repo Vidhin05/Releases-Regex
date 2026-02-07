@@ -44,6 +44,33 @@ https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/advanced-template
 >
 > Instead, it is better to use Stream Expressions Language (SEL) to smartly limit and filter streams. You can use [Tamtaro's](https://github.com/Tam-Taro/SEL-Filtering-and-Sorting#-how-to-import).
 
+### Customizing Scores
+
+Both templates include several ranked stream expressions that you can customize by editing their scores directly in the template configuration:
+
+#### **Anime Dual Audio**
+If you prefer Dual Audio releases, you can adjust the score based on your preference:
+- **Within same tier**: Score of `10` (prefers dual audio over single audio in the same quality tier)
+- **One tier above**: Score of `101` (prefers dual audio from a lower tier over single audio from a higher tier)
+- **Over any tier**: Score of `2000` (always prefers dual audio regardless of quality tier)
+- You may also want to disable `Dual Audio` if you only watch dubs.
+
+#### **Uncensored**
+If you prefer Uncensored anime releases, you can adjust the score similarly:
+- **Within same tier**: Score of `10` (prefers uncensored within the same quality tier)
+- **One tier above**: Score of `101` (prefers uncensored from a lower tier over censored from a higher tier)
+
+Using these scoring options, you'll still benefit from the tier system when better release groups provide Dual Audio or Uncensored releases.
+
+#### **Other Customizable Expressions**
+- **DV w/o HDR fallback**: Enable to prevent playback issues on devices that don't fully support Dolby Vision. This also applies to DV releases without HDR10 fallback (Profile 5).
+- **10bit**: Enable to filter out 10-bit encodes if your devices (FireStick, etc.) don't support them.
+- **Dubs Only**: Disable to keep anime dub-only streams
+- **Bad Dual Groups**: Disable to keep dual audio groups with non-English as primary language
+- **3D**: Disable to keep 3D releases if you want them
+- **Obfuscated**: Disable to keep obfuscated releases (Start with a low score, increase as needed)
+- **Retags**: Disable to keep retagged releases (Start with a low score, increase as needed)
+
 ---
 
 ## 🔧 Community Instance Admin Setup
