@@ -1,0 +1,21 @@
+{
+  "trash_id": "9f6cbff8cfe4ebbc1bde14c7b7bec0de",
+  "trash_regex": "https://regex101.com/r/y4MaGg/1",
+  "trash_scores": {
+    "default": 800,
+    "sqp-4-ma-hybrid": 65
+  },
+  "name": "IMAX Enhanced",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "IMAX Enhanced",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "^(?=.*\\b((DSNP|BC|B?CORE)\\b|Disney\\+)(?=.*\\bWEB[ ._-]?(DL|Rip)\\b))(?=.*\\b((?<!NON[ ._-])IMAX)\\b)|^(?=.*\\b(IMAX[ ._-]Enhanced)\\b)"
+      }
+    }
+  ]
+}
