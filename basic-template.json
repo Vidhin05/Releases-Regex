@@ -5,7 +5,7 @@
     "description": "Essential sorting for Anime, Movies, and TV Shows using regex patterns from [TRaSH Guides](https://trash-guides.info). Features Ranked Stream Expressions with intelligent scoring for release groups, quality filtering, and repack detection. \n\n * **ⓘ Requires Stream Expression Score in your sort order** (remove Regex Patterns and ranked regex scores) \n * Add `{stream.streamExpressionScore}` to formatter to display scores \n * Filters out low-quality releases, unwanted formats, and problematic groups \n * **Recommended for public instances or users who don't need audio/visual tag scoring**  \n * **Note for public instance admins:** Set `MAX_STREAM_EXPRESSION_FILTERS=100+` as Basic template will be discontinued in favor of advanced template, and future updates will add more expressions",
     "source": "external",
     "author": "Vidhin05",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "category": "Regex",
     "services": [],
     "serviceRequired": false
@@ -54,11 +54,11 @@
         "score": 1600
       },
       {
-        "expression": "/*SeaDex Best*/ isAnime ? seadex(streams, 'best') : []",
+        "expression": "/*#SeaDex Best*/ isAnime ? seadex(streams, 'best') : []",
         "score": 9000
       },
       {
-        "expression": "/*SeaDex Alt*/ isAnime ? negate(seadex(streams, 'best'), seadex(streams)) : []",
+        "expression": "/*#SeaDex Alt*/ isAnime ? negate(seadex(streams, 'best'), seadex(streams)) : []",
         "score": 8000
       },
       {
@@ -80,6 +80,18 @@
       {
         "expression": "/*Anime BD T5*/ isAnime ? regexMatched(streams,'Anime BD T5') : []",
         "score": 1000
+      },
+      {
+        "expression": "/*Remux T1 (Anime)*/ isAnime ? regexMatched(streams,'Remux T1') : []",
+        "score": 975
+      },
+      {
+        "expression": "/*Remux T2 (Anime)*/ isAnime ? regexMatched(streams,'Remux T2') : []",
+        "score": 950
+      },
+      {
+        "expression": "/*Remux T3 (Anime)*/ isAnime ? regexMatched(streams,'Remux T3') : []",
+        "score": 925
       },
       {
         "expression": "/*Anime BD T6*/ isAnime ? regexMatched(streams,'Anime BD T6') : []",
@@ -116,18 +128,6 @@
       {
         "expression": "/*Anime Web T6*/ isAnime ? regexMatched(streams,'Anime Web T6') : []",
         "score": 100
-      },
-      {
-        "expression": "/*Remux T1 (Anime)*/ isAnime ? regexMatched(streams,'Remux T1') : []",
-        "score": 975
-      },
-      {
-        "expression": "/*Remux T2 (Anime)*/ isAnime ? regexMatched(streams,'Remux T2') : []",
-        "score": 950
-      },
-      {
-        "expression": "/*Remux T3 (Anime)*/ isAnime ? regexMatched(streams,'Remux T3') : []",
-        "score": 925
       },
       {
         "expression": "/*Bad*/ regexMatched(streams, '3D', 'Anime LQ Groups', 'Anime Raws', 'AV1', 'Bad Dual Groups', 'Dubs Only', 'Extras', 'VOSTFR', 'Generated Dynamic HDR', 'LQ', 'LQ (Release Title)', 'Sing-Along Versions')",
