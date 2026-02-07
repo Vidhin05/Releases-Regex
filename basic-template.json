@@ -5,7 +5,7 @@
     "description": "Essential sorting for Anime, Movies, and TV Shows using regex patterns from [TRaSH Guides](https://trash-guides.info). Features Ranked Stream Expressions with intelligent scoring for release groups, quality filtering, and repack detection. \n\n * **ⓘ Requires Stream Expression Score in your sort order** (remove Regex Patterns and ranked regex scores) \n * Add `{stream.seScore}` to formatter to display scores and `{stream.rseMatched}` to display the matched stream expressions  \n * Filters out low-quality releases, unwanted formats, and problematic groups \n * **Recommended only for public instances with stricter limits**  \n * **Note for public instance admins:** Set `MAX_STREAM_EXPRESSIONS=150`+ as Basic template will be discontinued in favor of advanced template, and future updates will add more expressions",
     "source": "external",
     "author": "Vidhin05",
-    "version": "0.1.19",
+    "version": "0.2.0",
     "category": "Regex",
     "services": [],
     "serviceRequired": false
