@@ -5,7 +5,7 @@
     "description": "Advanced sorting for Anime, Movies, and TV Shows using regex patterns from [TRaSH Guides](https://trash-guides.info). Features Ranked Stream Expressions with intelligent scoring for release groups, quality filtering, repack detection, audio tags, and visual quality. \n\n * Eliminates the need for audio/visual tags in your sort order \n * **ⓘ Requires Stream Expression Score in your sort order** (remove Regex Patterns and ranked regex scores) \n * Add `{stream.streamExpressionScore}` to formatter to display scores \n * Exceeds default expression limit - requires `MAX_STREAM_EXPRESSION_FILTERS=100+` \n * ⚠️ Change DV w/o HDR fallback score to -10000 if your devices don't fully support Dolby Vision Profile 5 \n * **Recommended for selfhosters or public instances with increased limits** \n * **Note for public instance admins:** Set `MAX_STREAM_EXPRESSION_FILTERS=100+` as Basic template will be discontinued in favor of this template, and future updates will add more expressions",
     "source": "external",
     "author": "Vidhin05",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "category": "Regex",
     "services": [],
     "serviceRequired": false
@@ -58,11 +58,11 @@
         "score": 1550
       },
       {
-        "expression": "/*SeaDex Best*/ isAnime ? seadex(streams, 'best') : []",
+        "expression": "/*#SeaDex Best*/ isAnime ? seadex(streams, 'best') : []",
         "score": 9000
       },
       {
-        "expression": "/*SeaDex Alt*/ isAnime ? negate(seadex(streams, 'best'), seadex(streams)) : []",
+        "expression": "/*#SeaDex Alt*/ isAnime ? negate(seadex(streams, 'best'), seadex(streams)) : []",
         "score": 8000
       },
       {
@@ -88,6 +88,18 @@
       {
         "expression": "/*Anime BD T6*/ isAnime ? regexMatched(streams,'Anime BD T6') : []",
         "score": 900
+      },
+      {
+        "expression": "/*Remux T1 (Anime)*/ isAnime ? regexMatched(streams,'Remux T1') : []",
+        "score": 975
+      },
+      {
+        "expression": "/*Remux T2 (Anime)*/ isAnime ? regexMatched(streams,'Remux T2') : []",
+        "score": 950
+      },
+      {
+        "expression": "/*Remux T3 (Anime)*/ isAnime ? regexMatched(streams,'Remux T3') : []",
+        "score": 925
       },
       {
         "expression": "/*Anime BD T7*/ isAnime ? regexMatched(streams,'Anime BD T7') : []",
@@ -122,16 +134,96 @@
         "score": 100
       },
       {
-        "expression": "/*Remux T1 (Anime)*/ isAnime ? regexMatched(streams,'Remux T1') : []",
-        "score": 975
+        "expression": "/*Repack*/ regexMatched(negate(regexMatched(streams, 'Repack2','Repack3') , streams), 'Repack/Proper')",
+        "score": 5
       },
       {
-        "expression": "/*Remux T2 (Anime)*/ isAnime ? regexMatched(streams,'Remux T2') : []",
-        "score": 950
+        "expression": "/*Repack2*/ regexMatched(negate(regexMatched(streams, 'Repack3') , streams), 'Repack2')",
+        "score": 6
       },
       {
-        "expression": "/*Remux T3 (Anime)*/ isAnime ? regexMatched(streams,'Remux T3') : []",
-        "score": 925
+        "expression": "/*Repack3*/ regexMatched(streams, 'Repack3')",
+        "score": 7
+      },
+      {
+        "expression": "/*v0*/ isAnime ? regexMatched(streams, 'v0') : []",
+        "score": -51
+      },
+      {
+        "expression": "/*v1*/ isAnime ? regexMatched(streams, 'v1') : []",
+        "score": 1
+      },
+      {
+        "expression": "/*v2*/ isAnime ? regexMatched(streams, 'v2') : []",
+        "score": 2
+      },
+      {
+        "expression": "/*v3*/ isAnime ? regexMatched(streams, 'v3') : []",
+        "score": 3
+      },
+      {
+        "expression": "/*v4*/ isAnime ? regexMatched(streams, 'v4') : []",
+        "score": 4
+      },
+      {
+        "expression": "/*#HDR*/ (queryType == 'movie' or queryType == 'series') ? visualTag(streams, 'HDR') : []",
+        "score": 500
+      },
+      {
+        "expression": "/*#DV*/ (queryType == 'movie' or queryType == 'series') ? visualTag(streams, 'DV') : []",
+        "score": 1000
+      },
+      {
+        "expression": "/*#HDR10*/ (queryType == 'movie' or queryType == 'series') ? visualTag(streams, 'HDR10') : []",
+        "score": 600
+      },
+      {
+        "expression": "/*#HDR10+*/ (queryType == 'movie' or queryType == 'series') ? visualTag(streams, 'HDR10+') : []",
+        "score": 601
+      },
+      {
+        "expression": "/*#TrueHD*/ (queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'TrueHD') : []",
+        "score": 2750
+      },
+      {
+        "expression": "/*#ATMOS*/ (queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'Atmos') : []",
+        "score": 3000
+      },
+      {
+        "expression": "/*#DTS X*/ (queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'DTS:X') : []",
+        "score": 3250
+      },
+      {
+        "expression": "/*#DTS-HD MA*/ (queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'DTS-HD MA') : []",
+        "score": 1250
+      },
+      {
+        "expression": "/*#DTS-ES*/ (queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'DTS-ES') : []",
+        "score": 250
+      },
+      {
+        "expression": "/*#DTS*/ (queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'DTS') : []",
+        "score": 1250
+      },
+      {
+        "expression": "/*#DD+*/ (queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'DD+') : []",
+        "score": 1000
+      },
+      {
+        "expression": "/*#DD*/ (queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'DD') : []",
+        "score": 750
+      },
+      {
+        "expression": "/*#FLAC*/ (queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'FLAC') : []",
+        "score": 2250
+      },
+      {
+        "expression": "/*#AAC*/ (queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'AAC') : []",
+        "score": 1000
+      },
+      {
+        "expression": "/*#Opus*/ (queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'Opus') : []",
+        "score": 250
       },
       {
         "expression": "/*3D*/ regexMatched(streams, '3D')",
@@ -184,98 +276,6 @@
       {
         "expression": "/*Upscaled*/ regexMatched(streams, 'Upscaled')",
         "score": -10000
-      },
-      {
-        "expression": "/*Repack*/ regexMatched(negate(regexMatched(streams, 'Repack2','Repack3') , streams), 'Repack/Proper')",
-        "score": 5
-      },
-      {
-        "expression": "/*Repack2*/ regexMatched(negate(regexMatched(streams, 'Repack3') , streams), 'Repack2')",
-        "score": 6
-      },
-      {
-        "expression": "/*Repack3*/ regexMatched(streams, 'Repack3')",
-        "score": 7
-      },
-      {
-        "expression": "/*v0*/ isAnime ? regexMatched(streams, 'v0') : []",
-        "score": -51
-      },
-      {
-        "expression": "/*v1*/ isAnime ? regexMatched(streams, 'v1') : []",
-        "score": 1
-      },
-      {
-        "expression": "/*v2*/ isAnime ? regexMatched(streams, 'v2') : []",
-        "score": 2
-      },
-      {
-        "expression": "/*v3*/ isAnime ? regexMatched(streams, 'v3') : []",
-        "score": 3
-      },
-      {
-        "expression": "/*v4*/ isAnime ? regexMatched(streams, 'v4') : []",
-        "score": 4
-      },
-      {
-        "expression": "/*HDR*/ (queryType == 'movie' or queryType == 'series') ? visualTag(streams, 'HDR') : []",
-        "score": 500
-      },
-      {
-        "expression": "/*DV*/ (queryType == 'movie' or queryType == 'series') ? visualTag(streams, 'DV') : []",
-        "score": 1000
-      },
-      {
-        "expression": "/*HDR10*/ (queryType == 'movie' or queryType == 'series') ? visualTag(streams, 'HDR10') : []",
-        "score": 600
-      },
-      {
-        "expression": "/*HDR10+*/ (queryType == 'movie' or queryType == 'series') ? visualTag(streams, 'HDR10+') : []",
-        "score": 601
-      },
-      {
-        "expression": "/*TrueHD*/ (queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'TrueHD') : []",
-        "score": 2750
-      },
-      {
-        "expression": "/*ATMOS*/ (queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'Atmos') : []",
-        "score": 3000
-      },
-      {
-        "expression": "/*DTS X*/ (queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'DTS:X') : []",
-        "score": 3250
-      },
-      {
-        "expression": "/*DTS-HD MA*/ (queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'DTS-HD MA') : []",
-        "score": 1250
-      },
-      {
-        "expression": "/*DTS-ES*/ (queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'DTS-ES') : []",
-        "score": 250
-      },
-      {
-        "expression": "/*DTS*/ (queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'DTS') : []",
-        "score": 1250
-      },
-      {
-        "expression": "/*DD+*/ (queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'DD+') : []",
-        "score": 1000
-      },
-      {
-        "expression": "/*DD*/ (queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'DD') : []",
-        "score": 750
-      },
-      {
-        "expression": "/*FLAC*/ (queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'FLAC') : []",
-        "score": 2250
-      },
-      {
-        "expression": "/*AAC*/ (queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'AAC') : []",
-        "score": 1000
-      },
-      {
-        "expression": "/*Opus*/ (queryType == 'movie' or queryType == 'series') ? audioTag(streams, 'Opus') : []",
-        "score": 250
       },
       {
         "expression": "/*DV w/o HDR*/ (queryType == 'movie' or queryType == 'series') ? negate(merge(releaseGroup(streams, 'Flights'), regexMatched(streams, 'Hulu'), visualTag(streams, 'HDR','HDR10','HDR10+')), visualTag(streams, 'DV')) : []",
