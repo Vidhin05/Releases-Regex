@@ -322,5 +322,10 @@
     "pattern": "/\\b(Masters[ .-]?Of[ .-]?Cinema|MoC)(\\b|\\d)/i",
     "name": "Masters of Cinema",
     "score": 0
+  },
+  {
+    "pattern": "/\\b(Open[ ._-]?Matte)\\b/i",
+    "name": "Open Matte",
+    "score": 0
   }
 ]

@@ -238,6 +238,9 @@
         "score": 25
       },
       {
+        "expression": "/*Open Matte*/ (queryType == 'movie') ? regexMatched(streams, 'Open Matte') : []",
+        "score": 25
+      {
         "expression": "/*Season Pack*/ (queryType == 'series' or queryType == 'anime.series') ? seasonPack(streams, 'seasonPack') : []",
         "score": 10
       },
