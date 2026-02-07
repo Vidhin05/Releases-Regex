@@ -226,6 +226,14 @@
         "score": 250
       },
       {
+        "expression": "/*IMAX*/ (queryType == 'movie') ? negate(regexMatched(streams, 'IMAX Enhanced'), regexMatched(streams, 'IMAX')) : []",
+        "score": 800
+      },
+      {
+        "expression": "/*IMAX Enhanced*/ (queryType == 'movie') ? regexMatched(streams, 'IMAX Enhanced') : []",
+        "score": 800
+      },
+      {
         "expression": "/*Season Pack*/ (queryType == 'series' or queryType == 'anime.series') ? seasonPack(streams, 'seasonPack') : []",
         "score": 10
       },
