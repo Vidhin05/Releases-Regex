@@ -259,6 +259,10 @@
         "enabled": false
       },
       {
+        "expression": "/*Vinegar Syndrome*/ (queryType == 'movie') ? regexMatched(streams, 'Vinegar Syndrome') : []",
+        "score": 25
+      },
+      {
         "expression": "/*Season Pack*/ (queryType == 'series' or queryType == 'anime.series') ? seasonPack(streams, 'seasonPack') : []",
         "score": 10
       },
