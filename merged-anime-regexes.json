@@ -308,5 +308,15 @@
     "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b((B(lack)?[ ._-]?(out|(and|[n&])[ ._-]?(W(hite)?|Chrome)))|Monochrome|Noir|Shush[ ._-]?Cut|(No|Minus)[ ._-]?Colou?r|Gr[ae]y([ ._-]?(scale))?|Darkness?[ ._-]?(and|&)[ ._-]?(Light))\\b(?!$)/i",
     "name": "Black and White Editions",
     "score": 0
+  },
+  {
+    "pattern": "/\\b((?<!NON[ ._-])IMAX)\\b/i",
+    "name": "IMAX",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*\\b((DSNP|BC|B?CORE)\\b|Disney\\+)(?=.*\\bWEB[ ._-]?(DL|Rip)\\b))(?=.*\\b((?<!NON[ ._-])IMAX)\\b)|^(?=.*\\b(IMAX[ ._-]Enhanced)\\b)/i",
+    "name": "IMAX Enhanced",
+    "score": 0
   }
 ]
