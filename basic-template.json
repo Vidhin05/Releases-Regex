@@ -5,7 +5,7 @@
     "description": "Essential sorting for Anime, Movies, and TV Shows using regex patterns from [TRaSH Guides](https://trash-guides.info). Features Ranked Stream Expressions with intelligent scoring for release groups, quality filtering, and repack detection. \n\n * **ⓘ Requires Stream Expression Score in your sort order** (remove Regex Patterns and ranked regex scores) \n * Add `{stream.seScore}` to formatter to display scores and `{stream.rseMatched}` to display the matched stream expressions  \n * Filters out low-quality releases, unwanted formats, and problematic groups \n * **Recommended only for public instances with stricter limits**  \n * **Note for public instance admins:** Set `MAX_STREAM_EXPRESSIONS=150`+ as Basic template will be discontinued in favor of advanced template, and future updates will add more expressions",
     "source": "external",
     "author": "Vidhin05",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "category": "Regex",
     "services": [],
     "serviceRequired": false
@@ -78,20 +78,20 @@
         "score": 1100
       },
       {
+        "expression": "/*Remux T1 (Anime)*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Remux T1')) : []",
+        "score": 1050
+      },
+      {
+        "expression": "/*Remux T2 (Anime)*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Remux T2')) : []",
+        "score": 1000
+      },
+      {
         "expression": "/*Anime BD T5*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime BD T5')) : []",
         "score": 1000
       },
       {
-        "expression": "/*Remux T1 (Anime)*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Remux T1')) : []",
-        "score": 975
-      },
-      {
-        "expression": "/*Remux T2 (Anime)*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Remux T2')) : []",
-        "score": 950
-      },
-      {
         "expression": "/*Remux T3 (Anime)*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Remux T3')) : []",
-        "score": 925
+        "score": 950
       },
       {
         "expression": "/*Anime BD T6*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime BD T6')) : []",
