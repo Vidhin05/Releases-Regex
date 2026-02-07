@@ -234,6 +234,10 @@
         "score": 800
       },
       {
+        "expression": "/*Masters of Cinema*/ (queryType == 'movie') ? regexMatched(streams, 'Masters of Cinema') : []",
+        "score": 25
+      },
+      {
         "expression": "/*Season Pack*/ (queryType == 'series' or queryType == 'anime.series') ? seasonPack(streams, 'seasonPack') : []",
         "score": 10
       },
