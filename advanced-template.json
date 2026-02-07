@@ -270,6 +270,10 @@
         "score": -10000
       },
       {
+        "expression": "/*B&W*/ (queryType == 'movie') ? regexMatched(streams, 'Black and White Editions') : []",
+        "score": -10000
+      },
+      {
         "expression": "/*3D*/ regexMatched(streams, '3D')",
         "score": -10000
       },

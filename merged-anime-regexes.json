@@ -303,5 +303,10 @@
     "pattern": "/[.]heb\\b|\\[eztvx?[ ._-]?(io|re|to)?\\]|\\[(rarbg|rartv|TGx)\\]/i",
     "name": "Retags",
     "score": 0
+  },
+  {
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b((B(lack)?[ ._-]?(out|(and|[n&])[ ._-]?(W(hite)?|Chrome)))|Monochrome|Noir|Shush[ ._-]?Cut|(No|Minus)[ ._-]?Colou?r|Gr[ae]y([ ._-]?(scale))?|Darkness?[ ._-]?(and|&)[ ._-]?(Light))\\b(?!$)/i",
+    "name": "Black and White Editions",
+    "score": 0
   }
 ]
