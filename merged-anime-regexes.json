@@ -347,5 +347,10 @@
     "pattern": "/\\b(Theatrical)\\b/i",
     "name": "Theatrical Cut",
     "score": 0
+  },
+  {
+    "pattern": "/\\b(Vinegar[ ._-]Syndrome|V-S|VinSyn)\\b/i",
+    "name": "Vinegar Syndrome",
+    "score": 0
   }
 ]
