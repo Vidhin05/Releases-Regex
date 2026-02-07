@@ -5,7 +5,7 @@
     "description": "Essential sorting for Anime, Movies, and TV Shows using regex patterns from [TRaSH Guides](https://trash-guides.info). Features Ranked Stream Expressions with intelligent scoring for release groups, quality filtering, and repack detection. \n\n * **ⓘ Requires Stream Expression Score in your sort order** (remove Regex Patterns and ranked regex scores) \n * Add `{stream.seScore}` to formatter to display scores and `{stream.rseMatched}` to display the matched stream expressions  \n * Filters out low-quality releases, unwanted formats, and problematic groups \n * **Recommended only for public instances with stricter limits**  \n * **Note for public instance admins:** Set `MAX_STREAM_EXPRESSION_FILTERS=100`+ as Basic template will be discontinued in favor of advanced template, and future updates will add more expressions",
     "source": "external",
     "author": "Vidhin05",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "category": "Regex",
     "services": [],
     "serviceRequired": false
@@ -55,11 +55,11 @@
       },
       {
         "expression": "/*#SeaDex Best*/ isAnime ? seadex(streams, 'best') : []",
-        "score": 9000
+        "score": 4000
       },
       {
         "expression": "/*#SeaDex Alt*/ isAnime ? negate(seadex(streams, 'best'), seadex(streams)) : []",
-        "score": 8000
+        "score": 1750
       },
       {
         "expression": "/*Anime BD T1*/ isAnime ? regexMatched(streams,'Anime BD T1') : []",
@@ -130,12 +130,12 @@
         "score": 100
       },
       {
-        "expression": "/*Bad*/ regexMatched(streams, '3D', 'Anime LQ Groups', 'Anime Raws', 'AV1', 'Bad Dual Groups', 'Dubs Only', 'Extras', 'VOSTFR', 'Generated Dynamic HDR', 'LQ', 'LQ (Release Title)', 'Sing-Along Versions')",
-        "score": -10000
+        "expression": "/*Repack*/ (queryType == 'movie' or queryType == 'series') ? regexMatched(streams, 'Repack/Proper','Repack2','Repack3') : []",
+        "score": 5
       },
       {
-        "expression": "/*Repack*/ regexMatched(streams, 'Repack/Proper','Repack2','Repack3')",
-        "score": 5
+        "expression": "/*Bad*/ regexMatched(streams, '3D', 'Anime LQ Groups', 'Anime Raws', 'AV1', 'Bad Dual Groups', 'Dubs Only', 'Extras', 'VOSTFR', 'Generated Dynamic HDR', 'LQ', 'LQ (Release Title)', 'Sing-Along Versions')",
+        "score": -10000
       }
     ]
   }
