@@ -343,5 +343,9 @@
     "pattern": "/(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)|bd(?:720|1080|2160)))(?=.*(hybrid(\\b|\\d)))/i",
     "name": "Hybrid",
     "score": 0
+  {
+    "pattern": "/\\b(Theatrical)\\b/i",
+    "name": "Theatrical Cut",
+    "score": 0
   }
 ]

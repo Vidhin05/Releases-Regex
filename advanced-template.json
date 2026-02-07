@@ -254,6 +254,11 @@
         "score": 100
       },
       {
+        "expression": "/*Theatrical Cut*/ (queryType == 'movie') ? regexMatched(streams, 'Theatrical Cut') : []",
+        "score": 0,
+        "enabled": false
+      },
+      {
         "expression": "/*Season Pack*/ (queryType == 'series' or queryType == 'anime.series') ? seasonPack(streams, 'seasonPack') : []",
         "score": 10
       },
