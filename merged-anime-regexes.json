@@ -327,5 +327,15 @@
     "pattern": "/\\b(Open[ ._-]?Matte)\\b/i",
     "name": "Open Matte",
     "score": 0
+  },
+  {
+    "pattern": "/\\b(Remaster)\\b/i",
+    "name": "Remaster",
+    "score": 0
+  },
+  {
+    "pattern": "/\\b(4k)\\b/i",
+    "name": "4K",
+    "score": 0
   }
 ]

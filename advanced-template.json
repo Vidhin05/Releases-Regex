@@ -240,6 +240,14 @@
       {
         "expression": "/*Open Matte*/ (queryType == 'movie') ? regexMatched(streams, 'Open Matte') : []",
         "score": 25
+      },
+      {
+        "expression": "/*Remaster*/ (queryType == 'movie') ? negate(regexMatched(streams, '4K'), regexMatched(streams, 'Remaster')) : []",
+        "score": 25
+      },
+      {
+        "expression": "/*4K Remaster*/ (queryType == 'movie') ? (regexMatched(regexMatched(negate(resolution(streams, '2160p'), streams), '4K'), regexMatched(streams, 'Remaster'))) : []",
+        "score": 25
       {
         "expression": "/*Season Pack*/ (queryType == 'series' or queryType == 'anime.series') ? seasonPack(streams, 'seasonPack') : []",
         "score": 10
