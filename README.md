@@ -59,13 +59,16 @@ If you prefer Uncensored anime releases, you can adjust the score similarly:
 Using these scoring options, you'll still benefit from the tier system when better release groups provide Dual Audio or Uncensored releases.
 
 #### **Other Customizable Expressions**
-- **DV w/o HDR fallback**: Enable to prevent playback issues on devices that don't fully support Dolby Vision. This also applies to DV releases without HDR10 fallback (Profile 5).
-- **10bit**: Enable to filter out 10-bit encodes if your devices (FireStick, etc.) don't support them.
-- **Dubs Only**: Disable to keep anime dub-only streams
-- **Bad Dual Groups**: Disable to keep dual audio groups with non-English as primary language
-- **3D**: Disable to keep 3D releases if you want them
-- **Obfuscated**: Disable to keep obfuscated releases (Start with a low score, increase as needed)
-- **Retags**: Disable to keep retagged releases (Start with a low score, increase as needed)
+- **DV w/o HDR fallback** (disabled by default): Enable DV w/o HDR fallback ranked SEL if not all your devices support DV. This also applies to DV releases without HDR10 fallback (Profile 5).
+- **10bit** (disabled by default): Enable to filter out 10-bit encodes if your devices (FireStick, etc.) don't support them.
+- **Anime Dual Audio** (disabled by default): Adjust score based on your preference (see above for scoring options).
+- **Uncensored** (disabled by default): Adjust score based on your preference (see above for scoring options).
+- **Dubs Only**: Disable to keep anime dub-only streams.
+- **Bad Dual Groups**: Disable to keep dual audio groups with non-English as primary language.
+- **x265 (HD)**: Disable to keep x265 HD encodes.
+- **3D**: Disable to keep 3D releases if you want them.
+- **Obfuscated**: Disable to keep obfuscated releases (Enabled by default, but feel free to adjust score as needed.).
+- **Retags**: Disable to keep retagged releases (Enabled by default, but feel free to adjust score as needed.).
 
 ---
 
