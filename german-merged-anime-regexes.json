@@ -1,0 +1,597 @@
+[
+  {
+    "name": "Remux T1 GER",
+    "pattern": "/\\bRemux\\b.*\\b(TvR|pmHD|NIMA4K|QfG|WeebPinn|MAMA)\\b/",
+    "score": 0
+  },
+  {
+    "name": "Remux T2 GER",
+    "pattern": "/\\bRemux\\b.*\\b(MULTiPLEX|RHD|HD|HDSource|iNCEPTION|FX|RocketHD)\\b/",
+    "score": 0
+  },
+  {
+    "name": "Remux T1",
+    "pattern": "/^(?=.*(?:[_. ]|\\d{4}p-|\\bHybrid-)(?:(?:BD|UHD)[-_. ]?)?Remux\\b|(?:(?:BD|UHD)[-_. ]?)?Remux[_. ]\\d{4}p)(?=.*(?:\\b(3L|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PiRAMiDHEAD|PmP|ZQ)\\b|-BMF|-WiLDCAT)).*/i",
+    "score": 0
+  },
+  {
+    "name": "Remux T2",
+    "pattern": "/^(?=.*(?:[_. ]|\\d{4}p-|\\bHybrid-)(?:(?:BD|UHD)[-_. ]?)?Remux\\b|(?:(?:BD|UHD)[-_. ]?)?Remux[_. ]\\d{4}p)(?=.*\\b(ATELiER|NCmt|playBD|SiCFoI|SURFINBIRD|TEPES)\\b).*/i",
+    "score": 0
+  },
+  {
+    "name": "Remux T3",
+    "pattern": "/^(?=.*(?:[_. ]|\\d{4}p-|\\bHybrid-)(?:(?:BD|UHD)[-_. ]?)?Remux\\b|(?:(?:BD|UHD)[-_. ]?)?Remux[_. ]\\d{4}p)(?=.*\\b(12GaugeShotgun|decibeL|EPSiLON|HiFi|iFT|KRaLiMaRKo|NTb|PTer|PTP|SumVision|TOA|TRiToN)\\b).*/i",
+    "score": 0
+  },
+  {
+    "name": "Bluray T1 GER",
+    "pattern": "/^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:ZeroTwo|BUTTERCUP|HARTZ02|XiSS|DOGPACK404|PRiNCESSDiANA|DiVA|WAREZCX|BiTCHNUGGET|TSCC|TvR|NIMA4K|TVS|PXL|CNY|WeebPinn|MAMA|WalterBishop)\\b)).*/",
+    "score": 0
+  },
+  {
+    "name": "Bluray T2 GER",
+    "pattern": "/^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:VECTOR|MULTiPLEX|ABJ|paranoid06)\\b)).*/",
+    "score": 0
+  },
+  {
+    "name": "Bluray T3 GER",
+    "pattern": "/^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:RobertDeNiro|LeetHD|RHD|HDSource|UNFIrED|iNCEPTION|FX|RDR)\\b)).*/",
+    "score": 0
+  },
+  {
+    "name": "Bluray T1",
+    "pattern": "/^(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)))(?!.*(?:(?:[_. ]|\\d{4}p-|\\bHybrid-)(?:(?:BD|UHD)[-_. ]?)?Remux\\b|(?:(?:BD|UHD)[-_. ]?)?Remux[_. ]\\d{4}p))(?!.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)))(?!.*(WebRip|Web-Rip|WEBMux))(?=.*(?:\\b(?:BBQ|c0kE|Chotab|CRiSC|CtrlHD|D-Z0N3|Dariush|decibeL|EbP|EDPH|LolHD|MainFrame|NCmt|NTb|PTer|TayTO|TDD|TnP|VietHD|W4NK3R|ZQ|ZoroSenpai)\\b|-BMF)).*/i",
+    "score": 0
+  },
+  {
+    "name": "Bluray T1",
+    "pattern": "/^(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)))(?!.*(?:(?:[_. ]|\\d{4}p-|\\bHybrid-)(?:(?:BD|UHD)[-_. ]?)?Remux\\b|(?:(?:BD|UHD)[-_. ]?)?Remux[_. ]\\d{4}p))(?!.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)))(?!.*(WebRip|Web-Rip|WEBMux))(?=.*(?:\\b(?:DON|Geek)\\b)).*/",
+    "score": 0
+  },
+  {
+    "name": "Bluray T2",
+    "pattern": "/^(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)))(?!.*(?:(?:[_. ]|\\d{4}p-|\\bHybrid-)(?:(?:BD|UHD)[-_. ]?)?Remux\\b|(?:(?:BD|UHD)[-_. ]?)?Remux[_. ]\\d{4}p))(?!.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)))(?!.*(WebRip|Web-Rip|WEBMux))(?=.*\\b(?:ATELiER|EA|HiDt|HiSD|HQMUX|iFT|QOQ|SA89|sbR)\\b).*/i",
+    "score": 0
+  },
+  {
+    "name": "Bluray T3",
+    "pattern": "/^(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)))(?!.*(?:(?:[_. ]|\\d{4}p-|\\bHybrid-)(?:(?:BD|UHD)[-_. ]?)?Remux\\b|(?:(?:BD|UHD)[-_. ]?)?Remux[_. ]\\d{4}p))(?!.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)))(?!.*(WebRip|Web-Rip|WEBMux))(?=.*\\b(?:BHDStudio|hallowed|HiFi|HONE|playHD|SPHD|WEBDV)\\b).*/i",
+    "score": 0
+  },
+  {
+    "name": "Bluray T3",
+    "pattern": "/^(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)))(?!.*(?:(?:[_. ]|\\d{4}p-|\\bHybrid-)(?:(?:BD|UHD)[-_. ]?)?Remux\\b|(?:(?:BD|UHD)[-_. ]?)?Remux[_. ]\\d{4}p))(?!.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)))(?!.*(WebRip|Web-Rip|WEBMux))(?=.*\\b(?:LoRD)\\b).*/",
+    "score": 0
+  },
+  {
+    "name": "Web T1 GER",
+    "pattern": "/^(?=.*\\bWEB\\b)(?=.*\\b(?:DL|RIP)\\b)(?=.*\\b(?:ZeroTwo|BUTTERCUP|HARTZ02|XiSS|DOGPACK404|PRiNCESSDiANA|DiVA|WAREZCX|BiTCHNUGGET|TSCC|TvR|NIMA4K|TVS|D02KU|PXL|QfG|CNY|WeebPinn|MEDiATHEK|RiiR|TOJ|WalterBishop|pmHD)\\b).*/",
+    "score": 0
+  },
+  {
+    "name": "Web T2 GER",
+    "pattern": "/^(?=.*\\bWEB\\b)(?=.*\\b(?:DL|RIP)\\b)(?=.*\\b(?:VECTOR|MULTiPLEX|SiXTYNiNE|Oergel|4SF|ABJ|paranoid06)\\b).*/",
+    "score": 0
+  },
+  {
+    "name": "Web T3 GER",
+    "pattern": "/^(?=.*\\bWEB\\b)(?=.*\\b(?:DL|RIP)\\b)(?=.*\\b(?:RobertDeNiro|BALENCiAGA|HDSource|FX|RDR)\\b).*/",
+    "score": 0
+  },
+  {
+    "name": "Web T1",
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?=.*\\b(?:ABBiE|AJP69|BLUTONiUM|BYNDR|CasStudio|CMRG|CRFW|CRUD|CtrlHD|GNOME|HONE|Kitsune|monkee|NOSiViD|NTb|NTG|PAXA|PEXA|QOQ|RAWR|RTN|SiC|T6D|TEPES|TheFarm|ViSUM|XEPA|ZoroSenpai)\\b).*/i",
+    "score": 0
+  },
+  {
+    "name": "Web T1",
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?=.*\\b(?:APEX|FLUX|KiNGS|TOMMY)\\b).*/",
+    "score": 0
+  },
+  {
+    "name": "Web T2",
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?=.*\\b(?:3cTWeB|4KBEC|BTW|CEBEX|Chotab|Cinefeel|CiT|Coo7|dB|FC|iJP|iKA|iT00NZ|JETIX|KHN|MiU|MZABI|NPMS|NYH|orbitron|playWEB|PSiG|ROCCaT|RTFM|SA89|SbR|SDCC|TVSmash|WELP|XEBEC)\\b).*/i",
+    "score": 0
+  },
+  {
+    "name": "Web T2",
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?=.*\\b(?:DEEP|END|ETHiCS|Flights|KiMCHI|LAZY|PHOENiX|SIGMA|SiGMA|SMURF|SPiRiT)\\b).*/",
+    "score": 0
+  },
+  {
+    "name": "Web T3",
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?=.*\\b(?:Dooky|GNOMiSSiON|HHWEB|NINJACENTRAL|SLiGNOME|SwAgLaNdEr|T4H)\\b).*/i",
+    "score": 0
+  },
+  {
+    "name": "Web T3",
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?=.*\\b(?:DRACULA|ViSiON)\\b).*/",
+    "score": 0
+  },
+  {
+    "name": "Web Scene GER",
+    "pattern": "/^(?=.*\\bWEB\\b)(?=.*\\b(?:DL|RIP)\\b)(?=.*\\b(?:DETAiLS|WAYNE|WOMBAT|SAUERKRAUT|WvF|4KCONNECTiON|STARS|AWARDS|DMPD|EXCiTED|iNTENTiON|JaJunge|MGE|MisFiTS|RUBBiSH|RWP|TMSF|TV4A|HAXE|muhHD|RiLE|W4K|ENDSTATiON|HDARCHiV|PL3X|WATCHABLE|OHD|ENCOUNTERS|RSG|OCA|UNDERTAKERS|CDP|SAViOURHD|CONTRiBUTiON|GOREHOUNDS|SPiCY|bi0hazard)\\b).*/",
+    "score": 0
+  },
+  {
+    "name": "Web Scene",
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?=.*\\b(?:DEFLATE|INFLATE)\\b).*/i",
+    "score": 0
+  },
+  {
+    "name": "Anime BD T1",
+    "pattern": "/^(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)|bd(?:720|1080|2160)|(?<=[-_. (\\[])bd(?=[-_. )\\]])|DVD|DVDRip|NTSC|PAL|xvidvd))(?=.*(\\[(Moxie|smol|SoM)\\]|-(Moxie|smol|SoM)\\b|\\b(DemiHuman|FLE|Flugel|LYS1TH3A|ZR)\\b|(?<=remux).*\\b(NAN0)\\b|-ZR-)).*/i",
+    "score": 0
+  },
+  {
+    "name": "Anime BD T1",
+    "pattern": "/^(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)|bd(?:720|1080|2160)|(?<=[-_. (\\[])bd(?=[-_. )\\]])|DVD|DVDRip|NTSC|PAL|xvidvd))(?=.*(\\[sam\\]|-sam\\b)).*/",
+    "score": 0
+  },
+  {
+    "name": "Anime BD T2",
+    "pattern": "/^(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)|bd(?:720|1080|2160)|(?<=[-_. (\\[])bd(?=[-_. )\\]])|DVD|DVDRip|NTSC|PAL|xvidvd))(?=.*(\\[(Aergia|Arid|koala|Lulu|Vodes|YURI)\\]|-(Aergia(?!-raws)|Arid|koala|Lulu|YURI)\\b|\\b(Arg0|FateSucks|hchcsen|hydes|JOHNTiTOR|JySzE|Kulot|LostYears|Meakes|WAP|ZeroBuild)\\b|^(?=.*\\b(PMR)\\b)(?=.*\\b(Remux)\\b))|-Orphan\\b|(?<!Not)-Vodes\\b).*/i",
+    "score": 0
+  },
+  {
+    "name": "Anime BD T2",
+    "pattern": "/^(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)|bd(?:720|1080|2160)|(?<=[-_. (\\[])bd(?=[-_. )\\]])|DVD|DVDRip|NTSC|PAL|xvidvd))(?=.*(\\[Orphan\\])).*/",
+    "score": 0
+  },
+  {
+    "name": "Anime BD T3",
+    "pattern": "/^(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)|bd(?:720|1080|2160)|(?<=[-_. (\\[])bd(?=[-_. )\\]])|DVD|DVDRip|NTSC|PAL|xvidvd))(?=.*(\\[(ARC|cappybara|CRUCiBLE|Doc|fig|Headpatter|Legion|Mehul|Mysteria|RaiN|RUDY|Serendipity|sgt|uba)\\]|-(ARC|cappybara|CRUCiBLE|Doc|fig|Headpatter|Legion|Mehul|Mysteria|RaiN|RUDY|Serendipity|sgt|uba)\\b|\\b(BBT-RMX|ChucksMux|CUNNY|Cunnysseur|Inka-Subs|LaCroiX|MTBB|Netaro|Noiy|npz|NTRX|Okay-Subs|P9|RMX|Sekkon|SubsMix)\\b)).*/i",
+    "score": 0
+  },
+  {
+    "name": "Anime BD T4",
+    "pattern": "/^(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)|bd(?:720|1080|2160)|(?<=[-_. (\\[])bd(?=[-_. )\\]])|DVD|DVDRip|NTSC|PAL|xvidvd))(?=.*(\\[(Afro|Chimera|derp|DIY|EXP|Foxtrot|Kawatare|Metal|Pizza|Smoke|Vanilla|VULCAN)\\]|-(Afro|Chimera|derp|DIY|EXP|Foxtrot|Kawatare|Metal|Pizza|Smoke|Vanilla|VULCAN)\\b|\\b(ABdex|aRMX|BiRJU|BKC|CBT|grimf|IK|Iznjie[ .-]Biznjie|Kaleido-subs|Kametsu|KH|LazyRemux|MK|neko-kBaraka|OZR|pog42|Quetzal|Reza|SCY|Shimatta|Spirale|UDF|UQW|Virtuality)\\b)).*/i",
+    "score": 0
+  },
+  {
+    "name": "Anime BD T5",
+    "pattern": "/^(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)|bd(?:720|1080|2160)|(?<=[-_. (\\[])bd(?=[-_. )\\]])|DVD|DVDRip|NTSC|PAL|xvidvd))(?=.*(\\[(Beatrice|Drag|Judgment|Thighs|Yuki)\\]|-(Beatrice(?!-raws)|Drag|Judgment|Thighs|Yuki)\\b|\\b(Animorphs|AOmundson|ASC|Baws|McBalls|B00BA|Cait-Sidhe|CsS|CTR|D4C|deanzel|eldon|Freehold|GHS|Hark0N|Holomux|MC|mottoj|NH|NTRM|o7|QM|TTGA|UltraRemux|WBDP|WSE)\\b)).*/i",
+    "score": 0
+  },
+  {
+    "name": "Anime BD T6",
+    "pattern": "/^(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)|bd(?:720|1080|2160)|(?<=[-_. (\\[])bd(?=[-_. )\\]])|DVD|DVDRip|NTSC|PAL|xvidvd))(?=.*(\\[(ANE|Tsundere|YURASUKA)\\]|-ANE$|-(Tsundere(?!-)|YURASUKA)\\b|\\b(Bunny-Apocalypse|CyC|Datte13|EJF|GetItTwisted|GSK[._-]kun|iKaos|karios|Pookie|RASETSU|Starbez|Yoghurt)\\b)).*/i",
+    "score": 0
+  },
+  {
+    "name": "Anime BD T7",
+    "pattern": "/^(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)|bd(?:720|1080|2160)|(?<=[-_. (\\[])bd(?=[-_. )\\]])|DVD|DVDRip|NTSC|PAL|xvidvd))(?=.*(\\[(Almighty|Asakura|Bolshevik|Chihiro|Crow|Dekinai|Senjou|Vivid|AC)\\]|-(Almighty|Asakura|Bolshevik|Chihiro|Crow|Dekinai|Senjou|Vivid)\\b|-AC$|\\b(9volt|Asenshi|BlurayDesuYo|Brrrrrrr|Commie|Dae|Dragon-Releases|DragsterPS|Exiled-Destiny|E-D|FFF|Final8|Geonope|GJM|iAHD|inid4c|Koten[ ._-]Gars|kuchikirukia|LCE|NTW|orz|RAI|REVO|SCP-2223|SEV|THORA)\\b)).*/i",
+    "score": 0
+  },
+  {
+    "name": "Anime BD T8",
+    "pattern": "/^(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)|bd(?:720|1080|2160)|(?<=[-_. (\\[])bd(?=[-_. )\\]])|DVD|DVDRip|NTSC|PAL|xvidvd))(?=.*(\\[(EDGE|EMBER|GHOST|naiyas|Prof|Judas)\\]|-(EDGE|EMBER|GHOST|naiyas|Prof|Judas)\\b|\\b(AkihitoSubs|Arukoru|Nep[ ._-]Blanc|Shirσ)\\b)).*/i",
+    "score": 0
+  },
+  {
+    "name": "Anime Web T1",
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*(\\[(Arid|smol|SoM|Vodes)\\]|-(Arid|smol|SoM)\\b|\\b(Arg0|Baws|FLE|LostYears|LYS1TH3A|McBalls|SCY|Setsugen|Z4ST1N|ZeroBuild)\\b|(?<!Not)-Vodes\\b)).*/i",
+    "score": 0
+  },
+  {
+    "name": "Anime Web T1",
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*(\\[sam\\]|-sam\\b)).*/",
+    "score": 0
+  },
+  {
+    "name": "Anime Web T2",
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*(\\[(Asakura|Cyan|Dae|Foxtrot|Gao|Not-Vodes|Pizza|tenshi)\\]|-(Asakura|Cyan|Dae|Foxtrot|Gao|Not-Vodes|Pizza)\\b|-tenshi$|\\b(0x539|Cytox|GSK[._-]kun|Half-Baked|HatSubs|MALD|MTBB|Okay-Subs|Reza|Slyfox|SoLCE)\\b)).*/i",
+    "score": 0
+  },
+  {
+    "name": "Anime Web T3",
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*(\\[Kitsune\\]|-Kitsune\\b|\\b(AnoZu|Dooky|SubsPlus\\+?|ZR)\\b)).*/i",
+    "score": 0
+  },
+  {
+    "name": "Anime Web T4",
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*\\b(Erai-raws|ToonsHub|VARYG)\\b).*/i",
+    "score": 0
+  },
+  {
+    "name": "Anime Web T5",
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*(\\[(Lia|ZigZag)\\]|-(Lia|ZigZab)\\b|\\b(BlueLobster|GST|HorribleRips|HorribleSubs|KAN3D2M|KS|KiyoshiStar|NanDesuKa|PlayWeb|SobsPlease|Some-Stuffs|SubsPlease|URANIME)\\b)).*/i",
+    "score": 0
+  },
+  {
+    "name": "Anime Web T6",
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*(\\[(Chihiro|Doki|Kantai|Tsundere)\\]|-(Chihiro|Doki|Kantai|Tsundere(?!-))\\b|\\b(9volt|Asenshi|Commie|DameDesuYo|GJM|Kaleido|KawaSubs)\\b)).*/i",
+    "score": 0
+  },
+  {
+    "name": "3D",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(3d|sbs|half[ .-]ou|half[ .-]sbs|BluRay3D|BD3D)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Anime LQ Groups",
+    "pattern": "/\\b(\\$tore-Chill|0neshot|A-Destiny|AceAres|AhmadDev|Anime[ .-]?(Chap|Land|Time)|AnimeDynastyEN|AnimeKuro|AnimeRG|Animesubs|AnimeTR|Anitsu|AniVoid|ArataEnc|AREY|ASW|BJX|BlackLuster|bonkai77|CameEsp|Cat66|CBB|CuaP|DARKFLiX|DBArabic|Deadmau[ .-]?[ .-]?RAWS|DKB|DP|DsunS|ExREN|(Baked|Dead|Space)Fish|FunArts|GERMini|Hakata[ .-]?Ramen|Hall_of_C|HAV1T|HENiL|HollowRoxas|ICEBLUE|iPUNISHER|JacobSwaggedUp|Johnny-englishsubs|Kanjouteki|KEKMASTERS|Kirion|KQRM|KRP|LoliHouse|M@nI|mal[ .-]lu[ .-]zen|Man\\.K|mdcx|Metaljerk|MGD|Mini(Freeza|MTBB|sCuba|Theatre)|Mites|Modders[ .-]?Bay|Mr\\.Deadpool|NemDiggers|neoHEVC|Nokou|N[eo][wo]b[ ._-]?Subs|NS|Nyanpasu|OldCastle|phazer11|Plex[ .-]?Friendly|PnPSubs|Polarwindz|Project-gxs|PuyaSubs|QAS|QCE|Rando235|M2TS|BDMV|BDVD|Reaktor|RightShiftBy2|Rip[ .-]?Time|Salieri|Samir755|SanKyuu|sekkusu&ok|SHFS|shincaps|SLAX|SRW|SSA|StrayGods|TeamTurquoize|Tenrai[ .-]?Sensei|TnF|TOPKEK|U3-Web|Valenciano|VipapkStudios|WtF[ ._-]?Anime|xiao-av1|Yabai_Desu_NeRandomRemux|YakuboEncodes|youshikibi|YuiSubs)\\b|\\[224\\]|-224\\b|\\[(Ari|Cerberus|Cleo|Daddy(Subs)?|DB|Emmid|FAV|Hatsuyuki|Hitoku|HR|Kallango|Maximus|MD|Pantsu|Pao|Pixel|Ranger|Rapta|Raze|SAD|SEiN|Sokudo|Suki[ .-]?Desu|Trix|UNBIASED|uP|USD|Wardevil|Yun|zza)\\]|-(224|Ari|Cerberus|Cleo|Daddy(Subs)?|Emmid|FAV|Hatsuyuki|Hitoki|HR|Kallango|Maximus|MD|Pantsu|Pao|Pixel|Ranger|Rapta|Raze|SAD|SEiN|Sokudo|Suki[ .-]?Desu|Trix|UNBIASED|USD|Wardevil|Yun|zza)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Anime Raws",
+    "pattern": "/\\b(Asuka|Beatrice|Daddy|Fumi|Iriza|Kawaiika|Koi|Lilith|LowPower|Nanako|NC|neko|New|Ohys|Pandoratv|Scryous|Seicher|Shiniori)[ ._-]?(Raws)\\b|\\b(Moozzi2|Raws-Maji|ReinForce)\\b|\\[km\\]|-km\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Bad Dual Groups",
+    "pattern": "/\\b(alfaHD.*|BAT|BiOMA|BlackBit|BNd|C\\.A\\.A|Cory|EXTREME|FF|FOXX|G4RiS|GUEIRA|LCD|MGE|N3G4N|ONLYMOViE|PD|PTHome|RiPER|RK|SiGLA|Tars|TM|tokar86a|TURG|TvR|vnlls|WTV|Yatogam1|YusukeFLA|ZigZag|ZNM)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Dubs Only",
+    "pattern": "/\\b(Golumpa|KamiFS|torenter69)\\b|\\[Yameii\\]|-Yameii\\b|^(?!.*(Dual|Multi)[-_. ]?Audio).*((?<!multi-)\\b(dub(bed)?)\\b|(funi|eng(lish)?)_?dub)|^(?!.*(dual[ ._-]?audio|(JA|ZH|KO)\\+EN|EN\\+(JA|ZH|KO))).*\\b(KaiDubs|KS)\\b/i",
+    "score": 0
+  },
+  {
+    "pattern": "/((?<=\\b[12]\\d{3}\\b)(?=.*\\b(HEVC)\\b)(?=.*\\b(AI)\\b))|(\\b(AIUS|RW)\\b)|(\\b((Upscale)?Re-?graded?)\\b)|(\\b(The[ ._-]?Upscaler)\\b)|((?<=\\b[12]\\d{3}\\b).*\\b(AI[ ._-]?Enhanced|UPS(UHD)?|Upscaled?([ ._-]?UHD)?|UpRez)\\b)/i",
+    "name": "Upscaled",
+    "score": 0
+  },
+  {
+    "name": "Extras",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Extras|Bonus|Extended[ ._-]Clip)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "VOSTFR",
+    "pattern": "/\\b(VOST.*?FR(E|A)?|SUBFR(A|ENCH)?)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Generated Dynamic HDR",
+    "pattern": "/\\b(BiTOR|DepraveD|Flights|SasukeducK|tarunk9c|VD0N|VECTOR|VisionXpert)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "LQ GER",
+    "pattern": "/\\b(PsO|Cancer58|Tylor\\.D|1XBET|2dead|HELD|kala|POE|SHOWE|SHOWEHD|ORCA88|LuRCH|N2D2|GETB8|TFARC|Kristallprinz|LAW|CTFOH|Pendeti|OJ|PS|FSX|EMVY|ZaidaNulled|MEGA|MBA|FORMBA|PaZ|Whistler|omikron|WOTT|SunDry|PL|TVARCHiV|P73|LizardSquad|AVTOMAT|iSSEYMiYAKE|TVP|AIDA|UTOPiA|FRAGGERS|REEL|VideoStar)\\b/",
+    "score": 0
+  },
+  {
+    "name": "LQ",
+    "pattern": "/\\b(24xHD|41RGB|4K4U|AOC|AROMA|aXXo|AZAZE|BARC0DE|BAUCKLEY|BdC|BRiNK|BTM|C1NEM4|C4K|CDDHD|CHAOS|CHD|CHX|CiNE|CREATiVE24|CrEwSaDe|CTFOH|d3g|DDR|DepraveD|DNL|DRX|E|EuReKA|EVO|FaNGDiNG0|Feranki1980|FGT|FMD|FRDS|FZHD|GalaxyRG|GHD|GHOSTS|GPTHD|HDHUB4U|HDS|HDT|HDTime|HDWinG|HiQVE|iNTENSO|iPlanet|jennaortega(UHD)?|JFF|KC|KIRA|L0SERNIGHT|LAMA|Leffe|Liber8|LiGaS|MarkII|MeGusta|Mesc|mHD|mSD|MTeam|MT|MySiLU|nhanc3|NhaNc3|nHD|nikt0|nSD|OFT|PATOMiEL|PRODJi|PSA|PTNK|RARBG|RDN|Rifftrax|RU4HD|SANTi|SasukeducK|SHD|ShieldBearer|STUTTERSHIT|TBS|TEKNO3D|TG|Tigole|TIKO|VIDEOHOLE|VISIONPLUSHDR(-X|1000)?|WAF|WiKi|worldmkv|x0r|XLF|YIFY|YTS(.(MX|LT|AG))?|Zero00|Zeus)\\b|Pahe(\\.(ph|in))?\\b/i",
+    "score": 0
+  },
+  {
+    "name": "LQ",
+    "pattern": "/\\b(beAst|COLLECTiVE|EPiC|iVy|KiNGDOM|LUCY|Scene|SUNSCREEN)\\b/",
+    "score": 0
+  },
+  {
+    "name": "LQ GER (Release Title)",
+    "pattern": "/([._-]German[._-].+?[._-]?German$)|(Jellyfin-Plex$)|(([._-])iTunes(?:HD|SD)?\\1.+?-TVS$)/i",
+    "score": 0
+  },
+  {
+    "name": "LQ (Release Title)",
+    "pattern": "/\\b(1XBET|BEN[ ._-]THE[ ._-]MEN|CREATiVE24|Feranki1980|GalaxyRG|(?<!-)jennaortega(UHD)?|READ(\\s|\\.)+NOTE|SWTYBLZ|TeeWee|TEKNO3D|Will1869)\\b|(-D3US|D3US-)|(?<=\\b[12]\\d{3}\\b.*?)(?<!\\b(web[ ._-]?(dl|rip)?).*?)\\b(EVO|PiRaTeS)\\b|(?=.*?(\\b2160p\\b))(?=.*?(\\bBiTOR\\b))/i",
+    "score": 0
+  },
+  {
+    "name": "Sing-Along Versions",
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b(Sing[-_. ]Along)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Hulu",
+    "pattern": "/\\b(hulu)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "v0",
+    "pattern": "/(\\b|\\d)(v0)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "v1",
+    "pattern": "/(\\b|\\d)(v1)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "v2",
+    "pattern": "/(\\b|\\d)(v2)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "v3",
+    "pattern": "/(\\b|\\d)(v3)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "v4",
+    "pattern": "/(\\b|\\d)(v4)\\b/i",
+    "score": 0
+  },
+  {
+    "pattern": "/\\b(Repack|Proper|Rerip)\\b/i",
+    "name": "Repack/Proper",
+    "score": 0
+  },
+  {
+    "pattern": "/\\b((repack|proper)2)\\b|\\b(REAL\\.(PROPER|REPACK))\\b/i",
+    "name": "Repack2",
+    "score": 0
+  },
+  {
+    "pattern": "/\\b((repack|proper)3)\\b|\\b(REAL\\.REAL\\.(PROPER|REPACK))\\b/i",
+    "name": "Repack3",
+    "score": 0
+  },
+  {
+    "pattern": "/-4P\\b|-4Planet\\b|-AsRequested\\b|-BUYMORE\\b|-Chamele0n\\b|-GEROV\\b|-iNC0GNiTO\\b|-NZBGeek\\b|-Obfuscated\\b|-postbot\\b|-Rakuv\\b|(?<=\\bS\\d+\\b).*(Scrambled)\\b|-WhiteRev\\b|-xpost\\b|-WRTEAM\\b|-CAPTCHA\\b|_nzb\\b/i",
+    "name": "Obfuscated",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?!.*\\b((?<!HD[._ -]|HD)DVD|BDRip|720p|MKV|XviD|WMV|d3g|(BD)?REMUX|^(?=.*1080p)(?=.*HEVC)|[xh][-_. ]?26[45]|German.*[DM]L|((?<=\\d{4}).*German.*([DM]L)?)(?=.*\\b(AVC|HEVC|VC[-_. ]?1|MVC|MPEG[-_. ]?2)\\b))\\b)(((?=.*\\b(Blu[-_. ]?ray|BD|HD[-_. ]?DVD)\\b)(?=.*\\b(AVC|HEVC|VC[-_. ]?1|MVC|MPEG[-_. ]?2|BDMV|ISO)\\b))|^((?=.*\\b(((?=.*\\b((.*_)?COMPLETE.*|Dis[ck])\\b)(?=.*(Blu[-_. ]?ray|HD[-_. ]?DVD)))|3D[-_. ]?BD|BR[-_. ]?DISK|Full[-_. ]?Blu[-_. ]?ray|^((?=.*((BD|UHD)[-_. ]?(25|50|66|100|ISO)))))))).*$/i",
+    "name": "BR-DISK",
+    "score": 0
+  },
+  {
+    "pattern": "/[xh][ ._-]?265|\\bHEVC(\\b|\\d)/i",
+    "name": "x265 (HD)",
+    "score": 0
+  },
+  {
+    "pattern": "/10[.-]?bit|hi10p/i",
+    "name": "10bit",
+    "score": 0
+  },
+  {
+    "pattern": "/\\b(Uncut|Unrated|Uncensored|AT[-_. ]?X)\\b/i",
+    "name": "Uncensored",
+    "score": 0
+  },
+  {
+    "pattern": "/[.]heb\\b|\\[eztvx?[ ._-]?(io|re|to)?\\]|\\[(rarbg|rartv|TGx)\\]/i",
+    "name": "Retags",
+    "score": 0
+  },
+  {
+    "pattern": "/(?<=\\b[12]\\d{3}\\b).*\\b((B(lack)?[ ._-]?(out|(and|[n&])[ ._-]?(W(hite)?|Chrome)))|Monochrome|Noir|Shush[ ._-]?Cut|(No|Minus)[ ._-]?Colou?r|Gr[ae]y([ ._-]?(scale))?|Darkness?[ ._-]?(and|&)[ ._-]?(Light))\\b(?!$)/i",
+    "name": "Black and White Editions",
+    "score": 0
+  },
+  {
+    "pattern": "/\\b((?<!NON[ ._-])IMAX)\\b/i",
+    "name": "IMAX",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*\\b((DSNP|BC|B?CORE)\\b|Disney\\+)(?=.*\\bWEB[ ._-]?(DL|Rip)\\b))(?=.*\\b((?<!NON[ ._-])IMAX)\\b)|^(?=.*\\b(IMAX[ ._-]Enhanced)\\b)/i",
+    "name": "IMAX Enhanced",
+    "score": 0
+  },
+  {
+    "pattern": "/\\b(Criterion|CC)\\b/i",
+    "name": "Criterion Collection",
+    "score": 0
+  },
+  {
+    "pattern": "/\\b(Masters[ .-]?Of[ .-]?Cinema|MoC)(\\b|\\d)/i",
+    "name": "Masters of Cinema",
+    "score": 0
+  },
+  {
+    "pattern": "/\\b(Open[ ._-]?Matte)\\b/i",
+    "name": "Open Matte",
+    "score": 0
+  },
+  {
+    "pattern": "/\\b(Remaster)\\b/i",
+    "name": "Remaster",
+    "score": 0
+  },
+  {
+    "pattern": "/\\b(4k)\\b/i",
+    "name": "4K",
+    "score": 0
+  },
+  {
+    "pattern": "/(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)|bd(?:720|1080|2160)))(?=.*(hybrid(\\b|\\d)))/i",
+    "name": "Hybrid",
+    "score": 0
+  },
+  {
+    "pattern": "/\\b\\d{2,3}(?:th)?[.\\s\\-\\+_\\/(),]Anniversary[.\\s\\-\\+_\\/(),](?:Edition|Ed)?\\b/i",
+    "name": "Anniversary Edition",
+    "score": 0
+  },
+  {
+    "pattern": "/\\bDBOX\\b/i",
+    "name": "Dragon Box",
+    "score": 0
+  },
+  {
+    "pattern": "/\\bCC\\b/",
+    "name": "Color Corrected",
+    "score": 0
+  },
+  {
+    "pattern": "/\\bUltimate[.\\s\\-\\+_\\/(),]Edition\\b/i",
+    "name": "Ultimate Edition",
+    "score": 0
+  },
+  {
+    "pattern": "/\\b(?:custom.?)?Extended\\b/i",
+    "name": "Extended Edition",
+    "score": 0
+  },
+  {
+    "pattern": "/\\bDirector'?s.?Cut\\b/i",
+    "name": "Director's Cut",
+    "score": 0
+  },
+  {
+    "pattern": "/\\bCollector'?s\\b/i",
+    "name": "Collector's Edition",
+    "score": 0
+  },
+  {
+    "pattern": "/\\b\\.Diamond\\.\\b/i",
+    "name": "Diamond Edition",
+    "score": 0
+  },
+  {
+    "pattern": "/(?<!^|{)\\b(extended|uncut|directors|special|unrated|uncensored|cut|version|edition)(\\b|\\d)/i",
+    "name": "Special Edition",
+    "score": 0
+  },
+  {
+    "pattern": "/\\b(IMAX[ ._-]Edition)\\b/i",
+    "name": "IMAX Edition",
+    "score": 0
+  },
+  {
+    "pattern": "/\\b(Extended[ ._-]Clip)\\b/i",
+    "name": "Extended Clip",
+    "score": 0
+  },
+  {
+    "pattern": "/\\b(Theatrical)\\b/i",
+    "name": "Theatrical Cut",
+    "score": 0
+  },
+  {
+    "pattern": "/\\b(Vinegar[ ._-]Syndrome|V-S|VinSyn)\\b/i",
+    "name": "Vinegar Syndrome",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*\\b(ABEMA[ ._-]?(TV)?)\\b).*/i",
+    "name": "ABEMA",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*\\b(amzn|amazon(hd)?)\\b).*/i",
+    "name": "AMZN",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*\\b(C(runchy)?[ .-]?R(oll)?)\\b).*/i",
+    "name": "CR",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*\\b(dsnp|dsny|disney|Disney\\+)\\b).*/i",
+    "name": "DSNP",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*\\b(ADN)\\b).*/i",
+    "name": "ADN",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*\\b(FUNi(mation)?)\\b).*/i",
+    "name": "FUNi",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*\\b(nf|netflix(u?hd)?)\\b).*/i",
+    "name": "NF",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*\\b(VRV)\\b).*/i",
+    "name": "VRV",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*\\b(ATV)\\b).*/i",
+    "name": "ATV",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*\\b(atvp|aptv|Apple TV\\+)\\b).*/i",
+    "name": "ATVP",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*\\b(BCORE)\\b|\\b(\\d{3,4}(p|i))\\b.*\\b(CORE)\\b).*/i",
+    "name": "BCORE",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*\\b(CC)\\b[ ._-]web[ ._-]?(dl|rip)?\\b|\\[(CC)\\b|\\b(CC)\\]).*/i",
+    "name": "CC",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*\\b(CRiT)\\b).*/i",
+    "name": "CRiT",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*\\b(dcu|DC Universe)\\b).*/i",
+    "name": "DCU",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*\\b(hbo)(?![ ._-]max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)|\\[(HBO)\\b|\\b(HBO)\\]).*/i",
+    "name": "HBO",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*\\b(hmax|hbom|hbo[ ._-]?max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)|\\[(HMAX)\\b|\\b(HMAX)\\]).*/i",
+    "name": "HMAX",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*\\b(it|itunes)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)|\\[(iT)\\b|\\b(iT)\\]).*/i",
+    "name": "iT",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*\\b((?<!hbo[ ._-])max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)|\\[(MAX)\\b|\\b(MAX)\\]).*/i",
+    "name": "MAX",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*(?<!dts[ .-]?hd[ .-]?)\\b(ma|ykw)\\b(?=.*\\bweb[ ._-]?(dl|rip)\\b)).*/i",
+    "name": "MA",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*\\b(pmtp|Paramount Plus)\\b).*/i",
+    "name": "PMTP",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*\\b(pcok|peacock)\\b).*/i",
+    "name": "PCOK",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*\\b(Play)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)|\\[(Play)\\b|\\b(Play)\\]).*/i",
+    "name": "PLAY",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*\\b(ROKU)\\b).*/i",
+    "name": "ROKU",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*\\b(sho|showtime)\\b[ ._-]web[ ._-]?(dl|rip)?\\b|\\[(SHO)\\b|\\b(SHO)\\]).*/i",
+    "name": "SHO",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*\\b(stan)\\b[ ._-]web[ ._-]?(dl|rip)?\\b|\\[(STAN)\\b|\\b(STAN)\\]).*/i",
+    "name": "STAN",
+    "score": 0
+  },
+  {
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*\\b(SYFY)\\b).*/i",
+    "name": "SYFY",
+    "score": 0
+  }
+]
