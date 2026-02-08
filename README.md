@@ -8,23 +8,14 @@ Regular Expressions and ranked stream expressions (AIOStreams) for automatically
 
 AIOStreams uses a template-based import system. Templates are auto-updated with each release; you only need to re-apply them from the Template Wizard section in About to get the latest updates.
 
-### Stream Expression Score-based Sorting (AIOStreams Nightly Only)
-
-This repository has two templates with **Ranked Stream Expressions** featuring scoring capabilities:
-
-#### **Basic Template** - Public Instances
-```
-https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/basic-template.json
-```
-
-#### **Advanced Template** - Selfhosters / Instances with increased limits
-```
-https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/advanced-template.json
-```
+### Stream Expression Score-based Sorting
 
 #### **Installation**
 1. In AIOStreams, go to `About -> Template Wizard -> Import Template (Bottom Right)`
-2. Paste one of the template URLs above (choose **Basic** or **Advanced** based on your needs)
+2. Paste this URL:
+   ```
+   https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/advanced-template.json
+   ```
 3. Click go, and then load the template.
 
 > [!TIP]
@@ -42,7 +33,7 @@ https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/advanced-template
 
 ### Customizing Scores
 
-Both templates include several ranked stream expressions that you can customize by editing their scores directly in the template configuration:
+The template includes several ranked stream expressions that you can customize by editing their scores directly in the template configuration:
 
 #### **Anime Dual Audio**
 If you prefer Dual Audio releases, you can adjust the score based on your preference:
@@ -83,7 +74,8 @@ Set these environment variables in your AIOStreams instance to allow users to us
 ```bash
 ALLOWED_REGEX_PATTERNS_URLS=["https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/merged-anime-regexes.json"] 
 ALLOWED_REGEX_PATTERNS_URLS_REFRESH_INTERVAL=3600000
-MAX_STREAM_EXPRESSIONS=150
+MAX_STREAM_EXPRESSIONS=200
+MAX_STREAM_EXPRESSIONS_TOTAL_CHARACTERS=40000
 ```
 
 ---
