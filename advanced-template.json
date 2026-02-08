@@ -499,6 +499,14 @@
         "score": 75
       },
       {
+        "expression": "/*#Series*/ /*#UHD Streaming Boost*/ (queryType == 'series') ? regexMatched(resolution(streams, '2160p'), 'DSNP', 'HMAX', 'NF') : []",
+        "score": 75
+      },
+      {
+        "expression": "/*#Series*/ /*#HD Streaming Boost*/ (queryType == 'series') ? regexMatched(resolution(streams, '1080p'), 'DSNP') : []",
+        "score": 75
+      },
+      {
         "expression": "/*BR-DISK*/ (queryType == 'movie' or queryType == 'series') ? regexMatched(streams, 'BR-DISK') : []",
         "score": -10000
       },
