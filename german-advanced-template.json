@@ -208,7 +208,7 @@
         "enabled": true
       },
       {
-        "expression": "/*DV (w/o HDR fallback)*/ negate(merge(releaseGroup(streams, 'Flights'), regexMatched(streams, 'Hulu'), visualTag(streams, 'HDR','HDR10','HDR10+')), visualTag(streams, 'DV'))",
+        "expression": "/*DV (w/o HDR fallback)*/ negate(merge(releaseGroup(streams, 'Flights'), regexMatched(streams, 'Hulu'), visualTag(streams, 'HDR','HDR10','HDR10+')), quality(visualTag(streams, 'DV'), 'WEBDL', 'WEBRIP'))",
         "score": -10000,
         "enabled": true
       },
@@ -228,7 +228,7 @@
         "enabled": true
       },
       {
-        "expression": "/*LQ*/ regexMatched(streams,'Bad','Untrusted','Untrusted GER')",
+        "expression": "/*LQ*/ regexMatched(streams, 'LQ','LQ GER')",
         "score": -35000,
         "enabled": true
       },
