@@ -275,35 +275,35 @@
         "score": 10
       },
       {
-        "expression": "/*CR*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'CR')) : []",
+        "expression": "/*#Anime*/ /*CR*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'CR')) : []",
         "score": 6
       },
       {
-        "expression": "/*Anime DSNP*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'DSNP')) : []",
+        "expression": "/*#Anime*/ /*Disney+*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'DSNP')) : []",
         "score": 5
       },
       {
-        "expression": "/*Anime NF*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'NF')) : []",
+        "expression": "/*#Anime*/ /*Netflix*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'NF')) : []",
         "score": 4
       },
       {
-        "expression": "/*Anime AMZN*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'AMZN')) : []",
+        "expression": "/*#Anime*/ /*Amazon*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'AMZN')) : []",
         "score": 3
       },
       {
-        "expression": "/*VRV*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'VRV')) : []",
+        "expression": "/*#Anime*/ /*VRV*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'VRV')) : []",
         "score": 3
       },
       {
-        "expression": "/*FUNi*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'FUNi')) : []",
+        "expression": "/*#Anime*/ /*FUNi*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'FUNi')) : []",
         "score": 2
       },
       {
-        "expression": "/*ABEMA*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'ABEMA')) : []",
+        "expression": "/*#Anime*/ /*ABEMA*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'ABEMA')) : []",
         "score": 1
       },
       {
-        "expression": "/*ADN*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'ADN')) : []",
+        "expression": "/*#Anime*/ /*ADN*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'ADN')) : []",
         "score": 1
       },
       {
@@ -379,12 +379,11 @@
         "score": -10000
       },
       {
-        "expression": "/*Anime Dual Audio*/ isAnime ? language(streams, 'Dual Audio') : []",
-        "score": 0,
-        "enabled": false
+        "expression": "/*Uncensored*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'Uncensored')) : []",
+        "score": 10
       },
       {
-        "expression": "/*Uncensored*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'Uncensored')) : []",
+        "expression": "/*Anime Dual Audio*/ isAnime ? language(streams, 'Dual Audio') : []",
         "score": 0,
         "enabled": false
       },

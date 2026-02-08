@@ -62,7 +62,7 @@ Using these scoring options, you'll still benefit from the tier system when bett
 - **DV w/o HDR fallback** (disabled by default): Enable DV w/o HDR fallback ranked SEL if not all your devices support DV. This also applies to DV releases without HDR10 fallback (Profile 5).
 - **10bit** (disabled by default): Enable to filter out 10-bit encodes if your devices (FireStick, etc.) don't support them.
 - **Anime Dual Audio** (disabled by default): Adjust score based on your preference (see above for scoring options).
-- **Uncensored** (disabled by default): Adjust score based on your preference (see above for scoring options).
+- **Uncensored**: Adjust score based on your preference (see above for scoring options).
 - **Dubs Only**: Disable to keep anime dub-only streams.
 - **Bad Dual Groups**: Disable to keep dual audio groups with non-English as primary language.
 - **x265 (HD)**: Disable to keep x265 HD encodes.
