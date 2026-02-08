@@ -5,7 +5,7 @@
     "description": "Advanced sorting for Anime, Movies, and TV Shows using regex patterns from [TRaSH Guides](https://trash-guides.info). Features Ranked Stream Expressions with intelligent scoring for release groups, quality filtering, repack detection, audio tags, visual tags and more. \n\n * Eliminates the need for audio/visual tags in your sort order \n * **ⓘ Requires Stream Expression Score in your sort order** (remove Regex Patterns and ranked regex scores) \n * Add `{stream.seScore}` to formatter to display scores and `{stream.rseMatched}` to display the matched stream expressions \n * Exceeds default expression and character limit - requires `MAX_STREAM_EXPRESSIONS=200`+ and `MAX_STREAM_EXPRESSIONS_TOTAL_CHARACTERS=40000`+ \n * ⚠️ See [README](https://github.com/Vidhin05/Releases-Regex#customizing-scores) for a guide on customizing scores (Dual Audio, Uncensored, etc.) \n * **Recommended for all**",
     "source": "external",
     "author": "Vidhin05",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "category": "Regex",
     "services": [],
     "serviceRequired": false
@@ -182,47 +182,59 @@
         "score": 601
       },
       {
-        "expression": "/*#TrueHD*/ isAnime ? [] : audioTag(streams, 'TrueHD')",
-        "score": 2750
+        "expression": "/*#TrueHD ATMOS*/ isAnime ? [] : negate(merge(audioTag(streams, 'DD+'), audioTag(streams, 'DD'), audioTag(streams, 'DTS:X'), audioTag(streams, 'DTS'), audioTag(streams, 'FLAC')), audioTag(audioTag(streams, 'Atmos'), 'TrueHD'))",
+        "score": 5000
       },
       {
-        "expression": "/*#ATMOS*/ isAnime ? [] : audioTag(streams, 'Atmos')",
+        "expression": "/*#DTS X*/ isAnime ? [] : negate(merge(audioTag(streams, 'DD'), audioTag(streams, 'DD+'), audioTag(streams, 'TrueHD'), audioTag(streams, 'Atmos'), audioTag(streams, 'FLAC'), audioTag(streams, 'AAC')), audioTag(streams, 'DTS:X'))",
+        "score": 4500
+      },
+      {
+        "expression": "/*#ATMOS (undefined)*/ isAnime ? [] : negate(merge(audioTag(streams, 'AAC'), audioTag(streams, 'DD'), audioTag(streams, 'DD+'), audioTag(streams, 'DTS'), audioTag(streams, 'FLAC'), audioTag(streams, 'TrueHD')), audioTag(streams, 'Atmos'))",
         "score": 3000
       },
       {
-        "expression": "/*#DTS X*/ isAnime ? [] : audioTag(streams, 'DTS:X')",
-        "score": 3250
+        "expression": "/*#DD+ ATMOS*/ isAnime ? [] : negate(merge(audioTag(streams, 'TrueHD'), audioTag(streams, 'DTS'), audioTag(streams, 'DD'), audioTag(streams, 'FLAC'), audioTag(streams, 'AAC')), audioTag(audioTag(streams, 'DD+'), 'Atmos'))",
+        "score": 3000
       },
       {
-        "expression": "/*#DTS-HD MA*/ isAnime ? [] : audioTag(streams, 'DTS-HD MA')",
-        "score": 1250
+        "expression": "/*#TrueHD*/ isAnime ? [] : negate(merge(audioTag(streams, 'Atmos'), audioTag(streams, 'DD+'), audioTag(streams, 'DTS'), audioTag(streams, 'FLAC'), audioTag(streams, 'DD')), audioTag(streams, 'TrueHD'))",
+        "score": 2750
       },
       {
-        "expression": "/*#DTS-ES*/ isAnime ? [] : audioTag(streams, 'DTS-ES')",
-        "score": 250
+        "expression": "/*#DTS-HD MA*/ isAnime ? [] : negate(merge(audioTag(streams, 'TrueHD'), audioTag(streams, 'Atmos'), audioTag(streams, 'DD+'), audioTag(streams, 'DD'), audioTag(streams, 'DTS:X'), audioTag(streams, 'FLAC'), audioTag(streams, 'AAC'), audioTag(streams, 'DTS-ES')), audioTag(streams, 'DTS-HD MA'))",
+        "score": 2500
       },
       {
-        "expression": "/*#DTS*/ isAnime ? [] : audioTag(streams, 'DTS')",
-        "score": 1250
-      },
-      {
-        "expression": "/*#DD+*/ isAnime ? [] : audioTag(streams, 'DD+')",
-        "score": 1000
-      },
-      {
-        "expression": "/*#DD*/ isAnime ? [] : audioTag(streams, 'DD')",
-        "score": 750
-      },
-      {
-        "expression": "/*#FLAC*/ isAnime ? [] : audioTag(streams, 'FLAC')",
+        "expression": "/*#FLAC*/ isAnime ? [] : negate(merge(audioTag(streams, 'AAC'), audioTag(streams, 'DTS'), audioTag(streams, 'TrueHD'), audioTag(streams, 'Atmos'), audioTag(streams, 'DD'), audioTag(streams, 'DD+')), audioTag(streams, 'FLAC'))",
         "score": 2250
       },
       {
-        "expression": "/*#AAC*/ isAnime ? [] : audioTag(streams, 'AAC')",
+        "expression": "/*#DTS-HD HRA*/ isAnime ? [] : negate(merge(audioTag(streams, 'TrueHD'), audioTag(streams, 'Atmos'), audioTag(streams, 'DD+'), audioTag(streams, 'DD'), audioTag(streams, 'DTS:X'), audioTag(streams, 'FLAC'), audioTag(streams, 'AAC'), audioTag(streams, 'DTS-ES')), audioTag(streams, 'DTS-HD'))",
+        "score": 2000
+      },
+      {
+        "expression": "/*#DD+*/ isAnime ? [] : negate(merge(audioTag(streams, 'TrueHD'), audioTag(streams, 'Atmos'), audioTag(streams, 'DTS'), audioTag(streams, 'FLAC'), audioTag(streams, 'AAC')), audioTag(streams, 'DD+'))",
+        "score": 1750
+      },
+      {
+        "expression": "/*#DTS-ES*/ isAnime ? [] : negate(merge(audioTag(streams, 'TrueHD'), audioTag(streams, 'Atmos'), audioTag(streams, 'DD+'), audioTag(streams, 'DD'), audioTag(streams, 'DTS:X'), audioTag(streams, 'FLAC'), audioTag(streams, 'AAC')), audioTag(streams, 'DTS-ES'))",
+        "score": 1500
+      },
+      {
+        "expression": "/*#DTS*/ isAnime ? [] : negate(merge(audioTag(streams, 'DTS-HD MA'), audioTag(streams, 'DTS-HD'), audioTag(streams, 'DTS-ES'), audioTag(streams, 'DD+'), audioTag(streams, 'TrueHD'), audioTag(streams, 'Atmos'), audioTag(streams, 'DD'), audioTag(streams, 'DTS:X'), audioTag(streams, 'FLAC'), audioTag(streams, 'AAC')), audioTag(streams, 'DTS'))",
+        "score": 1250
+      },
+      {
+        "expression": "/*#AAC*/ isAnime ? [] : negate(merge(audioTag(streams, 'DTS'), audioTag(streams, 'DD+'), audioTag(streams, 'DD'), audioTag(streams, 'FLAC'), audioTag(streams, 'TrueHD'), audioTag(streams, 'Atmos')), audioTag(streams, 'AAC'))",
         "score": 1000
       },
       {
-        "expression": "/*#Opus*/ isAnime ? [] : audioTag(streams, 'Opus')",
+        "expression": "/*#DD*/ isAnime ? [] : negate(merge(audioTag(streams, 'DD+'), audioTag(streams, 'TrueHD'), audioTag(streams, 'Atmos'), audioTag(streams, 'DTS'), audioTag(streams, 'FLAC'), audioTag(streams, 'AAC')), audioTag(streams, 'DD'))",
+        "score": 750
+      },
+      {
+        "expression": "/*#Opus*/ isAnime ? [] : audioTag(streams, 'OPUS')",
         "score": 250
       },
       {
