@@ -1,0 +1,252 @@
+{
+  "metadata": {
+    "id": "Vidhin05.german-advanced-template",
+    "name": "Vidhin's Regexes - Advanced - German",
+    "description": "GERMAN Advanced sorting for Anime, Movies, and TV Shows using regex patterns from [TRaSH Guides](https://trash-guides.info). Features Ranked Stream Expressions with intelligent scoring for release groups, quality filtering, repack detection, audio tags, visual tags and more. \n\n * Eliminates the need for audio/visual tags in your sort order \n * **ⓘ Requires Stream Expression Score in your sort order** (remove Regex Patterns and ranked regex scores) \n * Add `{stream.seScore}` to formatter to display scores and `{stream.rseMatched}` to display the matched stream expressions \n * Exceeds default expression and character limit - requires `MAX_STREAM_EXPRESSIONS=200`+ and `MAX_STREAM_EXPRESSIONS_TOTAL_CHARACTERS=40000`+ \n * ⚠️ See [README](https://github.com/Vidhin05/Releases-Regex#customizing-scores) for a guide on customizing scores (Dual Audio, Uncensored, etc.) \n * **Recommended for all**",
+    "source": "external",
+    "author": "mindgam3s",
+    "version": "0.0.0",
+    "category": "Regex",
+    "services": [],
+    "serviceRequired": false
+  },
+  "config": {
+    "preferredRegexPatterns": [],
+    "syncedPreferredRegexUrls": [],
+    "syncedRankedRegexUrls": [
+      "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/german-merged-anime-regexes.json"
+    ],
+    "rankedStreamExpressions": [
+      {
+        "expression": "/*German DL*/ (originalLanguage == 'German') ? quality(language(streams, 'German'), 'WEB-DL') : []",
+        "score": 11000,
+        "enabled": true
+      },
+      {
+        "expression": "/*German DL (undefined)*/ (originalLanguage != 'German') ? quality(language(streams, 'German'), 'WEB-DL') : []",
+        "score": 11000,
+        "enabled": true
+      },
+      {
+        "expression": "/*German*/ (originalLanguage != 'German') ? language(negate(quality(streams, 'WEB-DL'), streams), 'German') : []",
+        "score": 10000,
+        "enabled": true
+      },
+      {
+        "expression": "/*German 2160p Booster*/ (originalLanguage == 'German') ? language(resolution(streams,'2160p'), 'German','Original') : []",
+        "score": 9000,
+        "enabled": true
+      },
+      {
+        "expression": "/*TrueHD ATMOS*/ audioTag(audioTag(negate(audioTag(streams, 'DD','DD+','DTS','DTS:X','FLAC'), streams),'Atmos'), 'TrueHD')",
+        "score": 5000,
+        "enabled": true
+      },
+      {
+        "expression": "/*German Remux T1*/ regexMatched(streams,'Remux T1 GER')",
+        "score": 4000,
+        "enabled": true
+      },
+      {
+        "expression": "/*German Remux T2*/ regexMatched(streams,'Remux T2 GER')",
+        "score": 3900,
+        "enabled": true
+      },
+      {
+        "expression": "/*ATMOS (undefined)*/ audioTag(negate( merge(audioTag(streams, 'AAC','DD','DD+','DTS','FLAC','PCM','TrueHD'), releaseGroup(streams, 'W4NK3R','HQMUX') ), streams),'Atmos')",
+        "score": 3000,
+        "enabled": true
+      },
+      {
+        "expression": "/*DD+ ATMOS*/ audioTag(audioTag(negate(audioTag(streams, 'TrueHD','DTS','DD','FLAC','AAC','PCM'), streams), 'Atmos'), 'DD+')",
+        "score": 3000,
+        "enabled": true
+      },
+      {
+        "expression": "/*TrueHD*/ audioTag(negate( merge(audioTag(streams, 'Atmos','DD+','DTS','FLAC','DD'), releaseGroup(streams, 'CtrlHD','W4NK3R','DON') ), streams),'TrueHD')",
+        "score": 2750,
+        "enabled": true
+      },
+      {
+        "expression": "/*DTS-HD MA*/ audioTag(negate(audioTag(streams, 'TrueHD','Atmos','DD+','DD','DTS:X','FLAC','AAC','PCM','DTS-HD','DTS-ES'), streams), 'DTS-HD MA')",
+        "score": 2500,
+        "enabled": true
+      },
+      {
+        "expression": "/*PCM*/ audioTag(negate(audioTag(streams, 'AAC','FLAC','DTS','TrueHD','Atmos','DD','DD+'), streams), 'PCM')",
+        "score": 2250,
+        "enabled": true
+      },
+      {
+        "expression": "/*German Web T1*/ regexMatched(streams,'Web T1 GER')",
+        "score": 2100,
+        "enabled": true
+      },
+      {
+        "expression": "/*Remux T1*/ regexMatched(streams,'Remux T1')",
+        "score": 1950,
+        "enabled": true
+      },
+      {
+        "expression": "/*German Web T2*/ regexMatched(streams,'Web T2 GER')",
+        "score": 1900,
+        "enabled": true
+      },
+      {
+        "expression": "/*Remux T2*/ regexMatched(streams,'Remux T2')",
+        "score": 1900,
+        "enabled": true
+      },
+      {
+        "expression": "/*Remux T3*/ regexMatched(streams,'Remux T3')",
+        "score": 1850,
+        "enabled": true
+      },
+      {
+        "expression": "/*German Web T3*/ regexMatched(streams,'Web T3 GER')",
+        "score": 1800,
+        "enabled": true
+      },
+      {
+        "expression": "/*DD+*/ audioTag(streams, 'DD+')",
+        "score": 1750,
+        "enabled": true
+      },
+      {
+        "expression": "/*German Scene*/ regexMatched(streams,'Web Scene GER')",
+        "score": 1700,
+        "enabled": true
+      },
+      {
+        "expression": "/*Web T1*/ regexMatched(streams,'Web T1')",
+        "score": 1700,
+        "enabled": true
+      },
+      {
+        "expression": "/*Web T2*/ regexMatched(streams,'Web T2')",
+        "score": 1650,
+        "enabled": true
+      },
+      {
+        "expression": "/*Web T3*/ regexMatched(streams,'Web T3')",
+        "score": 1600,
+        "enabled": true
+      },
+      {
+        "expression": "/*AAC*/ audioTag(streams, 'AAC')",
+        "score": 1000,
+        "enabled": true
+      },
+      {
+        "expression": "/*DV Boost*/ visualTag(streams, 'DV')",
+        "score": 1000,
+        "enabled": true
+      },
+      {
+        "expression": "/*DD*/ audioTag(streams, 'DD')",
+        "score": 750,
+        "enabled": true
+      },
+      {
+        "expression": "/*German 1080p Booster*/ (originalLanguage == 'German') ? language(resolution(streams,'1080p'), 'German','Original') : []",
+        "score": 650,
+        "enabled": true
+      },
+      {
+        "expression": "/*HDR*/ visualTag(streams, 'HDR','HDR10','HDR10+')",
+        "score": 500,
+        "enabled": true
+      },
+      {
+        "expression": "/*2160p*/ resolution(streams, '2160p')",
+        "score": 100,
+        "enabled": true
+      },
+      {
+        "expression": "/*HDR10+ Boost*/ visualTag(streams, 'HDR10+')",
+        "score": 100,
+        "enabled": true
+      },
+      {
+        "expression": "/*1080p*/ resolution(streams, '1080p')",
+        "score": 50,
+        "enabled": true
+      },
+      {
+        "expression": "/*CRiT*/ quality(releaseGroup(negate(releaseGroup(streams, 'Criterion'), streams),'CRiT'), 'WEB-DL','WEBRip')",
+        "score": 20,
+        "enabled": true
+      },
+      {
+        "expression": "/*Repack3*/ (queryType == 'movie' or queryType == 'series') ? regexMatched(streams, 'Repack3') : []",
+        "score": 7,
+        "enabled": true
+      },
+      {
+        "expression": "/*Repack2*/ (queryType == 'movie' or queryType == 'series') ? regexMatched(negate(regexMatched(streams, 'Repack3') , streams), 'Repack2') : []",
+        "score": 6,
+        "enabled": true
+      },
+      {
+        "expression": "/*Repack*/ (queryType == 'movie' or queryType == 'series') ? regexMatched(negate(regexMatched(streams, 'Repack2','Repack3') , streams), 'Repack/Proper') : []",
+        "score": 5,
+        "enabled": true
+      },
+      {
+        "expression": "/*720p*/ resolution(streams, '720p')",
+        "score": 5,
+        "enabled": true
+      },
+      {
+        "expression": "/*German Bluray T1-3*/ regexMatched(streams,'Bluray T1 GER','Bluray T2 GER','Bluray T3 GER')",
+        "score": 0,
+        "enabled": true
+      },
+      {
+        "expression": "/*x265 (HD)*/ encode(streams, 'x265','H.265','HEVC')",
+        "score": 0,
+        "enabled": true
+      },
+      {
+        "expression": "/*DV (w/o HDR fallback)*/ negate(merge(releaseGroup(streams, 'Flights'), regexMatched(streams, 'Hulu'), visualTag(streams, 'HDR','HDR10','HDR10+')), visualTag(streams, 'DV'))",
+        "score": -10000,
+        "enabled": true
+      },
+      {
+        "expression": "/*3D*/ visualTag(streams, '3D')",
+        "score": -35000,
+        "enabled": true
+      },
+      {
+        "expression": "/*AV1*/ encode(streams, 'AV1')",
+        "score": -35000,
+        "enabled": true
+      },
+      {
+        "expression": "/*Generated Dynamic HDR*/ releaseGroup(visualTag(streams, 'DV','HDR10','HDR10+'), 'BiTOR','DepraveD','Flights','SasukeducK','tarunk9c','VD0N','VECTOR','VisionXpert')",
+        "score": -35000,
+        "enabled": true
+      },
+      {
+        "expression": "/*LQ*/ regexMatched(streams,'Bad','Untrusted','Untrusted GER')",
+        "score": -35000,
+        "enabled": true
+      },
+      {
+        "expression": "/*Line/Mic Dubbed*/ regexMatched(streams, 'Line/Mic Dubbed')",
+        "score": -35000,
+        "enabled": true
+      },
+      {
+        "expression": "/*Upscaled*/ regexMatched(streams, 'Upscaled')",
+        "score": -35000,
+        "enabled": true
+      },
+      {
+        "expression": "/*Generated Dynamic HDR*/ visualTag(releaseGroup(streams, 'BiTOR','DepraveD','Flights','SasukeducK','tarunk9c','VD0N','VECTOR','VisionXpert'), 'DV','HDR','HDR10','HDR10+')",
+        "score": -35000,
+        "enabled": true
+      }
+    ]
+  }
+}
