@@ -350,6 +350,46 @@
     "score": 0
   },
   {
+    "pattern": "/\\b\\d{2,3}(?:th)?[.\\s\\-\\+_\\/(),]Anniversary[.\\s\\-\\+_\\/(),](?:Edition|Ed)?\\b/i",
+    "name": "Anniversary Edition",
+    "score": 0
+  },
+  {
+    "pattern": "/\\bDBOX\\b/i",
+    "name": "Dragon Box",
+    "score": 0
+  },
+  {
+    "pattern": "/\\bCC\\b/",
+    "name": "Color Corrected",
+    "score": 0
+  },
+  {
+    "pattern": "/\\bUltimate[.\\s\\-\\+_\\/(),]Edition\\b/i",
+    "name": "Ultimate Edition",
+    "score": 0
+  },
+  {
+    "pattern": "/\\b(?:custom.?)?Extended\\b/i",
+    "name": "Extended Edition",
+    "score": 0
+  },
+  {
+    "pattern": "/\\bDirector'?s.?Cut\\b/i",
+    "name": "Director's Cut",
+    "score": 0
+  },
+  {
+    "pattern": "/\\bCollector'?s\\b/i",
+    "name": "Collector's Edition",
+    "score": 0
+  },
+  {
+    "pattern": "/\\b\\.Diamond\\.\\b/i",
+    "name": "Diamond Edition",
+    "score": 0
+  },
+  {
     "pattern": "/(?<!^|{)\\b(extended|uncut|directors|special|unrated|uncensored|cut|version|edition)(\\b|\\d)/i",
     "name": "Special Edition",
     "score": 0
