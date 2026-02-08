@@ -351,6 +351,78 @@
         "score": -10000
       },
       {
+        "expression": "/*#Movie*/ /*Amazon Prime*/ (queryType == 'movie') ? regexMatched(streams, 'AMZN') : []",
+        "score": 0
+      },
+      {
+        "expression": "/*#Movie*/ /*Apple TV*/ (queryType == 'movie') ? regexMatched(streams, 'ATV') : []",
+        "score": 0
+      },
+      {
+        "expression": "/*#Movie*/ /*Apple TV+*/ (queryType == 'movie') ? regexMatched(streams, 'ATVP') : []",
+        "score": 0
+      },
+      {
+        "expression": "/*#Movie*/ /*Bravia Core*/ (queryType == 'movie') ? regexMatched(streams, 'BCORE') : []",
+        "score": 15
+      },
+      {
+        "expression": "/*#Movie*/ /*Criterion Channel*/ (queryType == 'movie') ? regexMatched(streams, 'CRiT') : []",
+        "score": 20
+      },
+      {
+        "expression": "/*#Movie*/ /*Disney+*/ (queryType == 'movie') ? regexMatched(streams, 'DSNP') : []",
+        "score": 0
+      },
+      {
+        "expression": "/*#Movie*/ /*HBO*/ (queryType == 'movie') ? regexMatched(streams, 'HBO') : []",
+        "score": 0
+      },
+      {
+        "expression": "/*#Movie*/ /*HBO Max*/ (queryType == 'movie') ? regexMatched(streams, 'HMAX') : []",
+        "score": 0
+      },
+      {
+        "expression": "/*#Movie*/ /*Hulu*/ (queryType == 'movie') ? regexMatched(streams, 'Hulu') : []",
+        "score": 0
+      },
+      {
+        "expression": "/*#Movie*/ /*iTunes*/ (queryType == 'movie') ? regexMatched(streams, 'iT') : []",
+        "score": 0
+      },
+      {
+        "expression": "/*#Movie*/ /*Max*/ (queryType == 'movie') ? regexMatched(streams, 'MAX') : []",
+        "score": 0
+      },
+      {
+        "expression": "/*#Movie*/ /*Movies Anywhere*/ (queryType == 'movie') ? regexMatched(streams, 'MA') : []",
+        "score": 20
+      },
+      {
+        "expression": "/*#Movie*/ /*Netflix*/ (queryType == 'movie') ? regexMatched(streams, 'NF') : []",
+        "score": 0
+      },
+      {
+        "expression": "/*#Movie*/ /*Paramount+*/ (queryType == 'movie') ? regexMatched(streams, 'PMTP') : []",
+        "score": 0
+      },
+      {
+        "expression": "/*#Movie*/ /*Peacock*/ (queryType == 'movie') ? regexMatched(streams, 'PCOK') : []",
+        "score": 0
+      },
+      {
+        "expression": "/*#Movie*/ /*Google Play*/ (queryType == 'movie') ? regexMatched(streams, 'PLAY') : []",
+        "score": 0
+      },
+      {
+        "expression": "/*#Movie*/ /*Roku*/ (queryType == 'movie') ? regexMatched(streams, 'ROKU') : []",
+        "score": 0
+      },
+      {
+        "expression": "/*#Movie*/ /*Stan*/ (queryType == 'movie') ? regexMatched(streams, 'STAN') : []",
+        "score": 0
+      },
+      {
         "expression": "/*BR-DISK*/ (queryType == 'movie' or queryType == 'series') ? regexMatched(streams, 'BR-DISK') : []",
         "score": -10000
       },
