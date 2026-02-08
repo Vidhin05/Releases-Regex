@@ -1,5 +1,15 @@
 [
   {
+    "name": "Remux T1 GER",
+    "pattern": "/\\bRemux\\b.*\\b(TvR|pmHD|NIMA4K|QfG|WeebPinn|MAMA)\\b/",
+    "score": 0
+  },
+  {
+    "name": "Remux T2 GER",
+    "pattern": "/\\bRemux\\b.*\\b(MULTiPLEX|RHD|HD|HDSource|iNCEPTION|FX|RocketHD)\\b/",
+    "score": 0
+  },
+  {
     "name": "Remux T1",
     "pattern": "/^(?=.*(?:[_. ]|\\d{4}p-|\\bHybrid-)(?:(?:BD|UHD)[-_. ]?)?Remux\\b|(?:(?:BD|UHD)[-_. ]?)?Remux[_. ]\\d{4}p)(?=.*(?:\\b(3L|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PiRAMiDHEAD|PmP|ZQ)\\b|-BMF|-WiLDCAT)).*/i",
     "score": 0
@@ -12,6 +22,21 @@
   {
     "name": "Remux T3",
     "pattern": "/^(?=.*(?:[_. ]|\\d{4}p-|\\bHybrid-)(?:(?:BD|UHD)[-_. ]?)?Remux\\b|(?:(?:BD|UHD)[-_. ]?)?Remux[_. ]\\d{4}p)(?=.*\\b(12GaugeShotgun|decibeL|EPSiLON|HiFi|iFT|KRaLiMaRKo|NTb|PTer|PTP|SumVision|TOA|TRiToN)\\b).*/i",
+    "score": 0
+  },
+  {
+    "name": "Bluray T1 GER",
+    "pattern": "/^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:ZeroTwo|BUTTERCUP|HARTZ02|XiSS|DOGPACK404|PRiNCESSDiANA|DiVA|WAREZCX|BiTCHNUGGET|TSCC|TvR|NIMA4K|TVS|PXL|CNY|WeebPinn|MAMA|WalterBishop)\\b)).*/",
+    "score": 0
+  },
+  {
+    "name": "Bluray T2 GER",
+    "pattern": "/^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:VECTOR|MULTiPLEX|ABJ|paranoid06)\\b)).*/",
+    "score": 0
+  },
+  {
+    "name": "Bluray T3 GER",
+    "pattern": "/^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:RobertDeNiro|LeetHD|RHD|HDSource|UNFIrED|iNCEPTION|FX|RDR)\\b)).*/",
     "score": 0
   },
   {
@@ -37,6 +62,21 @@
   {
     "name": "Bluray T3",
     "pattern": "/^(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)))(?!.*(?:(?:[_. ]|\\d{4}p-|\\bHybrid-)(?:(?:BD|UHD)[-_. ]?)?Remux\\b|(?:(?:BD|UHD)[-_. ]?)?Remux[_. ]\\d{4}p))(?!.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)))(?!.*(WebRip|Web-Rip|WEBMux))(?=.*\\b(?:LoRD)\\b).*/",
+    "score": 0
+  },
+  {
+    "name": "Web T1 GER",
+    "pattern": "/^(?=.*\\bWEB\\b)(?=.*\\b(?:DL|RIP)\\b)(?=.*\\b(?:ZeroTwo|BUTTERCUP|HARTZ02|XiSS|DOGPACK404|PRiNCESSDiANA|DiVA|WAREZCX|BiTCHNUGGET|TSCC|TvR|NIMA4K|TVS|D02KU|PXL|QfG|CNY|WeebPinn|MEDiATHEK|RiiR|TOJ|WalterBishop|pmHD)\\b).*/",
+    "score": 0
+  },
+  {
+    "name": "Web T2 GER",
+    "pattern": "/^(?=.*\\bWEB\\b)(?=.*\\b(?:DL|RIP)\\b)(?=.*\\b(?:VECTOR|MULTiPLEX|SiXTYNiNE|Oergel|4SF|ABJ|paranoid06)\\b).*/",
+    "score": 0
+  },
+  {
+    "name": "Web T3 GER",
+    "pattern": "/^(?=.*\\bWEB\\b)(?=.*\\b(?:DL|RIP)\\b)(?=.*\\b(?:RobertDeNiro|BALENCiAGA|HDSource|FX|RDR)\\b).*/",
     "score": 0
   },
   {
@@ -67,6 +107,11 @@
   {
     "name": "Web T3",
     "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?=.*\\b(?:DRACULA|ViSiON)\\b).*/",
+    "score": 0
+  },
+  {
+    "name": "Web Scene GER",
+    "pattern": "/^(?=.*\\bWEB\\b)(?=.*\\b(?:DL|RIP)\\b)(?=.*\\b(?:DETAiLS|WAYNE|WOMBAT|SAUERKRAUT|WvF|4KCONNECTiON|STARS|AWARDS|DMPD|EXCiTED|iNTENTiON|JaJunge|MGE|MisFiTS|RUBBiSH|RWP|TMSF|TV4A|HAXE|muhHD|RiLE|W4K|ENDSTATiON|HDARCHiV|PL3X|WATCHABLE|OHD|ENCOUNTERS|RSG|OCA|UNDERTAKERS|CDP|SAViOURHD|CONTRiBUTiON|GOREHOUNDS|SPiCY|bi0hazard)\\b).*/",
     "score": 0
   },
   {
@@ -235,6 +280,11 @@
     "score": 0
   },
   {
+    "name": "LQ GER",
+    "pattern": "/\\b(PsO|Cancer58|Tylor\\.D|1XBET|2dead|HELD|kala|POE|SHOWE|SHOWEHD|ORCA88|LuRCH|N2D2|GETB8|TFARC|Kristallprinz|LAW|CTFOH|Pendeti|OJ|PS|FSX|EMVY|ZaidaNulled|MEGA|MBA|FORMBA|PaZ|Whistler|omikron|WOTT|SunDry|PL|TVARCHiV|P73|LizardSquad|AVTOMAT|iSSEYMiYAKE|TVP|AIDA|UTOPiA|FRAGGERS|REEL|VideoStar)\\b/",
+    "score": 0
+  },
+  {
     "name": "LQ",
     "pattern": "/\\b(24xHD|41RGB|4K4U|AOC|AROMA|aXXo|AZAZE|BARC0DE|BAUCKLEY|BdC|BRiNK|BTM|C1NEM4|C4K|CDDHD|CHAOS|CHD|CHX|CiNE|CREATiVE24|CrEwSaDe|CTFOH|d3g|DDR|DepraveD|DNL|DRX|E|EuReKA|EVO|FaNGDiNG0|Feranki1980|FGT|FMD|FRDS|FZHD|GalaxyRG|GHD|GHOSTS|GPTHD|HDHUB4U|HDS|HDT|HDTime|HDWinG|HiQVE|iNTENSO|iPlanet|jennaortega(UHD)?|JFF|KC|KIRA|L0SERNIGHT|LAMA|Leffe|Liber8|LiGaS|MarkII|MeGusta|Mesc|mHD|mSD|MTeam|MT|MySiLU|nhanc3|NhaNc3|nHD|nikt0|nSD|OFT|PATOMiEL|PRODJi|PSA|PTNK|RARBG|RDN|Rifftrax|RU4HD|SANTi|SasukeducK|SHD|ShieldBearer|STUTTERSHIT|TBS|TEKNO3D|TG|Tigole|TIKO|VIDEOHOLE|VISIONPLUSHDR(-X|1000)?|WAF|WiKi|worldmkv|x0r|XLF|YIFY|YTS(.(MX|LT|AG))?|Zero00|Zeus)\\b|Pahe(\\.(ph|in))?\\b/i",
     "score": 0
@@ -245,8 +295,18 @@
     "score": 0
   },
   {
+    "name": "LQ GER (Release Title)",
+    "pattern": "/([._-]German[._-].+?[._-]?German$)|(Jellyfin-Plex$)|(([._-])iTunes(?:HD|SD)?\\1.+?-TVS$)/i",
+    "score": 0
+  },
+  {
     "name": "LQ (Release Title)",
     "pattern": "/\\b(1XBET|BEN[ ._-]THE[ ._-]MEN|CREATiVE24|Feranki1980|GalaxyRG|(?<!-)jennaortega(UHD)?|READ(\\s|\\.)+NOTE|SWTYBLZ|TeeWee|TEKNO3D|Will1869)\\b|(-D3US|D3US-)|(?<=\\b[12]\\d{3}\\b.*?)(?<!\\b(web[ ._-]?(dl|rip)?).*?)\\b(EVO|PiRaTeS)\\b|(?=.*?(\\b2160p\\b))(?=.*?(\\bBiTOR\\b))/i",
+    "score": 0
+  },
+  {
+    "pattern": "/\\b(LD|AC3LD|Line[ .-]?Dubbed)|(MD|AC3MD|Mic[ .-]?Dubbed)\\b/i",
+    "name": "Line/Mic Dubbed",
     "score": 0
   },
   {
