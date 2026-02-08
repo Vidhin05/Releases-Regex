@@ -562,7 +562,7 @@
         "score": -1
       },
       {
-        "expression": "/*Dubs Only*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'Dubs Only')) : []",
+        "expression": "/*Dubs Only*/ isAnime ? regexMatched(streams, 'Dubbed','KaiDubs (Not Dual Audio)','KS (Not Dual Audio)','Golumpa','KamiFS','torenter69','Yameii') : []",
         "score": -10000
       },
       {
