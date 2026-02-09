@@ -40,7 +40,7 @@ If you prefer Dual Audio releases, you can adjust the score based on your prefer
 - **Within same tier**: Score of `10` (prefers dual audio over single audio in the same quality tier)
 - **One tier above**: Score of `101` (prefers dual audio from a lower tier over single audio from a higher tier)
 - **Over any tier**: Score of `2000` (always prefers dual audio regardless of quality tier)
-- You may also want to disable `Dual Audio` if you only watch dubs.
+- You may also want to disable `Dubs Only` or give it a positive score same as or lower than `Anime Dual Audio`'s if you only watch dubs.
 
 #### **Uncensored**
 If you prefer Uncensored anime releases, you can adjust the score similarly:
