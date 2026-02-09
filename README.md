@@ -24,7 +24,7 @@ AIOStreams uses a template-based import system. Templates are auto-updated with 
 > My sort order:
 > - **Global Sort Order**: `Cached`
 > - **Cached Sort Order**: `SeaDex -> Library -> Resolution -> Quality -> Stream Expression Matched -> Stream Expression Score -> Bitrate`
-> - **Uncached Sort Order**: `SeaDex -> Library -> Resolution -> Quality -> Stream Type -> Stream Expression Matched -> Stream Expression Score -> Seeders -> Bitrate`
+> - **Uncached Sort Order**: `SeaDex -> Library -> Resolution -> Quality -> Stream Expression Matched -> Stream Expression Score -> Seeders -> Bitrate`
 
 > [!CAUTION]
 > It is **not recommended** to use the bad regex pattern as an exclude regex. If used so, it may filter out all streams for titles that have generic names (e.g., names like `Kingdom`, `Zeus`, `Epic`).
