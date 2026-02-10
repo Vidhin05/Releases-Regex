@@ -380,7 +380,7 @@
     "enabled": true
   },
   {
-    "expression": "/*#Movie*/ /*Amazon Prime*/ queryType=='movie' ? regexMatched(streams, 'AMZN') : []",
+    "expression": "/*#Movie*/ /*Amazon*/ queryType=='movie' ? regexMatched(streams, 'AMZN') : []",
     "score": 0,
     "enabled": true
   },
