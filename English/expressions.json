@@ -50,12 +50,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#SeaDex Best*/ isAnime ? seadex(streams, 'best') : []",
+    "expression": "/*SeaDex Best*/ isAnime ? seadex(streams, 'best') : []",
     "score": 2000,
     "enabled": true
   },
   {
-    "expression": "/*#SeaDex Alt*/ isAnime ? negate(seadex(streams, 'best'), seadex(streams)) : []",
+    "expression": "/*SeaDex Alt*/ isAnime ? negate(seadex(streams, 'best'), seadex(streams)) : []",
     "score": 1750,
     "enabled": true
   },
@@ -185,92 +185,92 @@
     "enabled": true
   },
   {
-    "expression": "/*#HDR*/ isAnime ? [] : visualTag(streams, 'HDR')",
+    "expression": "/*HDR*/ isAnime ? [] : visualTag(streams, 'HDR')",
     "score": 500,
     "enabled": true
   },
   {
-    "expression": "/*#DV*/ isAnime ? [] : visualTag(streams, 'DV')",
+    "expression": "/*DV*/ isAnime ? [] : visualTag(streams, 'DV')",
     "score": 1000,
     "enabled": true
   },
   {
-    "expression": "/*#HDR10*/ isAnime ? [] : visualTag(streams, 'HDR10')",
+    "expression": "/*HDR10*/ isAnime ? [] : visualTag(streams, 'HDR10')",
     "score": 600,
     "enabled": true
   },
   {
-    "expression": "/*#HDR10+*/ isAnime ? [] : visualTag(streams,'HDR10+')",
+    "expression": "/*HDR10+*/ isAnime ? [] : visualTag(streams,'HDR10+')",
     "score": 601,
     "enabled": true
   },
   {
-    "expression": "/*#TrueHD ATMOS*/ isAnime ? [] : negate(audioTag(streams, 'DD+', 'DD', 'DTS:X', 'DTS', 'FLAC'), audioTag(audioTag(streams, 'Atmos'), 'TrueHD'))",
+    "expression": "/*TrueHD ATMOS*/ isAnime ? [] : negate(audioTag(streams, 'DD+', 'DD', 'DTS:X', 'DTS', 'FLAC'), audioTag(audioTag(streams, 'Atmos'), 'TrueHD'))",
     "score": 5000,
     "enabled": true
   },
   {
-    "expression": "/*#DTS X*/ isAnime ? [] : negate(audioTag(streams, 'DD', 'DD+', 'TrueHD', 'Atmos', 'FLAC', 'AAC'), audioTag(streams, 'DTS:X'))",
+    "expression": "/*DTS X*/ isAnime ? [] : negate(audioTag(streams, 'DD', 'DD+', 'TrueHD', 'Atmos', 'FLAC', 'AAC'), audioTag(streams, 'DTS:X'))",
     "score": 4500,
     "enabled": true
   },
   {
-    "expression": "/*#ATMOS (undefined)*/ isAnime ? [] : negate(audioTag(streams, 'AAC', 'DD', 'DD+', 'DTS', 'FLAC', 'TrueHD'), audioTag(streams, 'Atmos'))",
+    "expression": "/*ATMOS (undefined)*/ isAnime ? [] : negate(audioTag(streams, 'AAC', 'DD', 'DD+', 'DTS', 'FLAC', 'TrueHD'), audioTag(streams, 'Atmos'))",
     "score": 3000,
     "enabled": true
   },
   {
-    "expression": "/*#DD+ ATMOS*/ isAnime ? [] : negate(audioTag(streams, 'TrueHD', 'DTS', 'DD', 'FLAC', 'AAC'), audioTag(audioTag(streams, 'DD+'), 'Atmos'))",
+    "expression": "/*DD+ ATMOS*/ isAnime ? [] : negate(audioTag(streams, 'TrueHD', 'DTS', 'DD', 'FLAC', 'AAC'), audioTag(audioTag(streams, 'DD+'), 'Atmos'))",
     "score": 3000,
     "enabled": true
   },
   {
-    "expression": "/*#TrueHD*/ isAnime ? [] : negate(audioTag(streams, 'Atmos', 'DD+', 'DTS', 'FLAC', 'DD'), audioTag(streams, 'TrueHD'))",
+    "expression": "/*TrueHD*/ isAnime ? [] : negate(audioTag(streams, 'Atmos', 'DD+', 'DTS', 'FLAC', 'DD'), audioTag(streams, 'TrueHD'))",
     "score": 2750,
     "enabled": true
   },
   {
-    "expression": "/*#DTS-HD MA*/ isAnime ? [] : negate(audioTag(streams, 'TrueHD', 'Atmos', 'DD+', 'DD', 'DTS:X', 'FLAC', 'AAC', 'DTS-ES'), audioTag(streams, 'DTS-HD MA'))",
+    "expression": "/*DTS-HD MA*/ isAnime ? [] : negate(audioTag(streams, 'TrueHD', 'Atmos', 'DD+', 'DD', 'DTS:X', 'FLAC', 'AAC', 'DTS-ES'), audioTag(streams, 'DTS-HD MA'))",
     "score": 2500,
     "enabled": true
   },
   {
-    "expression": "/*#FLAC*/ isAnime ? [] : negate(audioTag(streams, 'AAC', 'DTS', 'TrueHD', 'Atmos', 'DD', 'DD+'), audioTag(streams, 'FLAC'))",
+    "expression": "/*FLAC*/ isAnime ? [] : negate(audioTag(streams, 'AAC', 'DTS', 'TrueHD', 'Atmos', 'DD', 'DD+'), audioTag(streams, 'FLAC'))",
     "score": 2250,
     "enabled": true
   },
   {
-    "expression": "/*#DTS-HD HRA*/ isAnime ? [] : negate(audioTag(streams, 'TrueHD', 'Atmos', 'DD+', 'DD', 'DTS:X', 'FLAC', 'AAC', 'DTS-ES'), audioTag(streams, 'DTS-HD'))",
+    "expression": "/*DTS-HD HRA*/ isAnime ? [] : negate(audioTag(streams, 'TrueHD', 'Atmos', 'DD+', 'DD', 'DTS:X', 'FLAC', 'AAC', 'DTS-ES'), audioTag(streams, 'DTS-HD'))",
     "score": 2000,
     "enabled": true
   },
   {
-    "expression": "/*#DD+*/ isAnime ? [] : negate(audioTag(streams, 'TrueHD', 'Atmos', 'DTS', 'FLAC', 'AAC'), audioTag(streams, 'DD+'))",
+    "expression": "/*DD+*/ isAnime ? [] : negate(audioTag(streams, 'TrueHD', 'Atmos', 'DTS', 'FLAC', 'AAC'), audioTag(streams, 'DD+'))",
     "score": 1750,
     "enabled": true
   },
   {
-    "expression": "/*#DTS-ES*/ isAnime ? [] : negate(audioTag(streams, 'TrueHD', 'Atmos', 'DD+', 'DD', 'DTS:X', 'FLAC', 'AAC'), audioTag(streams, 'DTS-ES'))",
+    "expression": "/*DTS-ES*/ isAnime ? [] : negate(audioTag(streams, 'TrueHD', 'Atmos', 'DD+', 'DD', 'DTS:X', 'FLAC', 'AAC'), audioTag(streams, 'DTS-ES'))",
     "score": 1500,
     "enabled": true
   },
   {
-    "expression": "/*#DTS*/ isAnime ? [] : negate(audioTag(streams, 'DTS-HD MA', 'DTS-HD', 'DTS-ES', 'DD+', 'TrueHD', 'Atmos', 'DD', 'DTS:X', 'FLAC', 'AAC'), audioTag(streams, 'DTS'))",
+    "expression": "/*DTS*/ isAnime ? [] : negate(audioTag(streams, 'DTS-HD MA', 'DTS-HD', 'DTS-ES', 'DD+', 'TrueHD', 'Atmos', 'DD', 'DTS:X', 'FLAC', 'AAC'), audioTag(streams, 'DTS'))",
     "score": 1250,
     "enabled": true
   },
   {
-    "expression": "/*#AAC*/ isAnime ? [] : negate(audioTag(streams, 'DTS', 'DD+', 'DD', 'FLAC', 'TrueHD', 'Atmos'), audioTag(streams, 'AAC'))",
+    "expression": "/*AAC*/ isAnime ? [] : negate(audioTag(streams, 'DTS', 'DD+', 'DD', 'FLAC', 'TrueHD', 'Atmos'), audioTag(streams, 'AAC'))",
     "score": 1000,
     "enabled": true
   },
   {
-    "expression": "/*#DD*/ isAnime ? [] : negate(audioTag(streams, 'DD+', 'TrueHD', 'Atmos', 'DTS', 'FLAC', 'AAC'), audioTag(streams, 'DD'))",
+    "expression": "/*DD*/ isAnime ? [] : negate(audioTag(streams, 'DD+', 'TrueHD', 'Atmos', 'DTS', 'FLAC', 'AAC'), audioTag(streams, 'DD'))",
     "score": 750,
     "enabled": true
   },
   {
-    "expression": "/*#Opus*/ isAnime ? [] : audioTag(streams, 'OPUS')",
+    "expression": "/*Opus*/ isAnime ? [] : audioTag(streams, 'OPUS')",
     "score": 250,
     "enabled": true
   },
@@ -655,12 +655,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Series*/ /*#UHD Streaming Boost*/ queryType=='series' ? regexMatched(resolution(streams, '2160p'), 'DSNP', 'HMAX', 'NF') : []",
+    "expression": "/*#Series*/ /*UHD Streaming Boost*/ queryType=='series' ? regexMatched(resolution(streams, '2160p'), 'DSNP', 'HMAX', 'NF') : []",
     "score": 75,
     "enabled": true
   },
   {
-    "expression": "/*#Series*/ /*#HD Streaming Boost*/ queryType=='series' ? regexMatched(resolution(streams, '1080p'), 'DSNP') : []",
+    "expression": "/*#Series*/ /*HD Streaming Boost*/ queryType=='series' ? regexMatched(resolution(streams, '1080p'), 'DSNP') : []",
     "score": 75,
     "enabled": true
   },
