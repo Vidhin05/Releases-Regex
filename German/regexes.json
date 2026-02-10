@@ -66,17 +66,17 @@
   },
   {
     "name": "Web T1 GER",
-    "pattern": "/^(?=.*\\bWEB\\b)(?=.*\\b(?:DL|RIP)\\b)(?=.*\\b(?:ZeroTwo|BUTTERCUP|HARTZ02|XiSS|DOGPACK404|PRiNCESSDiANA|DiVA|WAREZCX|BiTCHNUGGET|TSCC|TvR|NIMA4K|TVS|D02KU|PXL|QfG|CNY|WeebPinn|MEDiATHEK|RiiR|TOJ|WalterBishop|pmHD)\\b).*/",
+    "pattern": "/^(?=.*\\bWEB\\b)(?=.*\\b(?:DL|RIP)?\\b)(?=.*\\b(?:ZeroTwo|BUTTERCUP|HARTZ02|XiSS|DOGPACK404|PRiNCESSDiANA|DiVA|WAREZCX|BiTCHNUGGET|TSCC|TvR|NIMA4K|TVS|D02KU|PXL|QfG|CNY|WeebPinn|MEDiATHEK|RiiR|TOJ|WalterBishop|pmHD)\\b).*/",
     "score": 0
   },
   {
     "name": "Web T2 GER",
-    "pattern": "/^(?=.*\\bWEB\\b)(?=.*\\b(?:DL|RIP)\\b)(?=.*\\b(?:VECTOR|MULTiPLEX|SiXTYNiNE|Oergel|4SF|ABJ|paranoid06)\\b).*/",
+    "pattern": "/^(?=.*\\bWEB\\b)(?=.*\\b(?:DL|RIP)?\\b)(?=.*\\b(?:VECTOR|MULTiPLEX|SiXTYNiNE|Oergel|4SF|ABJ|paranoid06)\\b).*/",
     "score": 0
   },
   {
     "name": "Web T3 GER",
-    "pattern": "/^(?=.*\\bWEB\\b)(?=.*\\b(?:DL|RIP)\\b)(?=.*\\b(?:RobertDeNiro|BALENCiAGA|HDSource|FX|RDR)\\b).*/",
+    "pattern": "/^(?=.*\\bWEB\\b)(?=.*\\b(?:DL|RIP)?\\b)(?=.*\\b(?:RobertDeNiro|BALENCiAGA|HDSource|FX|RDR)\\b).*/",
     "score": 0
   },
   {
