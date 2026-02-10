@@ -88,12 +88,12 @@
           "enabled": true
         },
         {
-          "expression": "/*#SeaDex Best*/ isAnime ? seadex(streams, 'best') : []",
+          "expression": "/*SeaDex Best*/ isAnime ? seadex(streams, 'best') : []",
           "score": 2000,
           "enabled": true
         },
         {
-          "expression": "/*#SeaDex Alt*/ isAnime ? negate(seadex(streams, 'best'), seadex(streams)) : []",
+          "expression": "/*SeaDex Alt*/ isAnime ? negate(seadex(streams, 'best'), seadex(streams)) : []",
           "score": 1750,
           "enabled": true
         },
