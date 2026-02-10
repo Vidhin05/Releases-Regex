@@ -185,7 +185,7 @@
     "enabled": true
   },
   {
-    "expression": "/*x265 (HD)*/ encode(negate(resolution('2160p'), streams), 'x265','H.265','HEVC')",
+    "expression": "/*x265 (HD)*/ encode(negate(resolution(streams, '2160p'), streams), 'x265','H.265','HEVC')",
     "score": 0,
     "enabled": true
   },
