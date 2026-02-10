@@ -215,7 +215,7 @@
     "enabled": true
   },
   {
-    "expression": "/*ATMOS (undefined)*/ isAnime ? [] : negate(audioTag(streams, 'AAC', 'DD', 'DD+', 'DTS', 'FLAC', 'TrueHD'), audioTag(streams, 'Atmos'))",
+    "expression": "/*ATMOS*/ isAnime ? [] : negate(audioTag(streams, 'AAC', 'DD', 'DD+', 'DTS', 'FLAC', 'TrueHD'), audioTag(streams, 'Atmos'))",
     "score": 3000,
     "enabled": true
   },
