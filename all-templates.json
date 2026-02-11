@@ -24,6 +24,29 @@
   },
   {
     "metadata": {
+      "id": "Vidhin05.german-template",
+      "name": "Vidhin's German Regexes",
+      "description": "German locale: Sorting streams using TRaSH [German quality profiles](https://trash-guides.info/Radarr/radarr-setup-quality-profiles-german-en/) regex + Ranked Stream Expressions. Fully **auto-syncs** updates to regex patterns and expressions.\n\n * **German** — German DL, German-only, Not GER/EN; GER T1-T3 (Remux/Bluray/Web), Web Scene GER; LQ GER, GER Microsized.\n * **Quality & source** — Remux, Bluray, Web tiers; repack/proper.\n * **Audio** — Full hierarchy.\n * **Visual** — HDR, Dolby Vision, HDR10/10+.\n * **Movie** — Editions, boutique labels.\n * **Streaming** — Source tags, UHD/HD boosts.\n * **Penalties** — Low-quality and undesired tags.\n\n * **ⓘ Requires Stream Expression Score in sort** (not Regex)\n * Add `{stream.seScore}` and `{stream.rseMatched}` to formatter\n * ⚠️ [How to customize scores](https://github.com/Vidhin05/Releases-Regex#customizing-scores)",
+      "source": "external",
+      "author": "Vidhin05",
+      "version": "1.0.0",
+      "category": "Regex",
+      "services": [],
+      "serviceRequired": false
+    },
+    "config": {
+      "preferredRegexPatterns": [],
+      "rankedStreamExpressions": [],
+      "syncedRankedRegexUrls": [
+        "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/German/regexes.json"
+      ],
+      "syncedRankedStreamExpressionUrls": [
+        "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/German/expressions.json"
+      ]
+    }
+  },
+  {
+    "metadata": {
       "id": "Vidhin05.legacy-english-template",
       "name": "Vidhin's Legacy English Regexes",
       "description": "⚠️ **Unmaintained.** Prefer **Vidhin's English Regexes** (other template) for scoring in depth.\n\nLegacy template for sorting streams using [TRaSH Guides](https://trash-guides.info) regex + Ranked Stream Expressions. **Auto-syncs** updates to regex patterns.\n\n * **Quality & source** — Remux, Bluray, Web tiers; repack/proper; season packs.\n * **Anime** — BD/Remux/Web tiers, SeaDex Best/Alt, uncensored bonus, penalties.\n * **Movie** — Editions, boutique labels. (1 score)\n * **Streaming** — Source tags. (No score)\n * **Penalties** — Low-quality and undesired tags.\n\n * **ⓘ Requires Stream Expression Score in sort** (not Regex)\n * Add `{stream.seScore}` and `{stream.rseMatched}` to formatter\n * ⚠️ [How to customize scores](https://github.com/Vidhin05/Releases-Regex#customizing-scores)",
