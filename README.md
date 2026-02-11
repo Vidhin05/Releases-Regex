@@ -16,7 +16,7 @@ AIOStreams uses a template-based import system. Templates are auto-updated with 
    ```
    https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/all-templates.json
    ```
-3. Click go, and then load the template.
+3. Click go, and then load the template (e.g. **English Regexes** or **German Regexes**).
 
 > [!TIP]
 > Add `{stream.seScore}` to your formatter to display the score and `{stream.rseMatched}` to display the matched stream expressions.
@@ -72,6 +72,8 @@ If you're running a community AIOStreams instance and want to allow users to use
 Set these environment variables in your AIOStreams instance to allow users to use these regexes and stream expressions:
 
 ```bash
+WHITELISTED_REGEX_PATTERNS_URLS=["https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/regexes.json", "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/German/regexes.json"]
+WHITELISTED_SEL_URLS=["https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/expressions.json", "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/German/expressions.json"]
 WHITELISTED_REGEX_PATTERNS_URLS_GITHUB_USERNAMES=["Vidhin05"]
 WHITELISTED_SEL_URLS_GITHUB_USERNAMES=["Vidhin05"]
 WHITELISTED_SYNC_REFRESH_INTERVAL=3600
