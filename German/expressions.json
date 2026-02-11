@@ -300,7 +300,7 @@
     "enabled": true
   },
   {
-    "expression": "/*LQ*/ isAnime ? [] : regexMatched(streams, 'LQ','LQ GER')",
+    "expression": "/*LQ*/ isAnime ? [] : merge(regexMatched(streams, 'LQ', 'LQ GER'), releaseGroup(streams, 'E'))",
     "score": -35000,
     "enabled": true
   },
