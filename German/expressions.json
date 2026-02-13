@@ -165,22 +165,22 @@
     "enabled": true
   },
   {
-    "expression": "/*TrueHD*/ isAnime ? [] : audioTag(negate(merge(audioTag(streams, 'Atmos','DD+','DTS','FLAC','DD'), releaseGroup(streams, 'CtrlHD','W4NK3R','DON')), streams),'TrueHD')",
+    "expression": "/*TrueHD*/ isAnime ? [] : audioTag(negate(merge(audioTag(streams, 'Atmos'), releaseGroup(streams, 'CtrlHD','W4NK3R','DON')), streams),'TrueHD')",
     "score": 2750,
     "enabled": true
   },
   {
-    "expression": "/*DTS-HD MA*/ isAnime ? [] : audioTag(negate(audioTag(streams, 'TrueHD','Atmos','DD+','DD','DTS:X','FLAC','AAC','PCM','DTS-HD','DTS-ES'), streams), 'DTS-HD MA')",
+    "expression": "/*DTS-HD MA*/ isAnime ? [] : audioTag(negate(audioTag(streams, 'TrueHD','Atmos','DTS:X','FLAC'), streams), 'DTS-HD MA')",
     "score": 2500,
     "enabled": true
   },
   {
-    "expression": "/*PCM*/ isAnime ? [] : audioTag(negate(audioTag(streams, 'AAC','FLAC','DTS','TrueHD','Atmos','DD','DD+'), streams), 'PCM')",
+    "expression": "/*PCM*/ isAnime ? [] : audioTag(negate(audioTag(streams, 'DTS','TrueHD','Atmos'), streams), 'PCM')",
     "score": 2250,
     "enabled": true
   },
   {
-    "expression": "/*FLAC*/ isAnime ? [] : audioTag(negate(audioTag(streams, 'AAC','DTS','TrueHD','Atmos','DD','DD+'), streams), 'FLAC')",
+    "expression": "/*FLAC*/ isAnime ? [] : audioTag(negate(audioTag(streams, 'TrueHD','Atmos'), streams), 'FLAC')",
     "score": 2250,
     "enabled": true
   },
@@ -190,17 +190,17 @@
     "enabled": true
   },
   {
-    "expression": "/*DTS-HD HRA*/ isAnime ? [] : audioTag(negate(audioTag(streams, 'TrueHD','Atmos','DD+','DD','DTS:X','FLAC','AAC','DTS-ES'), streams), 'DTS-HD')",
+    "expression": "/*DTS-HD HRA*/ isAnime ? [] : audioTag(negate(audioTag(streams, 'TrueHD','Atmos','DTS:X','FLAC'), streams), 'DTS-HD')",
     "score": 2000,
     "enabled": true
   },
   {
-    "expression": "/*DTS-ES*/ isAnime ? [] : audioTag(negate(audioTag(streams, 'TrueHD','Atmos','DD+','DD','DTS:X','FLAC','AAC'), streams), 'DTS-ES')",
+    "expression": "/*DTS-ES*/ isAnime ? [] : audioTag(negate(audioTag(streams, 'TrueHD','Atmos','DD+','DTS:X','FLAC'), streams), 'DTS-ES')",
     "score": 1500,
     "enabled": true
   },
   {
-    "expression": "/*DTS*/ isAnime ? [] : audioTag(negate(audioTag(streams, 'DTS-HD MA','DTS-HD','DTS-ES','DD+','TrueHD','Atmos','DD','DTS:X','FLAC','AAC'), streams), 'DTS')",
+    "expression": "/*DTS*/ isAnime ? [] : audioTag(negate(audioTag(streams, 'DTS-HD MA','DTS-HD','DTS-ES','DD+','TrueHD','Atmos','DTS:X','FLAC'), streams), 'DTS')",
     "score": 1250,
     "enabled": true
   },
