@@ -280,11 +280,6 @@
     "score": 0
   },
   {
-    "pattern": "/[xh][ ._-]?265|\\bHEVC(\\b|\\d)/i",
-    "name": "x265 (HD)",
-    "score": 0
-  },
-  {
     "pattern": "/10[.-]?bit|hi10p/i",
     "name": "10bit",
     "score": 0
