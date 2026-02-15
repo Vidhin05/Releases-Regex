@@ -54,7 +54,7 @@ Using these scoring options, you'll still benefit from the tier system when bett
 - **Uncensored**: Adjust score based on your preference (see above for scoring options).
 - **Dubs Only**: Disable to keep anime dub-only streams.
 - **Bad Dual Groups**: Disable to keep dual audio groups with non-English as primary language.
-- **x265 (HD)**: Disable to keep x265 HD encodes.
+- **x265**: Disable to keep x265 HD encodes without HDR/DV.
 - **3D**: Disable to keep 3D releases if you want them.
 - **Obfuscated**: Disable to keep obfuscated releases (Enabled by default, but feel free to adjust score as needed.).
 - **Retags**: Disable to keep retagged releases (Enabled by default, but feel free to adjust score as needed.).

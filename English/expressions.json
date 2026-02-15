@@ -670,7 +670,7 @@
     "enabled": true
   },
   {
-    "expression": "/*x265 (HD)*/ isAnime ? [] : regexMatched(negate(resolution(streams, '2160p'), streams), 'x265 (HD)')",
+    "expression": "/*x265*/ isAnime ? [] : negate(merge(visualTag(streams, 'HDR','HDR10','HDR10+'), visualTag(streams, 'DV')), encode(negate(resolution(streams, '2160p'), streams), 'HEVC'))",
     "score": -10000,
     "enabled": true
   },
