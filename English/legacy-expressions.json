@@ -285,7 +285,7 @@
     "enabled": true
   },
   {
-    "expression": "/*#Anime*/ /*Dual Audio*/ isAnime ? language(streams, 'Dual Audio') : []",
+    "expression": "/*#Anime*/ /*Dual Audio*/ isAnime and originalLanguage != 'English' ? language(streams, 'Dual Audio') : []",
     "score": 0,
     "enabled": false
   },
