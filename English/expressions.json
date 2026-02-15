@@ -300,7 +300,7 @@
     "enabled": true
   },
   {
-    "expression": "/*4K Remaster*/ queryType=='movie' ? regexMatched(regexMatched(negate(resolution(streams, '2160p'), streams), '4K'), regexMatched(streams, 'Remaster')) : []",
+    "expression": "/*4K Remaster*/ queryType=='movie' ? regexMatched(regexMatched(negate(resolution(streams, '2160p'), streams), '4K'), 'Remaster') : []",
     "score": 25,
     "enabled": true
   },
