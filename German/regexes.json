@@ -191,7 +191,7 @@
   },
   {
     "name": "HDR",
-    "pattern": "/(?:(?:^(?=.*\\b(dv|dovi|dolby[ .]?v(ision)?)\\b)(?!(?=.*\\b(WEB[ ._-]?(DL|Rip)?)\\b)(?!.*\\b(hulu)\\b))|\\b(HLG|PQ)\\b|^(?=.*\\b(FraMeSToR|HQMUX|SiCFoI)\\b)(?=.*\\b(2160p)\\b)(?!.*(?:HDR10(?:[+]|P(?:lus)?)|SDR)\\b).*)/i",
+    "pattern": "/(?:(?:^(?=.*\\b(dv|dovi|dolby[ .]?v(ision)?)\\b)(?!(?=.*\\b(WEB[ ._-]?(DL|Rip)?)\\b)(?!.*\\b(hulu)\\b)))|\\b(HLG|PQ)\\b|^(?=.*\\b(FraMeSToR|HQMUX|SiCFoI)\\b)(?=.*\\b(2160p)\\b)(?!.*(?:HDR10(?:[+]|P(?:lus)?)|SDR)\\b).*)/i",
     "score": 0
   },
   {
