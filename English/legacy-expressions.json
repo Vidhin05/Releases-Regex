@@ -275,7 +275,7 @@
     "enabled": true
   },
   {
-    "expression": "/*Dubs Only*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'Dubs Only')) : []",
+    "expression": "/*Dubs Only*/ isAnime and originalLanguage != 'English' ? negate(seadex(streams), regexMatched(streams, 'Dubs Only')) : []",
     "score": -10000,
     "enabled": true
   },
