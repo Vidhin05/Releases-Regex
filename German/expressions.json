@@ -130,7 +130,7 @@
     "enabled": true
   },
   {
-    "expression": "/*HDR*/ isAnime ? [] : visualTag(streams, 'HDR','HDR10','HDR10+')",
+    "expression": "/*HDR*/ isAnime ? [] : merge(regexMatched(streams, 'HDR'), visualTag(streams, 'HDR', 'HDR10', 'HDR10+'))",
     "score": 500,
     "enabled": true
   },
@@ -140,7 +140,7 @@
     "enabled": true
   },
   {
-    "expression": "/*HDR10+*/ isAnime ? [] : visualTag(streams, 'HDR10+')",
+    "expression": "/*HDR10+ Boost*/ isAnime ? [] : visualTag(streams, 'HDR10+')",
     "score": 100,
     "enabled": true
   },
