@@ -21,10 +21,15 @@ AIOStreams uses a template-based import system. Templates are auto-updated with 
 > [!TIP]
 > Add `{stream.seScore}` to your formatter to display the score and `{stream.rseMatched}` to display the matched stream expressions.
 >
-> My sort order:
+> Recommended English sort order:
 > - **Global Sort Order**: `Cached`
 > - **Cached Sort Order**: `SeaDex -> Library -> Resolution -> Quality -> Stream Expression Matched -> Stream Expression Score -> Bitrate`
 > - **Uncached Sort Order**: `SeaDex -> Library -> Resolution -> Quality -> Stream Expression Matched -> Stream Expression Score -> Seeders -> Bitrate`
+>
+> Recommended German sort order:
+> - **Global Sort Order**: `Cached`
+> - **Cached Sort Order**: `SeaDex -> Library -> Stream Expression Matched -> Stream Expression Score -> Bitrate`
+> - **Uncached Sort Order**: `SeaDex -> Library -> Stream Expression Matched -> Stream Expression Score -> Seeders -> Bitrate`
 
 > [!CAUTION]
 > I recommend using a SEL to smartly limit and filter streams instead of using exclude regexes. You can use [Tamtaro's](https://github.com/Tam-Taro/SEL-Filtering-and-Sorting#-how-to-import).
