@@ -1,552 +1,282 @@
 [
   {
-    "expression": "/*German DL*/ isAnime ? [] : (originalLanguage == 'German') ? quality(language(streams, 'German'), 'WEB-DL') : []",
+    "expression": "/*German DL*/ (originalLanguage == 'German') ? language(quality(streams, 'WEB-DL'), 'German') : []",
     "score": 11000,
     "enabled": true
   },
   {
-    "expression": "/*German DL (UDF)*/ isAnime ? [] : (originalLanguage != 'German') ? quality(language(streams, 'German'), 'WEB-DL') : []",
+    "expression": "/*German DL (undefined)*/ (originalLanguage != 'German') ? language(quality(streams, 'WEB-DL'), 'German') : []",
     "score": 11000,
     "enabled": true
   },
   {
-    "expression": "/*German*/ isAnime ? [] : (originalLanguage != 'German') ? language(negate(quality(streams, 'WEB-DL'), streams), 'German') : []",
+    "expression": "/*German*/ (originalLanguage != 'German') ? language(negate(quality(streams, 'WEB-DL'), streams), 'German') : []",
     "score": 10000,
     "enabled": true
   },
   {
-    "expression": "/*Not GER/EN*/ isAnime ? [] : (queryType == 'movie' or queryType == 'series') ? negate(merge(language(streams, 'German'), language(streams, 'English')), streams) : []",
-    "score": -35000,
-    "enabled": true
-  },
-  {
-    "expression": "/*2160p GER*/ isAnime ? [] : (originalLanguage == 'German') ? language(resolution(streams,'2160p'), 'German','Original') : []",
+    "expression": "/*German 2160p Booster*/ (originalLanguage == 'German') ? language(resolution(streams,'2160p'), 'German','Original') : []",
     "score": 9000,
     "enabled": true
   },
   {
-    "expression": "/*Remux T1 GER*/ isAnime ? [] : regexMatched(streams,'Remux T1 GER')",
-    "score": 4000,
-    "enabled": true
-  },
-  {
-    "expression": "/*Remux T2 GER*/ isAnime ? [] : regexMatched(streams,'Remux T2 GER')",
-    "score": 3900,
-    "enabled": true
-  },
-  {
-    "expression": "/*Remux T1*/ isAnime ? [] : regexMatched(streams,'Remux T1')",
-    "score": 1950,
-    "enabled": true
-  },
-  {
-    "expression": "/*Remux T2*/ isAnime ? [] : regexMatched(streams,'Remux T2')",
-    "score": 1900,
-    "enabled": true
-  },
-  {
-    "expression": "/*Remux T3*/ isAnime ? [] : regexMatched(streams,'Remux T3')",
-    "score": 1850,
-    "enabled": true
-  },
-  {
-    "expression": "/*Web T1 GER*/ isAnime ? [] : regexMatched(streams,'Web T1 GER')",
-    "score": 2100,
-    "enabled": true
-  },
-  {
-    "expression": "/*Web T2 GER*/ isAnime ? [] : regexMatched(streams,'Web T2 GER')",
-    "score": 1900,
-    "enabled": true
-  },
-  {
-    "expression": "/*Web T3 GER*/ isAnime ? [] : regexMatched(streams,'Web T3 GER')",
-    "score": 1800,
-    "enabled": true
-  },
-  {
-    "expression": "/*Web Scene GER*/ isAnime ? [] : regexMatched(streams,'Web Scene GER')",
-    "score": 1700,
-    "enabled": true
-  },
-  {
-    "expression": "/*Bluray T1 GER*/ isAnime ? [] : regexMatched(streams,'Bluray T1 GER')",
-    "score": 2900,
-    "enabled": true
-  },
-  {
-    "expression": "/*Bluray T2 GER*/ isAnime ? [] : regexMatched(streams,'Bluray T2 GER')",
-    "score": 2650,
-    "enabled": true
-  },
-  {
-    "expression": "/*Bluray T3 GER*/ isAnime ? [] : regexMatched(streams,'Bluray T3 GER')",
-    "score": 2300,
-    "enabled": true
-  },
-  {
-    "expression": "/*Bluray T1*/ isAnime ? [] : regexMatched(streams,'Bluray T1')",
-    "score": 1800,
-    "enabled": true
-  },
-  {
-    "expression": "/*Bluray T2*/ isAnime ? [] : regexMatched(streams,'Bluray T2')",
-    "score": 1750,
-    "enabled": true
-  },
-  {
-    "expression": "/*Bluray T3*/ isAnime ? [] : regexMatched(streams,'Bluray T3')",
-    "score": 1700,
-    "enabled": true
-  },
-  {
-    "expression": "/*Web T1*/ isAnime ? [] : regexMatched(streams,'Web T1')",
-    "score": 1700,
-    "enabled": true
-  },
-  {
-    "expression": "/*Web T2*/ isAnime ? [] : regexMatched(streams,'Web T2')",
-    "score": 1650,
-    "enabled": true
-  },
-  {
-    "expression": "/*Web T3*/ isAnime ? [] : regexMatched(streams,'Web T3')",
-    "score": 1600,
-    "enabled": true
-  },
-  {
-    "expression": "/*Repack*/ isAnime ? [] : regexMatched(negate(regexMatched(streams, 'Repack2','Repack3'), streams), 'Repack/Proper')",
-    "score": 5,
-    "enabled": true
-  },
-  {
-    "expression": "/*Repack2*/ isAnime ? [] : regexMatched(negate(regexMatched(streams, 'Repack3'), streams), 'Repack2')",
-    "score": 6,
-    "enabled": true
-  },
-  {
-    "expression": "/*Repack3*/ isAnime ? [] : regexMatched(streams, 'Repack3')",
-    "score": 7,
-    "enabled": true
-  },
-  {
-    "expression": "/*HDR*/ isAnime ? [] : merge(regexMatched(streams, 'HDR'), visualTag(streams, 'HDR', 'HDR10', 'HDR10+'))",
-    "score": 500,
-    "enabled": true
-  },
-  {
-    "expression": "/*DV*/ isAnime ? [] : visualTag(streams, 'DV')",
-    "score": 1000,
-    "enabled": true
-  },
-  {
-    "expression": "/*HDR10+ Boost*/ isAnime ? [] : visualTag(streams, 'HDR10+')",
-    "score": 100,
-    "enabled": true
-  },
-  {
-    "expression": "/*TrueHD ATMOS*/ isAnime ? [] : audioTag(audioTag(negate(audioTag(streams, 'DD','DD+','DTS','DTS:X','FLAC'), streams),'Atmos'), 'TrueHD')",
+    "expression": "/*TrueHD ATMOS*/ audioTag(audioTag(negate(audioTag(streams, 'DD','DD+','DTS','DTS:X','FLAC'), streams),'Atmos'), 'TrueHD')",
     "score": 5000,
     "enabled": true
   },
   {
-    "expression": "/*DTS X*/ isAnime ? [] : audioTag(negate(audioTag(streams, 'DD','DD+','TrueHD','Atmos','FLAC','AAC'), streams), 'DTS:X')",
-    "score": 4500,
+    "expression": "/*German Remux T1*/ releaseGroup(quality(streams, 'Bluray REMUX'), 'TvR','pmHD','NIMA4K','QfG','WeebPinn','MAMA')",
+    "score": 4000,
     "enabled": true
   },
   {
-    "expression": "/*ATMOS*/ isAnime ? [] : audioTag(negate(merge(audioTag(streams, 'AAC','DD','DD+','DTS','FLAC','PCM','TrueHD'), releaseGroup(streams, 'W4NK3R','HQMUX')), streams),'Atmos')",
+    "expression": "/*German Remux T2*/ releaseGroup(quality(streams, 'Bluray REMUX'), 'MULTiPLEX','RHD','HD','HDSource','iNCEPTION','FX','RocketHD')",
+    "score": 3900,
+    "enabled": true
+  },
+  {
+    "expression": "/*ATMOS (undefined)*/ audioTag(negate( merge(audioTag(streams, 'AAC','DD','DD+','DTS','FLAC','PCM','TrueHD'), releaseGroup(streams, 'W4NK3R','HQMUX') ), streams),'Atmos')",
     "score": 3000,
     "enabled": true
   },
   {
-    "expression": "/*DD+ ATMOS*/ isAnime ? [] : audioTag(audioTag(negate(audioTag(streams, 'TrueHD','DTS','DD','FLAC','AAC','PCM'), streams), 'Atmos'), 'DD+')",
+    "expression": "/*DD+ ATMOS*/ audioTag(audioTag(negate(audioTag(streams, 'TrueHD','DTS','DD','FLAC','AAC','PCM'), streams), 'Atmos'), 'DD+')",
     "score": 3000,
     "enabled": true
   },
   {
-    "expression": "/*TrueHD*/ isAnime ? [] : audioTag(negate(merge(audioTag(streams, 'Atmos'), releaseGroup(streams, 'CtrlHD','W4NK3R','DON')), streams),'TrueHD')",
+    "expression": "/*German Bluray T1*/ releaseGroup(quality(streams, 'Bluray'), 'ZeroTwo','BUTTERCUP','HARTZ02','XiSS','DOGPACK404','PRiNCESSDiANA','DiVA','WAREZCX','BiTCHNUGGET','TSCC','TvR','NIMA4K','TVS','PXL','CNY','WeebPinn','MAMA','WalterBishop')",
+    "score": 2900,
+    "enabled": true
+  },
+  {
+    "expression": "/*TrueHD*/ audioTag(negate( merge(audioTag(streams, 'Atmos','DD+','DTS','FLAC','DD'), releaseGroup(streams, 'CtrlHD','W4NK3R','DON') ), streams),'TrueHD')",
     "score": 2750,
     "enabled": true
   },
   {
-    "expression": "/*DTS-HD MA*/ isAnime ? [] : audioTag(negate(audioTag(streams, 'TrueHD','Atmos','DTS:X','FLAC'), streams), 'DTS-HD MA')",
+    "expression": "/*German Bluray T2*/ releaseGroup(quality(streams, 'Bluray'), 'VECTOR','MULTiPLEX','ABJ','paranoid06')",
+    "score": 2650,
+    "enabled": true
+  },
+  {
+    "expression": "/*DTS-HD MA*/ audioTag(negate(audioTag(streams, 'TrueHD','Atmos','DD+','DD','DTS:X','FLAC','AAC','PCM','DTS-HD','DTS-ES'), streams), 'DTS-HD MA')",
     "score": 2500,
     "enabled": true
   },
   {
-    "expression": "/*PCM*/ isAnime ? [] : audioTag(negate(audioTag(streams, 'DTS','TrueHD','Atmos'), streams), 'PCM')",
+    "expression": "/*German Bluray T3*/ releaseGroup(quality(streams, 'Bluray'), 'RobertDeNiro','LeetHD','RHD','HDSource','UNFIrED','iNCEPTION','FX','RDR')",
+    "score": 2300,
+    "enabled": true
+  },
+  {
+    "expression": "/*PCM*/ audioTag(negate(audioTag(streams, 'AAC','FLAC','DTS','TrueHD','Atmos','DD','DD+'), streams), 'PCM')",
     "score": 2250,
     "enabled": true
   },
   {
-    "expression": "/*FLAC*/ isAnime ? [] : audioTag(negate(audioTag(streams, 'TrueHD','Atmos'), streams), 'FLAC')",
-    "score": 2250,
+    "expression": "/*German Web T1*/ releaseGroup(quality(streams, 'WEB-DL','WEBRip'), 'ZeroTwo','BUTTERCUP','HARTZ02','XiSS','DOGPACK404','PRiNCESSDiANA','DiVA','WAREZCX','BiTCHNUGGET','TSCC','TvR','NIMA4K','TVS','D02KU','PXL','QfG','CNY','WeebPinn','MEDiATHEK','RiiR','TOJ','WalterBishop','pmHD')",
+    "score": 2100,
     "enabled": true
   },
   {
-    "expression": "/*DD+*/ isAnime ? [] : audioTag(streams, 'DD+')",
+    "expression": "/*Remux T1*/ releaseGroup(quality(streams, 'Bluray REMUX'), '3L','BiZKiT','BLURANiUM','BMF','CiNEPHiLES','FraMeSToR','PiRAMiDHEAD','PmP','WiLDCAT','ZQ')",
+    "score": 1950,
+    "enabled": true
+  },
+  {
+    "expression": "/*German Web T2*/ releaseGroup(quality(streams, 'WEB-DL','WEBRip'), 'VECTOR','MULTiPLEX','SiXTYNiNE','Oergel','4SF','ABJ','paranoid06')",
+    "score": 1900,
+    "enabled": true
+  },
+  {
+    "expression": "/*Remux T2*/ releaseGroup(quality(streams, 'Bluray REMUX'), 'ATELiER','NCmt','playBD','SiCFoI','SURFINBIRD','TEPES')",
+    "score": 1900,
+    "enabled": true
+  },
+  {
+    "expression": "/*Remux T3*/ releaseGroup(quality(streams, 'Bluray REMUX'), '12GaugeShotgun','decibeL','EPSiLON','HiFi','iFT','KRaLiMaRKo','NTb','PTer','PTP','SumVision','TOA','TRiToN')",
+    "score": 1850,
+    "enabled": true
+  },
+  {
+    "expression": "/*German Web T3*/ releaseGroup(quality(streams, 'WEB-DL','WEBRip'), 'RobertDeNiro','BALENCiAGA','HDSource','FX','RDR')",
+    "score": 1800,
+    "enabled": true
+  },
+  {
+    "expression": "/*DD+*/ audioTag(streams, 'DD+')",
     "score": 1750,
     "enabled": true
   },
   {
-    "expression": "/*DTS-HD HRA*/ isAnime ? [] : audioTag(negate(audioTag(streams, 'TrueHD','Atmos','DTS:X','FLAC'), streams), 'DTS-HD')",
-    "score": 2000,
+    "expression": "/*German Scene*/ releaseGroup(streams, 'DETAiLS','WAYNE','WOMBAT','SAUERKRAUT','WvF','4KCONNECTiON','STARS','AWARDS','DMPD','EXCiTED','iNTENTiON','JaJunge','MGE','MisFiTS','RUBBiSH','RWP','TMSF','TV4A','HAXE','muhHD','RiLE','W4K','ENDSTATiON','HDARCHiV','PL3X','WATCHABLE','OHD','ENCOUNTERS','RSG','OCA','UNDERTAKERS','CDP','SAViOURHD','CONTRiBUTiON','GOREHOUNDS','SPiCY','bi0hazard')",
+    "score": 1700,
     "enabled": true
   },
   {
-    "expression": "/*DTS-ES*/ isAnime ? [] : audioTag(negate(audioTag(streams, 'TrueHD','Atmos','DD+','DTS:X','FLAC'), streams), 'DTS-ES')",
-    "score": 1500,
+    "expression": "/*Web T1*/ releaseGroup(quality(streams, 'WEB-DL','WEBRip'), 'ZeroTwo','BUTTERCUP','HARTZ02','XiSS','DOGPACK404','PRiNCESSDiANA','DiVA','WAREZCX','BiTCHNUGGET','TSCC','TvR','NIMA4K','TVS','D02KU','PXL','QfG','CNY','WeebPinn','MEDiATHEK','RiiR','TOJ','WalterBishop','pmHD')",
+    "score": 1700,
     "enabled": true
   },
   {
-    "expression": "/*DTS*/ isAnime ? [] : audioTag(negate(audioTag(streams, 'DTS-HD MA','DTS-HD','DTS-ES','DD+','TrueHD','Atmos','DTS:X','FLAC'), streams), 'DTS')",
-    "score": 1250,
+    "expression": "/*Web T2*/ releaseGroup(quality(streams, 'WEB-DL','WEBRip'), 'VECTOR','MULTiPLEX','SiXTYNiNE','Oergel','4SF','ABJ','paranoid06')",
+    "score": 1650,
     "enabled": true
   },
   {
-    "expression": "/*AAC*/ isAnime ? [] : audioTag(streams, 'AAC')",
+    "expression": "/*Web T3*/ releaseGroup(quality(streams, 'WEB-DL','WEBRip'), 'RobertDeNiro','BALENCiAGA','HDSource','FX','RDR')",
+    "score": 1600,
+    "enabled": true
+  },
+  {
+    "expression": "/*AAC*/ audioTag(streams, 'AAC')",
     "score": 1000,
     "enabled": true
   },
   {
-    "expression": "/*DD*/ isAnime ? [] : audioTag(streams, 'DD')",
+    "expression": "/*DV Boost*/ visualTag(streams, 'DV')",
+    "score": 1000,
+    "enabled": true
+  },
+  {
+    "expression": "/*DD*/ audioTag(streams, 'DD')",
     "score": 750,
     "enabled": true
   },
   {
-    "expression": "/*1080p GER*/ isAnime ? [] : (originalLanguage == 'German') ? language(resolution(streams,'1080p'), 'German','Original') : []",
+    "expression": "/*German 1080p Booster*/ (originalLanguage == 'German') ? language(resolution(streams,'1080p'), 'German','Original') : []",
     "score": 650,
     "enabled": true
   },
   {
-    "expression": "/*2160p*/ isAnime ? [] : resolution(streams, '2160p')",
+    "expression": "/*HDR*/ visualTag(streams, 'HDR','HDR10','HDR10+')",
+    "score": 500,
+    "enabled": true
+  },
+  {
+    "expression": "/*2160p*/ resolution(streams, '2160p')",
     "score": 100,
     "enabled": true
   },
   {
-    "expression": "/*1080p*/ isAnime ? [] : resolution(streams, '1080p')",
+    "expression": "/*HDR10+ Boost*/ visualTag(streams, 'HDR10+')",
+    "score": 100,
+    "enabled": true
+  },
+  {
+    "expression": "/*1080p*/ resolution(streams, '1080p')",
     "score": 50,
     "enabled": true
   },
   {
-    "expression": "/*IMAX*/ queryType=='movie' ? negate(regexMatched(streams, 'IMAX Enhanced'),regexMatched(streams, 'IMAX')) : []",
-    "score": 800,
-    "enabled": true
-  },
-  {
-    "expression": "/*IMAX Enhanced*/ queryType=='movie' ? regexMatched(streams, 'IMAX Enhanced') : []",
-    "score": 800,
-    "enabled": true
-  },
-  {
-    "expression": "/*Criterion*/ queryType=='movie' ? regexMatched(negate(releaseGroup(streams, 'Criterion'), quality(streams, 'BluRay', 'DVD')), 'Criterion Collection') : []",
-    "score": 25,
-    "enabled": true
-  },
-  {
-    "expression": "/*Masters of Cinema*/ queryType=='movie' ? regexMatched(streams, 'Masters of Cinema') : []",
-    "score": 25,
-    "enabled": true
-  },
-  {
-    "expression": "/*Remaster*/ queryType=='movie' ? negate(regexMatched(streams, '4K'), regexMatched(streams, 'Remaster')) : []",
-    "score": 25,
-    "enabled": true
-  },
-  {
-    "expression": "/*4K Remaster*/ queryType=='movie' ? regexMatched(regexMatched(negate(resolution(streams, '2160p'), streams), '4K'), 'Remaster') : []",
-    "score": 25,
-    "enabled": true
-  },
-  {
-    "expression": "/*Hybrid*/ queryType=='movie' ? regexMatched(negate(releaseGroup(streams, 'HYBRID'), streams), 'Hybrid') : []",
-    "score": 100,
-    "enabled": true
-  },
-  {
-    "expression": "/*Special Edition*/ queryType=='movie' ? negate(regexMatched(streams, 'IMAX Edition', 'Open Matte', 'Theatrical Cut', 'Extended Clip', 'Anniversary Edition', 'Ultimate Edition', 'Extended Edition', 'Director\\'s Cut', 'Collector\\'s Edition', 'Diamond Edition'),regexMatched(streams, 'Special Edition')) : []",
-    "score": 125,
-    "enabled": true
-  },
-  {
-    "expression": "/*Vinegar Syndrome*/ queryType=='movie' ? regexMatched(streams, 'Vinegar Syndrome') : []",
-    "score": 25,
-    "enabled": true
-  },
-  {
-    "expression": "/*CRiT*/ isAnime ? [] : quality(releaseGroup(negate(releaseGroup(streams, 'Criterion'), streams),'CRiT'), 'WEB-DL','WEBRip')",
+    "expression": "/*CRiT*/ quality(negate(releaseGroup(streams, 'Criterion'), regexMatched(streams, 'CRiT')), 'WEB-DL','WEBRip')",
     "score": 20,
     "enabled": true
   },
   {
-    "expression": "/*720p*/ isAnime ? [] : resolution(streams, '720p')",
-    "score": 5,
+    "expression": "/*MA*/ quality(regexMatched(streams, 'MA'), 'WEB-DL','WEBRip')",
+    "score": 20,
     "enabled": true
   },
   {
-    "expression": "/*Extras*/ isAnime ? [] : regexMatched(streams, 'Extras')",
-    "score": -35000,
-    "enabled": true
-  },
-  {
-    "expression": "/*Generated HDR*/ queryType=='movie' ? visualTag(releaseGroup(streams, 'BiTOR','DepraveD','Flights','SasukeducK','tarunk9c','VD0N','VECTOR','VisionXpert'), 'DV','HDR','HDR10','HDR10+') : []",
-    "score": 0,
-    "enabled": true
-  },
-  {
-    "expression": "/*LQ*/ isAnime ? [] : merge(regexMatched(streams, 'LQ', 'LQ GER'), releaseGroup(streams, 'E'))",
-    "score": -35000,
-    "enabled": true
-  },
-  {
-    "expression": "/*LQ Title*/ isAnime ? [] : regexMatched(streams, 'LQ (Release Title)')",
-    "score": -35000,
-    "enabled": true
-  },
-  {
-    "expression": "/*LQ GER Title*/ isAnime ? [] : regexMatched(streams, 'LQ GER (Release Title)')",
-    "score": -35000,
-    "enabled": true
-  },
-  {
-    "expression": "/*GER Microsized*/ isAnime ? [] : regexMatched(streams, 'German Microsized')",
-    "score": -35000,
-    "enabled": true
-  },
-  {
-    "expression": "/*Upscaled*/ isAnime ? [] : regexMatched(streams, 'Upscaled')",
-    "score": -35000,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Movie*/ /*Amazon*/ queryType=='movie' ? regexMatched(streams, 'AMZN') : []",
-    "score": 0,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Movie*/ /*Apple TV*/ queryType=='movie' ? regexMatched(streams, 'ATV') : []",
-    "score": 0,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Movie*/ /*Apple TV+*/ queryType=='movie' ? regexMatched(streams, 'ATVP') : []",
-    "score": 0,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Movie*/ /*Bravia Core*/ queryType=='movie' ? regexMatched(streams, 'BCORE') : []",
+    "expression": "/*BCore*/ regexMatched(quality(streams, 'WEB-DL','WEBRip'), 'BCORE')",
     "score": 15,
     "enabled": true
   },
   {
-    "expression": "/*#Movie*/ /*Criterion Channel*/ queryType=='movie' ? regexMatched(streams, 'CRiT') : []",
-    "score": 20,
+    "expression": "/*Repack3*/ (queryType == 'movie' or queryType == 'series') ? regexMatched(streams, 'Repack3') : []",
+    "score": 7,
     "enabled": true
   },
   {
-    "expression": "/*#Movie*/ /*Disney+*/ queryType=='movie' ? regexMatched(streams, 'DSNP') : []",
+    "expression": "/*Repack2*/ (queryType == 'movie' or queryType == 'series') ? regexMatched(negate(regexMatched(streams, 'Repack3') , streams), 'Repack2') : []",
+    "score": 6,
+    "enabled": true
+  },
+  {
+    "expression": "/*Repack*/ (queryType == 'movie' or queryType == 'series') ? regexMatched(negate(regexMatched(streams, 'Repack2','Repack3') , streams), 'Repack/Proper') : []",
+    "score": 5,
+    "enabled": true
+  },
+  {
+    "expression": "/*720p*/ resolution(streams, '720p')",
+    "score": 5,
+    "enabled": true
+  },
+  {
+    "expression": "/*x265 (HD)*/ negate(merge(encode(merge(resolution(streams, '2160p') , quality(resolution(streams, '1080p'), 'Bluray REMUX')), 'x265','H.265','HEVC') , regexMatched(merge(resolution(streams, '2160p') , quality(resolution(streams, '1080p'), 'Bluray REMUX')), 'x265 (HD)')), streams)",
     "score": 0,
     "enabled": true
   },
   {
-    "expression": "/*#Movie*/ /*HBO*/ queryType=='movie' ? regexMatched(streams, 'HBO') : []",
-    "score": 0,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Movie*/ /*HBO Max*/ queryType=='movie' ? regexMatched(streams, 'HMAX') : []",
-    "score": 0,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Movie*/ /*Hulu*/ queryType=='movie' ? regexMatched(streams, 'Hulu') : []",
-    "score": 0,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Movie*/ /*iTunes*/ queryType=='movie' ? regexMatched(streams, 'iT') : []",
-    "score": 0,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Movie*/ /*Max*/ queryType=='movie' ? regexMatched(streams, 'MAX') : []",
-    "score": 0,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Movie*/ /*Movies Anywhere*/ queryType=='movie' ? regexMatched(streams, 'MA') : []",
-    "score": 20,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Movie*/ /*Netflix*/ queryType=='movie' ? regexMatched(streams, 'NF') : []",
-    "score": 0,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Movie*/ /*Paramount+*/ queryType=='movie' ? regexMatched(streams, 'PMTP') : []",
-    "score": 0,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Movie*/ /*Peacock*/ queryType=='movie' ? regexMatched(streams, 'PCOK') : []",
-    "score": 0,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Movie*/ /*Google Play*/ queryType=='movie' ? regexMatched(streams, 'PLAY') : []",
-    "score": 0,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Movie*/ /*Roku*/ queryType=='movie' ? regexMatched(streams, 'ROKU') : []",
-    "score": 0,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Movie*/ /*Stan*/ queryType=='movie' ? regexMatched(streams, 'STAN') : []",
-    "score": 0,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Series*/ /*Amazon*/ queryType=='series' ? regexMatched(streams, 'AMZN') : []",
-    "score": 75,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Series*/ /*Apple TV+*/ queryType=='series' ? regexMatched(streams, 'ATVP') : []",
-    "score": 75,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Series*/ /*Comedy Central*/ queryType=='series' ? regexMatched(streams, 'CC') : []",
-    "score": 75,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Series*/ /*DC Universe*/ queryType=='series' ? regexMatched(streams, 'DCU') : []",
-    "score": 75,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Series*/ /*Disney+*/ queryType=='series' ? regexMatched(streams, 'DSNP') : []",
-    "score": 75,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Series*/ /*HBO Max*/ queryType=='series' ? regexMatched(streams, 'HMAX') : []",
-    "score": 75,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Series*/ /*HBO*/ queryType=='series' ? regexMatched(streams, 'HBO') : []",
-    "score": 75,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Series*/ /*Hulu*/ queryType=='series' ? regexMatched(streams, 'Hulu') : []",
-    "score": 75,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Series*/ /*iTunes*/ queryType=='series' ? regexMatched(streams, 'iT') : []",
-    "score": 75,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Series*/ /*Max*/ queryType=='series' ? regexMatched(streams, 'MAX') : []",
-    "score": 75,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Series*/ /*Netflix*/ queryType=='series' ? regexMatched(streams, 'NF') : []",
-    "score": 75,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Series*/ /*Paramount+*/ queryType=='series' ? regexMatched(streams, 'PMTP') : []",
-    "score": 75,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Series*/ /*Peacock*/ queryType=='series' ? regexMatched(streams, 'PCOK') : []",
-    "score": 75,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Series*/ /*Google Play*/ queryType=='series' ? regexMatched(streams, 'PLAY') : []",
-    "score": 75,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Series*/ /*Showtime*/ queryType=='series' ? regexMatched(streams, 'SHO') : []",
-    "score": 75,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Series*/ /*Stan*/ queryType=='series' ? regexMatched(streams, 'STAN') : []",
-    "score": 75,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Series*/ /*Syfy*/ queryType=='series' ? regexMatched(streams, 'SYFY') : []",
-    "score": 75,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Series*/ /*HD Streaming Boost*/ queryType=='series' ? regexMatched(resolution(streams, '1080p'), 'DSNP') : []",
-    "score": 75,
-    "enabled": true
-  },
-  {
-    "expression": "/*x265*/ isAnime ? [] : negate(merge(visualTag(streams, 'HDR','HDR10','HDR10+'), visualTag(streams, 'DV')), encode(negate(resolution(streams, '2160p'), streams), 'HEVC'))",
-    "score": 0,
-    "enabled": true
-  },
-  {
-    "expression": "/*Scene*/ isAnime ? [] : regexMatched(streams, 'Web Scene')",
-    "score": 0,
-    "enabled": true
-  },
-  {
-    "expression": "/*BR-DISK*/ isAnime ? [] : regexMatched(streams, 'BR-DISK')",
-    "score": -35000,
-    "enabled": true
-  },
-  {
-    "expression": "/*3D*/ isAnime ? [] : visualTag(streams, '3D')",
-    "score": -35000,
-    "enabled": true
-  },
-  {
-    "expression": "/*AV1*/ isAnime ? [] : encode(streams, 'AV1')",
-    "score": -35000,
-    "enabled": true
-  },
-  {
-    "expression": "/*Line/Mic Dubbed*/ isAnime ? [] : regexMatched(streams, 'Line/Mic Dubbed')",
-    "score": -35000,
-    "enabled": true
-  },
-  {
-    "expression": "/*Bad Dual*/ isAnime ? [] : regexMatched(streams, 'Bad Dual Groups')",
-    "score": -35000,
-    "enabled": true
-  },
-  {
-    "expression": "/*Obfuscated*/ isAnime ? [] : regexMatched(streams, 'Obfuscated')",
-    "score": -1,
-    "enabled": true
-  },
-  {
-    "expression": "/*Retags*/ isAnime ? [] : regexMatched(streams, 'Retags')",
-    "score": -1,
-    "enabled": true
-  },
-  {
-    "expression": "/*DV w/o HDR*/ isAnime ? [] : negate(merge(releaseGroup(streams, 'Flights'), regexMatched(streams, 'Hulu'), visualTag(streams, 'HDR','HDR10','HDR10+')), quality(visualTag(streams, 'DV'), 'WEBDL', 'WEBRIP'))",
+    "expression": "/*DV (w/o HDR fallback)*/ negate(merge(releaseGroup(streams, 'Flights'), regexMatched(streams, 'Hulu'), visualTag(streams, 'HDR','HDR10','HDR10+')), visualTag(quality(streams, 'WEB-DL','WEBRip'), 'DV'))",
     "score": -10000,
-    "enabled": false
+    "enabled": true
+  },
+  {
+    "expression": "/*3D*/ visualTag(streams, '3D')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*AV1*/ encode(streams, 'AV1')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*BR-DISK*/ regexMatched(streams, 'BR-DISK')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*Extras*/ regexMatched(streams, 'Extras')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*Generated Dynamic HDR*/ releaseGroup(visualTag(streams, 'DV','HDR10','HDR10+'), 'BiTOR','DepraveD','Flights','SasukeducK','tarunk9c','VD0N','VECTOR','VisionXpert')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*German LQ*/ releaseGroup(streams, 'PsO','Cancer58','Tylor.D','1XBET','2dead','HELD','kala','POE','SHOWE','SHOWEHD','ORCA88','LuRCH','N2D2','GETB8','TFARC','Kristallprinz','LAW','CTFOH','Pendeti','OJ','PS','FSX','EMVY','ZaidaNulled','MEGA','MBA','FORMBA','PaZ','Whistler','omikron','WOTT','SunDry','PL','TVARCHiV','P73','LizardSquad','AVTOMAT','iSSEYMiYAKE','TVP','AIDA','UTOPiA','FRAGGERS','REEL','VideoStar')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*German LQ (release title)*/ regexMatched(streams, 'German LQ (release title)')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*LQ*/ releaseGroup(streams, '24xHD','41RGB','4K4U','AOC','AROMA','aXXo','AZAZE','BARC0DE','BAUCKLEY','BdC','beAst','BTM','C1NEM4','C4K','CDDHD','CHAOS','CHD','CiNE','COLLECTiVE','CREATiVE24','CrEwSaDe','CTFOH','d3g','DDR','DNL','DRX','E','EuReKA','FaNGDiNG0','Feranki1980','FGT','FMD','FRDS','FZHD','GalaxyRG','GHD','GPTHD','HDHUB4U','HDS','HDT','HDTime','HDWinG','HiQVE','iNTENSO','iPlanet','jennaortega','jennaortegaUHD','JFF','KC','KiNGDOM','KIRA','L0SERNIGHT','LAMA','Leffe','Liber8','LiGaS','LUCY','MarkII','MeGusta','Mesc','mHD','mSD','MTeam','MT','MySiLU','NhaNc3','nHD','nikt0','nSD','OFT','Pahe','Pahe.ph','Pahe.in','PATOMiEL','PRODJi','PSA','PTNK','RARBG','RDN','Rifftrax','RU4HD','SANTi','Scene','SHD','ShieldBearer','STUTTERSHIT','SUNSCREEN','TBS','TEKNO3D','Tigole','TIKO','VIDEOHOLE','VISIONPLUSHDR','VISIONPLUSHDR-X','VISIONPLUSHDR1000','WAF','WiKi','x0r','YIFY','XLF','YTS','YTS.MX','YTS.LT','YTS.AG','Zeus')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*LQ (release title)*/ regexMatched(streams, 'LQ (release title)')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*Line/Mic Dubbed*/ regexMatched(streams, 'Line/Mic Dubbed')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*Upscaled*/ regexMatched(streams, 'Upscaled')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*Not German or English*/ negate(merge(language(streams, 'German'), language(streams, 'English'), regexMatched(streams, 'German')), streams)",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*German Microsized*/ releaseGroup(streams ,'FuN','w00t','GTF','JellyfinPlex','BB','266ers')",
+    "score": -35000,
+    "enabled": true
   }
 ]
