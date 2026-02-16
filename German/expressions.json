@@ -70,6 +70,101 @@
     "enabled": true
   },
   {
+    "expression": "/*SeaDex Best*/ isAnime ? seadex(streams, 'best') : []",
+    "score": 2000,
+    "enabled": true
+  },
+  {
+    "expression": "/*SeaDex Alt*/ isAnime ? negate(seadex(streams, 'best'), seadex(streams)) : []",
+    "score": 1750,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*BD T1*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime BD T1')) : []",
+    "score": 1400,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*BD T2*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime BD T2')) : []",
+    "score": 1300,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*BD T3*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime BD T3')) : []",
+    "score": 1200,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*BD T4*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime BD T4')) : []",
+    "score": 1100,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*Remux T1*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Remux T1')) : []",
+    "score": 1050,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*Remux T2*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Remux T2')) : []",
+    "score": 1000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*BD T5*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime BD T5')) : []",
+    "score": 1000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*Remux T3*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Remux T3')) : []",
+    "score": 950,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*BD T6*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime BD T6')) : []",
+    "score": 900,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*BD T7*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime BD T7')) : []",
+    "score": 800,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*BD T8*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime BD T8')) : []",
+    "score": 700,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*Web T1*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime Web T1')) : []",
+    "score": 600,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*Web T2*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime Web T2')) : []",
+    "score": 500,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*Web T3*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime Web T3')) : []",
+    "score": 400,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*Web T4*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime Web T4')) : []",
+    "score": 300,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*Web T5*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime Web T5')) : []",
+    "score": 200,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*Web T6*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime Web T6')) : []",
+    "score": 100,
+    "enabled": true
+  },
+  {
     "expression": "/*Bluray T1 GER*/ isAnime ? [] : regexMatched(streams,'Bluray T1 GER')",
     "score": 2900,
     "enabled": true
@@ -127,6 +222,31 @@
   {
     "expression": "/*Repack3*/ isAnime ? [] : regexMatched(streams, 'Repack3')",
     "score": 7,
+    "enabled": true
+  },
+  {
+    "expression": "/*v0*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'v0')) : []",
+    "score": -51,
+    "enabled": true
+  },
+  {
+    "expression": "/*v1*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'v1')) : []",
+    "score": 1,
+    "enabled": true
+  },
+  {
+    "expression": "/*v2*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'v2')) : []",
+    "score": 2,
+    "enabled": true
+  },
+  {
+    "expression": "/*v3*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'v3')) : []",
+    "score": 3,
+    "enabled": true
+  },
+  {
+    "expression": "/*v4*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'v4')) : []",
+    "score": 4,
     "enabled": true
   },
   {
@@ -275,6 +395,61 @@
     "enabled": true
   },
   {
+    "expression": "/*#Anime*/ /*CR*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'CR')) : []",
+    "score": 6,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*Disney+*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'DSNP')) : []",
+    "score": 5,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*Netflix*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'NF')) : []",
+    "score": 4,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*Amazon*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'AMZN')) : []",
+    "score": 3,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*VRV*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'VRV')) : []",
+    "score": 3,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*FUNi*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'FUNi')) : []",
+    "score": 2,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*ABEMA*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'ABEMA')) : []",
+    "score": 1,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*ADN*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'ADN')) : []",
+    "score": 1,
+    "enabled": true
+  },
+  {
+    "expression": "/*Anime LQ*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'Anime LQ Groups')) : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*Anime Raws*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'Anime Raws')) : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*Anime*/ /*#AV1*/ isAnime ? negate(seadex(streams), encode(streams, 'AV1')) : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
     "expression": "/*CRiT*/ isAnime ? [] : quality(releaseGroup(negate(releaseGroup(streams, 'Criterion'), streams),'CRiT'), 'WEB-DL','WEBRip')",
     "score": 20,
     "enabled": true
@@ -287,6 +462,11 @@
   {
     "expression": "/*Extras*/ isAnime ? [] : regexMatched(streams, 'Extras')",
     "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*VOSTFR*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'VOSTFR')) : []",
+    "score": -10000,
     "enabled": true
   },
   {
@@ -543,6 +723,26 @@
     "expression": "/*Retags*/ isAnime ? [] : regexMatched(streams, 'Retags')",
     "score": -1,
     "enabled": true
+  },
+  {
+    "expression": "/*Dubs Only*/ isAnime and originalLanguage != 'English' ? negate(seadex(streams), regexMatched(streams, 'Dubs Only')) : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*Uncensored*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'Uncensored')) : []",
+    "score": 10,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*Dual Audio*/ isAnime and originalLanguage != 'English' ? language(streams, 'Dual Audio') : []",
+    "score": 0,
+    "enabled": false
+  },
+  {
+    "expression": "/*10bit*/ isAnime ? regexMatched(streams, '10bit') : []",
+    "score": -10000,
+    "enabled": false
   },
   {
     "expression": "/*DV w/o HDR*/ isAnime ? [] : negate(merge(releaseGroup(streams, 'Flights'), regexMatched(streams, 'Hulu'), visualTag(streams, 'HDR','HDR10','HDR10+')), quality(visualTag(streams, 'DV'), 'WEBDL', 'WEBRIP'))",
