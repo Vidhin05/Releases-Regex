@@ -135,6 +135,11 @@
     "score": 0
   },
   {
+    "name": "German",
+    "pattern": "/\\b(german)\\b/i",
+    "score": 0
+  },
+  {
     "pattern": "/((?<=\\b[12]\\d{3}\\b)(?=.*\\b(HEVC)\\b)(?=.*\\b(AI)\\b))|(\\b(AIUS|RW)\\b)|(\\b((Upscale)?Re-?graded?)\\b)|(\\b(The[ ._-]?Upscaler)\\b)|((?<=\\b[12]\\d{3}\\b).*\\b(AI[ ._-]?Enhanced|UPS(UHD)?|Upscaled?([ ._-]?UHD)?|UpRez)\\b)/i",
     "name": "Upscaled",
     "score": 0
