@@ -240,17 +240,32 @@
     "enabled": true
   },
   {
-    "expression": "/*HDR*/ isAnime ? [] : merge(regexMatched(streams, 'HDR'), visualTag(streams, 'HDR', 'HDR10', 'HDR10+'))",
-    "score": 500,
+    "expression": "/*2160p*/ resolution(streams, '2160p')",
+    "score": 100,
     "enabled": true
   },
   {
-    "expression": "/*DV*/ isAnime ? [] : visualTag(streams, 'DV')",
+    "expression": "/*1080p*/ resolution(streams, '1080p')",
+    "score": 50,
+    "enabled": true
+  },
+  {
+    "expression": "/*720p*/ resolution(streams, '720p')",
+    "score": 5,
+    "enabled": true
+  },
+  {
+    "expression": "/*DV Boost*/ visualTag(streams, 'DV')",
     "score": 1000,
     "enabled": true
   },
   {
-    "expression": "/*HDR10+ Boost*/ isAnime ? [] : visualTag(streams, 'HDR10+')",
+    "expression": "/*HDR*/ visualTag(streams, 'HDR','HDR10','HDR10+')",
+    "score": 500,
+    "enabled": true
+  },
+  {
+    "expression": "/*HDR10+ Boost*/ visualTag(streams, 'HDR10+')",
     "score": 100,
     "enabled": true
   },
@@ -332,16 +347,6 @@
   {
     "expression": "/*Opus*/ audioTag(streams, 'OPUS')",
     "score": 250,
-    "enabled": true
-  },
-  {
-    "expression": "/*2160p*/ isAnime ? [] : resolution(streams, '2160p')",
-    "score": 100,
-    "enabled": true
-  },
-  {
-    "expression": "/*1080p*/ isAnime ? [] : resolution(streams, '1080p')",
-    "score": 50,
     "enabled": true
   },
   {
