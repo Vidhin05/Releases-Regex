@@ -749,6 +749,16 @@
     "score": -10000,
     "enabled": false
   },
+    {
+    "expression": "/*SDR*/ resolution(visualTag(negate(visualTag(streams, 'DV','HDR','HDR10','HDR10+'), streams), 'SDR'), '2160p')",
+    "score": 0,
+    "enabled": true
+  },
+  {
+    "expression": "/*SDR (no WEBDL)*/ resolution(visualTag(negate(merge(visualTag(streams, 'DV','HDR','HDR10','HDR10+') , quality(streams, 'WEB-DL','WEBRip')), streams), 'SDR'), '2160p')",
+    "score": 0,
+    "enabled": true
+  },
   {
     "expression": "/*DV w/o HDR*/ isAnime ? [] : negate(merge(releaseGroup(streams, 'Flights'), regexMatched(streams, 'Hulu'), visualTag(streams, 'HDR','HDR10','HDR10+')), quality(visualTag(streams, 'DV'), 'WEBDL', 'WEBRIP'))",
     "score": -10000,
