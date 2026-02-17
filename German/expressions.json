@@ -55,8 +55,13 @@
     "enabled": true
   },
   {
-    "expression": "/*Remux T2*/ isAnime ? [] : regexMatched(streams,'Remux T2')",
+    "expression": "/*Remux T2*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'Bluray REMUX'), 'ATELiER','NCmt','playBD','SiCFoI','SURFINBIRD','TEPES')",
     "score": 1900,
+    "enabled": true
+  },
+  {
+    "expression": "/*Remux T2*/ (queryType!='series') ? [] : releaseGroup(quality(streams, 'Bluray REMUX'), '12GaugeShotgun','decibeL','EPSiLON','HiFi','KRaLiMaRKo','playBD','PTer','SiCFoI','TRiToN')",
+    "score": 1850,
     "enabled": true
   },
   {
