@@ -270,7 +270,7 @@
     "enabled": true
   },
   {
-    "expression": "/*DTS X*/ isAnime ? [] : audioTag(negate(audioTag(streams, 'DD','DD+','TrueHD','Atmos','FLAC','AAC'), streams), 'DTS:X')",
+    "expression": "/*DTS X*/ isAnime ? [] : audioTag(streams, 'DTS:X')",
     "score": 4500,
     "enabled": true
   },
