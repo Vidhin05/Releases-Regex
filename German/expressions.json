@@ -80,36 +80,6 @@
     "enabled": true
   },
   {
-    "expression": "/*Remux T1*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'Bluray REMUX'), '3L','BiZKiT','BLURANiUM','BMF','CiNEPHiLES','FraMeSToR','PiRAMiDHEAD','PmP','WiLDCAT','ZQ')",
-    "score": 1950,
-    "enabled": true
-  },
-  {
-    "expression": "/*Remux T1*/ (queryType!='series') ? [] : releaseGroup(quality(streams, 'Bluray REMUX'), 'BLURANiUM','BMF','FraMeSToR','PmP')",
-    "score": 1900,
-    "enabled": true
-  },
-  {
-    "expression": "/*Remux T2*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'Bluray REMUX'), 'ATELiER','NCmt','playBD','SiCFoI','SURFINBIRD','TEPES')",
-    "score": 1900,
-    "enabled": true
-  },
-  {
-    "expression": "/*Remux T2*/ (queryType!='series') ? [] : releaseGroup(quality(streams, 'Bluray REMUX'), '12GaugeShotgun','decibeL','EPSiLON','HiFi','KRaLiMaRKo','playBD','PTer','SiCFoI','TRiToN')",
-    "score": 1850,
-    "enabled": true
-  },
-  {
-    "expression": "/*Remux T3*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'Bluray REMUX'), '12GaugeShotgun','decibeL','EPSiLON','HiFi','iFT','KRaLiMaRKo','NTb','PTer','PTP','SumVision','TOA','TRiToN')",
-    "score": 1850,
-    "enabled": true
-  },
-  {
-    "expression": "/*Remux T3*/ (queryType!='series') ? [] : []",
-    "score": 1850,
-    "enabled": true
-  },
-  {
     "expression": "/*German Web T1*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'WEB-DL','WEBRip'), 'ZeroTwo','BUTTERCUP','HARTZ02','XiSS','DOGPACK404','PRiNCESSDiANA','DiVA','WAREZCX','BiTCHNUGGET','TSCC','TvR','NIMA4K','TVS','D02KU','PXL','QfG','CNY','WeebPinn','MEDiATHEK','RiiR','TOJ','WalterBishop','pmHD')",
     "score": 2100,
     "enabled": true
@@ -137,6 +107,36 @@
   {
     "expression": "/*German Web T3*/ (queryType!='series') ? [] : releaseGroup(quality(streams, 'WEB-DL','WEBRip'), 'RobertDeNiro','BALENCiAGA','HQC','HDSource','iNCEPTION','RDR')",
     "score": 1800,
+    "enabled": true
+  },
+  {
+    "expression": "/*Remux T1*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'Bluray REMUX'), '3L','BiZKiT','BLURANiUM','BMF','CiNEPHiLES','FraMeSToR','PiRAMiDHEAD','PmP','WiLDCAT','ZQ')",
+    "score": 1950,
+    "enabled": true
+  },
+  {
+    "expression": "/*Remux T1*/ (queryType!='series') ? [] : releaseGroup(quality(streams, 'Bluray REMUX'), 'BLURANiUM','BMF','FraMeSToR','PmP')",
+    "score": 1900,
+    "enabled": true
+  },
+  {
+    "expression": "/*Remux T2*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'Bluray REMUX'), 'ATELiER','NCmt','playBD','SiCFoI','SURFINBIRD','TEPES')",
+    "score": 1900,
+    "enabled": true
+  },
+  {
+    "expression": "/*Remux T2*/ (queryType!='series') ? [] : releaseGroup(quality(streams, 'Bluray REMUX'), '12GaugeShotgun','decibeL','EPSiLON','HiFi','KRaLiMaRKo','playBD','PTer','SiCFoI','TRiToN')",
+    "score": 1850,
+    "enabled": true
+  },
+  {
+    "expression": "/*Remux T3*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'Bluray REMUX'), '12GaugeShotgun','decibeL','EPSiLON','HiFi','iFT','KRaLiMaRKo','NTb','PTer','PTP','SumVision','TOA','TRiToN')",
+    "score": 1850,
+    "enabled": true
+  },
+  {
+    "expression": "/*Remux T3*/ (queryType!='series') ? [] : []",
+    "score": 1850,
     "enabled": true
   },
   {
