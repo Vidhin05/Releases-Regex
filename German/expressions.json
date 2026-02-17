@@ -205,17 +205,42 @@
     "enabled": true
   },
   {
-    "expression": "/*Bluray T1*/ isAnime ? [] : regexMatched(streams,'Bluray T1')",
+    "expression": "/*UHD Bluray T1*/ (queryType!='movie') ? [] : releaseGroup(quality(resolution(streams, '2160p'), 'Bluray'), 'CtrlHD','MainFrame','DON','W4NK3R')",
     "score": 1800,
     "enabled": true
   },
   {
-    "expression": "/*Bluray T2*/ isAnime ? [] : regexMatched(streams,'Bluray T2')",
+    "expression": "/*UHD Bluray T2*/ (queryType!='movie') ? [] : releaseGroup(quality(resolution(streams, '2160p'), 'Bluray'), 'HQMUX')",
     "score": 1750,
     "enabled": true
   },
   {
-    "expression": "/*Bluray T3*/ isAnime ? [] : regexMatched(streams,'Bluray T3')",
+    "expression": "/*UHD Bluray T3*/ (queryType!='movie') ? [] : releaseGroup(quality(resolution(streams, '2160p'), 'Bluray'), 'BHDStudio','hallowed','HONE','PTer','SPHD','WEBDV')",
+    "score": 1700,
+    "enabled": true
+  },
+  {
+    "expression": "/*HD Bluray T1*/ (queryType!='movie') ? [] : releaseGroup(quality(negate(resolution(streams, '2160p'), streams), 'Bluray'), 'BBQ','c0kE','Chotab','CRiSC','CtrlHD','D-Z0N3','Dariush','decibeL','EbP','EDPH','LolHD','MainFrame','NCmt','NTb','PTer','TayTO','TDD','TnP','VietHD','W4NK3R','ZQ','ZoroSenpai','BMF')",
+    "score": 1800,
+    "enabled": true
+  },
+  {
+    "expression": "/*HD Bluray T1*/ (queryType!='series') ? [] : releaseGroup(quality(negate(resolution(streams, '2160p'), streams), 'Bluray'), 'Chotab','CtrlHD','DON','EbP','NTb','PTer')",
+    "score": 1800,
+    "enabled": true
+  },
+  {
+    "expression": "/*HD Bluray T2*/ (queryType!='movie') ? [] : releaseGroup(quality(negate(resolution(streams, '2160p'), streams), 'Bluray'), 'ATELiER','EA','HiDt','HiSD','HQMUX','iFT','QOQ','SA89','sbR')",
+    "score": 1750,
+    "enabled": true
+  },
+  {
+    "expression": "/*HD Bluray T2*/ (queryType!='series') ? [] : releaseGroup(quality(negate(resolution(streams, '2160p'), streams), 'Bluray'), 'SA89','sbR')",
+    "score": 1800,
+    "enabled": true
+  },
+  {
+    "expression": "/*HD Bluray T3*/ (queryType!='movie') ? [] : releaseGroup(resolution(quality(streams, 'Bluray'), '1080p'), 'BHDStudio','hallowed','HiFi','HONE','playHD','SPHD','WEBDV')",
     "score": 1700,
     "enabled": true
   },
