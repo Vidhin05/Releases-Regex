@@ -630,7 +630,12 @@
     "enabled": true
   },
   {
-    "expression": "/*GER Microsized*/ isAnime ? [] : regexMatched(streams, 'German Microsized')",
+    "expression": "/*German Microsized*/ (queryType!='movie') ? [] : releaseGroup(streams ,'FuN','w00t','GTF','JellyfinPlex','BB','266ers')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*German Microsized*/ (queryType!='series') ? [] : releaseGroup(streams ,'FuN','w00t','GTF','PaTroL','JellyfinPlex','BB','266ers')",
     "score": -35000,
     "enabled": true
   },
