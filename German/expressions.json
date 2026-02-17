@@ -25,6 +25,11 @@
     "enabled": true
   },
   {
+    "expression": "/*German 1080p Booster*/ (originalLanguage == 'German') ? language(resolution(streams,'1080p'), 'German','Original') : []",
+    "score": 650,
+    "enabled": true
+  },
+  {
     "expression": "/*German Remux T1*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'Bluray REMUX'), 'TvR','pmHD','NIMA4K','QfG','WeebPinn','MAMA')",
     "score": 4000,
     "enabled": true
@@ -327,11 +332,6 @@
   {
     "expression": "/*Opus*/ audioTag(streams, 'OPUS')",
     "score": 250,
-    "enabled": true
-  },
-  {
-    "expression": "/*German 1080p Booster*/ (originalLanguage == 'German') ? language(resolution(streams,'1080p'), 'German','Original') : []",
-    "score": 650,
     "enabled": true
   },
   {
