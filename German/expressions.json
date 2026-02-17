@@ -480,71 +480,6 @@
     "enabled": true
   },
   {
-    "expression": "/*#Anime*/ /*CR*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'CR')) : []",
-    "score": 6,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Anime*/ /*Disney+*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'DSNP')) : []",
-    "score": 5,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Anime*/ /*Netflix*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'NF')) : []",
-    "score": 4,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Anime*/ /*Amazon*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'AMZN')) : []",
-    "score": 3,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Anime*/ /*VRV*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'VRV')) : []",
-    "score": 3,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Anime*/ /*FUNi*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'FUNi')) : []",
-    "score": 2,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Anime*/ /*ABEMA*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'ABEMA')) : []",
-    "score": 1,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Anime*/ /*ADN*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'ADN')) : []",
-    "score": 1,
-    "enabled": true
-  },
-  {
-    "expression": "/*Anime LQ*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'Anime LQ Groups')) : []",
-    "score": -10000,
-    "enabled": true
-  },
-  {
-    "expression": "/*Anime Raws*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'Anime Raws')) : []",
-    "score": -10000,
-    "enabled": true
-  },
-  {
-    "expression": "/*Anime*/ /*#AV1*/ isAnime ? negate(seadex(streams), encode(streams, 'AV1')) : []",
-    "score": -10000,
-    "enabled": true
-  },
-  {
-    "expression": "/*CRiT*/ isAnime ? [] : quality(releaseGroup(negate(releaseGroup(streams, 'Criterion'), streams),'CRiT'), 'WEB-DL','WEBRip')",
-    "score": 20,
-    "enabled": true
-  },
-  {
-    "expression": "/*VOSTFR*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'VOSTFR')) : []",
-    "score": -10000,
-    "enabled": true
-  },
-  {
     "expression": "/*#Movie*/ /*Amazon*/ queryType=='movie' ? regexMatched(streams, 'AMZN') : []",
     "score": 0,
     "enabled": true
@@ -768,21 +703,6 @@
     "expression": "/*Retags*/ isAnime ? [] : regexMatched(streams, 'Retags')",
     "score": -1,
     "enabled": true
-  },
-  {
-    "expression": "/*Dubs Only*/ isAnime and originalLanguage != 'English' ? negate(seadex(streams), regexMatched(streams, 'Dubs Only')) : []",
-    "score": -10000,
-    "enabled": true
-  },
-  {
-    "expression": "/*Uncensored*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'Uncensored')) : []",
-    "score": 10,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Anime*/ /*Dual Audio*/ isAnime and originalLanguage != 'English' ? language(streams, 'Dual Audio') : []",
-    "score": 0,
-    "enabled": false
   },
   {
     "expression": "/*10bit*/ isAnime ? regexMatched(streams, '10bit') : []",
