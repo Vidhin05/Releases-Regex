@@ -105,7 +105,12 @@
     "enabled": true
   },
   {
-    "expression": "/*Web Scene GER*/ isAnime ? [] : regexMatched(streams,'Web Scene GER')",
+    "expression": "/*German Scene*/ (queryType!='movie') ? [] : releaseGroup(streams, 'DETAiLS','WAYNE','WOMBAT','SAUERKRAUT','WvF','4KCONNECTiON','STARS','AWARDS','DMPD','EXCiTED','iNTENTiON','JaJunge','MGE','MisFiTS','RUBBiSH','RWP','TMSF','TV4A','HAXE','muhHD','RiLE','W4K','ENDSTATiON','HDARCHiV','PL3X','WATCHABLE','OHD','ENCOUNTERS','RSG','OCA','UNDERTAKERS','CDP','SAViOURHD','RiLE','CONTRiBUTiON','GOREHOUNDS','SPiCY','bi0hazard')",
+    "score": 1700,
+    "enabled": true
+  },
+  {
+    "expression": "/*German Scene*/ (queryType!='series') ? [] : releaseGroup(streams, 'DETAiLS','WAYNE','WOMBAT','SAUERKRAUT','WvF','4KCONNECTiON','STARS','AWARDS','DMPD','EXCiTED','iNTENTiON','JaJunge','MGE','MisFiTS','RUBBiSH','RWP','TMSF','TV4A','HAXE','muhHD','ENDSTATiON','HDARCHiV','PL3X','WATCHABLE','OHD','ENCOUNTERS','RSG','TVNATiON','FENDT','ACED','FKKTV','euHD','OCA','RIPLEY','GTVG','CDP','CDD','RiLE','CONTRiBUTiON','GOREHOUNDS','bi0hazard')",
     "score": 1700,
     "enabled": true
   },
