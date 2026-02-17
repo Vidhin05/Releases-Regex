@@ -450,6 +450,31 @@
     "enabled": true
   },
   {
+    "expression": "/*AV1*/ encode(streams, 'AV1')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*BR-DISK*/ regexMatched(streams, 'BR-DISK')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*Upscaled*/ regexMatched(streams, 'Upscaled')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*3D*/ visualTag(streams, '3D')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*Extras*/ regexMatched(streams, 'Extras')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
     "expression": "/*IMAX Enhanced*/ queryType=='movie' ? regexMatched(streams, 'IMAX Enhanced') : []",
     "score": 800,
     "enabled": true
@@ -472,11 +497,6 @@
   {
     "expression": "/*Special Edition*/ queryType=='movie' ? negate(regexMatched(streams, 'IMAX Edition', 'Open Matte', 'Theatrical Cut', 'Extended Clip', 'Anniversary Edition', 'Ultimate Edition', 'Extended Edition', 'Director\\'s Cut', 'Collector\\'s Edition', 'Diamond Edition'),regexMatched(streams, 'Special Edition')) : []",
     "score": 125,
-    "enabled": true
-  },
-  {
-    "expression": "/*Vinegar Syndrome*/ queryType=='movie' ? regexMatched(streams, 'Vinegar Syndrome') : []",
-    "score": 25,
     "enabled": true
   },
   {
@@ -657,31 +677,6 @@
   {
     "expression": "/*#Series*/ /*HD Streaming Boost*/ queryType=='series' ? regexMatched(resolution(streams, '1080p'), 'DSNP') : []",
     "score": 75,
-    "enabled": true
-  },
-  {
-    "expression": "/*AV1*/ encode(streams, 'AV1')",
-    "score": -35000,
-    "enabled": true
-  },
-  {
-    "expression": "/*BR-DISK*/ regexMatched(streams, 'BR-DISK')",
-    "score": -35000,
-    "enabled": true
-  },
-  {
-    "expression": "/*Upscaled*/ regexMatched(streams, 'Upscaled')",
-    "score": -35000,
-    "enabled": true
-  },
-  {
-    "expression": "/*3D*/ visualTag(streams, '3D')",
-    "score": -35000,
-    "enabled": true
-  },
-  {
-    "expression": "/*Extras*/ regexMatched(streams, 'Extras')",
-    "score": -35000,
     "enabled": true
   },
   {
