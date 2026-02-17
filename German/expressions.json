@@ -610,12 +610,12 @@
     "enabled": true
   },
   {
-    "expression": "/*LQ Title*/ isAnime ? [] : regexMatched(streams, 'LQ (Release Title)')",
+    "expression": "/*German LQ (Release Title)*/ (queryType!='movie') ? [] : regexMatched(streams, 'German LQ (Release Title) [Movie]')",
     "score": -35000,
     "enabled": true
   },
   {
-    "expression": "/*LQ GER Title*/ isAnime ? [] : regexMatched(streams, 'LQ GER (Release Title)')",
+    "expression": "/*German LQ (Release Title)*/ (queryType!='series') ? [] : regexMatched(streams, 'German LQ (Release Title) [Series]')",
     "score": -35000,
     "enabled": true
   },
