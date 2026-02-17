@@ -295,6 +295,11 @@
     "enabled": true
   },
   {
+    "expression": "/*DV (w/o HDR fallback)*/ negate(merge(releaseGroup(streams, 'Flights'), regexMatched(streams, 'Hulu'), visualTag(streams, 'HDR','HDR10','HDR10+')), visualTag(quality(streams, 'WEB-DL','WEBRip'), 'DV'))",
+    "score": -10000,
+    "enabled": true
+  },
+  {
     "expression": "/*TrueHD ATMOS*/ isAnime ? [] : audioTag(audioTag(negate(audioTag(streams, 'DD','DD+','DTS','DTS:X','FLAC'), streams),'Atmos'), 'TrueHD')",
     "score": 5000,
     "enabled": true
@@ -786,11 +791,6 @@
   },
   {
     "expression": "/*10bit*/ isAnime ? regexMatched(streams, '10bit') : []",
-    "score": -10000,
-    "enabled": false
-  },
-  {
-    "expression": "/*DV w/o HDR*/ isAnime ? [] : negate(merge(releaseGroup(streams, 'Flights'), regexMatched(streams, 'Hulu'), visualTag(streams, 'HDR','HDR10','HDR10+')), quality(visualTag(streams, 'DV'), 'WEBDL', 'WEBRIP'))",
     "score": -10000,
     "enabled": false
   }
