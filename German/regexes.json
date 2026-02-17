@@ -185,8 +185,13 @@
     "score": 0
   },
   {
-    "name": "LQ (Release Title)",
-    "pattern": "/\\b(1XBET|BEN[ ._-]THE[ ._-]MEN|CREATiVE24|Feranki1980|GalaxyRG|(?<!-)jennaortega(UHD)?|READ(\\s|\\.)+NOTE|SWTYBLZ|TeeWee|TEKNO3D|Will1869)\\b|(-D3US|D3US-)|(?<=\\b[12]\\d{3}\\b.*?)(?<!\\b(web[ ._-]?(dl|rip)?).*?)\\b(EVO|PiRaTeS)\\b|(?=.*?(\\b2160p\\b))(?=.*?(\\bBiTOR\\b))/i",
+    "name": "LQ (Release Title) [Movie]",
+    "pattern": "/(\\b(1XBET|BEN[ ._-]THE[ ._-]MEN|Feranki1980|GalaxyRG|SWTYBLZ|TeeWee|TEKNO3D|Will1869)\\b)|((?<!-)\\b(jennaortega(UHD)?)\\b)|((?<=\\b[12]\\d{3}\\b.*?)(?<!\\b(web[ ._-]?(dl|rip)?).*?)\\b(PiRaTeS)\\b)|(\\b(READ(\\s|\\.)+NOTE)\\b)/i",
+    "score": 0
+  },
+  {
+    "name": "LQ (Release Title) [Series]",
+    "pattern": "/(\\b(1XBET|BEN[ ._-]THE[ ._-]MEN|CREATiVE24|Feranki1980|TeeWee)\\b)|((?=.*?(\\b2160p\\b))(?=.*?(\\bBiTOR\\b)))/i",
     "score": 0
   },
   {
