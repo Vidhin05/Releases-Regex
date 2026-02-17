@@ -270,6 +270,11 @@
     "enabled": true
   },
   {
+    "expression": "/*DV (Disk)*/ []",
+    "score": 101,
+    "enabled": true
+  },
+  {
     "expression": "/*TrueHD ATMOS*/ isAnime ? [] : audioTag(audioTag(negate(audioTag(streams, 'DD','DD+','DTS','DTS:X','FLAC'), streams),'Atmos'), 'TrueHD')",
     "score": 5000,
     "enabled": true
