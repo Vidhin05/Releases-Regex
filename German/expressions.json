@@ -355,12 +355,12 @@
     "enabled": true
   },
   {
-    "expression": "/*TrueHD ATMOS*/ isAnime ? [] : audioTag(audioTag(negate(audioTag(streams, 'DD','DD+','DTS','DTS:X','FLAC'), streams),'Atmos'), 'TrueHD')",
+    "expression": "/*TrueHD ATMOS*/ audioTag(audioTag(negate(audioTag(streams, 'DD','DD+','DTS','DTS:X','FLAC'), streams),'Atmos'), 'TrueHD')",
     "score": 5000,
     "enabled": true
   },
   {
-    "expression": "/*DTS X*/ isAnime ? [] : audioTag(streams, 'DTS:X')",
+    "expression": "/*DTS X*/ audioTag(streams, 'DTS:X')",
     "score": 4500,
     "enabled": true
   },
@@ -520,10 +520,10 @@
     "enabled": true
   },
   {
-    "expression": "/*#Movie*/ /*Bravia Core*/ queryType=='movie' ? regexMatched(streams, 'BCORE') : []",
+    "expression": "/*Bravia Core*/ regexMatched(quality(streams, 'WEB-DL','WEBRip'), 'BCORE')",
     "score": 15,
     "enabled": true
-  },
+  }
   {
     "expression": "/*#Movie*/ /*Criterion Channel*/ queryType=='movie' ? regexMatched(streams, 'CRiT') : []",
     "score": 20,
