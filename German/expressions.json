@@ -595,7 +595,17 @@
     "enabled": true
   },
   {
-    "expression": "/*LQ*/ isAnime ? [] : merge(regexMatched(streams, 'LQ', 'LQ GER'), releaseGroup(streams, 'E'))",
+    "expression": "/*German LQ*/ (queryType!='movie') ? [] : releaseGroup(streams, 'PsO','Cancer58','Tylor.D','1XBET','2dead','HELD','kala','POE','SHOWE','SHOWEHD','ORCA88','LuRCH','N2D2','GETB8','TFARC','Kristallprinz','LAW','CTFOH','Pendeti','OJ','PS','FSX','EMVY','ZaidaNulled','MEGA','MBA','FORMBA','PaZ','Whistler','omikron','WOTT','SunDry','PL','TVARCHiV','P73','LizardSquad','AVTOMAT','iSSEYMiYAKE','TVP','AIDA','UTOPiA','FRAGGERS','REEL','VideoStar')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*German LQ*/ (queryType!='series') ? [] : releaseGroup(streams, 'PsO','Cancer58','Tylor.D','1XBET','2dead','HELD','kala','POE','SHOWE','SHOWEHD','ORCA88','LuRCH','N2D2','GETB8','TFARC','Kristallprinz','LAW','CTFOH','Pendeti','OJ','PS','FSX','EMVY','ZaidaNulled','MEGA','MBA','FORMBA','PaZ','Whistler','omikron','WOTT','SunDry','PL','TVARCHiV','P73','LizardSquad','AVTOMAT','iSSEYMiYAKE','TVP','AIDA','UTOPiA','FRAGGERS')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*LQ*/ releaseGroup(streams, '24xHD','41RGB','4K4U','AOC','AROMA','aXXo','AZAZE','BARC0DE','BAUCKLEY','BdC','beAst','BTM','C1NEM4','C4K','CDDHD','CHAOS','CHD','CiNE','COLLECTiVE','CREATiVE24','CrEwSaDe','CTFOH','d3g','DDR','DNL','DRX','E','EuReKA','FaNGDiNG0','Feranki1980','FGT','FMD','FRDS','FZHD','GalaxyRG','GHD','GPTHD','HDHUB4U','HDS','HDT','HDTime','HDWinG','HiQVE','iNTENSO','iPlanet','jennaortega','jennaortegaUHD','JFF','KC','KiNGDOM','KIRA','L0SERNIGHT','LAMA','Leffe','Liber8','LiGaS','LUCY','MarkII','MeGusta','Mesc','mHD','mSD','MTeam','MT','MySiLU','NhaNc3','nHD','nikt0','nSD','OFT','Pahe','Pahe.ph','Pahe.in','PATOMiEL','PRODJi','PSA','PTNK','RARBG','RDN','Rifftrax','RU4HD','SANTi','Scene','SHD','ShieldBearer','STUTTERSHIT','SUNSCREEN','TBS','TEKNO3D','Tigole','TIKO','VIDEOHOLE','VISIONPLUSHDR','VISIONPLUSHDR-X','VISIONPLUSHDR1000','WAF','WiKi','x0r','YIFY','XLF','YTS','YTS.MX','YTS.LT','YTS.AG','Zeus')",
     "score": -35000,
     "enabled": true
   },
