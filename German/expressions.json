@@ -495,11 +495,6 @@
     "enabled": true
   },
   {
-    "expression": "/*720p*/ isAnime ? [] : resolution(streams, '720p')",
-    "score": 5,
-    "enabled": true
-  },
-  {
     "expression": "/*Extras*/ isAnime ? [] : regexMatched(streams, 'Extras')",
     "score": -35000,
     "enabled": true
