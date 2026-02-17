@@ -470,8 +470,13 @@
     "enabled": true
   },
   {
-    "expression": "/*Generated HDR*/ queryType=='movie' ? visualTag(releaseGroup(streams, 'BiTOR','DepraveD','Flights','SasukeducK','tarunk9c','VD0N','VECTOR','VisionXpert'), 'DV','HDR','HDR10','HDR10+') : []",
-    "score": 0,
+    "expression": "/*Generated Dynamic HDR*/ (queryType!='movie') ? [] : releaseGroup(visualTag(streams, 'DV','HDR10+'), 'BiTOR','DepraveD','Flights','SasukeducK','tarunk9c','VD0N','VECTOR','VisionXpert')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*Generated Dynamic HDR*/ (queryType!='series') ? [] : []",
+    "score": -35000,
     "enabled": true
   },
   {
