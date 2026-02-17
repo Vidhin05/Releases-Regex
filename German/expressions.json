@@ -45,8 +45,13 @@
     "enabled": true
   },
   {
-    "expression": "/*Remux T1*/ isAnime ? [] : regexMatched(streams,'Remux T1')",
+    "expression": "/*Remux T1*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'Bluray REMUX'), '3L','BiZKiT','BLURANiUM','BMF','CiNEPHiLES','FraMeSToR','PiRAMiDHEAD','PmP','WiLDCAT','ZQ')",
     "score": 1950,
+    "enabled": true
+  },
+  {
+    "expression": "/*Remux T1*/ (queryType!='series') ? [] : releaseGroup(quality(streams, 'Bluray REMUX'), 'BLURANiUM','BMF','FraMeSToR','PmP')",
+    "score": 1900,
     "enabled": true
   },
   {
