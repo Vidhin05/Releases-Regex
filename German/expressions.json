@@ -1,26 +1,26 @@
 [
   {
-    "expression": "/*German DL*/ isAnime ? [] : (originalLanguage == 'German') ? quality(language(streams, 'German'), 'WEB-DL') : []",
+    "expression": "/*German DL*/ (originalLanguage == 'German') ? quality(language(streams, 'German'), 'WEB-DL') : []",
     "score": 11000,
     "enabled": true
   },
   {
-    "expression": "/*German DL (UDF)*/ isAnime ? [] : (originalLanguage != 'German') ? quality(language(streams, 'German'), 'WEB-DL') : []",
+    "expression": "/*German DL (undefined)*/ (originalLanguage != 'German') ? language(quality(streams, 'WEB-DL'), 'German') : []",
     "score": 11000,
     "enabled": true
   },
   {
-    "expression": "/*German*/ isAnime ? [] : (originalLanguage != 'German') ? language(negate(quality(streams, 'WEB-DL'), streams), 'German') : []",
+    "expression": "/*German*/ (originalLanguage != 'German') ? language(negate(quality(streams, 'WEB-DL'), streams), 'German') : []",
     "score": 10000,
     "enabled": true
   },
   {
-    "expression": "/*Not GER/EN*/ isAnime ? [] : (queryType == 'movie' or queryType == 'series') ? negate(merge(language(streams, 'German'), language(streams, 'English')), streams) : []",
+    "expression": "/*Not German or English*/ negate(merge(language(streams, 'German'), language(streams, 'English'), regexMatched(streams, 'German')), streams)",
     "score": -35000,
     "enabled": true
   },
   {
-    "expression": "/*2160p GER*/ isAnime ? [] : (originalLanguage == 'German') ? language(resolution(streams,'2160p'), 'German','Original') : []",
+    "expression": "/*German 2160p Booster*/ (originalLanguage == 'German') ? language(resolution(streams,'2160p'), 'German','Original') : []",
     "score": 9000,
     "enabled": true
   },
@@ -330,7 +330,7 @@
     "enabled": true
   },
   {
-    "expression": "/*1080p GER*/ isAnime ? [] : (originalLanguage == 'German') ? language(resolution(streams,'1080p'), 'German','Original') : []",
+    "expression": "/*German 1080p Booster*/ (originalLanguage == 'German') ? language(resolution(streams,'1080p'), 'German','Original') : []",
     "score": 650,
     "enabled": true
   },
