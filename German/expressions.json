@@ -275,6 +275,26 @@
     "enabled": true
   },
   {
+    "expression": "/*Hybrid*/ queryType=='movie' ? regexMatched(negate(releaseGroup(streams, 'HYBRID'), streams), 'Hybrid') : []",
+    "score": 100,
+    "enabled": true
+  },
+  {
+    "expression": "/*Remaster*/ queryType=='movie' ? negate(regexMatched(streams, '4K'), regexMatched(streams, 'Remaster')) : []",
+    "score": 25,
+    "enabled": true
+  },
+  {
+    "expression": "/*SDR*/ resolution(visualTag(negate(visualTag(streams, 'DV','HDR','HDR10','HDR10+'), streams), 'SDR'), '2160p')",
+    "score": 0,
+    "enabled": true
+  },
+  {
+    "expression": "/*SDR (no WEBDL)*/ resolution(visualTag(negate(merge(visualTag(streams, 'DV','HDR','HDR10','HDR10+') , quality(streams, 'WEB-DL','WEBRip')), streams), 'SDR'), '2160p')",
+    "score": 0,
+    "enabled": true
+  },
+  {
     "expression": "/*TrueHD ATMOS*/ isAnime ? [] : audioTag(audioTag(negate(audioTag(streams, 'DD','DD+','DTS','DTS:X','FLAC'), streams),'Atmos'), 'TrueHD')",
     "score": 5000,
     "enabled": true
@@ -375,18 +395,8 @@
     "enabled": true
   },
   {
-    "expression": "/*Remaster*/ queryType=='movie' ? negate(regexMatched(streams, '4K'), regexMatched(streams, 'Remaster')) : []",
-    "score": 25,
-    "enabled": true
-  },
-  {
     "expression": "/*4K Remaster*/ queryType=='movie' ? regexMatched(regexMatched(negate(resolution(streams, '2160p'), streams), '4K'), 'Remaster') : []",
     "score": 25,
-    "enabled": true
-  },
-  {
-    "expression": "/*Hybrid*/ queryType=='movie' ? regexMatched(negate(releaseGroup(streams, 'HYBRID'), streams), 'Hybrid') : []",
-    "score": 100,
     "enabled": true
   },
   {
@@ -778,16 +788,6 @@
     "expression": "/*10bit*/ isAnime ? regexMatched(streams, '10bit') : []",
     "score": -10000,
     "enabled": false
-  },
-    {
-    "expression": "/*SDR*/ resolution(visualTag(negate(visualTag(streams, 'DV','HDR','HDR10','HDR10+'), streams), 'SDR'), '2160p')",
-    "score": 0,
-    "enabled": true
-  },
-  {
-    "expression": "/*SDR (no WEBDL)*/ resolution(visualTag(negate(merge(visualTag(streams, 'DV','HDR','HDR10','HDR10+') , quality(streams, 'WEB-DL','WEBRip')), streams), 'SDR'), '2160p')",
-    "score": 0,
-    "enabled": true
   },
   {
     "expression": "/*DV w/o HDR*/ isAnime ? [] : negate(merge(releaseGroup(streams, 'Flights'), regexMatched(streams, 'Hulu'), visualTag(streams, 'HDR','HDR10','HDR10+')), quality(visualTag(streams, 'DV'), 'WEBDL', 'WEBRIP'))",
