@@ -365,7 +365,7 @@
     "score": 0
   },
   {
-    "pattern": "/\\b(Masters[ .-]?Of[ .-]?Cinema|MoC)(\\b|\\d)/i",
+    "pattern": "/(\\b(Masters[ .-]?Of[ .-]?Cinema)(\\b|\\d))|(\\b(MoC)\\b)/i",
     "name": "Masters of Cinema",
     "score": 0
   },
