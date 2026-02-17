@@ -480,6 +480,11 @@
     "enabled": true
   },
   {
+    "expression": "/*Line/Mic Dubbed*/ regexMatched(streams, 'Line/Mic Dubbed')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
     "expression": "/*Criterion Collection*/ quality(negate(releaseGroup(streams, 'Criterion'), regexMatched(streams, 'Criterion Collection')), 'Bluray','DVDRip')",
     "score": 25,
     "enabled": true
@@ -677,11 +682,6 @@
   {
     "expression": "/*#Series*/ /*HD Streaming Boost*/ queryType=='series' ? regexMatched(resolution(streams, '1080p'), 'DSNP') : []",
     "score": 75,
-    "enabled": true
-  },
-  {
-    "expression": "/*Line/Mic Dubbed*/ isAnime ? [] : regexMatched(streams, 'Line/Mic Dubbed')",
-    "score": -35000,
     "enabled": true
   },
   {
