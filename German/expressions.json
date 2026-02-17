@@ -35,7 +35,12 @@
     "enabled": true
   },
   {
-    "expression": "/*Remux T2 GER*/ isAnime ? [] : regexMatched(streams,'Remux T2 GER')",
+    "expression": "/*German Remux T2*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'Bluray REMUX'), 'MULTiPLEX','RHD','HDSource','iNCEPTION','FX','RocketHD')",
+    "score": 3900,
+    "enabled": true
+  },
+  {
+    "expression": "/*German Remux T2*/ (queryType!='series') ? [] : releaseGroup(quality(streams, 'Bluray REMUX'), 'MULTiPLEX','HQC','HDSource')",
     "score": 3900,
     "enabled": true
   },
