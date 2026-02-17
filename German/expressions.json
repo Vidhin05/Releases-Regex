@@ -115,101 +115,6 @@
     "enabled": true
   },
   {
-    "expression": "/*SeaDex Best*/ isAnime ? seadex(streams, 'best') : []",
-    "score": 2000,
-    "enabled": true
-  },
-  {
-    "expression": "/*SeaDex Alt*/ isAnime ? negate(seadex(streams, 'best'), seadex(streams)) : []",
-    "score": 1750,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Anime*/ /*BD T1*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime BD T1')) : []",
-    "score": 1400,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Anime*/ /*BD T2*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime BD T2')) : []",
-    "score": 1300,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Anime*/ /*BD T3*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime BD T3')) : []",
-    "score": 1200,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Anime*/ /*BD T4*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime BD T4')) : []",
-    "score": 1100,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Anime*/ /*Remux T1*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Remux T1')) : []",
-    "score": 1050,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Anime*/ /*Remux T2*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Remux T2')) : []",
-    "score": 1000,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Anime*/ /*BD T5*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime BD T5')) : []",
-    "score": 1000,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Anime*/ /*Remux T3*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Remux T3')) : []",
-    "score": 950,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Anime*/ /*BD T6*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime BD T6')) : []",
-    "score": 900,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Anime*/ /*BD T7*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime BD T7')) : []",
-    "score": 800,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Anime*/ /*BD T8*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime BD T8')) : []",
-    "score": 700,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Anime*/ /*Web T1*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime Web T1')) : []",
-    "score": 600,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Anime*/ /*Web T2*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime Web T2')) : []",
-    "score": 500,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Anime*/ /*Web T3*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime Web T3')) : []",
-    "score": 400,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Anime*/ /*Web T4*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime Web T4')) : []",
-    "score": 300,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Anime*/ /*Web T5*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime Web T5')) : []",
-    "score": 200,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Anime*/ /*Web T6*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Anime Web T6')) : []",
-    "score": 100,
-    "enabled": true
-  },
-  {
     "expression": "/*German Bluray T1*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'Bluray'), 'ZeroTwo','BUTTERCUP','HARTZ02','XiSS','DOGPACK404','PRiNCESSDiANA','DiVA','WAREZCX','BiTCHNUGGET','TSCC','TvR','NIMA4K','TVS','PXL','CNY','WeebPinn','MAMA','WalterBishop')",
     "score": 2900,
     "enabled": true
@@ -315,43 +220,18 @@
     "enabled": true
   },
   {
-    "expression": "/*Repack*/ isAnime ? [] : regexMatched(negate(regexMatched(streams, 'Repack2','Repack3'), streams), 'Repack/Proper')",
-    "score": 5,
-    "enabled": true
-  },
-  {
-    "expression": "/*Repack2*/ isAnime ? [] : regexMatched(negate(regexMatched(streams, 'Repack3'), streams), 'Repack2')",
-    "score": 6,
-    "enabled": true
-  },
-  {
-    "expression": "/*Repack3*/ isAnime ? [] : regexMatched(streams, 'Repack3')",
+    "expression": "/*Repack3*/ (queryType == 'movie' or queryType == 'series') ? regexMatched(streams, 'Repack3') : []",
     "score": 7,
     "enabled": true
   },
   {
-    "expression": "/*v0*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'v0')) : []",
-    "score": -51,
+    "expression": "/*Repack2*/ (queryType == 'movie' or queryType == 'series') ? regexMatched(negate(regexMatched(streams, 'Repack3') , streams), 'Repack2') : []",
+    "score": 6,
     "enabled": true
   },
   {
-    "expression": "/*v1*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'v1')) : []",
-    "score": 1,
-    "enabled": true
-  },
-  {
-    "expression": "/*v2*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'v2')) : []",
-    "score": 2,
-    "enabled": true
-  },
-  {
-    "expression": "/*v3*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'v3')) : []",
-    "score": 3,
-    "enabled": true
-  },
-  {
-    "expression": "/*v4*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'v4')) : []",
-    "score": 4,
+    "expression": "/*Repack*/ (queryType == 'movie' or queryType == 'series') ? regexMatched(negate(regexMatched(streams, 'Repack2','Repack3') , streams), 'Repack/Proper') : []",
+    "score": 5,
     "enabled": true
   },
   {
