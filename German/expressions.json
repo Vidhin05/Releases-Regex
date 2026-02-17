@@ -80,7 +80,12 @@
     "enabled": true
   },
   {
-    "expression": "/*Web T3 GER*/ isAnime ? [] : regexMatched(streams,'Web T3 GER')",
+    "expression": "/*German Web T3*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'WEB-DL','WEBRip'), 'RobertDeNiro','BALENCiAGA','HDSource','FX','RDR')",
+    "score": 1800,
+    "enabled": true
+  },
+  {
+    "expression": "/*German Web T3*/ (queryType!='series') ? [] : releaseGroup(quality(streams, 'WEB-DL','WEBRip'), 'RobertDeNiro','BALENCiAGA','HQC','HDSource','iNCEPTION','RDR')",
     "score": 1800,
     "enabled": true
   },
