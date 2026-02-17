@@ -335,6 +335,11 @@
     "enabled": true
   },
   {
+    "expression": "/*MP3*/ audioTag(streams, 'MP3')",
+    "score": 500,
+    "enabled": true
+  },
+  {
     "expression": "/*1080p GER*/ isAnime ? [] : (originalLanguage == 'German') ? language(resolution(streams,'1080p'), 'German','Original') : []",
     "score": 650,
     "enabled": true
