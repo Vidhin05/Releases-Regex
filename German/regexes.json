@@ -175,8 +175,13 @@
     "score": 0
   },
   {
-    "name": "LQ GER (Release Title)",
-    "pattern": "/([._-]German[._-].+?[._-]?German$)|(Jellyfin-Plex$)|(([._-])iTunes(?:HD|SD)?\\1.+?-TVS$)/i",
+    "name": "German LQ (Release Title) [Movie]",
+    "pattern": "/(([._-])iTunes(?:HD|SD)?\\1.+?-TVS$)|(Jellyfin-Plex$)|([._-]German[._-].+?[._-]?German$)/i",
+    "score": 0
+  },
+  {
+    "name": "German LQ (Release Title) [Series]",
+    "pattern": "/(([._-])iTunes(?:HD|SD)?\\1.+?-TVS$)|(Jellyfin-Plex$)|([._-]German[._-].+?[._-]?German$)/i",
     "score": 0
   },
   {
