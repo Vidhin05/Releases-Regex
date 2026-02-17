@@ -620,6 +620,16 @@
     "enabled": true
   },
   {
+    "expression": "/*LQ (Release title)*/ (queryType!='movie') ? [] : regexMatched(streams, 'LQ (Release Title) [Movie]')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*LQ (Release title)*/ (queryType!='series') ? [] : regexMatched(streams, 'LQ (Release Title) [Series]')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
     "expression": "/*GER Microsized*/ isAnime ? [] : regexMatched(streams, 'German Microsized')",
     "score": -35000,
     "enabled": true
