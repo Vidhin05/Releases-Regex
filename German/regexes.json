@@ -245,11 +245,6 @@
     "score": 0
   },
   {
-    "name": "HDR",
-    "pattern": "/(?:(?:^(?=.*\\b(dv|dovi|dolby[ .]?v(ision)?)\\b)(?!(?=.*\\b(WEB[ ._-]?(DL|Rip)?)\\b)(?!.*\\b(hulu)\\b)))|\\b(HLG|PQ)\\b|^(?=.*\\b(FraMeSToR|HQMUX|SiCFoI)\\b)(?=.*\\b(2160p)\\b)(?!.*(?:HDR10(?:[+]|P(?:lus)?)|SDR)\\b).*)/i",
-    "score": 0
-  },
-  {
     "pattern": "/-4P\\b|-4Planet\\b|-AsRequested\\b|-BUYMORE\\b|-Chamele0n\\b|-GEROV\\b|-iNC0GNiTO\\b|-NZBGeek\\b|-Obfuscated\\b|-postbot\\b|-Rakuv\\b|(?<=\\bS\\d+\\b).*(Scrambled)\\b|-WhiteRev\\b|-xpost\\b|-WRTEAM\\b|-CAPTCHA\\b|_nzb\\b/i",
     "name": "Obfuscated",
     "score": 0
