@@ -310,6 +310,11 @@
     "enabled": true
   },
   {
+    "expression": "/*Web Scene*/ (queryType!='series') ? [] : releaseGroup(quality(streams, 'WEB-DL','WEBRip'), 'DEFLATE','INFLATE')",
+    "score": 1600,
+    "enabled": true
+  },
+  {
     "expression": "/*Repack*/ isAnime ? [] : regexMatched(negate(regexMatched(streams, 'Repack2','Repack3'), streams), 'Repack/Proper')",
     "score": 5,
     "enabled": true
