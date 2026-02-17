@@ -70,7 +70,12 @@
     "enabled": true
   },
   {
-    "expression": "/*Web T2 GER*/ isAnime ? [] : regexMatched(streams,'Web T2 GER')",
+    "expression": "/*German Web T2*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'WEB-DL','WEBRip'), 'VECTOR','MULTiPLEX','SiXTYNiNE','Oergel','4SF','ABJ','paranoid06')",
+    "score": 1900,
+    "enabled": true
+  },
+  {
+    "expression": "/*German Web T2*/ (queryType!='series') ? [] : releaseGroup(quality(streams, 'WEB-DL','WEBRip'), 'VECTOR','MULTiPLEX','SiXTYNiNE','Oergel','4SF','4SJ','ABJ')",
     "score": 1900,
     "enabled": true
   },
