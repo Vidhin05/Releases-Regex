@@ -25,7 +25,12 @@
     "enabled": true
   },
   {
-    "expression": "/*Remux T1 GER*/ isAnime ? [] : regexMatched(streams,'Remux T1 GER')",
+    "expression": "/*German Remux T1*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'Bluray REMUX'), 'TvR','pmHD','NIMA4K','QfG','WeebPinn','MAMA')",
+    "score": 4000,
+    "enabled": true
+  },
+  {
+    "expression": "/*German Remux T1*/ (queryType!='series') ? [] : releaseGroup(quality(streams, 'Bluray REMUX'), 'TvR','pmHD','NIMA4K','QfG','TSCC')",
     "score": 4000,
     "enabled": true
   },
