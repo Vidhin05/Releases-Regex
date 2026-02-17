@@ -300,7 +300,12 @@
     "enabled": true
   },
   {
-    "expression": "/*Web T3*/ isAnime ? [] : regexMatched(streams,'Web T3')",
+    "expression": "/*Web T3*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'WEB-DL','WEBRip'), 'Dooky','GNOMiSSiON','HHWEB','NINJACENTRAL','NPMS','ROCCaT','SiGMA','SLiGNOME','SwAgLaNdEr')",
+    "score": 1600,
+    "enabled": true
+  },
+  {
+    "expression": "/*Web T3*/ (queryType!='series') ? [] : releaseGroup(quality(streams, 'WEB-DL','WEBRip'), 'Dooky','DRACULA','HHWEB','NINJACENTRAL','SLiGNOME','SwAgLaNdEr','T4H','ViSiON')",
     "score": 1600,
     "enabled": true
   },
