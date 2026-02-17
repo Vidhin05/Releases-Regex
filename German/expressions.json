@@ -300,6 +300,26 @@
     "enabled": true
   },
   {
+    "expression": "/*Generated Dynamic HDR*/ (queryType!='movie') ? [] : releaseGroup(visualTag(streams, 'DV','HDR10+'), 'BiTOR','DepraveD','Flights','SasukeducK','tarunk9c','VD0N','VECTOR','VisionXpert')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*x265 (HD)*/ negate(merge(resolution(merge(encode(streams, 'x265','H.265','HEVC') , regexMatched(streams, 'x265 (HD)')), '2160p') , quality(resolution(merge(encode(streams, 'x265','H.265','HEVC') , regexMatched(streams, 'x265 (HD)')), '1080p'), 'Bluray REMUX')), merge(encode(streams, 'x265','H.265','HEVC') , regexMatched(streams, 'x265 (HD)')))",
+    "score": 0,
+    "enabled": true
+  },
+  {
+    "expression": "/*x265 (no HDR/DV)*/ visualTag(negate(merge(resolution(merge(encode(streams, 'x265','H.265','HEVC') , regexMatched(streams, 'x265 (HD)')), '2160p') , quality(resolution(merge(encode(streams, 'x265','H.265','HEVC') , regexMatched(streams, 'x265 (HD)')), '1080p'), 'Bluray REMUX')), merge(encode(streams, 'x265','H.265','HEVC') , regexMatched(streams, 'x265 (HD)'))), 'DV','HDR','HDR10','HDR10+')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*Generated Dynamic HDR*/ (queryType!='series') ? [] : []",
+    "score": -35000,
+    "enabled": true
+  },
+  {
     "expression": "/*TrueHD ATMOS*/ isAnime ? [] : audioTag(audioTag(negate(audioTag(streams, 'DD','DD+','DTS','DTS:X','FLAC'), streams),'Atmos'), 'TrueHD')",
     "score": 5000,
     "enabled": true
@@ -487,16 +507,6 @@
   {
     "expression": "/*VOSTFR*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'VOSTFR')) : []",
     "score": -10000,
-    "enabled": true
-  },
-  {
-    "expression": "/*Generated Dynamic HDR*/ (queryType!='movie') ? [] : releaseGroup(visualTag(streams, 'DV','HDR10+'), 'BiTOR','DepraveD','Flights','SasukeducK','tarunk9c','VD0N','VECTOR','VisionXpert')",
-    "score": -35000,
-    "enabled": true
-  },
-  {
-    "expression": "/*Generated Dynamic HDR*/ (queryType!='series') ? [] : []",
-    "score": -35000,
     "enabled": true
   },
   {
@@ -727,11 +737,6 @@
   {
     "expression": "/*#Series*/ /*HD Streaming Boost*/ queryType=='series' ? regexMatched(resolution(streams, '1080p'), 'DSNP') : []",
     "score": 75,
-    "enabled": true
-  },
-  {
-    "expression": "/*x265*/ isAnime ? [] : negate(merge(visualTag(streams, 'HDR','HDR10','HDR10+'), visualTag(streams, 'DV')), encode(negate(resolution(streams, '2160p'), streams), 'HEVC'))",
-    "score": 0,
     "enabled": true
   },
   {
