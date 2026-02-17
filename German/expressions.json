@@ -280,7 +280,12 @@
     "enabled": true
   },
   {
-    "expression": "/*Web T1*/ isAnime ? [] : regexMatched(streams,'Web T1')",
+    "expression": "/*Web T1*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'WEB-DL','WEBRip'), 'ABBIE','AJP69','APEX','PAXA','PEXA','XEPA','BLUTONiUM','BYNDR','CMRG','CRFW','CRUD','FLUX','GNOME','HONE','KiNGS','Kitsune','NOSiViD','NTb','NTG','RAWR','SiC','TEPES','TheFarm','ZoroSenpai')",
+    "score": 1700,
+    "enabled": true
+  },
+  {
+    "expression": "/*Web T1*/ (queryType!='series') ? [] : releaseGroup(quality(streams, 'WEB-DL','WEBRip'), 'ABBIE','AJP69','APEX','PAXA','PEXA','XEPA','CasStudio','CRFW','CtrlHD','FLUX','HONE','KiNGS','Kitsune','monkee','NOSiViD','NTb','NTG','QOQ','RAWR','RTN','SiC','T6D','TOMMY','ViSUM')",
     "score": 1700,
     "enabled": true
   },
