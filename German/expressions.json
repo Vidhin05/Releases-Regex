@@ -60,7 +60,12 @@
     "enabled": true
   },
   {
-    "expression": "/*Web T1 GER*/ isAnime ? [] : regexMatched(streams,'Web T1 GER')",
+    "expression": "/*German Web T1*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'WEB-DL','WEBRip'), 'ZeroTwo','BUTTERCUP','HARTZ02','XiSS','DOGPACK404','PRiNCESSDiANA','DiVA','WAREZCX','BiTCHNUGGET','TSCC','TvR','NIMA4K','TVS','D02KU','PXL','QfG','CNY','WeebPinn','MEDiATHEK','RiiR','TOJ','WalterBishop','pmHD')",
+    "score": 2100,
+    "enabled": true
+  },
+  {
+    "expression": "/*German Web T1*/ (queryType!='series') ? [] : releaseGroup(quality(streams, 'WEB-DL','WEBRip'), 'ZeroTwo','BUTTERCUP','HARTZ02','XiSS','DOGPACK404','PRiNCESSDiANA','DiVA','WAREZCX','BiTCHNUGGET','TSCC','TvR','NIMA4K','TVS','PXL','QfG','CNY','WeebPinn','MEDiATHEK','RiiR','TOJ','WalterBishop')",
     "score": 2100,
     "enabled": true
   },
