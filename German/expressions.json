@@ -195,7 +195,12 @@
     "enabled": true
   },
   {
-    "expression": "/*Bluray T3 GER*/ isAnime ? [] : regexMatched(streams,'Bluray T3 GER')",
+    "expression": "/*German Bluray T3*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'Bluray'), 'RobertDeNiro','LeetHD','RHD','HDSource','UNFIrED','iNCEPTION','FX','RDR')",
+    "score": 2300,
+    "enabled": true
+  },
+  {
+    "expression": "/*German Bluray T3*/ (queryType!='series') ? [] : releaseGroup(quality(streams, 'Bluray'), 'RobertDeNiro','HQC','RDR','HDSource')",
     "score": 2300,
     "enabled": true
   },
