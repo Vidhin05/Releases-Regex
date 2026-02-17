@@ -290,7 +290,12 @@
     "enabled": true
   },
   {
-    "expression": "/*Web T2*/ isAnime ? [] : regexMatched(streams,'Web T2')",
+    "expression": "/*Web T2*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'WEB-DL','WEBRip'), 'dB','Flights','MiU','monkee','MZABI','PHOENiX','playWEB','SbR','SMURF','TOMMY','XEBEC','4KBEC','CEBEX')",
+    "score": 1650,
+    "enabled": true
+  },
+  {
+    "expression": "/*Web T2*/ (queryType!='series') ? [] : releaseGroup(quality(streams, 'WEB-DL','WEBRip'), '3cTWeB','BLUTONiUM','BTW','BYNDR','Chotab','Cinefeel','CiT','CMRG','Coo7','dB','DEEP','END','ETHiCS','FC','Flights','GNOME','iJP','iKA','iT00NZ','JETIX','KHN','KiMCHI','LAZY','MiU','MZABI','NPMS','NYH','orbitron','PHOENiX','playWEB','PSiG','ROCCaT','RTFM','SA89','SbR','SDCC','SIGMA','SMURF','SPiRiT','TEPES','TVSmash','XEBEC','4KBEC','CEBEX')",
     "score": 1650,
     "enabled": true
   },
