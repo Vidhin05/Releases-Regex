@@ -265,6 +265,11 @@
     "score": 0
   },
   {
+    "pattern": "/[xh][ ._-]?265|\\bHEVC(\\b|\\d)/i",
+    "name": "x265 (HD)",
+    "score": 0
+  },
+  {
     "pattern": "/[.]heb\\b|\\[eztvx?[ ._-]?(io|re|to)?\\]|\\[(rarbg|rartv|TGx)\\]/i",
     "name": "Retags",
     "score": 0
