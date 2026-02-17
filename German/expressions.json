@@ -725,11 +725,6 @@
     "enabled": true
   },
   {
-    "expression": "/*Scene*/ isAnime ? [] : regexMatched(streams, 'Web Scene')",
-    "score": 0,
-    "enabled": true
-  },
-  {
     "expression": "/*AV1*/ encode(streams, 'AV1')",
     "score": -35000,
     "enabled": true
