@@ -495,11 +495,6 @@
     "enabled": true
   },
   {
-    "expression": "/*Extras*/ isAnime ? [] : regexMatched(streams, 'Extras')",
-    "score": -35000,
-    "enabled": true
-  },
-  {
     "expression": "/*VOSTFR*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'VOSTFR')) : []",
     "score": -10000,
     "enabled": true
@@ -546,11 +541,6 @@
   },
   {
     "expression": "/*German Microsized*/ (queryType!='series') ? [] : releaseGroup(streams ,'FuN','w00t','GTF','PaTroL','JellyfinPlex','BB','266ers')",
-    "score": -35000,
-    "enabled": true
-  },
-  {
-    "expression": "/*Upscaled*/ isAnime ? [] : regexMatched(streams, 'Upscaled')",
     "score": -35000,
     "enabled": true
   },
@@ -740,17 +730,27 @@
     "enabled": true
   },
   {
-    "expression": "/*BR-DISK*/ isAnime ? [] : regexMatched(streams, 'BR-DISK')",
+    "expression": "/*AV1*/ encode(streams, 'AV1')",
     "score": -35000,
     "enabled": true
   },
   {
-    "expression": "/*3D*/ isAnime ? [] : visualTag(streams, '3D')",
+    "expression": "/*BR-DISK*/ regexMatched(streams, 'BR-DISK')",
     "score": -35000,
     "enabled": true
   },
   {
-    "expression": "/*AV1*/ isAnime ? [] : encode(streams, 'AV1')",
+    "expression": "/*Upscaled*/ regexMatched(streams, 'Upscaled')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*3D*/ visualTag(streams, '3D')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*Extras*/ regexMatched(streams, 'Extras')",
     "score": -35000,
     "enabled": true
   },
