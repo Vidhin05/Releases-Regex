@@ -360,7 +360,7 @@
     "enabled": true
   },
   {
-    "expression": "/*Criterion*/ queryType=='movie' ? regexMatched(negate(releaseGroup(streams, 'Criterion'), quality(streams, 'BluRay', 'DVD')), 'Criterion Collection') : []",
+    "expression": "/*Criterion Collection*/ quality(negate(releaseGroup(streams, 'Criterion'), regexMatched(streams, 'Criterion Collection')), 'Bluray','DVDRip')",
     "score": 25,
     "enabled": true
   },
