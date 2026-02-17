@@ -175,7 +175,12 @@
     "enabled": true
   },
   {
-    "expression": "/*Bluray T1 GER*/ isAnime ? [] : regexMatched(streams,'Bluray T1 GER')",
+    "expression": "/*German Bluray T1*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'Bluray'), 'ZeroTwo','BUTTERCUP','HARTZ02','XiSS','DOGPACK404','PRiNCESSDiANA','DiVA','WAREZCX','BiTCHNUGGET','TSCC','TvR','NIMA4K','TVS','PXL','CNY','WeebPinn','MAMA','WalterBishop')",
+    "score": 2900,
+    "enabled": true
+  },
+  {
+    "expression": "/*German Bluray T1*/ (queryType!='series') ? [] : releaseGroup(quality(streams, 'Bluray'), 'ZeroTwo','BUTTERCUP','HARTZ02','XiSS','DOGPACK404','PRiNCESSDiANA','DiVA','WAREZCX','BiTCHNUGGET','TSCC','TvR','NIMA4K','TVS','PXL','CNY','WeebPinn','WalterBishop')",
     "score": 2900,
     "enabled": true
   },
