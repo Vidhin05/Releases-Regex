@@ -50,6 +50,36 @@
     "enabled": true
   },
   {
+    "expression": "/*German Bluray T1*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'Bluray'), 'ZeroTwo','BUTTERCUP','HARTZ02','XiSS','DOGPACK404','PRiNCESSDiANA','DiVA','WAREZCX','BiTCHNUGGET','TSCC','TvR','NIMA4K','TVS','PXL','CNY','WeebPinn','MAMA','WalterBishop')",
+    "score": 2900,
+    "enabled": true
+  },
+  {
+    "expression": "/*German Bluray T1*/ (queryType!='series') ? [] : releaseGroup(quality(streams, 'Bluray'), 'ZeroTwo','BUTTERCUP','HARTZ02','XiSS','DOGPACK404','PRiNCESSDiANA','DiVA','WAREZCX','BiTCHNUGGET','TSCC','TvR','NIMA4K','TVS','PXL','CNY','WeebPinn','WalterBishop')",
+    "score": 2900,
+    "enabled": true
+  },
+  {
+    "expression": "/*German Bluray T2*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'Bluray'), 'VECTOR','MULTiPLEX','SiXTYNiNE','SiXTYNiNE','Oergel','ABJ','paranoid06','RocketHD')",
+    "score": 2650,
+    "enabled": true
+  },
+  {
+    "expression": "/*German Bluray T2*/ (queryType!='series') ? [] : releaseGroup(quality(streams, 'Bluray'), 'VECTOR','MULTiPLEX','SiXTYNiNE','SiXTYNiNE','Oergel','ABJ')",
+    "score": 2650,
+    "enabled": true
+  },
+  {
+    "expression": "/*German Bluray T3*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'Bluray'), 'RobertDeNiro','LeetHD','RHD','HDSource','UNFIrED','iNCEPTION','FX','RDR')",
+    "score": 2300,
+    "enabled": true
+  },
+  {
+    "expression": "/*German Bluray T3*/ (queryType!='series') ? [] : releaseGroup(quality(streams, 'Bluray'), 'RobertDeNiro','HQC','RDR','HDSource')",
+    "score": 2300,
+    "enabled": true
+  },
+  {
     "expression": "/*Remux T1*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'Bluray REMUX'), '3L','BiZKiT','BLURANiUM','BMF','CiNEPHiLES','FraMeSToR','PiRAMiDHEAD','PmP','WiLDCAT','ZQ')",
     "score": 1950,
     "enabled": true
@@ -117,36 +147,6 @@
   {
     "expression": "/*German Scene*/ (queryType!='series') ? [] : releaseGroup(streams, 'DETAiLS','WAYNE','WOMBAT','SAUERKRAUT','WvF','4KCONNECTiON','STARS','AWARDS','DMPD','EXCiTED','iNTENTiON','JaJunge','MGE','MisFiTS','RUBBiSH','RWP','TMSF','TV4A','HAXE','muhHD','ENDSTATiON','HDARCHiV','PL3X','WATCHABLE','OHD','ENCOUNTERS','RSG','TVNATiON','FENDT','ACED','FKKTV','euHD','OCA','RIPLEY','GTVG','CDP','CDD','RiLE','CONTRiBUTiON','GOREHOUNDS','bi0hazard')",
     "score": 1700,
-    "enabled": true
-  },
-  {
-    "expression": "/*German Bluray T1*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'Bluray'), 'ZeroTwo','BUTTERCUP','HARTZ02','XiSS','DOGPACK404','PRiNCESSDiANA','DiVA','WAREZCX','BiTCHNUGGET','TSCC','TvR','NIMA4K','TVS','PXL','CNY','WeebPinn','MAMA','WalterBishop')",
-    "score": 2900,
-    "enabled": true
-  },
-  {
-    "expression": "/*German Bluray T1*/ (queryType!='series') ? [] : releaseGroup(quality(streams, 'Bluray'), 'ZeroTwo','BUTTERCUP','HARTZ02','XiSS','DOGPACK404','PRiNCESSDiANA','DiVA','WAREZCX','BiTCHNUGGET','TSCC','TvR','NIMA4K','TVS','PXL','CNY','WeebPinn','WalterBishop')",
-    "score": 2900,
-    "enabled": true
-  },
-  {
-    "expression": "/*German Bluray T2*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'Bluray'), 'VECTOR','MULTiPLEX','SiXTYNiNE','SiXTYNiNE','Oergel','ABJ','paranoid06','RocketHD')",
-    "score": 2650,
-    "enabled": true
-  },
-  {
-    "expression": "/*German Bluray T2*/ (queryType!='series') ? [] : releaseGroup(quality(streams, 'Bluray'), 'VECTOR','MULTiPLEX','SiXTYNiNE','SiXTYNiNE','Oergel','ABJ')",
-    "score": 2650,
-    "enabled": true
-  },
-  {
-    "expression": "/*German Bluray T3*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'Bluray'), 'RobertDeNiro','LeetHD','RHD','HDSource','UNFIrED','iNCEPTION','FX','RDR')",
-    "score": 2300,
-    "enabled": true
-  },
-  {
-    "expression": "/*German Bluray T3*/ (queryType!='series') ? [] : releaseGroup(quality(streams, 'Bluray'), 'RobertDeNiro','HQC','RDR','HDSource')",
-    "score": 2300,
     "enabled": true
   },
   {
