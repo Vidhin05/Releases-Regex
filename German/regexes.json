@@ -256,7 +256,7 @@
   },
   {
     "name": "LQ",
-    "pattern": "/\\b(beAst|COLLECTiVE|EPiC|iVy|KiNGDOM|LUCY|Scene|SUNSCREEN)\\b/",
+    "pattern": "/\\b(beAst|COLLECTiVE|E|EPiC|iVy|KiNGDOM|LUCY|Scene|SUNSCREEN)\\b/",
     "score": 0
   },
   {
