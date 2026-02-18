@@ -280,7 +280,7 @@
     "enabled": true
   },
   {
-    "expression": "/*Criterion Collection*/ queryType=='movie' ? regexMatched(negate(releaseGroup(streams, 'Criterion'), quality(streams, 'BluRay', 'DVD')), 'Criterion Collection') : []",
+    "expression": "/*Criterion Collection*/ queryType=='movie' ? regexMatched(negate(releaseGroup(streams, 'Criterion'), quality(streams, 'BluRay', 'DVDRip')), 'Criterion Collection') : []",
     "score": 25,
     "enabled": true
   },
