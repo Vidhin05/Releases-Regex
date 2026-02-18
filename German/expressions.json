@@ -24,9 +24,6 @@
     "score": 9000,
     "enabled": true
   },
-
-
-
   {
     "expression": "/*German Remux T1*/ (queryType!='movie') ? [] : releaseGroup(quality(streams, 'Bluray REMUX'), 'TvR','pmHD','NIMA4K','QfG','WeebPinn','MAMA')",
     "score": 4000,
@@ -267,10 +264,6 @@
     "score": -35000,
     "enabled": true
   },
-
-
-
-  
   {
     "expression": "/*SeaDex Best*/ isAnime ? seadex(streams, 'best') : []",
     "score": 2000,
