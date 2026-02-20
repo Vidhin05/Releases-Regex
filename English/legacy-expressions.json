@@ -245,17 +245,17 @@
     "enabled": true
   },
   {
-    "expression": "/*720p*/ isAnime ? [] : resolution(streams, '720p')",
+    "expression": "/*HD*/ isAnime ? [] : resolution(streams, '720p')",
     "score": 5,
     "enabled": true
   },
   {
-    "expression": "/*1080p*/ isAnime ? [] : resolution(streams, '1080p')",
+    "expression": "/*FHD*/ isAnime ? [] : resolution(streams, '1080p')",
     "score": 50,
     "enabled": true
   },
   {
-    "expression": "/*2160p*/ isAnime ? [] : resolution(streams, '2160p')",
+    "expression": "/*4K*/ isAnime ? [] : resolution(streams, '2160p')",
     "score": 100,
     "enabled": true
   },
