@@ -1,52 +1,102 @@
 [
   {
-    "expression": "/*Remux T1*/ isAnime ? [] : regexMatched(streams,'Remux T1')",
+    "expression": "/*#Radarr*/ /*Remux T1*/ queryType=='movie' ? regexMatched(streams,'Radarr Remux T1') : []",
     "score": 1950,
     "enabled": true
   },
   {
-    "expression": "/*Remux T2*/ isAnime ? [] : regexMatched(streams,'Remux T2')",
+    "expression": "/*#Sonarr*/ /*Remux T1*/ queryType=='series' ? regexMatched(streams,'Sonarr Remux T1') : []",
     "score": 1900,
     "enabled": true
   },
   {
-    "expression": "/*Remux T3*/ isAnime ? [] : regexMatched(streams,'Remux T3')",
+    "expression": "/*#Radarr*/ /*Remux T2*/ queryType=='movie' ? regexMatched(streams,'Radarr Remux T2') : []",
+    "score": 1900,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*Remux T2*/ queryType=='series' ? regexMatched(streams,'Sonarr Remux T2') : []",
     "score": 1850,
     "enabled": true
   },
   {
-    "expression": "/*Bluray T1*/ isAnime ? [] : regexMatched(streams,'Bluray T1')",
+    "expression": "/*#Radarr*/ /*Remux T3*/ queryType=='movie' ? regexMatched(streams,'Radarr Remux T3') : []",
+    "score": 1850,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*UHD Bluray T1*/ queryType=='movie' ? regexMatched(resolution(streams, '2160p'),'Radarr UHD Bluray T1') : []",
     "score": 1800,
     "enabled": true
   },
   {
-    "expression": "/*Bluray T2*/ isAnime ? [] : regexMatched(streams,'Bluray T2')",
+    "expression": "/*#Radarr*/ /*HD Bluray T1*/ queryType=='movie' ? regexMatched(negate(resolution(streams, '2160p'), streams),'Radarr HD Bluray T1') : []",
+    "score": 1800,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*HD Bluray T1*/ queryType=='series' ? regexMatched(negate(resolution(streams, '2160p'), streams),'Sonarr HD Bluray T1') : []",
+    "score": 1800,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*UHD Bluray T2*/ queryType=='movie' ? regexMatched(resolution(streams, '2160p'),'Radarr UHD Bluray T2') : []",
     "score": 1750,
     "enabled": true
   },
   {
-    "expression": "/*Bluray T3*/ isAnime ? [] : regexMatched(streams,'Bluray T3')",
+    "expression": "/*#Radarr*/ /*HD Bluray T2*/ queryType=='movie' ? regexMatched(negate(resolution(streams, '2160p'), streams),'Radarr HD Bluray T2') : []",
+    "score": 1750,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*HD Bluray T2*/ queryType=='series' ? regexMatched(negate(resolution(streams, '2160p'), streams),'Sonarr HD Bluray T2') : []",
+    "score": 1750,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*UHD Bluray T3*/ queryType=='movie' ? regexMatched(resolution(streams, '2160p'),'Radarr UHD Bluray T3') : []",
     "score": 1700,
     "enabled": true
   },
   {
-    "expression": "/*Web T1*/ isAnime ? [] : regexMatched(streams,'Web T1')",
+    "expression": "/*#Radarr*/ /*HD Bluray T3*/ queryType=='movie' ? regexMatched(negate(resolution(streams, '2160p'), streams),'Radarr HD Bluray T3') : []",
     "score": 1700,
     "enabled": true
   },
   {
-    "expression": "/*Web T2*/ isAnime ? [] : regexMatched(streams,'Web T2')",
+    "expression": "/*#Radarr*/ /*Web T1*/ queryType=='movie' ? regexMatched(streams,'Radarr Web T1') : []",
+    "score": 1700,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*Web T1*/ queryType=='series' ? regexMatched(streams,'Sonarr Web T1') : []",
+    "score": 1700,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*Web T2*/ queryType=='movie' ? regexMatched(streams,'Radarr Web T2') : []",
     "score": 1650,
     "enabled": true
   },
   {
-    "expression": "/*Web T3*/ isAnime ? [] : regexMatched(streams,'Web T3')",
+    "expression": "/*#Sonarr*/ /*Web T2*/ queryType=='series' ? regexMatched(streams,'Sonarr Web T2') : []",
+    "score": 1650,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*Web T3*/ queryType=='movie' ? regexMatched(streams,'Radarr Web T3') : []",
     "score": 1600,
     "enabled": true
   },
   {
-    "expression": "/*Web Scene*/ isAnime ? [] : regexMatched(streams,'Web Scene')",
-    "score": 1550,
+    "expression": "/*#Sonarr*/ /*Web T3*/ queryType=='series' ? regexMatched(streams,'Sonarr Web T3') : []",
+    "score": 1600,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*Web Scene*/ queryType=='series' ? regexMatched(streams,'Web Scene') : []",
+    "score": 1600,
     "enabled": true
   },
   {
@@ -80,13 +130,23 @@
     "enabled": true
   },
   {
-    "expression": "/*#Anime*/ /*Remux T1*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Remux T1')) : []",
-    "score": 1050,
+    "expression": "/*#Anime*/ /*#Radarr*/ /*Remux T1*/ queryType=='anime.movie' ? negate(seadex(streams), regexMatched(streams,'Radarr Remux T1')) : []",
+    "score": 975,
     "enabled": true
   },
   {
-    "expression": "/*#Anime*/ /*Remux T2*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Remux T2')) : []",
-    "score": 1000,
+    "expression": "/*#Anime*/ /*#Sonarr*/ /*Remux T1*/ queryType=='anime.series' ? negate(seadex(streams), regexMatched(streams,'Sonarr Remux T1')) : []",
+    "score": 975,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*#Radarr*/ /*Remux T2*/ queryType=='anime.movie' ? negate(seadex(streams), regexMatched(streams,'Radarr Remux T2')) : []",
+    "score": 950,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*#Sonarr*/ /*Remux T2*/ queryType=='anime.series' ? negate(seadex(streams), regexMatched(streams,'Sonarr Remux T2')) : []",
+    "score": 950,
     "enabled": true
   },
   {
@@ -95,8 +155,8 @@
     "enabled": true
   },
   {
-    "expression": "/*#Anime*/ /*Remux T3*/ isAnime ? negate(seadex(streams), regexMatched(streams,'Remux T3')) : []",
-    "score": 950,
+    "expression": "/*#Anime*/ /*#Radarr*/ /*Remux T3*/ queryType=='anime.movie' ? negate(seadex(streams), regexMatched(streams,'Radarr Remux T3')) : []",
+    "score": 925,
     "enabled": true
   },
   {
@@ -185,6 +245,56 @@
     "enabled": true
   },
   {
+    "expression": "/*720p*/ isAnime ? [] : resolution(streams, '720p')",
+    "score": 5,
+    "enabled": true
+  },
+  {
+    "expression": "/*1080p*/ isAnime ? [] : resolution(streams, '1080p')",
+    "score": 50,
+    "enabled": true
+  },
+  {
+    "expression": "/*2160p*/ isAnime ? [] : resolution(streams, '2160p')",
+    "score": 100,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*126811*/ queryType=='movie' ? regexMatched(streams, '126811') : []",
+    "score": 51,
+    "enabled": true
+  },
+  {
+    "expression": "/*FLUX*/ isAnime ? [] : regexMatched(streams, 'FLUX')",
+    "score": 51,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*SiC*/ queryType=='movie' ? regexMatched(streams, 'SiC') : []",
+    "score": 51,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*FraMeSToR*/ queryType=='movie' ? regexMatched(streams, 'FraMeSToR') : []",
+    "score": 101,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*TheFarm*/ queryType=='movie' ? regexMatched(streams, 'TheFarm') : []",
+    "score": 231,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*hallowed*/ queryType=='movie' ? regexMatched(streams, 'hallowed') : []",
+    "score": 600,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*BHDStudio*/ queryType=='movie' ? regexMatched(streams, 'BHDStudio') : []",
+    "score": 1000,
+    "enabled": true
+  },
+  {
     "expression": "/*Season Pack*/ queryType=='series' ? negate(seadex(streams), seasonPack(streams, 'seasonPack')) : []",
     "score": 1,
     "enabled": true
@@ -205,7 +315,12 @@
     "enabled": true
   },
   {
-    "expression": "/*Extras*/ isAnime ? [] : regexMatched(streams, 'Extras')",
+    "expression": "/*#Radarr*/ /*Extras*/ queryType=='movie' ? regexMatched(streams, 'Extras (Radarr)') : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*Extras*/ queryType=='series' ? regexMatched(streams, 'Extras (Sonarr)') : []",
     "score": -10000,
     "enabled": true
   },
@@ -215,22 +330,32 @@
     "enabled": true
   },
   {
-    "expression": "/*Generated HDR*/ isAnime ? [] : regexMatched(streams, 'Generated Dynamic HDR')",
+    "expression": "/*Generated DV/HDR10+*/ queryType=='movie' ? regexMatched(streams, 'Generated Dynamic HDR') : []",
     "score": -10000,
     "enabled": true
   },
   {
-    "expression": "/*LQ*/ isAnime ? [] : merge(regexMatched(streams, 'LQ'), releaseGroup(streams, 'E'))",
+    "expression": "/*#Radarr*/ /*LQ*/ queryType=='movie' ? merge(regexMatched(streams, 'LQ (Radarr)'), releaseGroup(streams, 'E')) : []",
     "score": -10000,
     "enabled": true
   },
   {
-    "expression": "/*LQ Title*/ isAnime ? [] : regexMatched(streams, 'LQ (Release Title)')",
+    "expression": "/*#Sonarr*/ /*LQ*/ queryType=='series' ? regexMatched(streams, 'LQ (Sonarr)') : []",
     "score": -10000,
     "enabled": true
   },
   {
-    "expression": "/*Sing-Along*/ isAnime ? [] : regexMatched(streams, 'Sing-Along Versions')",
+    "expression": "/*#Radarr*/ /*LQ Title*/ queryType=='movie' ? regexMatched(streams, 'LQ (Release Title) (Radarr)') : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*LQ Title*/ queryType=='series' ? regexMatched(streams, 'LQ (Release Title) (Sonarr)') : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*Sing-Along*/ queryType=='movie' ? regexMatched(streams, 'Sing-Along Versions') : []",
     "score": -10000,
     "enabled": true
   },
@@ -260,17 +385,32 @@
     "enabled": true
   },
   {
-    "expression": "/*Bad Dual*/ isAnime ? [] : regexMatched(streams, 'Bad Dual Groups')",
+    "expression": "/*#Radarr*/ /*Bad Dual*/ queryType=='movie' ? regexMatched(streams, 'Radarr Bad Dual Groups') : []",
     "score": -10000,
     "enabled": true
   },
   {
-    "expression": "/*Obfuscated*/ isAnime ? [] : regexMatched(streams, 'Obfuscated')",
+    "expression": "/*#Sonarr*/ /*Bad Dual*/ queryType=='series' ? regexMatched(streams, 'Sonarr Bad Dual Groups') : []",
+    "score": -10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*Obfuscated*/ queryType=='movie' ? regexMatched(streams, 'Obfuscated (Radarr)') : []",
     "score": -1,
     "enabled": true
   },
   {
-    "expression": "/*Retags*/ isAnime ? [] : regexMatched(streams, 'Retags')",
+    "expression": "/*#Sonarr*/ /*Obfuscated*/ queryType=='series' ? regexMatched(streams, 'Obfuscated (Sonarr)') : []",
+    "score": -1,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*Retags*/ queryType=='movie' ? regexMatched(streams, 'Retags (Radarr)') : []",
+    "score": -1,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*Retags*/ queryType=='series' ? regexMatched(streams, 'Retags (Sonarr)') : []",
     "score": -1,
     "enabled": true
   },
