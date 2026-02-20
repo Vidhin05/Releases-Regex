@@ -14,10 +14,10 @@
     "config": {
       "preferredRegexPatterns": [],
       "syncedRankedRegexUrls": [
-        "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/refs/heads/split-radarr-sonarr-patterns/English/regexes.json"
+        "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/regexes.json"
       ],
       "syncedRankedStreamExpressionUrls": [
-        "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/refs/heads/split-radarr-sonarr-patterns/English/expressions.json"
+        "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/expressions.json"
       ]
     }
   },
@@ -36,10 +36,10 @@
     "config": {
       "preferredRegexPatterns": [],
       "syncedRankedRegexUrls": [
-        "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/refs/heads/split-radarr-sonarr-patterns/German/regexes.json"
+        "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/German/regexes.json"
       ],
       "syncedRankedStreamExpressionUrls": [
-        "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/refs/heads/split-radarr-sonarr-patterns/German/expressions.json"
+        "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/German/expressions.json"
       ]
     }
   },
@@ -58,10 +58,10 @@
     "config": {
       "preferredRegexPatterns": [],
       "syncedRankedStreamExpressionUrls": [
-        "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/refs/heads/split-radarr-sonarr-patterns/English/legacy-expressions.json"
+        "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/legacy-expressions.json"
       ],
       "syncedRankedRegexUrls": [
-        "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/refs/heads/split-radarr-sonarr-patterns/English/regexes.json"
+        "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/regexes.json"
       ]
     }
   }
