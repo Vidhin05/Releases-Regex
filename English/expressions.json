@@ -267,32 +267,32 @@
   {
     "expression": "/*FLUX*/ isAnime ? [] : regexMatched(streams, 'FLUX')",
     "score": 51,
-    "enabled": true
+    "enabled": false
   },
   {
     "expression": "/*#Radarr*/ /*SiC*/ queryType=='movie' ? regexMatched(streams, 'SiC') : []",
     "score": 51,
-    "enabled": true
+    "enabled": false
   },
   {
     "expression": "/*#Radarr*/ /*FraMeSToR*/ queryType=='movie' ? regexMatched(streams, 'FraMeSToR') : []",
     "score": 101,
-    "enabled": true
+    "enabled": false
   },
   {
     "expression": "/*#Radarr*/ /*TheFarm*/ queryType=='movie' ? regexMatched(streams, 'TheFarm') : []",
     "score": 231,
-    "enabled": true
+    "enabled": false
   },
   {
     "expression": "/*#Radarr*/ /*hallowed*/ queryType=='movie' ? regexMatched(streams, 'hallowed') : []",
     "score": 600,
-    "enabled": true
+    "enabled": false
   },
   {
     "expression": "/*#Radarr*/ /*BHDStudio*/ queryType=='movie' ? regexMatched(streams, 'BHDStudio') : []",
     "score": 1000,
-    "enabled": true
+    "enabled": false
   },
   {
     "expression": "/*HDR*/ isAnime ? [] : merge(regexMatched(streams, 'HDR'), visualTag(streams, 'HDR', 'HDR10', 'HDR10+'))",

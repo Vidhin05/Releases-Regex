@@ -265,36 +265,6 @@
     "enabled": true
   },
   {
-    "expression": "/*FLUX*/ isAnime ? [] : regexMatched(streams, 'FLUX')",
-    "score": 51,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Radarr*/ /*SiC*/ queryType=='movie' ? regexMatched(streams, 'SiC') : []",
-    "score": 51,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Radarr*/ /*FraMeSToR*/ queryType=='movie' ? regexMatched(streams, 'FraMeSToR') : []",
-    "score": 101,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Radarr*/ /*TheFarm*/ queryType=='movie' ? regexMatched(streams, 'TheFarm') : []",
-    "score": 231,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Radarr*/ /*hallowed*/ queryType=='movie' ? regexMatched(streams, 'hallowed') : []",
-    "score": 600,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Radarr*/ /*BHDStudio*/ queryType=='movie' ? regexMatched(streams, 'BHDStudio') : []",
-    "score": 1000,
-    "enabled": true
-  },
-  {
     "expression": "/*Season Pack*/ queryType=='series' ? negate(seadex(streams), seasonPack(streams, 'seasonPack')) : []",
     "score": 1,
     "enabled": true
