@@ -19,19 +19,35 @@ AIOStreams uses a template-based import system. Templates are auto-updated with 
 3. Click go, and then load the template (e.g. **English Regexes** or **German Regexes**).
 
 > [!TIP]
-> Add `{stream.seScore}` to your formatter to display the score and `{stream.rseMatched}` to display the matched stream expressions.
+> Use this sort order:
 >
 > Recommended English sort order:
 > - **Global Sort Order**: `Cached`
-> - **Cached Sort Order**: `SeaDex -> Library -> Resolution -> Quality -> Stream Expression Matched -> Stream Expression Score -> Bitrate`
-> - **Uncached Sort Order**: `SeaDex -> Library -> Resolution -> Quality -> Stream Expression Matched -> Stream Expression Score -> Seeders -> Bitrate`
+> - **Cached Sort Order**: `SeaDex -> Resolution -> Quality -> Library ->  Stream Expressions -> Stream Expression Score -> (optional Language -> Visual Tag -> Audio Tag -> Encode) -> Bitrate`
+> - **Uncached Sort Order**: `SeaDex -> Resolution -> Quality -> Library -> Stream Expressions -> Stream Expression Score -> Seeders -> (optional Language -> Visual Tag -> Audio Tag -> Encode) -> Bitrate`
 >
 > Recommended German sort order:
 > - **Global Sort Order**: `Cached`
-> - **Cached Sort Order**: `SeaDex -> Library -> Stream Expression Matched -> Stream Expression Score -> Bitrate`
-> - **Uncached Sort Order**: `SeaDex -> Library -> Stream Expression Matched -> Stream Expression Score -> Seeders -> Bitrate`
+> - **Cached Sort Order**: `SeaDex -> Library -> Stream Expressions -> Stream Expression Score -> (optional Language -> Visual Tag -> Audio Tag -> Encode) -> Bitrate`
+> - **Uncached Sort Order**: `SeaDex -> Library -> Stream Expressions -> Stream Expression Score -> Seeders -> (optional Language -> Visual Tag -> Audio Tag -> Encode) -> Bitrate`
 
 > [!CAUTION]
+> **Formatter: `seScore` & `rseMatched`**
+>
+> Add `{stream.seScore}` and `{stream.rseMatched}` to your formatter. `seScore` shows the total score from ranked expressions (used for sorting); `rseMatched` shows which expressions matched. **Do not use `regexMatched`**.
+>
+> This repo has two layers: (1) **regex patterns** (regexes.json) that match release titles, and (2) **ranked stream expressions** (expressions.json) that use those regexes as filters and assign RSE names with scores. Most RSEs are regex-based, but the expressions apply query-type checks, negations, and merges before output.
+>
+> `regexMatched` returns only the first pattern it matches. For a Kitsune anime release it will show Web T1 instead of Web T3 — incorrect tagging. Use `rseMatched` to see what actually impacted the score.
+
+| Usage | Description |
+|-------|-------------|
+| `{stream.rseMatched}` | **Recommended.** Show all matched expressions — tier, bonuses (Dual Audio, Uncensored), penalties, etc. Full picture of what impacts the score. |
+| `{stream.rseMatched::first}` | First matched element only. |
+| `{stream.rseMatched::first::~ T["{stream.rseMatched::first}"\|\|""]}` | **Tier only** (Remux T1, Web T1, etc.) — shows first element when it contains ` T`; hides bonus tags. |
+| `{stream.rseMatched::string::~Value["if contains"\|\|""]}` | Treat array as joined string; check if it contains `Value` (substring). |
+
+> [!NOTE]
 > I recommend using a SEL to smartly limit and filter streams instead of using exclude regexes. You can use [Tamtaro's](https://github.com/Tam-Taro/SEL-Filtering-and-Sorting#-how-to-import).
 
 ### Customizing Scores
