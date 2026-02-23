@@ -285,12 +285,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*Web T1*/ queryType=='movie' ? regexMatched(streams,'Radarr Web T1') : []",
+    "expression": "/*#Radarr*/ /*Web T1*/ queryType=='movie' ? regexMatched(streams,'Radarr Web T1','Web T1') : []",
     "score": 1700,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*Web T1*/ queryType=='series' ? regexMatched(streams,'Sonarr Web T1') : []",
+    "expression": "/*#Sonarr*/ /*Web T1*/ queryType=='series' ? regexMatched(streams,'Sonarr Web T1','Web T1') : []",
     "score": 1700,
     "enabled": true
   },
