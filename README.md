@@ -86,13 +86,11 @@ Using these scoring options, you'll still benefit from the tier system when bett
 
 ### Environment Variables
 
-Set this environment variable in your AIOStreams instance to increase the sync speed for regexes and stream expressions:
+Set these environment variables in your AIOStreams instance to increase the sync speed for templates, regexes and stream expressions:
 
 ```bash
-WHITELISTED_REGEX_PATTERNS_URLS=["https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/regexes.json", "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/German/regexes.json"]
-WHITELISTED_SEL_URLS=["https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/expressions.json", "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/German/expressions.json", "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/legacy-expressions.json"]
-WHITELISTED_REGEX_PATTERNS_URLS_GITHUB_USERNAMES=["Vidhin05"]
-WHITELISTED_SEL_URLS_GITHUB_USERNAMES=["Vidhin05"]
+TEMPLATE_URLS=["https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/all-templates.json"]
+TEMPLATE_REFRESH_INTERVAL=3600
 WHITELISTED_SYNC_REFRESH_INTERVAL=3600
 ```
 
