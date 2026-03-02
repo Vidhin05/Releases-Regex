@@ -540,7 +540,7 @@
     "score": 0
   },
   {
-    "pattern": "/(?<!^|{)\\b(extended|uncut|directors|special|unrated|uncensored|cut|version|edition)(\\b|\\d)/i",
+    "pattern": "/(?<!^)\\b(extended|uncut|directors|special|unrated|uncensored|cut|version|(?<!{)edition)(\\b|\\d)/i",
     "name": "Special Edition",
     "score": 0
   },
