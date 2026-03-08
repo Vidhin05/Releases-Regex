@@ -1,5 +1,10 @@
 [
   {
+    "expression": "/*#𝚅𝚒𝚍𝚑𝚒𝚗'𝚜 𝙶𝚎𝚛𝚖𝚊𝚗 𝚁𝚊𝚗𝚔𝚎𝚍 𝚂𝚝𝚛𝚎𝚊𝚖 𝙴𝚡𝚙𝚛𝚎𝚜𝚜𝚒𝚘𝚗𝚜 (𝚜𝚢𝚗𝚌𝚎𝚍)*/ []",
+    "score": 0,
+    "enabled": false
+  },
+  {
     "expression": "/*DE DL*/ isAnime ? [] : (originalLanguage == 'German') ? quality(language(streams, 'German'), 'WEB-DL') : []",
     "score": 11000,
     "enabled": true

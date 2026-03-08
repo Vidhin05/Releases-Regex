@@ -6,7 +6,7 @@
       "description": "Sorting streams using [TRaSH Guides](https://trash-guides.info) regex + Ranked Stream Expressions. Choose **English**, **German**, or **Legacy English**. Fully **auto-syncs** updates to regex patterns and expressions.\n\n * **English** — Full scoring: quality tiers, audio hierarchy, HDR/DV, streaming tags, anime, editions, penalties.\n * **German** — Same as English plus TRaSH DE quality profiles: DE DL, DE-only, DE T1–T3, Web Scene DE, LQ DE.\n * **Legacy English** — Release-group scoring only (no detailed audio/visual/streaming). **Not recommended**; use English unless you only care about release groups.\n\n * **ⓘ Requires Stream Expression Score in sort order** (not Regex)\n * Use `{stream.seScore}` and `{stream.rseMatched}` instead of `{stream.regexMatched}` in custom formatters\n * ⚠️ [How to customize scores](https://github.com/Vidhin05/Releases-Regex#customizing-scores)",
       "source": "external",
       "author": "Vidhin05",
-      "version": "2.0.1",
+      "version": "2.0.2",
       "category": "Regex",
       "services": [],
       "serviceRequired": false,
@@ -105,7 +105,39 @@
       },
       "rankedRegexPatterns": {
         "__if": "inputs.clearRankedRegexPatterns",
-        "__value": []
+        "__value": {
+          "__switch": "inputs.variant",
+          "cases": {
+            "english": [
+              {
+                "name": "𝚅𝚒𝚍𝚑𝚒𝚗'𝚜 𝙴𝚗𝚐𝚕𝚒𝚜𝚑 𝚁𝚊𝚗𝚔𝚎𝚍 𝚁𝚎𝚐𝚎𝚡𝚎𝚜(𝚜𝚢𝚗𝚌𝚎𝚍)",
+                "pattern": "/^(?!x)x$/",
+                "score": 0
+              }
+            ],
+            "german": [
+              {
+                "name": "𝚅𝚒𝚍𝚑𝚒𝚗'𝚜 𝙶𝚎𝚛𝚖𝚊𝚗 𝚁𝚊𝚗𝚔𝚎𝚍 𝚁𝚎𝚐𝚎𝚡𝚎𝚜(𝚜𝚢𝚗𝚌𝚎𝚍)",
+                "pattern": "/^(?!x)x$/",
+                "score": 0
+              }
+            ],
+            "legacy-english": [
+              {
+                "name": "𝚅𝚒𝚍𝚑𝚒𝚗'𝚜 𝙴𝚗𝚐𝚕𝚒𝚜𝚑 𝙻𝚎𝚐𝚊𝚌𝚢 𝚁𝚊𝚗𝚔𝚎𝚍 𝚁𝚎𝚐𝚎𝚡𝚎𝚜(𝚜𝚢𝚗𝚌𝚎𝚍)",
+                "pattern": "/^(?!x)x$/",
+                "score": 0
+              }
+            ]
+          },
+          "default": [
+            {
+              "name": "𝚅𝚒𝚍𝚑𝚒𝚗'𝚜 𝙴𝚗𝚐𝚕𝚒𝚜𝚑 𝚁𝚊𝚗𝚔𝚎𝚍 𝚁𝚎𝚐𝚎𝚡𝚎𝚜(𝚜𝚢𝚗𝚌𝚎𝚍)",
+              "pattern": "/^(?!x)x$/",
+              "score": 0
+            }
+          ]
+        }
       },
       "regexOverrides": {
         "__if": "inputs.clearRegexOverrides",
@@ -134,7 +166,59 @@
       },
       "rankedStreamExpressions": {
         "__if": "inputs.clearRankedStreamExpressions",
-        "__value": []
+        "__value": {
+          "__switch": "inputs.variant",
+          "cases": {
+            "english": [
+              {
+                "expression": "/*#𝚅𝚒𝚍𝚑𝚒𝚗'𝚜 𝚁𝚎𝚐𝚎𝚡𝚎𝚜 — 𝙴𝚗𝚐𝚕𝚒𝚜𝚑 𝚁𝚊𝚗𝚔𝚎𝚍 𝚂𝚝𝚛𝚎𝚊𝚖 𝙴𝚡𝚙𝚛𝚎𝚜𝚜𝚒𝚘𝚗𝚜 (𝚜𝚢𝚗𝚌𝚎𝚍). 𝚄𝚜𝚎𝚍 𝚝𝚘 𝚜𝚌𝚘𝚛𝚎 𝚊𝚗𝚍 𝚝𝚊𝚐 𝚜𝚝𝚛𝚎𝚊𝚖𝚜, 𝚟𝚒𝚜𝚒𝚋𝚕𝚎 𝚒𝚗 𝚏𝚘𝚛𝚖𝚊𝚝𝚝𝚎𝚛.*/ []",
+                "score": 0,
+                "enabled": false
+              },
+              {
+                "expression": "/*𝚐𝚒𝚝𝚑𝚞𝚋.𝚌𝚘𝚖/Vidhin05/Releases-Regex 𝚏𝚘𝚛 𝚏𝚞𝚕𝚕 𝚐𝚞𝚒𝚍𝚎*/ []",
+                "score": 0,
+                "enabled": false
+              }
+            ],
+            "german": [
+              {
+                "expression": "/*#𝚅𝚒𝚍𝚑𝚒𝚗'𝚜 𝚁𝚎𝚐𝚎𝚡𝚎𝚜 — 𝙶𝚎𝚛𝚖𝚊𝚗 𝚁𝚊𝚗𝚔𝚎𝚍 𝚂𝚝𝚛𝚎𝚊𝚖 𝙴𝚡𝚙𝚛𝚎𝚜𝚜𝚒𝚘𝚗𝚜 (𝚜𝚢𝚗𝚌𝚎𝚍). 𝚄𝚜𝚎𝚍 𝚝𝚘 𝚜𝚌𝚘𝚛𝚎 𝚊𝚗𝚍 𝚝𝚊𝚐 𝚜𝚝𝚛𝚎𝚊𝚖𝚜, 𝚟𝚒𝚜𝚒𝚋𝚕𝚎 𝚒𝚗 𝚏𝚘𝚛𝚖𝚊𝚝𝚝𝚎𝚛.*/ []",
+                "score": 0,
+                "enabled": false
+              },
+              {
+                "expression": "/*𝚐𝚒𝚝𝚑𝚞𝚋.𝚌𝚘𝚖/Vidhin05/Releases-Regex 𝚏𝚘𝚛 𝚏𝚞𝚕𝚕 𝚐𝚞𝚒𝚍𝚎*/ []",
+                "score": 0,
+                "enabled": false
+              }
+            ],
+            "legacy-english": [
+              {
+                "expression": "/*#𝚅𝚒𝚍𝚑𝚒𝚗'𝚜 𝚁𝚎𝚐𝚎𝚡𝚎𝚜 — 𝙴𝚗𝚐𝚕𝚒𝚜𝚑 𝙻𝚎𝚐𝚊𝚌𝚢 𝚁𝚊𝚗𝚔𝚎𝚍 𝚂𝚝𝚛𝚎𝚊𝚖 𝙴𝚡𝚙𝚛𝚎𝚜𝚜𝚒𝚘𝚗𝚜 (𝚜𝚢𝚗𝚌𝚎𝚍). 𝚄𝚜𝚎𝚍 𝚝𝚘 𝚜𝚌𝚘𝚛𝚎 𝚊𝚗𝚍 𝚝𝚊𝚐 𝚜𝚝𝚛𝚎𝚊𝚖𝚜, 𝚟𝚒𝚜𝚒𝚋𝚕𝚎 𝚒𝚗 𝚏𝚘𝚛𝚖𝚊𝚝𝚝𝚎𝚛.*/ []",
+                "score": 0,
+                "enabled": false
+              },
+              {
+                "expression": "/*𝚐𝚒𝚝𝚑𝚞𝚋.𝚌𝚘𝚖/Vidhin05/Releases-Regex 𝚏𝚘𝚛 𝚏𝚞𝚕𝚕 𝚐𝚞𝚒𝚍𝚎*/ []",
+                "score": 0,
+                "enabled": false
+              }
+            ]
+          },
+          "default": [
+            {
+              "expression": "/*#𝚅𝚒𝚍𝚑𝚒𝚗'𝚜 𝚁𝚎𝚐𝚎𝚡𝚎𝚜 — 𝙴𝚗𝚐𝚕𝚒𝚜𝚑 𝚁𝚊𝚗𝚔𝚎𝚍 𝚂𝚝𝚛𝚎𝚊𝚖 𝙴𝚡𝚙𝚛𝚎𝚜𝚜𝚒𝚘𝚗𝚜 (𝚜𝚢𝚗𝚌𝚎𝚍). 𝚄𝚜𝚎𝚍 𝚝𝚘 𝚜𝚌𝚘𝚛𝚎 𝚊𝚗𝚍 𝚝𝚊𝚐 𝚜𝚝𝚛𝚎𝚊𝚖𝚜, 𝚟𝚒𝚜𝚒𝚋𝚕𝚎 𝚒𝚗 𝚏𝚘𝚛𝚖𝚊𝚝𝚝𝚎𝚛.*/ []",
+              "score": 0,
+              "enabled": false
+            },
+            {
+              "expression": "/*𝚐𝚒𝚝𝚑𝚞𝚋.𝚌𝚘𝚖/Vidhin05/Releases-Regex 𝚏𝚘𝚛 𝚏𝚞𝚕𝚕 𝚐𝚞𝚒𝚍𝚎*/ []",
+              "score": 0,
+              "enabled": false
+            }
+          ]
+        }
       },
       "syncedRankedStreamExpressionUrls": {
         "__switch": "inputs.variant",

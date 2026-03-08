@@ -1,5 +1,10 @@
 [
   {
+    "name": "𝚅𝚒𝚍𝚑𝚒𝚗'𝚜 𝙶𝚎𝚛𝚖𝚊𝚗 𝚁𝚊𝚗𝚔𝚎𝚍 𝚁𝚎𝚐𝚎𝚡𝚎𝚜 (𝚜𝚢𝚗𝚌𝚎𝚍)",
+    "pattern": "/^(?!V)V$/",
+    "score": 0
+  },
+  {
     "name": "Radarr DE Remux T1",
     "pattern": "/\\bRemux\\b.*\\b(TvR|pmHD|NIMA4K|QfG|WeebPinn|MAMA)\\b/",
     "score": 0
