@@ -6,35 +6,20 @@ Regular Expressions and ranked stream expressions (AIOStreams) for automatically
 
 ## 🚀 AIOStreams - Usage Instructions
 
-AIOStreams uses a template-based import system. Templates are auto-updated with each release; you only need to re-apply them from the Template Wizard section in About to get the latest updates.
+This template **auto-syncs** updates to regex patterns and ranked stream expressions. Re-apply the template from About → Template Wizard only when the template itself (e.g. options or variants) changes.
 
 ### Stream Expression Score-based Sorting
 
 #### **Installation**
-1. In AIOStreams, go to `About -> Template Wizard -> Import Template (Bottom Right)`
-2. Paste this URL:
-   ```
-   https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/all-templates.json
-   ```
-3. Click go, and then load the template (e.g. **English Regexes** or **German Regexes**).
+1. On the AIOStreams configure page, `About -> Get Started -> Use a Template -> Vidhin's Regexes -> Load Template`
+2. Choose a variant (**English**, **German**, or **Legacy English**).
 
-> [!TIP]
-> Use this sort order:
->
-> Recommended English sort order:
-> - **Global Sort Order**: `Cached`
-> - **Cached Sort Order**: `SeaDex -> Resolution -> Quality -> Library ->  Stream Expressions -> Stream Expression Score -> (optional Language -> Visual Tag -> Audio Tag -> Encode) -> Bitrate`
-> - **Uncached Sort Order**: `SeaDex -> Resolution -> Quality -> Library -> Stream Expressions -> Stream Expression Score -> Seeders -> (optional Language -> Visual Tag -> Audio Tag -> Encode) -> Bitrate`
->
-> Recommended German sort order:
-> - **Global Sort Order**: `Cached`
-> - **Cached Sort Order**: `SeaDex -> Library -> Stream Expressions -> Stream Expression Score -> (optional Language -> Visual Tag -> Audio Tag -> Encode) -> Bitrate`
-> - **Uncached Sort Order**: `SeaDex -> Library -> Stream Expressions -> Stream Expression Score -> Seeders -> (optional Language -> Visual Tag -> Audio Tag -> Encode) -> Bitrate`
+Optionally import the template with the URL `https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/all-templates.json` if it does not show up.
 
-> [!CAUTION]
-> **Formatter: `seScore` & `rseMatched`**
->
-> Add `{stream.seScore}` and `{stream.rseMatched}` to your formatter. `seScore` shows the total score from ranked expressions (used for sorting); `rseMatched` shows which expressions matched. **Do not use `regexMatched`**.
+> [!IMPORTANT]
+> **Sort & formatter**
+> - **Requires Stream Expression Score in sort** (not Regex). Add **Stream Expression Score** to your sort order.
+> - If using a custom formatter, add `{stream.seScore}` and `{stream.rseMatched}`. **Do not use `regexMatched`**.
 >
 > This repo has two layers: (1) **regex patterns** (regexes.json) that match release titles, and (2) **ranked stream expressions** (expressions.json) that use those regexes as filters and assign RSE names with scores. Most RSEs are regex-based, but the expressions apply query-type checks, negations, and merges before output.
 >
@@ -52,7 +37,7 @@ AIOStreams uses a template-based import system. Templates are auto-updated with 
 
 ### Customizing Scores
 
-The template includes several ranked stream expressions that you can customize by editing their scores directly in the template configuration:
+The template includes several ranked stream expressions whose effect can be customized by overriding their scores in synced ranked expressions. (Filters -> Stream Expressions -> Ranked Stream Expressions -> Synced URLs -> Expand URL -> Override score using 📝 or Disable/Enable using the checkbox)
 
 #### **Anime Dual Audio**
 If you prefer Dual Audio releases, you can adjust the score based on your preference:

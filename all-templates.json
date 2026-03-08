@@ -1,68 +1,158 @@
 [
   {
     "metadata": {
-      "id": "Vidhin05.english-template",
-      "name": "Vidhin's English Regexes",
-      "description": "Sorting streams using [TRaSH Guides](https://trash-guides.info) regex + Ranked Stream Expressions. Fully **auto-syncs** updates to regex patterns and expressions.\n\n * **Quality & source** — Remux, Bluray, Web tiers; repack/proper; season packs.\n * **Anime** — BD/Remux/Web tiers, SeaDex Best/Alt, uncensored bonus, penalties.\n * **Audio** — Full hierarchy.\n * **Visual** — HDR, Dolby Vision, HDR10/10+.\n * **Movie** — Editions, boutique labels.\n * **Streaming** — Source tags, UHD/HD boosts.\n * **Penalties** — Low-quality and undesired tags.\n\n * **ⓘ Requires Stream Expression Score in sort** (not Regex)\n * Add `{stream.seScore}` and `{stream.rseMatched}` to formatter\n * ⚠️ [How to customize scores](https://github.com/Vidhin05/Releases-Regex#customizing-scores)",
+      "id": "Vidhin05.regex-template",
+      "name": "Vidhin's Regexes",
+      "description": "Sorting streams using [TRaSH Guides](https://trash-guides.info) regex + Ranked Stream Expressions. Choose **English**, **German**, or **Legacy English**. Fully **auto-syncs** updates to regex patterns and expressions.\n\n * **English** — Full scoring: quality tiers, audio hierarchy, HDR/DV, streaming tags, anime, editions, penalties.\n * **German** — Same as English plus TRaSH DE quality profiles: DE DL, DE-only, DE T1–T3, Web Scene DE, LQ DE.\n * **Legacy English** — Release-group scoring only (no detailed audio/visual/streaming). **Not recommended**; use English unless you only care about release groups.\n\n * **ⓘ Requires Stream Expression Score in sort order** (not Regex)\n * Use `{stream.seScore}` and `{stream.rseMatched}` instead of `{stream.regexMatched}` in custom formatters\n * ⚠️ [How to customize scores](https://github.com/Vidhin05/Releases-Regex#customizing-scores)",
       "source": "external",
       "author": "Vidhin05",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "category": "Regex",
       "services": [],
-      "serviceRequired": false
+      "serviceRequired": false,
+      "inputs": [
+        {
+          "id": "variant",
+          "name": "Variant",
+          "description": "Choose English (full scoring), German (+ DE quality profiles), or Legacy English (mostly release groups based). \n\n * **English** — Full scoring: **Quality & source** (Remux, Bluray, Web tiers; repack/proper; season packs). **Anime** (BD/Remux/Web, SeaDex Best/Alt, uncensored bonus, penalties). **Audio** (full hierarchy). **Visual** (HDR, Dolby Vision, HDR10/10+). **Movie** (editions, boutique labels). **Streaming** (source tags, UHD/HD boosts). **Penalties** (low-quality, undesired tags). Best for most users.\n * **German** — Same as English plus TRaSH DE quality profiles: **DE** (DE DL, DE-only, Not DE/EN); **DE T1–T3** (Remux/Bluray/Web); Web Scene DE; LQ DE, DE Microsized.\n * **Legacy English** — **Mostly Release Groups based** (no audio/visual/streaming tiers, no anime/edition detail). **Not recommended** unless you only care about group preference.",
+          "type": "select",
+          "required": true,
+          "default": "english",
+          "options": [
+            {
+              "value": "english",
+              "label": "English"
+            },
+            {
+              "value": "german",
+              "label": "German"
+            },
+            {
+              "value": "legacy-english",
+              "label": "Legacy English (Mostly Release Groups based — not recommended)"
+            }
+          ]
+        },
+        {
+          "id": "clearPreferredRegexPatterns",
+          "name": "Clear preferred regex patterns",
+          "description": "Preferred regex are not used by this template. **Keep enabled** unless your setup uses them.",
+          "type": "boolean",
+          "required": false,
+          "default": true
+        },
+        {
+          "id": "clearRegexOverrides",
+          "name": "Clear overridden synced regex patterns",
+          "description": "Regex overrides are not used by this template. **Keep enabled** unless you use them to disable specific regexes.",
+          "type": "boolean",
+          "required": false,
+          "default": true
+        },
+        {
+          "id": "clearRankedRegexPatterns",
+          "name": "Clear ranked regex patterns",
+          "description": "Ranked regex come from synced URLs. **Keep enabled** unless you are also using your own.",
+          "type": "boolean",
+          "required": false,
+          "default": true
+        },
+        {
+          "id": "clearRankedStreamExpressions",
+          "name": "Clear ranked stream expressions",
+          "description": "Ranked stream expressions come from synced URLs. **Keep enabled** unless you are also using your own.",
+          "type": "boolean",
+          "required": false,
+          "default": true
+        },
+        {
+          "id": "clearRankedStreamExpressionOverrides",
+          "name": "Clear overridden synced stream expressions",
+          "description": "Enable to reset to base synced scores (removes per-expression score edits).",
+          "type": "boolean",
+          "required": false,
+          "default": false
+        },
+        {
+          "id": "customizeScores",
+          "name": "",
+          "description": "[How to customize scores](https://github.com/Vidhin05/Releases-Regex#customizing-scores)",
+          "type": "alert",
+          "intent": "warning-basic"
+        },
+        {
+          "id": "credits",
+          "name": "Credits",
+          "description": "",
+          "type": "socials",
+          "socials": [
+            {
+              "id": "github",
+              "url": "https://github.com/Vidhin05/Releases-Regex"
+            },
+            {
+              "id": "ko-fi",
+              "url": "https://ko-fi.com/vidhin"
+            }
+          ]
+        }
+      ]
     },
     "config": {
-      "preferredRegexPatterns": [],
-      "syncedRankedRegexUrls": [
-        "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/regexes.json"
-      ],
-      "syncedRankedStreamExpressionUrls": [
-        "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/expressions.json"
-      ]
-    }
-  },
-  {
-    "metadata": {
-      "id": "Vidhin05.german-template",
-      "name": "Vidhin's German Regexes",
-      "description": "German locale: Sorting streams using [TRaSH's German quality profiles](https://trash-guides.info/Radarr/radarr-setup-quality-profiles-german-en/) regex + Ranked Stream Expressions. Fully **auto-syncs** updates to regex patterns and expressions.\n\n * **German** — German DL, German-only, Not GER/EN; GER T1-T3 (Remux/Bluray/Web), Web Scene GER; LQ GER, GER Microsized.\n * **Quality & source** — Remux, Bluray, Web tiers; repack/proper.\n * **Audio** — Full hierarchy.\n * **Visual** — HDR, Dolby Vision, HDR10/10+.\n * **Movie** — Editions, boutique labels.\n * **Streaming** — Source tags, UHD/HD boosts.\n * **Penalties** — Low-quality and undesired tags.\n\n * **ⓘ Requires Stream Expression Score in sort** (not Regex)\n * Add `{stream.seScore}` and `{stream.rseMatched}` to formatter\n * ⚠️ [How to customize scores](https://github.com/Vidhin05/Releases-Regex#customizing-scores)",
-      "source": "external",
-      "author": "Vidhin05",
-      "version": "2.0.0",
-      "category": "Regex",
-      "services": [],
-      "serviceRequired": false
-    },
-    "config": {
-      "preferredRegexPatterns": [],
-      "syncedRankedRegexUrls": [
-        "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/German/regexes.json"
-      ],
-      "syncedRankedStreamExpressionUrls": [
-        "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/German/expressions.json"
-      ]
-    }
-  },
-  {
-    "metadata": {
-      "id": "Vidhin05.legacy-english-template",
-      "name": "Vidhin's Legacy English Regexes",
-      "description": "⚠️ **Unmaintained.** Prefer **Vidhin's English Regexes** (other template) for scoring in depth.\n\nLegacy template for sorting streams using [TRaSH Guides](https://trash-guides.info) regex + Ranked Stream Expressions. Fully **auto-syncs** updates to regex patterns and expressions.\n\n * **Quality & source** — Remux, Bluray, Web tiers; repack/proper; season packs.\n * **Anime** — BD/Remux/Web tiers, SeaDex Best/Alt, uncensored bonus, penalties.\n * **Movie** — Editions, boutique labels. (1 score)\n * **Streaming** — Source tags. (No score)\n * **Penalties** — Low-quality and undesired tags.\n\n * **ⓘ Requires Stream Expression Score in sort** (not Regex)\n * Add `{stream.seScore}` and `{stream.rseMatched}` to formatter\n * ⚠️ [How to customize scores](https://github.com/Vidhin05/Releases-Regex#customizing-scores)",
-      "source": "external",
-      "author": "Vidhin05",
-      "version": "2.0.0",
-      "category": "Regex",
-      "services": [],
-      "serviceRequired": false
-    },
-    "config": {
-      "preferredRegexPatterns": [],
-      "syncedRankedStreamExpressionUrls": [
-        "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/legacy-expressions.json"
-      ],
-      "syncedRankedRegexUrls": [
-        "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/regexes.json"
-      ]
+      "preferredRegexPatterns": {
+        "__if": "inputs.clearPreferredRegexPatterns",
+        "__value": []
+      },
+      "rankedRegexPatterns": {
+        "__if": "inputs.clearRankedRegexPatterns",
+        "__value": []
+      },
+      "regexOverrides": {
+        "__if": "inputs.clearRegexOverrides",
+        "__value": []
+      },
+      "selOverrides": {
+        "__if": "inputs.clearRankedStreamExpressionOverrides",
+        "__value": []
+      },
+      "syncedRankedRegexUrls": {
+        "__switch": "inputs.variant",
+        "cases": {
+          "english": [
+            "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/regexes.json"
+          ],
+          "german": [
+            "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/German/regexes.json"
+          ],
+          "legacy-english": [
+            "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/regexes.json"
+          ]
+        },
+        "default": [
+          "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/regexes.json"
+        ]
+      },
+      "rankedStreamExpressions": {
+        "__if": "inputs.clearRankedStreamExpressions",
+        "__value": []
+      },
+      "syncedRankedStreamExpressionUrls": {
+        "__switch": "inputs.variant",
+        "cases": {
+          "english": [
+            "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/expressions.json"
+          ],
+          "german": [
+            "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/German/expressions.json"
+          ],
+          "legacy-english": [
+            "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/legacy-expressions.json"
+          ]
+        },
+        "default": [
+          "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/expressions.json"
+        ]
+      }
     }
   }
 ]

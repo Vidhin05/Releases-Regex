@@ -1,16 +1,16 @@
 [
   {
-    "expression": "/*German DL*/ isAnime ? [] : (originalLanguage == 'German') ? quality(language(streams, 'German'), 'WEB-DL') : []",
+    "expression": "/*DE DL*/ isAnime ? [] : (originalLanguage == 'German') ? quality(language(streams, 'German'), 'WEB-DL') : []",
     "score": 11000,
     "enabled": true
   },
   {
-    "expression": "/*German DL (UDF)*/ isAnime ? [] : (originalLanguage != 'German') ? quality(language(streams, 'German'), 'WEB-DL') : []",
+    "expression": "/*DE DL (UDF)*/ isAnime ? [] : (originalLanguage != 'German') ? quality(language(streams, 'German'), 'WEB-DL') : []",
     "score": 11000,
     "enabled": true
   },
   {
-    "expression": "/*German*/ isAnime ? [] : (originalLanguage != 'German') ? language(negate(quality(streams, 'WEB-DL'), streams), 'German') : []",
+    "expression": "/*DE*/ isAnime ? [] : (originalLanguage != 'German') ? language(negate(quality(streams, 'WEB-DL'), streams), 'German') : []",
     "score": 10000,
     "enabled": true
   },
