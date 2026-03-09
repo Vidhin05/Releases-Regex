@@ -2,7 +2,7 @@
   {
     "expression": "/*#𝚅𝚒𝚍𝚑𝚒𝚗'𝚜 𝙴𝚗𝚐𝚕𝚒𝚜𝚑 𝚁𝚊𝚗𝚔𝚎𝚍 𝚂𝚝𝚛𝚎𝚊𝚖 𝙴𝚡𝚙𝚛𝚎𝚜𝚜𝚒𝚘𝚗𝚜 (𝚜𝚢𝚗𝚌𝚎𝚍)*/ []",
     "score": 0,
-    "enabled": false
+    "enabled": true
   },
   {
     "expression": "/*#Radarr*/ /*Remux T1*/ queryType=='movie' ? regexMatched(streams,'Radarr Remux T1') : []",
