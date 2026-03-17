@@ -6,7 +6,7 @@
       "description": "Sorting streams using [TRaSH Guides](https://trash-guides.info) regex + Ranked Stream Expressions. Choose **English**, **German**, or **Legacy English**. Fully **auto-syncs** updates to regex patterns and expressions.\n\n * **English** — Full scoring: quality tiers, audio hierarchy, HDR/DV, streaming tags, anime, editions, penalties.\n * **German** — Same as English plus TRaSH DE and DE Anime quality profiles: DE DL / DE-only / Not DE/EN, DE T1–T3 (Remux/Bluray/Web), Web Scene DE, DE Anime BD/Web tiers, LQ DE, DE Microsized.\n * **Legacy English** — Release-group scoring only (no detailed audio/visual/streaming). **Not recommended**; use English unless you only care about release groups.\n\n * **ⓘ Requires Stream Expression Score in sort order** (not Regex)\n * Use `{stream.seScore}` and `{stream.rseMatched}` instead of `{stream.regexMatched}` in custom formatters\n * ⚠️ [How to customize scores](https://github.com/Vidhin05/Releases-Regex#customizing-scores)",
       "source": "external",
       "author": "Vidhin05",
-      "version": "2.0.5",
+      "version": "2.1.0",
       "category": "Regex",
       "services": [],
       "serviceRequired": false,
