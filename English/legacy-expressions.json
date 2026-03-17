@@ -235,17 +235,17 @@
     "enabled": true
   },
   {
-    "expression": "/*v2*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'v2')) : []",
+    "expression": "/*v2*/ isAnime ? negate(seadex(streams), negate(regexMatched(streams, 'v3', 'v4', 'Repack2', 'Repack3'), regexMatched(streams, 'v2', 'Repack/Proper'))) : []",
     "score": 2,
     "enabled": true
   },
   {
-    "expression": "/*v3*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'v3')) : []",
+    "expression": "/*v3*/ /*v3*/ isAnime ? negate(seadex(streams), negate(regexMatched(streams, 'v4', 'Repack3'), regexMatched(streams, 'v3', 'Repack2'))) : []",
     "score": 3,
     "enabled": true
   },
   {
-    "expression": "/*v4*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'v4')) : []",
+    "expression": "/*v4*/ isAnime ? negate(seadex(streams), regexMatched(streams, 'v4', 'Repack3')) : []",
     "score": 4,
     "enabled": true
   },
