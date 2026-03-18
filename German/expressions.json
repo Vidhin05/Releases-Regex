@@ -5,27 +5,27 @@
     "enabled": true
   },
   {
-    "expression": "/*DE DL*/ (originalLanguage == 'German') ? quality(language(streams, 'German'), 'WEB-DL') : []",
+    "expression": "/*DE Orig*/ (originalLanguage == 'German') ? language(streams, 'German', 'Original') : []",
     "score": 11000,
     "enabled": true
   },
   {
-    "expression": "/*DE DL (UDF)*/ (originalLanguage != 'German') ? quality(language(streams, 'German'), 'WEB-DL') : []",
+    "expression": "/*DE Dual*/ (originalLanguage != 'German') ? regexMatched(language(streams, 'German'), 'DL', 'ML') : []",
     "score": 11000,
     "enabled": true
   },
   {
-    "expression": "/*DE*/ (originalLanguage != 'German') ? language(negate(quality(streams, 'WEB-DL'), streams), 'German') : []",
+    "expression": "/*DE*/ (originalLanguage != 'German') ? negate(regexMatched(streams, 'DL', 'ML', 'Not Subbed'), language(streams, 'German')) : []",
     "score": 10000,
     "enabled": true
   },
   {
-    "expression": "/*Not DE/EN*/ isAnime ? [] : negate(merge(language(streams, 'German'), language(streams, 'English')), streams)",
+    "expression": "/*Not DE/EN*/ isAnime ? [] : negate(merge(language(streams, 'German', 'English'), regexMatched(streams, 'German')), streams)",
     "score": -35000,
     "enabled": true
   },
   {
-    "expression": "/*Not DE/JP/EN*/ isAnime ? negate(merge(language(streams, 'German'), language(streams, 'English'), language(streams, 'Japanese')), streams) : []",
+    "expression": "/*Not DE/JP/EN*/ isAnime ? negate(merge(language(streams, 'German', 'Japanese', 'English'), regexMatched(streams, 'German')), streams) : []",
     "score": -35000,
     "enabled": true
   },
