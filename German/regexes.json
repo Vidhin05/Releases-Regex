@@ -5,6 +5,26 @@
     "score": 0
   },
   {
+    "name": "German",
+    "pattern": "/\\b(GERMAN)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "DL",
+    "pattern": "/(?<!WEB[-_. ]?)\\b(DL)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "ML",
+    "pattern": "/\\b(ML)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Not Subbed",
+    "pattern": "/(?=.*(German|Ger))(?=.*(Sub|Multi(ple)?Sub))/i",
+    "score": 0
+  },
+  {
     "name": "Radarr DE Remux T1",
     "pattern": "/\\bRemux\\b.*\\b(TvR|pmHD|NIMA4K|QfG|WeebPinn|MAMA)\\b/",
     "score": 0
