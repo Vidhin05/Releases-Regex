@@ -325,27 +325,27 @@
     "enabled": true
   },
   {
-    "expression": "/*TrueHD ATMOS*/ isAnime ? [] : negate(audioTag(streams, 'DD+', 'DD', 'DTS:X', 'DTS', 'FLAC'), audioTag(audioTag(streams, 'Atmos'), 'TrueHD'))",
+    "expression": "/*TrueHD ATMOS*/ isAnime ? [] : audioTag(audioTag(streams, 'Atmos'), 'TrueHD')",
     "score": 5000,
     "enabled": true
   },
   {
-    "expression": "/*DTS X*/ isAnime ? [] : negate(audioTag(streams, 'DD', 'DD+', 'TrueHD', 'Atmos', 'FLAC', 'AAC'), audioTag(streams, 'DTS:X'))",
+    "expression": "/*DTS X*/ isAnime ? [] : audioTag(streams, 'DTS:X')",
     "score": 4500,
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*ATMOS*/ queryType=='movie' ? negate(merge(audioTag(streams, 'AAC', 'DD', 'DD+', 'DTS', 'FLAC', 'TrueHD'), regexMatched(streams, 'Atmos Exclude Groups')), audioTag(streams, 'Atmos')) : []",
+    "expression": "/*#Radarr*/ /*ATMOS*/ queryType=='movie' ? negate(regexMatched(streams, 'Atmos Exclude Groups'), audioTag(streams, 'Atmos')) : []",
     "score": 3000,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*ATMOS*/ queryType=='series' ? negate(audioTag(streams, 'AAC', 'DD', 'DD+', 'DTS', 'FLAC', 'TrueHD'), audioTag(streams, 'Atmos')) : []",
+    "expression": "/*#Sonarr*/ /*ATMOS*/ queryType=='series' ? audioTag(streams, 'Atmos') : []",
     "score": 3000,
     "enabled": true
   },
   {
-    "expression": "/*DD+ ATMOS*/ isAnime ? [] : negate(audioTag(streams, 'TrueHD', 'DTS', 'DD', 'FLAC', 'AAC'), audioTag(audioTag(streams, 'DD+'), 'Atmos'))",
+    "expression": "/*DD+ ATMOS*/ isAnime ? [] : negate(audioTag(streams, 'TrueHD'), audioTag(audioTag(streams, 'DD+'), 'Atmos'))",
     "score": 3000,
     "enabled": true
   },
@@ -390,7 +390,7 @@
     "enabled": true
   },
   {
-    "expression": "/*AAC*/ isAnime ? [] : negate(audioTag(streams, 'DTS', 'DD+', 'DD', 'FLAC', 'TrueHD', 'Atmos'), audioTag(streams, 'AAC'))",
+    "expression": "/*AAC*/ isAnime ? [] : negate(audioTag(streams, 'DTS', 'DD+', 'FLAC', 'TrueHD', 'Atmos'), audioTag(streams, 'AAC'))",
     "score": 1000,
     "enabled": true
   },
