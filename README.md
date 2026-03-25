@@ -55,6 +55,7 @@ Using these scoring options, you'll still benefit from the tier system when bett
 
 #### **Other Customizable Expressions**
 - **DV w/o HDR fallback** (disabled by default): Enable DV w/o HDR fallback ranked SEL if not all your devices support DV. This also applies to DV releases without HDR10 fallback (Profile 5).
+- **DV P7** (disabled by default): Enable to filter out DV releases with Profile 7.
 - **H.264 10bit** (disabled by default): Enable to filter out H.264 10-bit encodes if your devices (FireStick, etc.) don't support them.
 - **10bit** (disabled by default): Less strict version of H.264 10bit that matches more files. Enable only if you are still unable to play files after enabling H.264 10bit.
 - **Anime Dual Audio** (disabled by default): Adjust score based on your preference (see above for scoring options).

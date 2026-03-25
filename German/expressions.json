@@ -1145,6 +1145,11 @@
     "enabled": false
   },
   {
+    "expression": "/*DV P7*/ negate(rseMatched(streams, 'Hybrid'), quality(visualTag(resolution(streams, '2160p'), 'DV'), 'Bluray Remux', 'Bluray'))",
+    "score": -10000,
+    "enabled": false
+  },
+  {
     "expression": "/*No-RlsGroup*/ isAnime ? [] : negate(releaseGroup(streams), streams)",
     "score": -1,
     "enabled": true
