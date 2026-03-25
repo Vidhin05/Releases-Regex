@@ -53,6 +53,12 @@ If you prefer Uncensored anime releases, you can adjust the score similarly:
 
 Using these scoring options, you'll still benefit from the tier system when better release groups provide Dual Audio or Uncensored releases.
 
+#### **LG TV**
+Many LG TVs can't play **TrueHD**, **DTS** (any tier), or **DV P7**. Enable and override their scores to **-10000** to filter out these streams.
+
+#### **Fire TV Stick**
+Fire TV/Sticks can't play properly **H.264 10bit (Hi10p)**. **Enable** **`H.264 10bit`** to filter out these streams.
+
 #### **Other Customizable Expressions**
 - **DV w/o HDR fallback** (disabled by default): Enable DV w/o HDR fallback ranked SEL if not all your devices support DV. This also applies to DV releases without HDR10 fallback (Profile 5).
 - **DV P7** (disabled by default): Enable to filter out DV releases with Profile 7.
