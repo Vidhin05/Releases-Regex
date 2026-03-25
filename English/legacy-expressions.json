@@ -410,6 +410,11 @@
     "enabled": false
   },
   {
+    "expression": "/*H.264 10bit*/ isAnime ? regexMatched(streams, 'H.264 10bit') : []",
+    "score": -10000,
+    "enabled": false
+  },
+  {
     "expression": "/*DV w/o HDR*/ isAnime ? [] : negate(merge(releaseGroup(streams, 'Flights'), regexMatched(streams, 'Hulu'), visualTag(streams, 'HDR', 'HDR10', 'HDR10+')), quality(visualTag(streams, 'DV'), 'WEBDL', 'WEBRIP'))",
     "score": -10000,
     "enabled": false
