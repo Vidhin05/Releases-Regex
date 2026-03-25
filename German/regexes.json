@@ -600,8 +600,13 @@
     "score": 0
   },
   {
-    "pattern": "/10[.-]?bit|hi10p/i",
+    "pattern": "/10[.-]?bit|hi10p?/i",
     "name": "10bit",
+    "score": 0
+  },
+  {
+    "pattern": "/\\bhi10p?\\b|(?=.*10[.-]?bit)(?=.*\\b[xh][-_. ]?264\\b)/i",
+    "name": "H.264 10bit",
     "score": 0
   },
   {
