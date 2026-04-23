@@ -840,6 +840,26 @@
     "enabled": true
   },
   {
+    "expression": "/*AD*/ isAnime ? [] : regexMatched(streams, 'WiTH AD')",
+    "score": 101,
+    "enabled": false
+  },
+  {
+    "expression": "/*ASL*/ isAnime ? [] : regexMatched(streams, 'WiTH ASL')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*BSL*/ isAnime ? [] : regexMatched(streams, 'WiTH BSL')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*BASL*/ isAnime ? [] : regexMatched(streams, 'WiTH BASL')",
+    "score": -35000,
+    "enabled": true
+  },
+  {
     "expression": "/*#Radarr*/ /*DE Microsized*/ queryType=='movie' ? regexMatched(streams, 'Radarr DE Microsized') : []",
     "score": -35000,
     "enabled": true
