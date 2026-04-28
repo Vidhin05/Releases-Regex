@@ -445,17 +445,17 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*ATMOS*/ queryType=='movie' ? negate(regexMatched(streams, 'Atmos Exclude Groups'), audioTag(streams, 'Atmos')) : []",
-    "score": 3000,
-    "enabled": true
-  },
-  {
-    "expression": "/*#Sonarr*/ /*ATMOS*/ queryType=='series' ? audioTag(streams, 'Atmos') : []",
-    "score": 3000,
-    "enabled": true
-  },
-  {
     "expression": "/*DD+ ATMOS*/ isAnime ? [] : negate(audioTag(streams, 'TrueHD'), audioTag(audioTag(streams, 'DD+'), 'Atmos'))",
+    "score": 3000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*ATMOS*/ queryType=='movie' ? negate(merge(rseMatched(streams, 'DD+ ATMOS', 'TrueHD ATMOS'), regexMatched(streams, 'Atmos Exclude Groups')), audioTag(streams, 'Atmos')) : []",
+    "score": 3000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*ATMOS*/ queryType=='series' ? negate(rseMatched(streams, 'DD+ ATMOS', 'TrueHD ATMOS'), audioTag(streams, 'Atmos')) : []",
     "score": 3000,
     "enabled": true
   },
