@@ -340,12 +340,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*ATMOS*/ queryType=='movie' ? negate(merge(rseMatched(streams, 'DD+ ATMOS', 'TrueHD ATMOS'), regexMatched(streams, 'Atmos Exclude Groups')), audioTag(streams, 'Atmos')) : []",
+    "expression": "/*#Radarr*/ /*ATMOS*/ queryType=='movie' ? negate(merge(audioTag(streams, 'TrueHD', 'DD+'), regexMatched(streams, 'Atmos Exclude Groups')), audioTag(streams, 'Atmos')) : []",
     "score": 3000,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*ATMOS*/ queryType=='series' ? negate(rseMatched(streams, 'DD+ ATMOS', 'TrueHD ATMOS'), audioTag(streams, 'Atmos')) : []",
+    "expression": "/*#Sonarr*/ /*ATMOS*/ queryType=='series' ? negate(audioTag(streams, 'TrueHD', 'DD+'), audioTag(streams, 'Atmos')) : []",
     "score": 3000,
     "enabled": true
   },
@@ -965,7 +965,7 @@
     "enabled": false
   },
   {
-    "expression": "/*DV P7*/ negate(rseMatched(streams, 'Hybrid'), quality(visualTag(resolution(streams, '2160p'), 'DV'), 'Bluray Remux', 'Bluray'))",
+    "expression": "/*DV P7*/ negate(regexMatched(negate(releaseGroup(streams, 'HYBRID'), streams), 'Hybrid'), quality(visualTag(resolution(streams, '2160p'), 'DV'), 'Bluray Remux', 'Bluray'))",
     "score": -10000,
     "enabled": false
   },
