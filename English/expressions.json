@@ -325,7 +325,12 @@
     "enabled": true
   },
   {
-    "expression": "/*TrueHD ATMOS*/ isAnime ? [] : audioTag(audioTag(streams, 'Atmos'), 'TrueHD')",
+    "expression": "/*#Radarr*/ /*TrueHD ATMOS*/ queryType=='movie' ? negate(audioTag(streams, 'DD', 'DD+', 'DTS', 'DTS:X', 'FLAC'), negate(negate(merge(audioTag(streams, 'Atmos'), regexMatched(streams, 'TrueHD Exclude Groups')), merge(audioTag(streams, 'TrueHD'), regexMatched(streams, 'Atmos Exclude Groups'))), merge(audioTag(streams, 'TrueHD'), regexMatched(streams, 'Atmos Exclude Groups')))) : []",
+    "score": 5000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*TrueHD ATMOS*/ queryType=='series' ? audioTag(audioTag(streams, 'Atmos'), 'TrueHD') : []",
     "score": 5000,
     "enabled": true
   },
