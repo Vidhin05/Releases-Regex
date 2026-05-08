@@ -435,7 +435,7 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*TrueHD ATMOS*/ queryType=='movie' ? negate(audioTag(streams, 'DD', 'DD+', 'DTS', 'DTS:X', 'FLAC'), negate(negate(merge(audioTag(streams, 'Atmos'), regexMatched(streams, 'TrueHD Exclude Groups')), merge(audioTag(streams, 'TrueHD'), regexMatched(streams, 'Atmos Exclude Groups'))), merge(audioTag(streams, 'TrueHD'), regexMatched(streams, 'Atmos Exclude Groups')))) : []",
+    "expression": "/*#Radarr*/ /*TrueHD ATMOS*/ queryType=='movie' ? merge(audioTag(audioTag(streams, 'Atmos'), 'TrueHD'), negate(audioTag(streams, 'DD', 'DD+', 'DTS', 'DTS:X', 'FLAC'), merge(regexMatched(audioTag(streams, 'Atmos'), 'Atmos Exclude Groups'), regexMatched(audioTag(streams, 'TrueHD'), 'TrueHD Exclude Groups'), regexMatched(regexMatched(streams, 'TrueHD Exclude Groups'), 'Atmos Exclude Groups')))) : []",
     "score": 5000,
     "enabled": true
   },
