@@ -880,8 +880,13 @@
     "enabled": true
   },
   {
-    "expression": "/*B&W*/ queryType=='movie' ? regexMatched(streams, 'Black and White Editions') : []",
-    "score": -10000,
+    "expression": "/*#Radarr*/ /*B&W*/ queryType=='movie' ? regexMatched(streams, 'Black and White Editions') : []",
+    "score": -35000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*B&W*/ queryType=='series' ? regexMatched(streams, 'BW') : []",
+    "score": -35000,
     "enabled": true
   },
   {
@@ -1151,12 +1156,12 @@
   },
   {
     "expression": "/*#Radarr*/ /*Bad Dual*/ queryType=='movie' ? regexMatched(streams, 'Radarr Bad Dual Groups') : []",
-    "score": -35000,
+    "score": 0,
     "enabled": true
   },
   {
     "expression": "/*#Sonarr*/ /*Bad Dual*/ queryType=='series' ? regexMatched(streams, 'Sonarr Bad Dual Groups') : []",
-    "score": -35000,
+    "score": 0,
     "enabled": true
   },
   {

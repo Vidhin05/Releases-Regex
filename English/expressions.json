@@ -695,7 +695,12 @@
     "enabled": true
   },
   {
-    "expression": "/*B&W*/ queryType=='movie' ? regexMatched(streams, 'Black and White Editions') : []",
+    "expression": "/*#Radarr*/ /*B&W*/ queryType=='movie' ? regexMatched(streams, 'Black and White Editions') : []",
+    "score": -10000,
+    "enabled": true
+  },  
+  {
+    "expression": "/*#Sonarr*/ /*B&W*/ queryType=='series' ? regexMatched(streams, 'BW') : []",
     "score": -10000,
     "enabled": true
   },
