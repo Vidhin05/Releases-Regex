@@ -450,6 +450,11 @@
     "score": 0
   },
   {
+    "name": "BW",
+    "pattern": "/(?<=\\bS\\d+(E\\d+)?\\b).*\\b((B(lack)?[ ._-]?(out|(and|[n&])?[ ._-]?(W(hite)?|Chrome))))\\b(?!$)/",
+    "score": 0
+  },
+  {
     "name": "VOSTFR",
     "pattern": "/\\b(VOST.*?FR(E|A)?|SUBFR(A|ENCH)?)\\b/i",
     "score": 0
