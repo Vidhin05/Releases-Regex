@@ -698,7 +698,7 @@
     "expression": "/*#Radarr*/ /*B&W*/ queryType=='movie' ? regexMatched(streams, 'Black and White Editions') : []",
     "score": -10000,
     "enabled": true
-  },  
+  },
   {
     "expression": "/*#Sonarr*/ /*B&W*/ queryType=='series' ? regexMatched(streams, 'BW') : []",
     "score": -10000,
@@ -815,6 +815,96 @@
     "enabled": true
   },
   {
+    "expression": "/*#Radarr*/ /*Coupang*/ queryType=='movie' ? regexMatched(streams, 'CPNG') : []",
+    "score": 50,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*FOD*/ queryType=='movie' ? regexMatched(streams, 'FOD') : []",
+    "score": 0,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*friDay*/ queryType=='movie' ? regexMatched(streams, 'friDay') : []",
+    "score": 10,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*Hami*/ queryType=='movie' ? regexMatched(streams, 'Hami') : []",
+    "score": 50,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*Hotstar*/ queryType=='movie' ? regexMatched(streams, 'HTSR') : []",
+    "score": 0,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*iQIYI*/ queryType=='movie' ? regexMatched(streams, 'iQIY') : []",
+    "score": 50,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*KOCOWA*/ queryType=='movie' ? regexMatched(streams, 'KCW') : []",
+    "score": 30,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*KKTV*/ queryType=='movie' ? regexMatched(streams, 'KKTV') : []",
+    "score": 10,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*LINE TV*/ queryType=='movie' ? regexMatched(streams, 'LINETV') : []",
+    "score": 20,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*myTV*/ queryType=='movie' ? regexMatched(streams, 'MyTVSuper') : []",
+    "score": 40,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*TVer*/ queryType=='movie' ? regexMatched(streams, 'TVer') : []",
+    "score": 0,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*TVING*/ queryType=='movie' ? regexMatched(streams, 'TVING') : []",
+    "score": 0,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*U-NEXT*/ queryType=='movie' ? regexMatched(streams, 'U-NEXT') : []",
+    "score": 0,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*Viki*/ queryType=='movie' ? regexMatched(streams, 'Viki') : []",
+    "score": 49,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*Viu*/ queryType=='movie' ? regexMatched(streams, 'VIU') : []",
+    "score": 0,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*Wavve*/ queryType=='movie' ? regexMatched(streams, 'WAVVE') : []",
+    "score": 20,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*WeTV*/ queryType=='movie' ? regexMatched(streams, 'WETV') : []",
+    "score": 30,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*Youku*/ queryType=='movie' ? regexMatched(streams, 'YOUKU') : []",
+    "score": 30,
+    "enabled": true
+  },
+  {
     "expression": "/*#Sonarr*/ /*Amazon*/ queryType=='series' ? regexMatched(streams, 'AMZN') : []",
     "score": 75,
     "enabled": true
@@ -902,6 +992,101 @@
   {
     "expression": "/*#Sonarr*/ /*Stan*/ queryType=='series' ? regexMatched(streams, 'STAN') : []",
     "score": 75,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*Coupang*/ queryType=='series' ? regexMatched(streams, 'CPNG') : []",
+    "score": 50,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*DMM TV*/ queryType=='series' ? regexMatched(streams, 'DMM-TV') : []",
+    "score": 10,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*FOD*/ queryType=='series' ? regexMatched(streams, 'FOD') : []",
+    "score": 75,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*friDay*/ queryType=='series' ? regexMatched(streams, 'friDay') : []",
+    "score": 10,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*Hami*/ queryType=='series' ? regexMatched(streams, 'Hami') : []",
+    "score": 50,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*Hotstar*/ queryType=='series' ? regexMatched(streams, 'HTSR') : []",
+    "score": 75,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*iQIYI*/ queryType=='series' ? regexMatched(streams, 'iQIY') : []",
+    "score": 50,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*KOCOWA*/ queryType=='series' ? regexMatched(streams, 'KCW') : []",
+    "score": 30,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*KKTV*/ queryType=='series' ? regexMatched(streams, 'KKTV') : []",
+    "score": 10,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*LINE TV*/ queryType=='series' ? regexMatched(streams, 'LINETV') : []",
+    "score": 20,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*myTV*/ queryType=='series' ? regexMatched(streams, 'MyTVSuper') : []",
+    "score": 40,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*TVer*/ queryType=='series' ? regexMatched(streams, 'TVer') : []",
+    "score": 75,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*TVING*/ queryType=='series' ? regexMatched(streams, 'TVING') : []",
+    "score": 75,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*U-NEXT*/ queryType=='series' ? regexMatched(streams, 'U-NEXT') : []",
+    "score": 75,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*Viki*/ queryType=='series' ? regexMatched(streams, 'Viki') : []",
+    "score": 49,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*Viu*/ queryType=='series' ? regexMatched(streams, 'VIU') : []",
+    "score": 75,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*Wavve*/ queryType=='series' ? regexMatched(streams, 'WAVVE') : []",
+    "score": 20,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*WeTV*/ queryType=='series' ? regexMatched(streams, 'WETV') : []",
+    "score": 30,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*Youku*/ queryType=='series' ? regexMatched(streams, 'YOUKU') : []",
+    "score": 30,
     "enabled": true
   },
   {
