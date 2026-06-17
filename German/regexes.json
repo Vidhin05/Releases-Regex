@@ -191,12 +191,12 @@
   },
   {
     "name": "Radarr Web T1",
-    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?=.*\\b(?:ABBIE|AJP69|BLUTONiUM|BYNDR|CMRG|CRFW|CRUD|GNOME|HONE|Kitsune|NOSiViD|NTb|NTG|PAXA|PEXA|RAWR|SiC|TEPES|TheFarm|XEPA|ZoroSenpai)\\b).*/i",
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?=.*\\b(?:ABBIE|AJP69|BLUTONiUM|BYNDR|CMRG|CRFW|CRUD|GNOME|HONE|Kitsune|MADSKY|NOSiViD|NTb|NTG|PAXA|PEXA|RAWR|SiC|TEPES|TheFarm|XEPA|ZoroSenpai)\\b).*/i",
     "score": 0
   },
   {
     "name": "Sonarr Web T1",
-    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?=.*\\b(?:ABBiE|AJP69|CasStudio|CRFW|CtrlHD|HONE|Kitsune|monkee|NOSiViD|NTb|NTG|PAXA|PEXA|QOQ|RAWR|RTN|SiC|T6D|ViSUM|XEPA)\\b).*/i",
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?=.*\\b(?:ABBiE|AJP69|CasStudio|CRFW|CtrlHD|HONE|Kitsune|MADSKY|monkee|NOSiViD|NTb|NTG|PAXA|PEXA|QOQ|RAWR|RTN|SiC|T6D|ViSUM|XEPA)\\b).*/i",
     "score": 0
   },
   {
@@ -242,6 +242,26 @@
   {
     "name": "Sonarr Web T3",
     "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?=.*\\b(?:DRACULA|ViSiON)\\b).*/",
+    "score": 0
+  },
+  {
+    "name": "Asian Tier 01",
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?=.*\\b(?:ANDY|Archie|ECLiPSE|HBO|HeavenlyOppa|iTsOK|JKCT|LoveBug|MARK|MMR|MrHulk|Phanteam|SH3LBY|SYNFM|Wendy)\\b).*/i",
+    "score": 0
+  },
+  {
+    "name": "Asian Tier 02",
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?=.*\\b(?:PandaMoon)\\b).*/i",
+    "score": 0
+  },
+  {
+    "name": "Asian Tier 03",
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?=.*\\b(?:ADWeb|CHDWEB|HDCTV|HHWEB|OurTV|SHiNE)\\b).*/i",
+    "score": 0
+  },
+  {
+    "name": "Asian LQ",
+    "pattern": "/\\b(AppleTor|Luvmichelle|MagicStar|NEXT|Taengoo|unco@AvistaZ|unco)\\b/i",
     "score": 0
   },
   {
@@ -311,7 +331,7 @@
   },
   {
     "name": "German Anime Bluray Tier 01",
-    "pattern": "/^(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)|bd(?:720|1080|2160)|(?<=[-_. (\\[])bd(?=[-_. )\\]])|DVD|DVDRip|NTSC|PAL|xvidvd))(?!.*(?:(?:[_. ]|\\d{4}p-|\\bHybrid-)(?:(?:BD|UHD)[-_. ]?)?Remux\\b|(?:(?:BD|UHD)[-_. ]?)?Remux[_. ]\\d{4}p))(?=.*(\\[(Baka|Pudding-sama|RTemp)\\]|-(Baka|Pudding-sama|RTemp)\\b|\\b(snk|shw|Ainz|TvR|Fuuko|AO|CNY|FumoFriday|Waechter|GP|DRiFTKiNG|DK)\\b)).*/i",
+    "pattern": "/^(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)|bd(?:720|1080|2160)|(?<=[-_. (\\[])bd(?=[-_. )\\]])|DVD|DVDRip|NTSC|PAL|xvidvd))(?!.*(?:(?:[_. ]|\\d{4}p-|\\bHybrid-)(?:(?:BD|UHD)[-_. ]?)?Remux\\b|(?:(?:BD|UHD)[-_. ]?)?Remux[_. ]\\d{4}p))(?=.*(\\[(Baka|Pudding[-]?sama|RTemp)\\]|-(Baka|Pudding[-]?sama|RTemp)\\b|\\b(snk|shw|Ainz|TvR|Fuuko|AO|CNY|FumoFriday|Waechter|GP|DRiFTKiNG|DK)\\b)).*/i",
     "score": 0
   },
   {
@@ -361,7 +381,7 @@
   },
   {
     "name": "German Anime Web Tier 01",
-    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*(\\[(Baka|Pudding-sama|RTemp)\\]|-(Baka|Pudding-sama|RTemp)\\b|\\b(snk|shw|Ainz|TvR|Tanuki|HiSHiRO|WeebPinn|Lynacchi|DRiFTKiNG|DK)\\b)).*/i",
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux|\\[WEB\\]|[\\[\\(]WEB[ .]))(?=.*(\\[(Baka|Pudding[-]?sama|RTemp)\\]|-(Baka|Pudding[-]?sama|RTemp)\\b|\\b(snk|shw|Ainz|TvR|Tanuki|HiSHiRO|WeebPinn|Lynacchi|DRiFTKiNG|DK)\\b)).*/i",
     "score": 0
   },
   {
@@ -391,12 +411,12 @@
   },
   {
     "name": "Radarr Bad Dual Groups",
-    "pattern": "/\\b(alfaHD.*|BAT|BlackBit|BNd|C\\.A\\.A|Cory|EXTREME|FF|FOXX|G4RiS|GUEIRA|LCD|MGE|N3G4N|ONLYMOViE|PD|PTHome|RiPER|RK|SiGLA|Tars|TM|tokar86a|TURG|TvR|vnlls|WTV|Yatogam1|YusukeFLA|ZigZag|ZNM)\\b/i",
+    "pattern": "/\\b(alfaHD.*|BAT|BlackBit|BNd|C\\.A\\.A|Cory|CYPHER|EniaHD|EXTREME|FF|FOXX|G4RiS|GUEIRA|LCD|MGE|MLH|N3G4N|ONLYMOViE|PD|PTHome|RiPER|RK|SiGLA|Tars|TM|tokar86a|TURG|TvR|vnlls|WTV|XiQUEXiQUE|Yatogam1|YusukeFLA|ZigZag|ZNM)\\b/i",
     "score": 0
   },
   {
     "name": "Sonarr Bad Dual Groups",
-    "pattern": "/\\b(alfaHD.*|BAT|BiOMA|BlackBit|BNd|C\\.A\\.A|Cory|EXTREME|FF|FOXX|G4RiS|GUEIRA|LCD|N3G4N|PD|PTHome|RiPER|RK|SiGLA|Tars|tokar86a|TURG|vnlls|WTV|Yatogam1|YusukeFLA|ZigZag|ZNM)\\b/i",
+    "pattern": "/\\b(alfaHD.*|BAT|CYPHER|MLH|XiQUEXiQUE|BiOMA|BlackBit|BNd|C\\.A\\.A|Cory|EniaHD|EXTREME|FF|FOXX|G4RiS|GUEIRA|LCD|N3G4N|PD|PTHome|RiPER|RK|SiGLA|Tars|tokar86a|TURG|vnlls|WTV|Yatogam1|YusukeFLA|ZigZag|ZNM)\\b/i",
     "score": 0
   },
   {
@@ -506,7 +526,7 @@
   },
   {
     "name": "LQ (Radarr)",
-    "pattern": "/\\b(24xHD|41RGB|4K4U|AOC|AROMA|aXXo|AZAZE|BARC0DE|BAUCKLEY|BdC|BTM|C1NEM4|C4K|CDDHD|CHAOS|CHD|CHX|CiNE|CREATiVE24|CrEwSaDe|CTFOH|d3g|DDR|DepraveD|DNL|DRX|EuReKA|EVO|FaNGDiNG0|Feranki1980|FGT|FMD|FRDS|FZHD|GalaxyRG|GHD|GHOSTS|GPTHD|HDHUB4U|HDS|HDT|HDTime|HDWinG|HiQVE|iNTENSO|iPlanet|jennaortega(UHD)?|JFF|KC|KIRA|L0SERNIGHT|LAMA|Leffe|Liber8|LiGaS|MarkII|MeGusta|Mesc|mHD|mSD|MTeam|MT|MySiLU|nhanc3|NhaNc3|nHD|nikt0|nSD|OFT|PATOMiEL|PRODJi|PSA|PTNK|R&H|RARBG|RDN|Rifftrax|RU4HD|SANTi|SasukeducK|SHD|ShieldBearer|STUTTERSHIT|TBS|TEKNO3D|TG|Tigole|TIKO|VIDEOHOLE|VISIONPLUSHDR(-X|1000)?|WAF|WiKi|worldmkv|x0r|XLF|YIFY|YTS(.(MX|LT|AG))?|Zero00|Zeus)\\b|Pahe(\\.(ph|in))?\\b|\\bx265-E/i",
+    "pattern": "/\\b(24xHD|41RGB|4K4U|AOC|AROMA|aXXo|AZAZE|BARC0DE|BAUCKLEY|BdC|BTM|C1NEM4|C4K|CDDHD|CHAOS|CHD|CHX|CiNE|CREATiVE24|CrEwSaDe|CTFOH|d3g|DDR|DepraveD|DNL|DRX|EuReKA|EVO|FaNGDiNG0|Feranki1980|FGT|FMD|FRDS|FZHD|GalaxyRG|GHD|GHOSTS|GPTHD|HDHUB4U|HDS|HDT|HDTime|HDWinG|HiQVE|iNTENSO|iPlanet|jennaortega(UHD)?|JFF|KC|KIRA|L0SERNIGHT|LAMA|Leffe|Liber8|LiGaS|MarkII|MeGusta|Mesc|mHD|mSD|MTeam|MT|MySiLU|nhanc3|NhaNc3|nHD|nikt0|nSD|OFT|PATOMiEL|PRODJi|PSA|PTNK|RARBG|RDN|Rifftrax|RU4HD|SANTi|SasukeducK|SHD|ShieldBearer|STUTTERSHIT|TBS|TEKNO3D|TG|Tigole|TIKO|VIDEOHOLE|VISIONPLUSHDR(-X|1000)?|WAF|WiKi|worldmkv|x0r|XLF|YIFY|YTS(.(MX|LT|AG))?|Zero00|Zeus)\\b|Pahe(\\.(ph|in))?\\b|\\bx265-E/i",
     "score": 0
   },
   {
@@ -516,7 +536,7 @@
   },
   {
     "name": "LQ (Sonarr)",
-    "pattern": "/\\b(BRiNK|BTM|CHX|CTFOH|d3g|DepraveD|EVO|Feranki1980|FGT|FMD|GHOSTS|HiQVE|iNTENSO|JFF|KC|MeGusta|nhanc3|OFT|PSA|R&H|SasukeducK|SHD|ShieldBearer|TBS|TG|VIDEOHOLE|worldmkv|XLF|Zero00)\\b|Pahe(\\.(ph|in))?\\b/i",
+    "pattern": "/\\b(BRiNK|BTM|CHX|CTFOH|d3g|DepraveD|EVO|Feranki1980|FGT|FMD|GHOSTS|HiQVE|iNTENSO|JFF|KC|MeGusta|nhanc3|OFT|PSA|SasukeducK|SHD|ShieldBearer|TBS|TG|VIDEOHOLE|worldmkv|XLF|Zero00)\\b|Pahe(\\.(ph|in))?\\b/i",
     "score": 0
   },
   {
@@ -526,12 +546,12 @@
   },
   {
     "name": "LQ (Release Title) (Radarr)",
-    "pattern": "/\\b(1XBET|BEN[ ._-]THE[ ._-]MEN|Feranki1980|GalaxyRG|(?<!-)jennaortega(UHD)?|READ(\\s|\\.)+NOTE|SWTYBLZ|TeeWee|TEKNO3D|Will1869)\\b|(-D3US|D3US-)|(?<=\\b[12]\\d{3}\\b.*?)(?<!\\b(web[ ._-]?(dl|rip)?).*?)\\b(EVO|PiRaTeS)\\b|^(?!.*\\bMA\\b.*\\bWEB-?DL\\b).*\\b(HHWEB)\\b|(?<!\\b(remux).*?)\\b(unkn0wn)\\b/i",
+    "pattern": "/\\b(1XBET|BEN[ ._-]THE[ ._-]MEN|Feranki1980|GalaxyRG|(?<!-)jennaortega(UHD)?|R&H|READ(\\s|\\.)+NOTE|SWTYBLZ|TeeWee|TEKNO3D|Will1869)\\b|(-D3US|D3US-)|(?<=\\b[12]\\d{3}\\b.*?)(?<!\\b(web[ ._-]?(dl|rip)?).*?)\\b(EVO|PiRaTeS)\\b|^(?!.*\\bMA\\b.*\\bWEB-?DL\\b).*\\b(HHWEB)\\b|(?<!\\b(remux).*?)\\b(unkn0wn)\\b/i",
     "score": 0
   },
   {
     "name": "LQ (Release Title) (Sonarr)",
-    "pattern": "/\\b(BEN[ ._-]THE[ ._-]MEN|CREATiVE24|Feranki1980|TeeWee)\\b|(?=.*?(\\b2160p\\b))(?=.*?(\\bBiTOR\\b))/i",
+    "pattern": "/\\b(BEN[ ._-]THE[ ._-]MEN|CREATiVE24|Feranki1980|R&H|TeeWee)\\b|(?=.*?(\\b2160p\\b))(?=.*?(\\bBiTOR\\b))/i",
     "score": 0
   },
   {
