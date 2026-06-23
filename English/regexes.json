@@ -171,7 +171,7 @@
   },
   {
     "name": "Anime BD T1",
-    "pattern": "/^(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)|bd(?:720|1080|2160)|(?<=[-_. (\\[])bd(?=[-_. )\\]])|DVD|DVDRip|NTSC|PAL|xvidvd))(?=.*(\\[(Moxie|smol|SoM)\\]|-(Moxie|smol|SoM)\\b|\\b(DemiHuman|FLE|Flugel|LYS1TH3A|ZR)\\b|(?<=remux).*\\b(NAN0)\\b|-ZR-)).*/i",
+    "pattern": "/^(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)|bd(?:720|1080|2160)|(?<=[-_. (\\[])bd(?=[-_. )\\]])|DVD|DVDRip|NTSC|PAL|xvidvd))(?=.*(\\[(Moxie|smol|SoM)\\]|-(Moxie|smol|SoM)\\b|\\b(DemiHuman|FLE|Flugel|LYS1TH3A)\\b)).*/i",
     "score": 0
   },
   {
@@ -181,7 +181,7 @@
   },
   {
     "name": "Anime BD T2",
-    "pattern": "/^(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)|bd(?:720|1080|2160)|(?<=[-_. (\\[])bd(?=[-_. )\\]])|DVD|DVDRip|NTSC|PAL|xvidvd))(?=.*(\\[(Aergia|Arid|koala|Lulu|Vodes|YURI)\\]|-(Aergia(?!-raws)|Arid|koala|Lulu|YURI)\\b|\\b(Arg0|FateSucks|hchcsen|hydes|JOHNTiTOR|JySzE|Kulot|LostYears|Meakes|WAP|ZeroBuild)\\b|^(?=.*\\b(PMR)\\b)(?=.*\\b(Remux)\\b))|-Orphan\\b|(?<!Not)-Vodes\\b).*/i",
+    "pattern": "/^(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)|bd(?:720|1080|2160)|(?<=[-_. (\\[])bd(?=[-_. )\\]])|DVD|DVDRip|NTSC|PAL|xvidvd))(?=.*(\\[(Aergia|Arid|koala|Lulu|Vodes|YURI)\\]|-(Aergia(?!-raws)|Arid|koala|Lulu|YURI)\\b|\\b(Arg0|BlackRose|FateSucks|hchcsen|hydes|JOHNTiTOR|JySzE|Kulot|LostYears|Meakes|WAP|ZeroBuild)\\b|-Orphan\\b|(?<!Not)-Vodes\\b)).*/i",
     "score": 0
   },
   {
@@ -191,7 +191,7 @@
   },
   {
     "name": "Anime BD T3",
-    "pattern": "/^(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)|bd(?:720|1080|2160)|(?<=[-_. (\\[])bd(?=[-_. )\\]])|DVD|DVDRip|NTSC|PAL|xvidvd))(?=.*(\\[(ARC|cappybara|CRUCiBLE|Doc|fig|Headpatter|Legion|Mehul|Mysteria|RaiN|RUDY|Serendipity|sgt|uba)\\]|-(ARC|cappybara|CRUCiBLE|Doc|fig|Headpatter|Legion|Mehul|Mysteria|RaiN|RUDY|Serendipity|sgt|uba)\\b|\\b(BBT-RMX|ChucksMux|CUNNY|Cunnysseur|Inka-Subs|LaCroiX|MTBB|Netaro|Noiy|npz|NTRX|Okay-Subs|P9|RMX|Sekkon|SubsMix)\\b)).*/i",
+    "pattern": "/^(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)|bd(?:720|1080|2160)|(?<=[-_. (\\[])bd(?=[-_. )\\]])|DVD|DVDRip|NTSC|PAL|xvidvd))(?=.*(\\[(ARC|cappybara|CRUCiBLE|Doc|fig|Headpatter|Legion|Mehul|Mysteria|RaiN|RUDY|Serendipity|sgt|uba)\\]|-(ARC|cappybara|CRUCiBLE|Doc|fig|Headpatter|Legion|Mehul|Mysteria|RaiN|RUDY|Serendipity|sgt|uba)\\b|\\b(BBT-RMX|ChucksMux|CUNNY|Cunnysseur|Inka-Subs|LaCroiX|MTBB|Netaro|Noiy|npz|NTRX|Okay-Subs|P9|RMX|Sekkon|SubsMix|Sylvar|ZR)\\b|(?<=remux).*\\b(NAN0)\\b|^(?=.*\\b(PMR)\\b)(?=.*\\b(Remux)\\b)|-ZR-)).*/i",
     "score": 0
   },
   {
