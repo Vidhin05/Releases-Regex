@@ -105,32 +105,32 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*Asian T1*/ queryType=='movie' ? regexMatched(streams, 'Asian Tier 01') : []",
+    "expression": "/*#Radarr*/ /*Asian T1*/ queryType=='movie' and originalLanguage != 'English' ? regexMatched(streams, 'Asian Tier 01') : []",
     "score": 1650,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*Asian T1*/ queryType=='series' ? regexMatched(streams, 'Asian Tier 01') : []",
+    "expression": "/*#Sonarr*/ /*Asian T1*/ queryType=='series' and originalLanguage != 'English' ? regexMatched(streams, 'Asian Tier 01') : []",
     "score": 1650,
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*Asian T2*/ queryType=='movie' ? regexMatched(streams, 'Asian Tier 02') : []",
+    "expression": "/*#Radarr*/ /*Asian T2*/ queryType=='movie' and originalLanguage != 'English' ? regexMatched(streams, 'Asian Tier 02') : []",
     "score": 1600,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*Asian T2*/ queryType=='series' ? regexMatched(streams, 'Asian Tier 02') : []",
+    "expression": "/*#Sonarr*/ /*Asian T2*/ queryType=='series' and originalLanguage != 'English' ? regexMatched(streams, 'Asian Tier 02') : []",
     "score": 1600,
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*Asian T3*/ queryType=='movie' ? regexMatched(streams, 'Asian Tier 03') : []",
+    "expression": "/*#Radarr*/ /*Asian T3*/ queryType=='movie' and originalLanguage != 'English' ? regexMatched(streams, 'Asian Tier 03') : []",
     "score": 100,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*Asian T3*/ queryType=='series' ? regexMatched(streams, 'Asian Tier 03') : []",
+    "expression": "/*#Sonarr*/ /*Asian T3*/ queryType=='series' and originalLanguage != 'English' ? regexMatched(streams, 'Asian Tier 03') : []",
     "score": 100,
     "enabled": true
   },
@@ -340,12 +340,12 @@
     "enabled": true
   },
   {
-    "expression": "/*#Radarr*/ /*Asian LQ*/ queryType=='movie' ? regexMatched(streams, 'Asian LQ') : []",
+    "expression": "/*#Radarr*/ /*Asian LQ*/ queryType=='movie' and originalLanguage != 'English' ? regexMatched(streams, 'Asian LQ') : []",
     "score": -10000,
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*Asian LQ*/ queryType=='series' ? regexMatched(streams, 'Asian LQ') : []",
+    "expression": "/*#Sonarr*/ /*Asian LQ*/ queryType=='series' and originalLanguage != 'English' ? regexMatched(streams, 'Asian LQ') : []",
     "score": -10000,
     "enabled": true
   },
