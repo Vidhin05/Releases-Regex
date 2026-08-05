@@ -61,7 +61,7 @@
   },
   {
     "name": "Radarr UHD Bluray T2",
-    "pattern": "/^(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)|UHD|4K))(?!.*(?:(?:[_. ]|\\d{4}p-|\\bHybrid-)(?:(?:BD|UHD)[-_. ]?)?Remux\\b|(?:(?:BD|UHD)[-_. ]?)?Remux[_. ]\\d{4}p))(?!.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)))(?!.*(WebRip|Web-Rip|WEBMux))(?=.*\\b(?:HQMUX)\\b).*/i",
+    "pattern": "/^(?=.*(BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)|UHD|4K))(?!.*(?:(?:[_. ]|\\d{4}p-|\\bHybrid-)(?:(?:BD|UHD)[-_. ]?)?Remux\\b|(?:(?:BD|UHD)[-_. ]?)?Remux[_. ]\\d{4}p))(?!.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)))(?!.*(WebRip|Web-Rip|WEBMux))(?=.*\\b(?:HiDt|HQMUX)\\b).*/i",
     "score": 0
   },
   {
