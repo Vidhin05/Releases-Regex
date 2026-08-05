@@ -765,6 +765,26 @@
     "enabled": true
   },
   {
+    "expression": "/*#Anime*/ /*#Sonarr*/ /*HIDIVE*/ queryType=='anime.series' ? negate(seadex(streams), regexMatched(streams, 'HIDIVE')) : []",
+    "score": 2,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*#Radarr*/ /*HIDIVE*/ queryType=='anime.movie' ? negate(seadex(streams), regexMatched(streams, 'HIDIVE')) : []",
+    "score": 10,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*#Sonarr*/ /*WKN*/ queryType=='anime.series' ? negate(seadex(streams), regexMatched(streams, 'WKN')) : []",
+    "score": 2,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Anime*/ /*#Radarr*/ /*WKN*/ queryType=='anime.movie' ? negate(seadex(streams), regexMatched(streams, 'WKN')) : []",
+    "score": 10,
+    "enabled": true
+  },
+  {
     "expression": "/*#Anime*/ /*#Sonarr*/ /*ABEMA*/ queryType=='anime.series' ? negate(seadex(streams), regexMatched(streams, 'ABEMA')) : []",
     "score": 1,
     "enabled": true
