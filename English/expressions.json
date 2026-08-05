@@ -700,7 +700,7 @@
     "enabled": true
   },
   {
-    "expression": "/*#Sonarr*/ /*B&W*/ queryType=='series' and (title != 'Spider-Noir' and title != 'Spider Noir' and title != 'Spider-noir' and title != 'Spider noir') ? regexMatched(streams, 'BW') : []",
+    "expression": "/*#Sonarr*/ /*B&W*/ queryType=='series' and not ((title == 'Spider-Noir' or title == 'Spider Noir' or title == 'Spider-noir' or title == 'Spider noir') or (title == 'Game of Thrones' and season == 5 and episode == 2)) ? regexMatched(streams, 'BW') : []",
     "score": -10000,
     "enabled": true
   },
