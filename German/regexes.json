@@ -551,7 +551,7 @@
   },
   {
     "name": "LQ (Release Title) (Radarr)",
-    "pattern": "/\\b(1XBET|BEN[ ._-]THE[ ._-]MEN|Feranki1980|GalaxyRG|(?<!-)jennaortega(UHD)?|R&H|READ(\\s|\\.)+NOTE|SWTYBLZ|TeeWee|TEKNO3D|Will1869)\\b|(-D3US|D3US-)|(?<=\\b[12]\\d{3}\\b.*?)(?<!\\b(web[ ._-]?(dl|rip)?).*?)\\b(EVO|PiRaTeS)\\b|^(?!.*\\bMA\\b.*\\bWEB-?DL\\b).*\\b(HHWEB)\\b|(?<!\\b(remux).*?)\\b(unkn0wn)\\b/i",
+    "pattern": "/\\b(1XBET|BEN[ ._-]THE[ ._-]MEN|Feranki1980|GalaxyRG|(?<!-)jennaortega(UHD)?|R&H|READ(\\s|\\.)+NOTE|SWTYBLZ|TeeWee|TEKNO3D|Will1869)\\b|(-D3US|D3US-)|(?<!\\bweb[ ._-]?(dl|rip)?\\b.*)-(EVO)\\b|(?<!\\bweb[ ._-]?(dl|rip)?\\b.*)-(PiRaTeS)\\b|^(?!.*\\bMA\\b.*\\bWEB-?DL\\b).*\\b(HHWEB)\\b|(?<!\\b(remux).*?)\\b(unkn0wn)\\b/i",
     "score": 0
   },
   {
