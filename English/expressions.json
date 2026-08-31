@@ -845,6 +845,11 @@
     "enabled": true
   },
   {
+    "expression": "/*#Radarr*/ /*Fandango*/ queryType=='movie' ? regexMatched(streams, 'FAND') : []",
+    "score": 0,
+    "enabled": true
+  },
+  {
     "expression": "/*#Radarr*/ /*FOD*/ queryType=='movie' ? regexMatched(streams, 'FOD') : []",
     "score": 0,
     "enabled": true
@@ -1027,6 +1032,11 @@
   {
     "expression": "/*#Sonarr*/ /*DMM TV*/ queryType=='series' ? regexMatched(streams, 'DMM-TV') : []",
     "score": 10,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*Fandango*/ queryType=='series' ? regexMatched(streams, 'FAND') : []",
+    "score": 75,
     "enabled": true
   },
   {
