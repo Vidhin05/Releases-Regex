@@ -141,7 +141,7 @@
   },
   {
     "name": "Radarr DE Bluray T2",
-    "pattern": "/^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:VECTOR|MULTiPLEX|SiXTYNiNE|Oergel|ABJ|paranoid06|RocketHD)\\b)).*/",
+    "pattern": "/^(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:VECTOR|MULTiPLEX|SiXTYNiNE|Oergel|ABJ|paranoid06|RocketHD|toto)\\b)).*/",
     "score": 0
   },
   {
@@ -171,7 +171,7 @@
   },
   {
     "name": "Radarr DE Web T2",
-    "pattern": "/^(?=.*\\bWEB\\b)(?=.*\\b(?:DL|RIP)?\\b)(?=.*\\b(?:VECTOR|MULTiPLEX|SiXTYNiNE|Oergel|4SF|ABJ|paranoid06)\\b).*/",
+    "pattern": "/^(?=.*\\bWEB\\b)(?=.*\\b(?:DL|RIP)?\\b)(?=.*\\b(?:VECTOR|MULTiPLEX|SiXTYNiNE|Oergel|4SF|ABJ|paranoid06|toto)\\b).*/",
     "score": 0
   },
   {
