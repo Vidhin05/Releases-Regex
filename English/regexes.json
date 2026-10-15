@@ -311,7 +311,7 @@
   },
   {
     "name": "Generated Dynamic HDR",
-    "pattern": "/^(?=.*\\b(BiTOR|DepraveD|SasukeducK|tarunk9c|VD0N|VECTOR|VisionXpert)\\b)(?=.*(?:\\bHDR10(\\+|P(lus)?)\\b|\\b(dv|dovi|dolby[ .]?v(ision)?)\\b)).*/i",
+    "pattern": "/^(?=.*\\b(BiTOR|DepraveD|SasukeducK|SumVision|tarunk9c|VD0N|VECTOR|VisionXpert)\\b)(?=.*(?:\\bHDR10(\\+|P(lus)?)\\b|\\b(dv|dovi|dolby[ .]?v(ision)?)\\b)).*/i",
     "score": 0
   },
   {
