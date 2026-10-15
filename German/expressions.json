@@ -995,6 +995,11 @@
     "enabled": true
   },
   {
+    "expression": "/*#Radarr*/ /*IMF*/ queryType=='movie' ? regexMatched(streams, 'IMF') : []",
+    "score": 20,
+    "enabled": true
+  },
+  {
     "expression": "/*#Radarr*/ /*iTunes*/ queryType=='movie' ? regexMatched(streams, 'iT') : []",
     "score": 0,
     "enabled": true
