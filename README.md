@@ -12,7 +12,7 @@ This template **auto-syncs** updates to regex patterns and ranked stream express
 
 #### **Installation**
 1. On the AIOStreams configure page, `About -> Get Started -> Use a Template -> Vidhin's Regexes -> Load Template`
-2. Choose a variant (**English**, **German**, or **Legacy English**).
+2. Choose a variant (**English**, **German**, **French**, or **Legacy English**).
 
 Optionally import the template with the URL `https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/all-templates.json` if it does not show up.
 
