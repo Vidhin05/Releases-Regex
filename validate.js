@@ -11,8 +11,10 @@ const path = require('path');
 const ROOT = path.join(__dirname);
 const EN_REGEXES = path.join(ROOT, 'English', 'regexes.json');
 const DE_REGEXES = path.join(ROOT, 'German', 'regexes.json');
+const FR_REGEXES = path.join(ROOT, 'French', 'regexes.json');
 const EN_EXPRESSIONS = path.join(ROOT, 'English', 'expressions.json');
 const DE_EXPRESSIONS = path.join(ROOT, 'German', 'expressions.json');
+const FR_EXPRESSIONS = path.join(ROOT, 'French', 'expressions.json');
 const EN_LEGACY = path.join(ROOT, 'English', 'legacy-expressions.json');
 
 function parseRegexLiteral(str) {
@@ -150,15 +152,20 @@ const allErrors = [];
 
 allErrors.push(...validateRegexes(EN_REGEXES, 'English/regexes.json'));
 allErrors.push(...validateRegexes(DE_REGEXES, 'German/regexes.json'));
+allErrors.push(...validateRegexes(FR_REGEXES, 'French/regexes.json'));
 
 const enRegexNames = loadRegexNames(EN_REGEXES);
 const deRegexNames = loadRegexNames(DE_REGEXES);
+const frRegexNames = loadRegexNames(FR_REGEXES);
 if (enRegexNames) {
   allErrors.push(...validateExpressions(EN_EXPRESSIONS, enRegexNames, 'English/expressions.json'));
   allErrors.push(...validateExpressions(EN_LEGACY, enRegexNames, 'English/legacy-expressions.json'));
 }
 if (deRegexNames) {
   allErrors.push(...validateExpressions(DE_EXPRESSIONS, deRegexNames, 'German/expressions.json'));
+}
+if (frRegexNames) {
+  allErrors.push(...validateExpressions(FR_EXPRESSIONS, frRegexNames, 'French/expressions.json'));
 }
 
 if (allErrors.length > 0) {
