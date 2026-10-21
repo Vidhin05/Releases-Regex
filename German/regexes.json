@@ -161,32 +161,32 @@
   },
   {
     "name": "Radarr DE Web T1",
-    "pattern": "/^(?=.*\\bWEB\\b)(?=.*\\b(?:DL|RIP)?\\b)(?=.*\\b(?:ZeroTwo|BUTTERCUP|HARTZ02|XiSS|DOGPACK404|PRiNCESSDiANA|DiVA|WAREZCX|BiTCHNUGGET|TSCC|TvR|NIMA4K|TVS|D02KU|PXL|QfG|CNY|WeebPinn|MEDiATHEK|RiiR|TOJ|WalterBishop|pmHD)\\b).*/",
+    "pattern": "/^(?=.*(?:\\bWEB\\b|WEBDL|WebDL|WEBRip|WebRip|WEBRIP|Web-Rip|WEBMux|WebMux|WEBMUX))(?=.*\\b(?:ZeroTwo|BUTTERCUP|HARTZ02|XiSS|DOGPACK404|PRiNCESSDiANA|DiVA|WAREZCX|BiTCHNUGGET|TSCC|TvR|NIMA4K|TVS|D02KU|PXL|QfG|CNY|WeebPinn|MEDiATHEK|RiiR|TOJ|WalterBishop|pmHD)\\b).*/",
     "score": 0
   },
   {
     "name": "Sonarr DE Web T1",
-    "pattern": "/^(?=.*\\bWEB\\b)(?=.*\\b(?:DL|RIP)?\\b)(?=.*\\b(?:ZeroTwo|BUTTERCUP|HARTZ02|XiSS|DOGPACK404|PRiNCESSDiANA|DiVA|D02KU|WAREZCX|BiTCHNUGGET|TSCC|TvR|NIMA4K|TVS|PXL|QfG|CNY|WeebPinn|MEDiATHEK|RiiR|TOJ|WalterBishop)\\b).*/",
+    "pattern": "/^(?=.*(?:\\bWEB\\b|WEBDL|WebDL|WEBRip|WebRip|WEBRIP|Web-Rip|WEBMux|WebMux|WEBMUX))(?=.*\\b(?:ZeroTwo|BUTTERCUP|HARTZ02|XiSS|DOGPACK404|PRiNCESSDiANA|DiVA|D02KU|WAREZCX|BiTCHNUGGET|TSCC|TvR|NIMA4K|TVS|PXL|QfG|CNY|WeebPinn|MEDiATHEK|RiiR|TOJ|WalterBishop)\\b).*/",
     "score": 0
   },
   {
     "name": "Radarr DE Web T2",
-    "pattern": "/^(?=.*\\bWEB\\b)(?=.*\\b(?:DL|RIP)?\\b)(?=.*\\b(?:VECTOR|MULTiPLEX|SiXTYNiNE|Oergel|4SF|ABJ|paranoid06|toto)\\b).*/",
+    "pattern": "/^(?=.*(?:\\bWEB\\b|WEBDL|WebDL|WEBRip|WebRip|WEBRIP|Web-Rip|WEBMux|WebMux|WEBMUX))(?=.*\\b(?:VECTOR|MULTiPLEX|SiXTYNiNE|Oergel|4SF|ABJ|paranoid06|toto)\\b).*/",
     "score": 0
   },
   {
     "name": "Sonarr DE Web T2",
-    "pattern": "/^(?=.*\\bWEB\\b)(?=.*\\b(?:DL|RIP)?\\b)(?=.*\\b(?:VECTOR|MULTiPLEX|SiXTYNiNE|Oergel|4SF|4SJ|ABJ)\\b).*/",
+    "pattern": "/^(?=.*(?:\\bWEB\\b|WEBDL|WebDL|WEBRip|WebRip|WEBRIP|Web-Rip|WEBMux|WebMux|WEBMUX))(?=.*\\b(?:VECTOR|MULTiPLEX|SiXTYNiNE|Oergel|4SF|4SJ|ABJ)\\b).*/",
     "score": 0
   },
   {
     "name": "Radarr DE Web T3",
-    "pattern": "/^(?=.*\\bWEB\\b)(?=.*\\b(?:DL|RIP)?\\b)(?=.*\\b(?:RobertDeNiro|BALENCiAGA|HDSource|FX|RDR)\\b).*/",
+    "pattern": "/^(?=.*(?:\\bWEB\\b|WEBDL|WebDL|WEBRip|WebRip|WEBRIP|Web-Rip|WEBMux|WebMux|WEBMUX))(?=.*\\b(?:RobertDeNiro|BALENCiAGA|HDSource|FX|RDR)\\b).*/",
     "score": 0
   },
   {
     "name": "Sonarr DE Web T3",
-    "pattern": "/^(?=.*\\bWEB\\b)(?=.*\\b(?:DL|RIP)?\\b)(?=.*\\b(?:RobertDeNiro|BALENCiAGA|HQC|HDSource|iNCEPTION|RDR)\\b).*/",
+    "pattern": "/^(?=.*(?:\\bWEB\\b|WEBDL|WebDL|WEBRip|WebRip|WEBRIP|Web-Rip|WEBMux|WebMux|WEBMUX))(?=.*\\b(?:RobertDeNiro|BALENCiAGA|HQC|HDSource|iNCEPTION|RDR)\\b).*/",
     "score": 0
   },
   {
@@ -266,12 +266,12 @@
   },
   {
     "name": "Radarr DE Scene",
-    "pattern": "/^(?=.*\\bWEB\\b)(?=.*\\b(?:DL|RIP)\\b)(?=.*\\b(?:DETAiLS|WAYNE|WOMBAT|SAUERKRAUT|WvF|4KCONNECTiON|STARS|AWARDS|DMPD|EXCiTED|iNTENTiON|JaJunge|MGE|MisFiTS|RUBBiSH|RWP|TMSF|TV4A|HAXE|muhHD|RiLE|W4K|ENDSTATiON|HDARCHiV|PL3X|WATCHABLE|OHD|ENCOUNTERS|RSG|OCA|UNDERTAKERS|CDP|SAViOURHD|CONTRiBUTiON|GOREHOUNDS|SPiCY|bi0hazard)\\b).*/",
+    "pattern": "/^(?=.*(?:\\bWEB\\b|WEBDL|WebDL|WEBRip|WebRip|WEBRIP|Web-Rip|WEBMux|WebMux|WEBMUX))(?=.*\\b(?:DETAiLS|WAYNE|WOMBAT|SAUERKRAUT|WvF|4KCONNECTiON|STARS|AWARDS|DMPD|EXCiTED|iNTENTiON|JaJunge|MGE|MisFiTS|RUBBiSH|RWP|TMSF|TV4A|HAXE|muhHD|RiLE|W4K|ENDSTATiON|HDARCHiV|PL3X|WATCHABLE|OHD|ENCOUNTERS|RSG|OCA|UNDERTAKERS|CDP|SAViOURHD|CONTRiBUTiON|GOREHOUNDS|SPiCY|bi0hazard)\\b).*/",
     "score": 0
   },
   {
     "name": "Sonarr DE Scene",
-    "pattern": "/^(?=.*\\bWEB\\b)(?=.*\\b(?:DL|RIP)\\b)(?=.*\\b(?:DETAiLS|WAYNE|WOMBAT|SAUERKRAUT|WvF|4KCONNECTiON|STARS|AWARDS|DMPD|EXCiTED|iNTENTiON|JaJunge|MGE|MisFiTS|RUBBiSH|RWP|TMSF|TV4A|HAXE|muhHD|ENDSTATiON|HDARCHiV|PL3X|WATCHABLE|OHD|ENCOUNTERS|RSG|TVNATiON|FENDT|ACED|FKKTV|euHD|OCA|RIPLEY|GTVG|CDP|CDD|RiLE|CONTRiBUTiON|bi0hazard)\\b).*/",
+    "pattern": "/^(?=.*(?:\\bWEB\\b|WEBDL|WebDL|WEBRip|WebRip|WEBRIP|Web-Rip|WEBMux|WebMux|WEBMUX))(?=.*\\b(?:DETAiLS|WAYNE|WOMBAT|SAUERKRAUT|WvF|4KCONNECTiON|STARS|AWARDS|DMPD|EXCiTED|iNTENTiON|JaJunge|MGE|MisFiTS|RUBBiSH|RWP|TMSF|TV4A|HAXE|muhHD|ENDSTATiON|HDARCHiV|PL3X|WATCHABLE|OHD|ENCOUNTERS|RSG|TVNATiON|FENDT|ACED|FKKTV|euHD|OCA|RIPLEY|GTVG|CDP|CDD|RiLE|CONTRiBUTiON|bi0hazard)\\b).*/",
     "score": 0
   },
   {
