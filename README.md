@@ -33,7 +33,7 @@ Optionally import the template with the URL `https://raw.githubusercontent.com/V
 | `{stream.rseMatched::string::~Value["if contains"\|\|""]}` | Treat array as joined string; check if it contains `Value` (substring). |
 
 > [!NOTE]
-> I recommend using a SEL to smartly limit and filter streams instead of using exclude regexes. You can use [Tamtaro's](https://github.com/Tam-Taro/SEL-Filtering-and-Sorting#-how-to-import).
+> I recommend using a SEL to smartly limit and filter streams instead of using exclude regexes. You can use [Tamtaro's](https://github.com/Tam-Taro/SEL-Filtering-and-Sorting#quick-setup-overview).
 
 ### Customizing Scores
 
@@ -74,16 +74,19 @@ Fire TV/Sticks can't play properly **H.264 10bit (Hi10p)**. **Enable** **`H.264 
 
 ---
 
-## 🔧 Community Instance Admin Setup
+## 🔧 Selfhost & Community Instance Admin
 
-### Environment Variables
+**regex/synced url not allowed** on save means this template URL is not set in the dashboard. Setting it allows every regex and synced URL the template uses.
 
-Set these environment variables in your AIOStreams instance to increase the sync speed for templates, regexes and stream expressions:
+1. Dashboard → `Ctrl K` → **Templates URL** → enter `https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/all-templates.json`
+2. Optional: set **Featured template IDs** to `Vidhin05.regex-template` and **Template refresh interval** to `1h`.
+
+To pull a template update before that interval: Dashboard → **Tasks** → **Template remote refresh** → **Run now**.
+
+If a synced URL update still does not show on the configuration page, the cache is stale. Recreate the container, or wait:
 
 ```bash
-TEMPLATE_URLS=["https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/all-templates.json"]
-TEMPLATE_REFRESH_INTERVAL=3600
-WHITELISTED_SYNC_REFRESH_INTERVAL=3600
+docker compose up -d --force-recreate aiostreams
 ```
 
 ---
