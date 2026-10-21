@@ -520,7 +520,12 @@
     "score": 0
   },
   {
-    "pattern": "/\\b(3L|CtrlHD|DON|HQMUX|W4NK3R)\\b/i",
+    "pattern": "/\\b(3L|CtrlHD|HQMUX|W4NK3R)\\b/i",
+    "name": "TrueHD Exclude Groups",
+    "score": 0
+  },
+  {
+    "pattern": "/\\b(DON)\\b/",
     "name": "TrueHD Exclude Groups",
     "score": 0
   },
