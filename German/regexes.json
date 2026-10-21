@@ -161,22 +161,22 @@
   },
   {
     "name": "Radarr DE Web T1",
-    "pattern": "/^(?=.*(?:\\bWEB\\b|WEBDL|WebDL|WEBRip|WebRip|WEBRIP|Web-Rip|WEBMux|WebMux|WEBMUX))(?=.*\\b(?:ZeroTwo|BUTTERCUP|HARTZ02|XiSS|DOGPACK404|PRiNCESSDiANA|DiVA|WAREZCX|BiTCHNUGGET|TSCC|TvR|NIMA4K|TVS|D02KU|PXL|QfG|CNY|WeebPinn|MEDiATHEK|RiiR|TOJ|WalterBishop|pmHD)\\b).*/",
+    "pattern": "/^(?=.*(?:\\bWEB\\b|WEBDL|WebDL|WEBRip|WebRip|WEBRIP|Web-Rip|WEBMux|WebMux|WEBMUX))(?=.*\\b(?:ZeroTwo|BUTTERCUP|HARTZ02|XiSS|DOGPACK404|PRiNCESSDiANA|DiVA|WAREZCX|BiTCHNUGGET|TSCC|TvR|NIMA4K|TVS|D02KU|KOMET|PXL|QfG|CNY|WeebPinn|MEDiATHEK|RiiR|TOJ|SLiDE|WalterBishop|pmHD)\\b).*/",
     "score": 0
   },
   {
     "name": "Sonarr DE Web T1",
-    "pattern": "/^(?=.*(?:\\bWEB\\b|WEBDL|WebDL|WEBRip|WebRip|WEBRIP|Web-Rip|WEBMux|WebMux|WEBMUX))(?=.*\\b(?:ZeroTwo|BUTTERCUP|HARTZ02|XiSS|DOGPACK404|PRiNCESSDiANA|DiVA|D02KU|WAREZCX|BiTCHNUGGET|TSCC|TvR|NIMA4K|TVS|PXL|QfG|CNY|WeebPinn|MEDiATHEK|RiiR|TOJ|WalterBishop)\\b).*/",
+    "pattern": "/^(?=.*(?:\\bWEB\\b|WEBDL|WebDL|WEBRip|WebRip|WEBRIP|Web-Rip|WEBMux|WebMux|WEBMUX))(?=.*\\b(?:ZeroTwo|BUTTERCUP|HARTZ02|XiSS|DOGPACK404|PRiNCESSDiANA|DiVA|D02KU|WAREZCX|BiTCHNUGGET|TSCC|TvR|NIMA4K|TVS|PXL|QfG|CNY|KOMET|WeebPinn|MEDiATHEK|RiiR|TOJ|SLiDE|WalterBishop)\\b).*/",
     "score": 0
   },
   {
     "name": "Radarr DE Web T2",
-    "pattern": "/^(?=.*(?:\\bWEB\\b|WEBDL|WebDL|WEBRip|WebRip|WEBRIP|Web-Rip|WEBMux|WebMux|WEBMUX))(?=.*\\b(?:VECTOR|MULTiPLEX|SiXTYNiNE|Oergel|4SF|ABJ|paranoid06|toto)\\b).*/",
+    "pattern": "/^(?=.*(?:\\bWEB\\b|WEBDL|WebDL|WEBRip|WebRip|WEBRIP|Web-Rip|WEBMux|WebMux|WEBMUX))(?=.*\\b(?:VECTOR|MULTiPLEX|SiXTYNiNE|Oergel|4SF|ABJ|FLORiX|paranoid06|toto)\\b).*/",
     "score": 0
   },
   {
     "name": "Sonarr DE Web T2",
-    "pattern": "/^(?=.*(?:\\bWEB\\b|WEBDL|WebDL|WEBRip|WebRip|WEBRIP|Web-Rip|WEBMux|WebMux|WEBMUX))(?=.*\\b(?:VECTOR|MULTiPLEX|SiXTYNiNE|Oergel|4SF|4SJ|ABJ)\\b).*/",
+    "pattern": "/^(?=.*(?:\\bWEB\\b|WEBDL|WebDL|WEBRip|WebRip|WEBRIP|Web-Rip|WEBMux|WebMux|WEBMUX))(?=.*\\b(?:VECTOR|MULTiPLEX|SiXTYNiNE|Oergel|4SF|4SJ|ABJ|FLORiX)\\b).*/",
     "score": 0
   },
   {
@@ -211,7 +211,7 @@
   },
   {
     "name": "Radarr Web T2",
-    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?=.*\\b(?:dB|MiU|MZABI|playWEB|SbR|SMURF|XEBEC|4KBEC|CEBEX)\\b).*/i",
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?=.*\\b(?:dB|MiU|monkee|MZABI|playWEB|SbR|SMURF|XEBEC|4KBEC|CEBEX)\\b).*/i",
     "score": 0
   },
   {
@@ -226,7 +226,7 @@
   },
   {
     "name": "Sonarr Web T2",
-    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?=.*\\b(?:3cTWeB|4KBEC|BTW|BLUTONiUM|BYNDR|CEBEX|Chotab|Cinefeel|CiT|Coo7|dB|FC|iJP|iKA|iT00NZ|JETIX|KHN|MiU|MZABI|NPMS|NYH|orbitron|playWEB|PSiG|ROCCaT|RTFM|SA89|SbR|SDCC|TEPES|TVSmash|WELP|XEBEC)\\b).*/i",
+    "pattern": "/^(?=.*(WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?=.*\\b(?:3cTWeB|4KBEC|BTW|BLUTONiUM|BYNDR|CEBEX|Chotab|Cinefeel|CiT|CMRG|Coo7|dB|FC|iJP|iKA|iT00NZ|JETIX|KHN|MiU|MZABI|NPMS|NYH|orbitron|playWEB|PSiG|ROCCaT|RTFM|SA89|SbR|SDCC|TEPES|TVSmash|WELP|XEBEC)\\b).*/i",
     "score": 0
   },
   {
@@ -281,7 +281,7 @@
   },
   {
     "name": "Sonarr DE Scene",
-    "pattern": "/^(?=.*(?:\\bWEB\\b|WEBDL|WebDL|WEBRip|WebRip|WEBRIP|Web-Rip|WEBMux|WebMux|WEBMUX))(?=.*\\b(?:DETAiLS|WAYNE|WOMBAT|SAUERKRAUT|WvF|4KCONNECTiON|STARS|AWARDS|DMPD|EXCiTED|iNTENTiON|JaJunge|MGE|MisFiTS|RUBBiSH|RWP|TMSF|TV4A|HAXE|muhHD|ENDSTATiON|HDARCHiV|PL3X|WATCHABLE|OHD|ENCOUNTERS|RSG|TVNATiON|FENDT|ACED|FKKTV|euHD|OCA|RIPLEY|GTVG|CDP|CDD|RiLE|CONTRiBUTiON|bi0hazard)\\b).*/",
+    "pattern": "/^(?=.*(?:\\bWEB\\b|WEBDL|WebDL|WEBRip|WebRip|WEBRIP|Web-Rip|WEBMux|WebMux|WEBMUX))(?=.*\\b(?:DETAiLS|WAYNE|WOMBAT|SAUERKRAUT|WvF|4KCONNECTiON|STARS|AWARDS|DMPD|EXCiTED|iNTENTiON|JaJunge|MGE|MisFiTS|RUBBiSH|RWP|TMSF|TV4A|HAXE|muhHD|ENDSTATiON|HDARCHiV|PL3X|WATCHABLE|OHD|ENCOUNTERS|RSG|TVNATiON|W4K|FENDT|ACED|FKKTV|euHD|OCA|RIPLEY|GTVG|CDP|CDD|RiLE|CONTRiBUTiON|bi0hazard)\\b).*/",
     "score": 0
   },
   {
@@ -491,12 +491,12 @@
   },
   {
     "name": "DE LQ (Radarr)",
-    "pattern": "/\\b(PsO|Cancer58|Tylor\\.D|1XBET|2dead|HELD|kala|POE|SHOWE|SHOWEHD|ORCA88|LuRCH|N2D2|GETB8|TFARC|Kristallprinz|LAW|CTFOH|Pendeti|OJ|PS|FSX|EMVY|ZaidaNulled|MEGA|MBA|FORMBA|PaZ|Whistler|omikron|WOTT|SunDry|PL|TVARCHiV|P73|LizardSquad|AVTOMAT|iSSEYMiYAKE|TVP|AIDA|UTOPiA|FRAGGERS|REEL|VideoStar)\\b/",
+    "pattern": "/\\b(PsO|Cancer58|Tylor\\.D|1XBET|2dead|HELD|kala|POE|SHOWE|SHOWEHD|ORCA88|LuRCH|N2D2|GETB8|TFARC|Kristallprinz|LAW|CTFOH|Pendeti|PiKACHU|OJ|PS|FSX|EMVY|ZaidaNulled|MEGA|MBA|FORMBA|PaZ|Whistler|omikron|WOTT|SunDry|PL|TVARCHiV|P73|LizardSquad|AVTOMAT|iSSEYMiYAKE|TVP|AIDA|UTOPiA|FRAGGERS|REEL|SD7|VideoStar)\\b/",
     "score": 0
   },
   {
     "name": "DE LQ (Sonarr)",
-    "pattern": "/\\b(PsO|Cancer58|Tylor\\.D|1XBET|2dead|HELD|kala|POE|SHOWE|SHOWEHD|ORCA88|LuRCH|N2D2|GETB8|TFARC|Kristallprinz|LAW|CTFOH|Pendeti|OJ|PS|FSX|EMVY|ZaidaNulled|MEGA|MBA|FORMBA|PaZ|Whistler|omikron|WOTT|SunDry|PL|TVARCHiV|P73|LizardSquad|AVTOMAT|iSSEYMiYAKE|TVP|AIDA|UTOPiA|FRAGGERS)\\b/",
+    "pattern": "/\\b(PsO|Cancer58|Tylor\\.D|1XBET|2dead|HELD|kala|POE|SHOWE|SHOWEHD|ORCA88|LuRCH|N2D2|GETB8|TFARC|Kristallprinz|LAW|CTFOH|Pendeti|OJ|PS|FSX|EMVY|ZaidaNulled|MEGA|MBA|FORMBA|PaZ|Whistler|omikron|WOTT|SunDry|PL|TVARCHiV|P73|LizardSquad|AVTOMAT|iSSEYMiYAKE|TVP|AIDA|UTOPiA|FRAGGERS|SD7)\\b/",
     "score": 0
   },
   {
