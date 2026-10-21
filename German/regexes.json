@@ -506,7 +506,7 @@
   },
   {
     "name": "FLUX",
-    "pattern": "/\\b(FLUX)\\b/i",
+    "pattern": "/\\b(FLUX)\\b/",
     "score": 0
   },
   {
