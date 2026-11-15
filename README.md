@@ -64,6 +64,8 @@ Fire TV/Sticks can't play properly **H.264 10bit (Hi10p)**. **Enable** **`H.264 
 - **DV P7** (disabled by default): Enable to filter out DV releases with Profile 7.
 - **H.264 10bit** (disabled by default): Enable to filter out H.264 10-bit encodes if your devices (FireStick, etc.) don't support them.
 - **10bit** (disabled by default): Less strict version of H.264 10bit that matches more files. Enable only if you are still unable to play files after enabling H.264 10bit.
+- **Hardsub** (disabled by default, anime only): Burned-in subs, including the nekoBT `HS` tag. Enable and set a positive score to prefer them when `.ass` subs render poorly.
+- The nekoBT `{Tags:...}` `HS` tag matches only when **Leave Auto Title Tags in Filename** is enabled. Hardsub still matches `Hardsub`, `HC`, and `内嵌` in the release name without that option.
 - **Audio description** (disabled by default): Enable to prefer audio description releases. Adjust score based on your preference
 - **Dubs Only**: Disable to keep anime dub-only streams.
 - **Bad Dual Groups**: Disable to keep dual audio groups with non-English as primary language.

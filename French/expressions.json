@@ -1485,6 +1485,11 @@
     "enabled": false
   },
   {
+    "expression": "/*#Anime*/ /*Hardsub*/ isAnime ? regexMatched(streams, 'Hardsub') : []",
+    "score": 0,
+    "enabled": false
+  },
+  {
     "expression": "/*DV w/o HDR*/ isAnime ? [] : negate(merge(releaseGroup(streams, 'Flights'), regexMatched(streams, 'Hulu'), visualTag(streams, 'HDR', 'HDR10', 'HDR10+')), quality(visualTag(streams, 'DV'), 'WEBDL', 'WEBRIP'))",
     "score": -10000,
     "enabled": false

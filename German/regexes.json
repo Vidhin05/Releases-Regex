@@ -645,6 +645,11 @@
     "score": 0
   },
   {
+    "pattern": "/\\b(?:hard[ ._-]?(?:subs?|subbed|subtitles?|coded(?:[ ._-]?(?:subs?|subtitles?))?)|hc(?:[ ._-]?(?:subs?|subbed))?|korsub(?:bed|s)?|burn(?:ed|t)[ ._-]?in(?:[ ._-]?(?:subs?|subtitles?))?|burn(?:ed|t)[ ._-]?subs?)\\b|[内內]嵌|\\{Tags:[^}]*\\bHS\\b/i",
+    "name": "Hardsub",
+    "score": 0
+  },
+  {
     "pattern": "/\\b(Uncut|Unrated|Uncensored|AT[-_. ]?X)\\b/i",
     "name": "Uncensored",
     "score": 0
