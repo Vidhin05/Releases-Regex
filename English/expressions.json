@@ -765,6 +765,26 @@
     "enabled": true
   },
   {
+    "expression": "/*#Radarr*/ /*BBC iPlayer*/ queryType=='movie' ? regexMatched(streams, 'IP') : []",
+    "score": 0,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*ITVX*/ queryType=='movie' ? regexMatched(streams, 'ITVX') : []",
+    "score": 0,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*MY5*/ queryType=='movie' ? regexMatched(streams, 'MY5') : []",
+    "score": 0,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Radarr*/ /*NOW*/ queryType=='movie' ? regexMatched(streams, 'NOW') : []",
+    "score": 0,
+    "enabled": true
+  },
+  {
     "expression": "/*#Radarr*/ /*Bravia Core*/ queryType=='movie' ? regexMatched(streams, 'BCORE') : []",
     "score": 15,
     "enabled": true
@@ -951,6 +971,36 @@
   },
   {
     "expression": "/*#Sonarr*/ /*Apple TV+*/ queryType=='series' ? regexMatched(streams, 'ATVP') : []",
+    "score": 75,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*4OD*/ queryType=='series' ? regexMatched(streams, '4OD') : []",
+    "score": 75,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*ALL4*/ queryType=='series' ? regexMatched(streams, 'ALL4') : []",
+    "score": 75,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*BBC iPlayer*/ queryType=='series' ? regexMatched(streams, 'IP') : []",
+    "score": 75,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*ITVX*/ queryType=='series' ? regexMatched(streams, 'ITVX') : []",
+    "score": 75,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*MY5*/ queryType=='series' ? regexMatched(streams, 'MY5') : []",
+    "score": 75,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sonarr*/ /*NOW*/ queryType=='series' ? regexMatched(streams, 'NOW') : []",
     "score": 75,
     "enabled": true
   },
