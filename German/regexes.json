@@ -171,22 +171,22 @@
   },
   {
     "name": "Radarr DE Web T2",
-    "pattern": "/^(?=.*(?:\\bWEB\\b|WEBDL|WebDL|WEBRip|WebRip|WEBRIP|Web-Rip|WEBMux|WebMux|WEBMUX))(?=.*\\b(?:VECTOR|MULTiPLEX|SiXTYNiNE|Oergel|4SF|ABJ|FLORiX|paranoid06|toto)\\b).*/",
+    "pattern": "/^(?=.*(?:\\bWEB\\b|WEBDL|WebDL|WEBRip|WebRip|WEBRIP|Web-Rip|WEBMux|WebMux|WEBMUX))(?=.*\\b(?:VECTOR|MULTiPLEX|SiXTYNiNE|Oergel|4SF|ABJ|paranoid06|toto)\\b).*/",
     "score": 0
   },
   {
     "name": "Sonarr DE Web T2",
-    "pattern": "/^(?=.*(?:\\bWEB\\b|WEBDL|WebDL|WEBRip|WebRip|WEBRIP|Web-Rip|WEBMux|WebMux|WEBMUX))(?=.*\\b(?:VECTOR|MULTiPLEX|SiXTYNiNE|Oergel|4SF|4SJ|ABJ|FLORiX)\\b).*/",
+    "pattern": "/^(?=.*(?:\\bWEB\\b|WEBDL|WebDL|WEBRip|WebRip|WEBRIP|Web-Rip|WEBMux|WebMux|WEBMUX))(?=.*\\b(?:VECTOR|MULTiPLEX|SiXTYNiNE|Oergel|4SF|4SJ|ABJ)\\b).*/",
     "score": 0
   },
   {
     "name": "Radarr DE Web T3",
-    "pattern": "/^(?=.*(?:\\bWEB\\b|WEBDL|WebDL|WEBRip|WebRip|WEBRIP|Web-Rip|WEBMux|WebMux|WEBMUX))(?=.*\\b(?:RobertDeNiro|BALENCiAGA|HDSource|FX|RDR)\\b).*/",
+    "pattern": "/^(?=.*(?:\\bWEB\\b|WEBDL|WebDL|WEBRip|WebRip|WEBRIP|Web-Rip|WEBMux|WebMux|WEBMUX))(?=.*\\b(?:RobertDeNiro|BALENCiAGA|HDSource|FLORiX|FX|RDR)\\b).*/",
     "score": 0
   },
   {
     "name": "Sonarr DE Web T3",
-    "pattern": "/^(?=.*(?:\\bWEB\\b|WEBDL|WebDL|WEBRip|WebRip|WEBRIP|Web-Rip|WEBMux|WebMux|WEBMUX))(?=.*\\b(?:RobertDeNiro|BALENCiAGA|HQC|HDSource|iNCEPTION|RDR)\\b).*/",
+    "pattern": "/^(?=.*(?:\\bWEB\\b|WEBDL|WebDL|WEBRip|WebRip|WEBRIP|Web-Rip|WEBMux|WebMux|WEBMUX))(?=.*\\b(?:RobertDeNiro|BALENCiAGA|FLORiX|HQC|HDSource|iNCEPTION|RDR)\\b).*/",
     "score": 0
   },
   {
